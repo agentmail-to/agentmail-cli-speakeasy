@@ -29,7 +29,7 @@ func initWebhooksCreateCmd(parent *cobra.Command) error {
 		Use:     "create",
 		Short:   "Create Webhook",
 		Long:    "**CLI:**\n```bash\nagentmail webhooks create --url https://example.com/webhook --event-type message.received\n```",
-		Example: "  cli webhooks create --url https://odd-zebra.org/ --event-types '[\"message.rejected\"]'",
+		Example: "  agentmail webhooks create --url https://odd-zebra.org/ --event-types '[\"message.rejected\"]'",
 		RunE:    runWebhooksCreateCmd,
 	}
 	flagutil.RegisterFlags(cmd, webhooksCreateCmdMeta)

@@ -24,7 +24,7 @@ func initDomainsGetCmd(parent *cobra.Command) error {
 		Use:     "get",
 		Short:   "Get Domain",
 		Long:    "**CLI:**\n```bash\nagentmail domains get --domain-id <domain_id>\n```",
-		Example: "  cli domains get --domain-id <id>",
+		Example: "  agentmail domains get --domain-id <id>",
 		RunE:    runDomainsGetCmd,
 	}
 	flagutil.RegisterFlags(cmd, domainsGetCmdMeta)

@@ -18,7 +18,7 @@ func initAuthCmd(parent *cobra.Command) error {
 	authCmd := &cobra.Command{
 		Use:   "auth",
 		Short: "Manage authentication credentials",
-		Long: `Manage authentication credentials for cli.
+		Long: `Manage authentication credentials for agentmail.
 
 Subcommands:
   login   - Interactively configure credentials
@@ -30,7 +30,7 @@ Subcommands:
 	authCmd.AddCommand(&cobra.Command{
 		Use:   "login",
 		Short: "Interactively configure authentication credentials",
-		Long: `Interactively configure authentication credentials for cli.
+		Long: `Interactively configure authentication credentials for agentmail.
 Secret credentials are stored in the OS keychain when available,
 with a config file fallback.
 
@@ -46,9 +46,9 @@ Use the configure command for both authentication and global parameters.`,
 
 Sources are shown as:
   [flag]    - Set via command line flag
-  [env]     - Set via environment variable (CLI_*)
+  [env]     - Set via environment variable (AGENTMAIL_*)
   [keyring] - Set via OS keychain (stored by login/configure command)
-  [config]  - Set via config file (~/.config/cli/config.yaml)
+  [config]  - Set via config file (~/.config/agentmail/config.yaml)
   [unset]   - Not configured
 
 Credential values are masked for security.`,
@@ -75,9 +75,9 @@ func runAuthLoginCmd(cmd *cobra.Command, args []string) error {
 			"auth_login_blocked",
 			"the 'auth login' command is interactive and cannot be used in agent mode",
 			[]string{
-				fmt.Sprintf("Set credentials via environment variables (prefix: %s_)", "CLI"),
+				fmt.Sprintf("Set credentials via environment variables (prefix: %s_)", "AGENTMAIL"),
 				"Pass credentials directly as CLI flags for each command",
-				fmt.Sprintf("Run '%s auth whoami' to verify current authentication", "cli"),
+				fmt.Sprintf("Run '%s auth whoami' to verify current authentication", "agentmail"),
 			},
 		)
 	}

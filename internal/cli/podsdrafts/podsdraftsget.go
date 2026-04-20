@@ -25,7 +25,7 @@ func initPodsDraftsGetCmd(parent *cobra.Command) error {
 		Use:     "get",
 		Short:   "Get Draft",
 		Long:    "**CLI:**\n```bash\nagentmail pods:drafts get --pod-id <pod_id> --draft-id <draft_id>\n```",
-		Example: "  cli pods-drafts get --pod-id <id> --draft-id <id>",
+		Example: "  agentmail pods-drafts get --pod-id <id> --draft-id <id>",
 		RunE:    runPodsDraftsGetCmd,
 	}
 	flagutil.RegisterFlags(cmd, podsDraftsGetCmdMeta)

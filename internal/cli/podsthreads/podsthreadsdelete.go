@@ -26,7 +26,7 @@ func initPodsThreadsDeleteCmd(parent *cobra.Command) error {
 		Use:     "delete",
 		Short:   "Delete Thread",
 		Long:    "Moves the thread to trash by adding a trash label to all messages. If the thread is already in trash, it will be permanently deleted. Use `permanent=true` to force permanent deletion.\n\n**CLI:**\n```bash\nagentmail pods:threads delete --pod-id <pod_id> --thread-id <thread_id>\n```",
-		Example: "  cli pods-threads delete --pod-id <id> --thread-id <id>",
+		Example: "  agentmail pods-threads delete --pod-id <id> --thread-id <id>",
 		RunE:    runPodsThreadsDeleteCmd,
 	}
 	flagutil.RegisterFlags(cmd, podsThreadsDeleteCmdMeta)

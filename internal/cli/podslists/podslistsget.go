@@ -27,7 +27,7 @@ func initPodsListsGetCmd(parent *cobra.Command) error {
 		Use:     "get",
 		Short:   "Get List Entry",
 		Long:    "**CLI:**\n```bash\nagentmail pods:lists get --pod-id <pod_id> --direction <direction> --type <type> --entry <entry>\n```",
-		Example: "  cli pods-lists get --pod-id <id> --direction reply --type block --entry <value>",
+		Example: "  agentmail pods-lists get --pod-id <id> --direction reply --type block --entry <value>",
 		RunE:    runPodsListsGetCmd,
 	}
 	flagutil.RegisterFlags(cmd, podsListsGetCmdMeta)

@@ -28,7 +28,7 @@ func initWebhooksUpdateCmd(parent *cobra.Command) error {
 		Use:     "update",
 		Short:   "Update Webhook",
 		Long:    "**CLI:**\n```bash\nagentmail webhooks update --webhook-id <webhook_id> --add-inbox-id <inbox_id>\n```",
-		Example: "  cli webhooks update --webhook-id <id>",
+		Example: "  agentmail webhooks update --webhook-id <id>",
 		RunE:    runWebhooksUpdateCmd,
 	}
 	flagutil.RegisterFlags(cmd, webhooksUpdateCmdMeta)

@@ -30,7 +30,7 @@ func initPodsMetricsQueryCmd(parent *cobra.Command) error {
 		Use:     "query",
 		Short:   "Query Metrics",
 		Long:    "**CLI:**\n```bash\nagentmail pods:metrics query --pod-id <pod_id>\n```",
-		Example: "  cli pods-metrics query --pod-id <id>",
+		Example: "  agentmail pods-metrics query --pod-id <id>",
 		RunE:    runPodsMetricsQueryCmd,
 	}
 	flagutil.RegisterFlags(cmd, podsMetricsQueryCmdMeta)

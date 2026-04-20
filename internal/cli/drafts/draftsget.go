@@ -24,7 +24,7 @@ func initDraftsGetCmd(parent *cobra.Command) error {
 		Use:     "get",
 		Short:   "Get Draft",
 		Long:    "**CLI:**\n```bash\nagentmail drafts get --draft-id <draft_id>\n```",
-		Example: "  cli drafts get --draft-id <id>",
+		Example: "  agentmail drafts get --draft-id <id>",
 		RunE:    runDraftsGetCmd,
 	}
 	flagutil.RegisterFlags(cmd, draftsGetCmdMeta)

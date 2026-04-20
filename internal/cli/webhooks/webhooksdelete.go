@@ -24,7 +24,7 @@ func initWebhooksDeleteCmd(parent *cobra.Command) error {
 		Use:     "delete",
 		Short:   "Delete Webhook",
 		Long:    "**CLI:**\n```bash\nagentmail webhooks delete --webhook-id <webhook_id>\n```",
-		Example: "  cli webhooks delete --webhook-id <id>",
+		Example: "  agentmail webhooks delete --webhook-id <id>",
 		RunE:    runWebhooksDeleteCmd,
 	}
 	flagutil.RegisterFlags(cmd, webhooksDeleteCmdMeta)

@@ -27,7 +27,7 @@ func initInboxesEventsListCmd(parent *cobra.Command) error {
 		Use:     "list",
 		Short:   "List Inbox Events",
 		Long:    "List label change events for an inbox. Returns events in reverse chronological order by default. Use for IMAP UID projection or audit logging.\n\n**CLI:**\n```bash\nagentmail inboxes:events list --inbox-id <inbox_id>\n```",
-		Example: "  cli inboxes-events list --inbox-id <id>",
+		Example: "  agentmail inboxes-events list --inbox-id <id>",
 		RunE:    runInboxesEventsListCmd,
 	}
 	flagutil.RegisterFlags(cmd, inboxesEventsListCmdMeta)

@@ -28,7 +28,7 @@ func initInboxesCreateCmd(parent *cobra.Command) error {
 		Use:     "create",
 		Short:   "Create Inbox",
 		Long:    "**CLI:**\n```bash\nagentmail inboxes create --display-name \"My Agent\" --username myagent --domain agentmail.to\n```",
-		Example: "  cli inboxes create",
+		Example: "  agentmail inboxes create",
 		RunE:    runInboxesCreateCmd,
 	}
 	flagutil.RegisterFlags(cmd, inboxesCreateCmdMeta)

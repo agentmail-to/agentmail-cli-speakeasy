@@ -11,7 +11,7 @@ import (
 
 // version and buildTime can be set at build time using Go linker flags:
 //
-//	go build -ldflags "-X main.version=x.y.z -X main.buildTime=$(date -u +%Y-%m-%dT%H:%M:%SZ)" ./cmd/cli
+//	go build -ldflags "-X main.version=x.y.z -X main.buildTime=$(date -u +%Y-%m-%dT%H:%M:%SZ)" ./cmd/agentmail
 var version string
 var buildTime string
 

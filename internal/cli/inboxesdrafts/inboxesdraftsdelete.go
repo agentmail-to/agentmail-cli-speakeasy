@@ -25,7 +25,7 @@ func initInboxesDraftsDeleteCmd(parent *cobra.Command) error {
 		Use:     "delete",
 		Short:   "Delete Draft",
 		Long:    "**CLI:**\n```bash\nagentmail inboxes:drafts delete --inbox-id <inbox_id> --draft-id <draft_id>\n```",
-		Example: "  cli inboxes-drafts delete --inbox-id <id> --draft-id <id>",
+		Example: "  agentmail inboxes-drafts delete --inbox-id <id> --draft-id <id>",
 		RunE:    runInboxesDraftsDeleteCmd,
 	}
 	flagutil.RegisterFlags(cmd, inboxesDraftsDeleteCmdMeta)

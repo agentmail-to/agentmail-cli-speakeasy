@@ -1,6 +1,6 @@
 #
-# cli CLI Installation Script for Windows
-# This script downloads and installs the latest version of the cli CLI
+# agentmail CLI Installation Script for Windows
+# This script downloads and installs the latest version of the agentmail CLI
 #
 # Usage:
 #   iwr -useb https://raw.githubusercontent.com//main/scripts/install.ps1 | iex
@@ -8,8 +8,8 @@
 #   Invoke-WebRequest -Uri https://raw.githubusercontent.com//main/scripts/install.ps1 -UseBasicParsing | Invoke-Expression
 #
 # Options:
-#   $env:CLI_INSTALL_DIR - Installation directory (default: $env:LOCALAPPDATA\Programs\cli)
-#   $env:CLI_VERSION     - Specific version to install (default: latest)
+#   $env:AGENTMAIL_INSTALL_DIR - Installation directory (default: $env:LOCALAPPDATA\Programs\agentmail)
+#   $env:AGENTMAIL_VERSION     - Specific version to install (default: latest)
 #
 
 [CmdletBinding()]
@@ -19,10 +19,10 @@ $ErrorActionPreference = 'Stop'
 
 # Configuration
 $Repo = ""
-$BinaryName = "cli.exe"
-$DefaultInstallDir = Join-Path $env:LOCALAPPDATA "Programs\cli"
-$InstallDir = if ($env:CLI_INSTALL_DIR) { $env:CLI_INSTALL_DIR } else { $DefaultInstallDir }
-$Version = if ($env:CLI_VERSION) { $env:CLI_VERSION } else { "latest" }
+$BinaryName = "agentmail.exe"
+$DefaultInstallDir = Join-Path $env:LOCALAPPDATA "Programs\agentmail"
+$InstallDir = if ($env:AGENTMAIL_INSTALL_DIR) { $env:AGENTMAIL_INSTALL_DIR } else { $DefaultInstallDir }
+$Version = if ($env:AGENTMAIL_VERSION) { $env:AGENTMAIL_VERSION } else { "latest" }
 
 # Helper functions
 function Write-ColorOutput {
@@ -58,7 +58,7 @@ function Get-Architecture {
 }
 
 function Install-CLI {
-    Write-ColorOutput "Installing cli CLI..." -Color Green
+    Write-ColorOutput "Installing agentmail CLI..." -Color Green
 
     # Detect architecture
     $arch = Get-Architecture
@@ -71,13 +71,13 @@ function Install-CLI {
     }
 
     # Construct download URL
-    $archiveName = "cli_Windows_$arch.zip"
+    $archiveName = "agentmail_Windows_$arch.zip"
     $downloadUrl = "https://github.com/$Repo/releases/download/$Version/$archiveName"
 
     Write-ColorOutput "Downloading from: $downloadUrl" -Color Cyan
 
     # Create temporary directory
-    $tempDir = Join-Path $env:TEMP "cli-install-$(New-Guid)"
+    $tempDir = Join-Path $env:TEMP "agentmail-install-$(New-Guid)"
     New-Item -ItemType Directory -Path $tempDir -Force | Out-Null
 
     try {
@@ -115,7 +115,7 @@ function Install-CLI {
 
         Copy-Item -Path (Join-Path $tempDir $BinaryName) -Destination $binaryPath -Force
 
-        Write-ColorOutput "cli $Version has been installed to $binaryPath" -Color Green
+        Write-ColorOutput "agentmail $Version has been installed to $binaryPath" -Color Green
 
         # Add to PATH if not already there
         $userPath = [Environment]::GetEnvironmentVariable("Path", "User")
@@ -130,7 +130,7 @@ function Install-CLI {
             Write-ColorOutput "Added to PATH. You may need to restart your terminal for changes to take effect." -Color Yellow
         }
 
-        Write-ColorOutput "Installation successful! Run 'cli --help' to get started." -Color Green
+        Write-ColorOutput "Installation successful! Run 'agentmail --help' to get started." -Color Green
         Write-ColorOutput "Note: You may need to restart your terminal or run 'refreshenv' for the PATH changes to take effect." -Color Yellow
     }
     finally {

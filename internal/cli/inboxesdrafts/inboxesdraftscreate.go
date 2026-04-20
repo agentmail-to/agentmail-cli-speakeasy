@@ -36,7 +36,7 @@ func initInboxesDraftsCreateCmd(parent *cobra.Command) error {
 		Use:     "create",
 		Short:   "Create Draft",
 		Long:    "**CLI:**\n```bash\nagentmail inboxes:drafts create --inbox-id <inbox_id> --to recipient@example.com --subject \"Draft subject\" --text \"Draft body\"\n```",
-		Example: "  cli inboxes-drafts create --inbox-id <id>",
+		Example: "  agentmail inboxes-drafts create --inbox-id <id>",
 		RunE:    runInboxesDraftsCreateCmd,
 	}
 	flagutil.RegisterFlags(cmd, inboxesDraftsCreateCmdMeta)

@@ -26,7 +26,7 @@ func initInboxesThreadsDeleteCmd(parent *cobra.Command) error {
 		Use:     "delete",
 		Short:   "Delete Thread",
 		Long:    "Moves the thread to trash by adding a trash label to all messages. If the thread is already in trash, it will be permanently deleted. Use `permanent=true` to force permanent deletion.\n\n**CLI:**\n```bash\nagentmail inboxes:threads delete --inbox-id <inbox_id> --thread-id <thread_id>\n```",
-		Example: "  cli inboxes-threads delete --inbox-id <id> --thread-id <id>",
+		Example: "  agentmail inboxes-threads delete --inbox-id <id> --thread-id <id>",
 		RunE:    runInboxesThreadsDeleteCmd,
 	}
 	flagutil.RegisterFlags(cmd, inboxesThreadsDeleteCmdMeta)

@@ -33,7 +33,7 @@ func initPodsThreadsListCmd(parent *cobra.Command) error {
 		Use:     "list",
 		Short:   "List Threads",
 		Long:    "**CLI:**\n```bash\nagentmail pods:threads list --pod-id <pod_id>\n```",
-		Example: "  cli pods-threads list --pod-id <id>",
+		Example: "  agentmail pods-threads list --pod-id <id>",
 		RunE:    runPodsThreadsListCmd,
 	}
 	flagutil.RegisterFlags(cmd, podsThreadsListCmdMeta)

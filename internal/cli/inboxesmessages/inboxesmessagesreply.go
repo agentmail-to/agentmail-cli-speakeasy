@@ -35,7 +35,7 @@ func initInboxesMessagesReplyCmd(parent *cobra.Command) error {
 		Use:     "reply",
 		Short:   "Reply To Message",
 		Long:    "**CLI:**\n```bash\nagentmail inboxes:messages reply --inbox-id <inbox_id> --message-id <message_id> --text \"Reply text\"\n```",
-		Example: "  cli inboxes-messages reply --inbox-id <id> --message-id <id>",
+		Example: "  agentmail inboxes-messages reply --inbox-id <id> --message-id <id>",
 		RunE:    runInboxesMessagesReplyCmd,
 	}
 	flagutil.RegisterFlags(cmd, inboxesMessagesReplyCmdMeta)

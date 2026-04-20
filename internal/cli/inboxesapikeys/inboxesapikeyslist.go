@@ -26,7 +26,7 @@ func initInboxesApiKeysListCmd(parent *cobra.Command) error {
 		Use:     "inboxes-api-keys-list",
 		Short:   "List API Keys",
 		Long:    "**CLI:**\n```bash\nagentmail inboxes:api-keys list --inbox-id <inbox_id>\n```",
-		Example: "  cli inboxes-API-keys inboxes-api-keys-list --inbox-id <id>",
+		Example: "  agentmail inboxes-API-keys inboxes-api-keys-list --inbox-id <id>",
 		RunE:    runInboxesApiKeysListCmd,
 		Aliases: []string{"iakl"},
 	}

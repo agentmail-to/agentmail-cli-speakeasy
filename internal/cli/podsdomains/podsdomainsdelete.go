@@ -25,7 +25,7 @@ func initPodsDomainsDeleteCmd(parent *cobra.Command) error {
 		Use:     "delete",
 		Short:   "Delete Domain",
 		Long:    "**CLI:**\n```bash\nagentmail pods:domains delete --pod-id <pod_id> --domain-id <domain_id>\n```",
-		Example: "  cli pods-domains delete --pod-id <id> --domain-id <id>",
+		Example: "  agentmail pods-domains delete --pod-id <id> --domain-id <id>",
 		RunE:    runPodsDomainsDeleteCmd,
 	}
 	flagutil.RegisterFlags(cmd, podsDomainsDeleteCmdMeta)

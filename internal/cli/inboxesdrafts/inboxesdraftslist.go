@@ -30,7 +30,7 @@ func initInboxesDraftsListCmd(parent *cobra.Command) error {
 		Use:     "list",
 		Short:   "List Drafts",
 		Long:    "**CLI:**\n```bash\nagentmail inboxes:drafts list --inbox-id <inbox_id>\n```",
-		Example: "  cli inboxes-drafts list --inbox-id <id>",
+		Example: "  agentmail inboxes-drafts list --inbox-id <id>",
 		RunE:    runInboxesDraftsListCmd,
 	}
 	flagutil.RegisterFlags(cmd, inboxesDraftsListCmdMeta)

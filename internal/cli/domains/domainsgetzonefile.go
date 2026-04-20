@@ -24,7 +24,7 @@ func initDomainsGetZoneFileCmd(parent *cobra.Command) error {
 		Use:     "get-zone-file",
 		Short:   "Get Zone File",
 		Long:    "**CLI:**\n```bash\nagentmail domains get-zone-file --domain-id <domain_id>\n```\n\nThis operation returns binary data. Use --output-file <path> to save to a file, or pipe the output to another command.",
-		Example: "  cli domains get-zone-file --domain-id <id>",
+		Example: "  agentmail domains get-zone-file --domain-id <id>",
 		RunE:    runDomainsGetZoneFileCmd,
 		Aliases: []string{"gzf"},
 	}

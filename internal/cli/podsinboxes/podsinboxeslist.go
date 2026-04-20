@@ -27,7 +27,7 @@ func initPodsInboxesListCmd(parent *cobra.Command) error {
 		Use:     "list",
 		Short:   "List Inboxes",
 		Long:    "**CLI:**\n```bash\nagentmail pods:inboxes list --pod-id <pod_id>\n```",
-		Example: "  cli pods-inboxes list --pod-id <id>",
+		Example: "  agentmail pods-inboxes list --pod-id <id>",
 		RunE:    runPodsInboxesListCmd,
 	}
 	flagutil.RegisterFlags(cmd, podsInboxesListCmdMeta)

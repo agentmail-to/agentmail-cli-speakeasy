@@ -28,7 +28,7 @@ func initPodsInboxesCreateCmd(parent *cobra.Command) error {
 		Use:     "create",
 		Short:   "Create Inbox",
 		Long:    "**CLI:**\n```bash\nagentmail pods:inboxes create --pod-id <pod_id> --username myagent --domain example.com\n```",
-		Example: "  cli pods-inboxes create --pod-id <id>",
+		Example: "  agentmail pods-inboxes create --pod-id <id>",
 		RunE:    runPodsInboxesCreateCmd,
 	}
 	flagutil.RegisterFlags(cmd, podsInboxesCreateCmdMeta)

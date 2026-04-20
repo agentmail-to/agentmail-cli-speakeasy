@@ -28,7 +28,7 @@ func initInboxesListsListCmd(parent *cobra.Command) error {
 		Use:     "list",
 		Short:   "List Entries",
 		Long:    "**CLI:**\n```bash\nagentmail inboxes:lists list --inbox-id <inbox_id> --direction <direction> --type <type>\n```",
-		Example: "  cli inboxes-lists list --inbox-id <id> --direction reply --type allow",
+		Example: "  agentmail inboxes-lists list --inbox-id <id> --direction reply --type allow",
 		RunE:    runInboxesListsListCmd,
 	}
 	flagutil.RegisterFlags(cmd, inboxesListsListCmdMeta)

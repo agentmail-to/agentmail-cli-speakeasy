@@ -25,7 +25,7 @@ func initInboxesApiKeysDeleteCmd(parent *cobra.Command) error {
 		Use:     "inboxes-api-keys-delete",
 		Short:   "Delete API Key",
 		Long:    "**CLI:**\n```bash\nagentmail inboxes:api-keys delete --inbox-id <inbox_id> --api-key-id <api_key_id>\n```",
-		Example: "  cli inboxes-API-keys inboxes-api-keys-delete --inbox-id <id> --api-key-id <id>",
+		Example: "  agentmail inboxes-API-keys inboxes-api-keys-delete --inbox-id <id> --api-key-id <id>",
 		RunE:    runInboxesApiKeysDeleteCmd,
 		Aliases: []string{"iakd"},
 	}

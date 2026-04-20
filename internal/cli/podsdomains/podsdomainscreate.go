@@ -26,7 +26,7 @@ func initPodsDomainsCreateCmd(parent *cobra.Command) error {
 		Use:     "create",
 		Short:   "Create Domain",
 		Long:    "**CLI:**\n```bash\nagentmail pods:domains create --pod-id <pod_id> --domain example.com\n```",
-		Example: "  cli pods-domains create --pod-id <id> --domain scientific-swanling.org --feedback-enabled true",
+		Example: "  agentmail pods-domains create --pod-id <id> --domain scientific-swanling.org --feedback-enabled true",
 		RunE:    runPodsDomainsCreateCmd,
 	}
 	flagutil.RegisterFlags(cmd, podsDomainsCreateCmdMeta)

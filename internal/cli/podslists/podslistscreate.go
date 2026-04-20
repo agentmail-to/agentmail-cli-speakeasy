@@ -28,7 +28,7 @@ func initPodsListsCreateCmd(parent *cobra.Command) error {
 		Use:     "create",
 		Short:   "Create List Entry",
 		Long:    "**CLI:**\n```bash\nagentmail pods:lists create --pod-id <pod_id> --direction <direction> --type <type> --entry user@example.com\n```",
-		Example: "  cli pods-lists create --pod-id <id> --direction send --type allow --entry <value>",
+		Example: "  agentmail pods-lists create --pod-id <id> --direction send --type allow --entry <value>",
 		RunE:    runPodsListsCreateCmd,
 	}
 	flagutil.RegisterFlags(cmd, podsListsCreateCmdMeta)

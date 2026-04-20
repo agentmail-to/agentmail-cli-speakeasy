@@ -26,7 +26,7 @@ func initDomainsListCmd(parent *cobra.Command) error {
 		Use:     "list",
 		Short:   "List Domains",
 		Long:    "**CLI:**\n```bash\nagentmail domains list\n```",
-		Example: "  cli domains list",
+		Example: "  agentmail domains list",
 		RunE:    runDomainsListCmd,
 	}
 	flagutil.RegisterFlags(cmd, domainsListCmdMeta)

@@ -31,7 +31,7 @@ func initInboxesMessagesReplyAllCmd(parent *cobra.Command) error {
 		Use:     "reply-all",
 		Short:   "Reply All Message",
 		Long:    "**CLI:**\n```bash\nagentmail inboxes:messages reply-all --inbox-id <inbox_id> --message-id <message_id> --text \"Reply text\"\n```",
-		Example: "  cli inboxes-messages reply-all --inbox-id <id> --message-id <id>",
+		Example: "  agentmail inboxes-messages reply-all --inbox-id <id> --message-id <id>",
 		RunE:    runInboxesMessagesReplyAllCmd,
 		Aliases: []string{"ra"},
 	}

@@ -26,7 +26,7 @@ func initListsGetCmd(parent *cobra.Command) error {
 		Use:     "get",
 		Short:   "Get List Entry",
 		Long:    "**CLI:**\n```bash\nagentmail lists get --direction <direction> --type <type> --entry <entry>\n```",
-		Example: "  cli lists get --direction send --type allow --entry <value>",
+		Example: "  agentmail lists get --direction send --type allow --entry <value>",
 		RunE:    runListsGetCmd,
 	}
 	flagutil.RegisterFlags(cmd, listsGetCmdMeta)

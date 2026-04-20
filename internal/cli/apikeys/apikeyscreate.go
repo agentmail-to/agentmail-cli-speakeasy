@@ -26,7 +26,7 @@ func initApiKeysCreateCmd(parent *cobra.Command) error {
 		Use:     "api-keys-create",
 		Short:   "Create API Key",
 		Long:    "**CLI:**\n```bash\nagentmail api-keys create --name \"My Key\"\n```",
-		Example: "  cli API-keys api-keys-create",
+		Example: "  agentmail API-keys api-keys-create",
 		RunE:    runApiKeysCreateCmd,
 		Aliases: []string{"akc"},
 	}

@@ -20,11 +20,11 @@ func initConfigureCmd(parent *cobra.Command) error {
 		Use:   "configure",
 		Short: "Configure authentication credentials and preferences",
 		Long: `Interactively configure authentication credentials and preferences for the CLI.
-Settings are stored in ~/.config/cli/config.yaml.
+Settings are stored in ~/.config/agentmail/config.yaml.
 Secret credentials are stored in the OS keychain when available.
 
-You can also set values via environment variables with the CLI_ prefix
-(e.g., CLI_API_KEY) or pass them as flags to individual commands.
+You can also set values via environment variables with the AGENTMAIL_ prefix
+(e.g., AGENTMAIL_API_KEY) or pass them as flags to individual commands.
 
 Priority: CLI flags > environment variables > OS keychain > config file`,
 		RunE: runConfigureCmd,
@@ -44,9 +44,9 @@ func runConfigureCmd(cmd *cobra.Command, args []string) error {
 			"configure_blocked",
 			"the 'configure' command is interactive and cannot be used in agent mode",
 			[]string{
-				fmt.Sprintf("Set credentials via environment variables (prefix: %s_)", "CLI"),
+				fmt.Sprintf("Set credentials via environment variables (prefix: %s_)", "AGENTMAIL"),
 				"Pass credentials directly as CLI flags for each command",
-				fmt.Sprintf("Run '%s whoami' to verify current authentication", "cli"),
+				fmt.Sprintf("Run '%s whoami' to verify current authentication", "agentmail"),
 			},
 		)
 	}

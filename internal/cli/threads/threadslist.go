@@ -32,7 +32,7 @@ func initThreadsListCmd(parent *cobra.Command) error {
 		Use:     "list",
 		Short:   "List Threads",
 		Long:    "**CLI:**\n```bash\nagentmail threads list\n```",
-		Example: "  cli threads list",
+		Example: "  agentmail threads list",
 		RunE:    runThreadsListCmd,
 	}
 	flagutil.RegisterFlags(cmd, threadsListCmdMeta)

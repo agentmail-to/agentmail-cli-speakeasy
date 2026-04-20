@@ -25,7 +25,7 @@ func initDraftsGetAttachmentCmd(parent *cobra.Command) error {
 		Use:     "get-attachment",
 		Short:   "Get Attachment",
 		Long:    "**CLI:**\n```bash\nagentmail drafts get-attachment --draft-id <draft_id> --attachment-id <attachment_id>\n```",
-		Example: "  cli drafts get-attachment --draft-id <id> --attachment-id <id>",
+		Example: "  agentmail drafts get-attachment --draft-id <id> --attachment-id <id>",
 		RunE:    runDraftsGetAttachmentCmd,
 		Aliases: []string{"ga"},
 	}

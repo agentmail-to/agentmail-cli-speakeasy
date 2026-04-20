@@ -26,7 +26,7 @@ func initPodsApiKeysListCmd(parent *cobra.Command) error {
 		Use:     "pods-api-keys-list",
 		Short:   "List API Keys",
 		Long:    "**CLI:**\n```bash\nagentmail pods:api-keys list --pod-id <pod_id>\n```",
-		Example: "  cli pods-API-keys pods-api-keys-list --pod-id <id>",
+		Example: "  agentmail pods-API-keys pods-api-keys-list --pod-id <id>",
 		RunE:    runPodsApiKeysListCmd,
 		Aliases: []string{"pakl"},
 	}

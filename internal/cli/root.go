@@ -48,9 +48,9 @@ func NewRootCommand() (*cobra.Command, error) {
 	cobra.AddTemplateFunc("groupedFlagUsages", groupedFlagUsages)
 	cobra.AddTemplateFunc("groupedGlobalFlagUsages", groupedGlobalFlagUsages)
 	rootCmd := &cobra.Command{
-		Use:           "cli",
-		Short:         "cli command-line interface",
-		Long:          "Command-line interface for cli",
+		Use:           "agentmail",
+		Short:         "agentmail command-line interface",
+		Long:          "Command-line interface for agentmail",
 		SilenceUsage:  true,
 		SilenceErrors: true,
 		RunE: func(cmd *cobra.Command, args []string) error {
@@ -63,7 +63,7 @@ func NewRootCommand() (*cobra.Command, error) {
 			if usage.UsageRequested(cmd) {
 				return nil
 			}
-			if err := config.Init("cli", "CLI"); err != nil {
+			if err := config.Init("agentmail", "AGENTMAIL"); err != nil {
 				return err
 			}
 			output.InitAgentMode(cmd)

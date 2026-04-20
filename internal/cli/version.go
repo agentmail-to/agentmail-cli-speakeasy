@@ -10,10 +10,10 @@ import (
 
 // Version is the current version of the CLI, defaulting to the version from gen.yaml.
 // It can be overridden at build time via ldflags targeting the main package,
-// which propagates the value here (see cmd/cli/main.go):
+// which propagates the value here (see cmd/agentmail/main.go):
 //
-//	go build -ldflags "-X main.version=x.y.z" ./cmd/cli
-var Version = "0.0.1"
+//	go build -ldflags "-X main.version=x.y.z" ./cmd/agentmail
+var Version = "0.0.2"
 
 // BuildTime is optionally set at build time via ldflags targeting the main package.
 var BuildTime string
@@ -23,17 +23,17 @@ func initVersionCmd(parent *cobra.Command) error {
 	var cmd = &cobra.Command{
 		Use:   "version",
 		Short: "Print the CLI version",
-		Long: `Print the current version of the cli CLI.
+		Long: `Print the current version of the agentmail CLI.
 
 The version defaults to the SDK version set during generation, but can be
 overridden at build time using Go linker flags:
 
-  go build -ldflags "-X main.version=x.y.z -X main.buildTime=$(date -u +%Y-%m-%dT%H:%M:%SZ)" ./cmd/cli`,
+  go build -ldflags "-X main.version=x.y.z -X main.buildTime=$(date -u +%Y-%m-%dT%H:%M:%SZ)" ./cmd/agentmail`,
 		RunE: func(cmd *cobra.Command, args []string) error {
 			if usage.UsageRequested(cmd) {
 				return usage.EmitSchema(cmd, cmd.OutOrStdout())
 			}
-			if _, err := fmt.Fprintf(cmd.OutOrStdout(), "cli %s\n", Version); err != nil {
+			if _, err := fmt.Fprintf(cmd.OutOrStdout(), "agentmail %s\n", Version); err != nil {
 				return err
 			}
 			if BuildTime != "" {

@@ -31,9 +31,9 @@ generation:
     generateNewTests: true
     skipResponseBodyAssertions: false
 cli:
-  version: 0.0.1
+  version: 0.0.2
   additionalDependencies: {}
-  cliName: cli
+  cliName: agentmail
   distribution:
     homebrew:
       enabled: false
@@ -51,7 +51,7 @@ cli:
       publisherUrl: ""
       repositoryOwner: ""
   enableCustomCodeRegions: false
-  envVarPrefix: CLI
+  envVarPrefix: AGENTMAIL
   generateRelease: true
   imports:
     option: openapi

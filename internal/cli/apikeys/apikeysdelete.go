@@ -24,7 +24,7 @@ func initApiKeysDeleteCmd(parent *cobra.Command) error {
 		Use:     "api-keys-delete",
 		Short:   "Delete API Key",
 		Long:    "**CLI:**\n```bash\nagentmail api-keys delete --api-key-id <api_key_id>\n```",
-		Example: "  cli API-keys api-keys-delete --api-key-id <id>",
+		Example: "  agentmail API-keys api-keys-delete --api-key-id <id>",
 		RunE:    runApiKeysDeleteCmd,
 		Aliases: []string{"akd"},
 	}

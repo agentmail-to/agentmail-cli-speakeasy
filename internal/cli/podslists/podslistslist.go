@@ -28,7 +28,7 @@ func initPodsListsListCmd(parent *cobra.Command) error {
 		Use:     "list",
 		Short:   "List Entries",
 		Long:    "**CLI:**\n```bash\nagentmail pods:lists list --pod-id <pod_id> --direction <direction> --type <type>\n```",
-		Example: "  cli pods-lists list --pod-id <id> --direction send --type block",
+		Example: "  agentmail pods-lists list --pod-id <id> --direction send --type block",
 		RunE:    runPodsListsListCmd,
 	}
 	flagutil.RegisterFlags(cmd, podsListsListCmdMeta)

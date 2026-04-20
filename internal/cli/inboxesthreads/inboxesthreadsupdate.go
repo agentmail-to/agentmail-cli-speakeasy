@@ -27,7 +27,7 @@ func initInboxesThreadsUpdateCmd(parent *cobra.Command) error {
 		Use:     "update",
 		Short:   "Update Thread",
 		Long:    "Updates thread labels. Cannot add or remove system labels (sent, received, bounced, etc.). Rejects requests with a `422` for threads with 100 or more messages.",
-		Example: "  cli inboxes-threads update --inbox-id <id> --thread-id <id>",
+		Example: "  agentmail inboxes-threads update --inbox-id <id> --thread-id <id>",
 		RunE:    runInboxesThreadsUpdateCmd,
 	}
 	flagutil.RegisterFlags(cmd, inboxesThreadsUpdateCmdMeta)

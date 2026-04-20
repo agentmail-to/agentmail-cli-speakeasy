@@ -34,7 +34,7 @@ func initInboxesMessagesSendCmd(parent *cobra.Command) error {
 		Use:     "send",
 		Short:   "Send Message",
 		Long:    "**CLI:**\n```bash\nagentmail inboxes:messages send --inbox-id <inbox_id> --to recipient@example.com --subject \"Hello\" --text \"Body\"\n```",
-		Example: "  cli inboxes-messages send --inbox-id <id>",
+		Example: "  agentmail inboxes-messages send --inbox-id <id>",
 		RunE:    runInboxesMessagesSendCmd,
 	}
 	flagutil.RegisterFlags(cmd, inboxesMessagesSendCmdMeta)

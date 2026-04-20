@@ -25,7 +25,7 @@ func initPodsInboxesGetCmd(parent *cobra.Command) error {
 		Use:     "get",
 		Short:   "Get Inbox",
 		Long:    "**CLI:**\n```bash\nagentmail pods:inboxes get --pod-id <pod_id> --inbox-id <inbox_id>\n```",
-		Example: "  cli pods-inboxes get --pod-id <id> --inbox-id <id>",
+		Example: "  agentmail pods-inboxes get --pod-id <id> --inbox-id <id>",
 		RunE:    runPodsInboxesGetCmd,
 	}
 	flagutil.RegisterFlags(cmd, podsInboxesGetCmdMeta)

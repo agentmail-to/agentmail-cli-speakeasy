@@ -26,7 +26,7 @@ func initDomainsCreateCmd(parent *cobra.Command) error {
 		Use:     "create",
 		Short:   "Create Domain",
 		Long:    "**CLI:**\n```bash\nagentmail domains create --domain example.com\n```",
-		Example: "  cli domains create --domain unhappy-meal.name --feedback-enabled false",
+		Example: "  agentmail domains create --domain unhappy-meal.name --feedback-enabled false",
 		RunE:    runDomainsCreateCmd,
 	}
 	flagutil.RegisterFlags(cmd, domainsCreateCmdMeta)

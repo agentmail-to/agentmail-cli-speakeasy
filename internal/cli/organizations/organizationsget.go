@@ -19,7 +19,7 @@ func initOrganizationsGetCmd(parent *cobra.Command) error {
 		Use:     "get",
 		Short:   "Get Organization",
 		Long:    "Returns the organization for the authenticated API key (usage limits, counts, and billing metadata).\n\n**CLI:**\n```bash\nagentmail organizations get\n```",
-		Example: "  cli organizations get",
+		Example: "  agentmail organizations get",
 		RunE:    runOrganizationsGetCmd,
 	}
 	parent.AddCommand(cmd)

@@ -33,7 +33,7 @@ func initInboxesMessagesListCmd(parent *cobra.Command) error {
 		Use:     "list",
 		Short:   "List Messages",
 		Long:    "**CLI:**\n```bash\nagentmail inboxes:messages list --inbox-id <inbox_id>\n```",
-		Example: "  cli inboxes-messages list --inbox-id <id>",
+		Example: "  agentmail inboxes-messages list --inbox-id <id>",
 		RunE:    runInboxesMessagesListCmd,
 	}
 	flagutil.RegisterFlags(cmd, inboxesMessagesListCmdMeta)

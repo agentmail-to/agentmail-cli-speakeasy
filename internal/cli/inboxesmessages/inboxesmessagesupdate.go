@@ -27,7 +27,7 @@ func initInboxesMessagesUpdateCmd(parent *cobra.Command) error {
 		Use:     "update",
 		Short:   "Update Message",
 		Long:    "**CLI:**\n```bash\nagentmail inboxes:messages update --inbox-id <inbox_id> --message-id <message_id> --add-label read --remove-label unread\n```",
-		Example: "  cli inboxes-messages update --inbox-id <id> --message-id <id>",
+		Example: "  agentmail inboxes-messages update --inbox-id <id> --message-id <id>",
 		RunE:    runInboxesMessagesUpdateCmd,
 	}
 	flagutil.RegisterFlags(cmd, inboxesMessagesUpdateCmdMeta)

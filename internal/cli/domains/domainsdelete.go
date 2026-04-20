@@ -24,7 +24,7 @@ func initDomainsDeleteCmd(parent *cobra.Command) error {
 		Use:     "delete",
 		Short:   "Delete Domain",
 		Long:    "**CLI:**\n```bash\nagentmail domains delete --domain-id <domain_id>\n```",
-		Example: "  cli domains delete --domain-id <id>",
+		Example: "  agentmail domains delete --domain-id <id>",
 		RunE:    runDomainsDeleteCmd,
 	}
 	flagutil.RegisterFlags(cmd, domainsDeleteCmdMeta)

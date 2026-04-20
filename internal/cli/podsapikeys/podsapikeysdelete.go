@@ -25,7 +25,7 @@ func initPodsApiKeysDeleteCmd(parent *cobra.Command) error {
 		Use:     "pods-api-keys-delete",
 		Short:   "Delete API Key",
 		Long:    "**CLI:**\n```bash\nagentmail pods:api-keys delete --pod-id <pod_id> --api-key-id <api_key_id>\n```",
-		Example: "  cli pods-API-keys pods-api-keys-delete --pod-id <id> --api-key-id <id>",
+		Example: "  agentmail pods-API-keys pods-api-keys-delete --pod-id <id> --api-key-id <id>",
 		RunE:    runPodsApiKeysDeleteCmd,
 		Aliases: []string{"pakd"},
 	}

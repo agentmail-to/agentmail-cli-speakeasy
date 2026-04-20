@@ -26,7 +26,7 @@ func initInboxesApiKeysCreateCmd(parent *cobra.Command) error {
 		Use:     "inboxes-api-keys-create",
 		Short:   "Create API Key",
 		Long:    "**CLI:**\n```bash\nagentmail inboxes:api-keys create --inbox-id <inbox_id> --name \"My Key\"\n```",
-		Example: "  cli inboxes-API-keys inboxes-api-keys-create --inbox-id <id>",
+		Example: "  agentmail inboxes-API-keys inboxes-api-keys-create --inbox-id <id>",
 		RunE:    runInboxesApiKeysCreateCmd,
 		Aliases: []string{"iakc"},
 	}

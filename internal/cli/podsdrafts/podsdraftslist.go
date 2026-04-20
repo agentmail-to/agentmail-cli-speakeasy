@@ -30,7 +30,7 @@ func initPodsDraftsListCmd(parent *cobra.Command) error {
 		Use:     "list",
 		Short:   "List Drafts",
 		Long:    "**CLI:**\n```bash\nagentmail pods:drafts list --pod-id <pod_id>\n```",
-		Example: "  cli pods-drafts list --pod-id <id>",
+		Example: "  agentmail pods-drafts list --pod-id <id>",
 		RunE:    runPodsDraftsListCmd,
 	}
 	flagutil.RegisterFlags(cmd, podsDraftsListCmdMeta)

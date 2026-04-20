@@ -24,7 +24,7 @@ func initWebhooksGetCmd(parent *cobra.Command) error {
 		Use:     "get",
 		Short:   "Get Webhook",
 		Long:    "**CLI:**\n```bash\nagentmail webhooks get --webhook-id <webhook_id>\n```",
-		Example: "  cli webhooks get --webhook-id <id>",
+		Example: "  agentmail webhooks get --webhook-id <id>",
 		RunE:    runWebhooksGetCmd,
 	}
 	flagutil.RegisterFlags(cmd, webhooksGetCmdMeta)

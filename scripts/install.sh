@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #
-# cli CLI Installation Script
-# This script downloads and installs the latest version of the cli CLI
+# agentmail CLI Installation Script
+# This script downloads and installs the latest version of the agentmail CLI
 # for Linux and macOS systems.
 #
 # Usage:
@@ -10,8 +10,8 @@
 #   wget -qO- https://raw.githubusercontent.com//main/scripts/install.sh | bash
 #
 # Options:
-#   CLI_INSTALL_DIR - Installation directory (default: /usr/local/bin)
-#   CLI_VERSION     - Specific version to install (default: latest)
+#   AGENTMAIL_INSTALL_DIR - Installation directory (default: /usr/local/bin)
+#   AGENTMAIL_VERSION     - Specific version to install (default: latest)
 #
 
 set -e
@@ -20,8 +20,8 @@ set -e
 REPO=""
 DEFAULT_INSTALL_DIR="/usr/local/bin"
 USER_INSTALL_DIR="$HOME/.local/bin"
-VERSION="${CLI_VERSION:-latest}"
-BINARY_NAME="cli"
+VERSION="${AGENTMAIL_VERSION:-latest}"
+BINARY_NAME="agentmail"
 
 # Colors for output
 RED='\033[0;31m'
@@ -92,8 +92,8 @@ get_latest_version() {
 # Determine installation directory
 get_install_dir() {
     # If user specified a directory, use it
-    if [ -n "${CLI_INSTALL_DIR}" ]; then
-        echo "${CLI_INSTALL_DIR}"
+    if [ -n "${AGENTMAIL_INSTALL_DIR}" ]; then
+        echo "${AGENTMAIL_INSTALL_DIR}"
         return
     fi
 
@@ -175,7 +175,7 @@ install_cli() {
     if [ ! -d "$INSTALL_DIR" ]; then
         log_info "Creating installation directory: $INSTALL_DIR"
         mkdir -p "$INSTALL_DIR" || {
-            log_error "Failed to create $INSTALL_DIR. Try running with sudo or set CLI_INSTALL_DIR to a writable location."
+            log_error "Failed to create $INSTALL_DIR. Try running with sudo or set AGENTMAIL_INSTALL_DIR to a writable location."
             exit 1
         }
     fi
@@ -191,14 +191,14 @@ install_cli() {
 
     log_info "Installing to $target_binary..."
     if ! mv "$source_binary" "$target_binary"; then
-        log_error "Failed to install to $INSTALL_DIR. Try running with sudo or set CLI_INSTALL_DIR to a writable location."
+        log_error "Failed to install to $INSTALL_DIR. Try running with sudo or set AGENTMAIL_INSTALL_DIR to a writable location."
         exit 1
     fi
 
     # Make executable (not needed on Windows, but doesn't hurt)
     chmod +x "$target_binary" 2>/dev/null || true
 
-    log_info "cli ${VERSION} has been installed to $target_binary"
+    log_info "agentmail ${VERSION} has been installed to $target_binary"
 
     # Verify installation
     local cmd_to_check="$BINARY_NAME"
@@ -223,7 +223,7 @@ install_cli() {
 
 # Main execution
 main() {
-    log_info "Installing cli CLI..."
+    log_info "Installing agentmail CLI..."
     install_cli
 }
 

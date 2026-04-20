@@ -33,7 +33,7 @@ func initInboxesDraftsUpdateCmd(parent *cobra.Command) error {
 		Use:     "update",
 		Short:   "Update Draft",
 		Long:    "**CLI:**\n```bash\nagentmail inboxes:drafts update --inbox-id <inbox_id> --draft-id <draft_id> --subject \"Updated subject\"\n```",
-		Example: "  cli inboxes-drafts update --inbox-id <id> --draft-id <id>",
+		Example: "  agentmail inboxes-drafts update --inbox-id <id> --draft-id <id>",
 		RunE:    runInboxesDraftsUpdateCmd,
 	}
 	flagutil.RegisterFlags(cmd, inboxesDraftsUpdateCmdMeta)

@@ -25,7 +25,7 @@ func initAgentVerifyCmd(parent *cobra.Command) error {
 		Use:     "verify",
 		Short:   "Verify",
 		Long:    "Verify an agent organization using the 6-digit OTP sent to the human's email during sign-up.\n\nOn success, the organization is upgraded from `agent_unverified` to `agent_verified`, the send allowlist is removed, and free plan entitlements are applied.\n\nThe OTP expires after 24 hours and allows a maximum of 10 attempts.\n\n**CLI:**\n```bash\nagentmail agent verify --otp-code 123456\n```",
-		Example: "  cli agent verify --otp-code <value>",
+		Example: "  agentmail agent verify --otp-code <value>",
 		RunE:    runAgentVerifyCmd,
 	}
 	flagutil.RegisterFlags(cmd, agentVerifyCmdMeta)

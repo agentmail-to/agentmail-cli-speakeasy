@@ -27,7 +27,7 @@ func initInboxesListsDeleteCmd(parent *cobra.Command) error {
 		Use:     "delete",
 		Short:   "Delete List Entry",
 		Long:    "**CLI:**\n```bash\nagentmail inboxes:lists delete --inbox-id <inbox_id> --direction <direction> --type <type> --entry <entry>\n```",
-		Example: "  cli inboxes-lists delete --inbox-id <id> --direction reply --type allow --entry <value>",
+		Example: "  agentmail inboxes-lists delete --inbox-id <id> --direction reply --type allow --entry <value>",
 		RunE:    runInboxesListsDeleteCmd,
 	}
 	flagutil.RegisterFlags(cmd, inboxesListsDeleteCmdMeta)

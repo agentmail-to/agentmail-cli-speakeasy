@@ -25,7 +25,7 @@ func initPodsInboxesDeleteCmd(parent *cobra.Command) error {
 		Use:     "delete",
 		Short:   "Delete Inbox",
 		Long:    "**CLI:**\n```bash\nagentmail pods:inboxes delete --pod-id <pod_id> --inbox-id <inbox_id>\n```",
-		Example: "  cli pods-inboxes delete --pod-id <id> --inbox-id <id>",
+		Example: "  agentmail pods-inboxes delete --pod-id <id> --inbox-id <id>",
 		RunE:    runPodsInboxesDeleteCmd,
 	}
 	flagutil.RegisterFlags(cmd, podsInboxesDeleteCmdMeta)

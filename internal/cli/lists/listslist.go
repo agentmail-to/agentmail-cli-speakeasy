@@ -27,7 +27,7 @@ func initListsListCmd(parent *cobra.Command) error {
 		Use:     "list",
 		Short:   "List Entries",
 		Long:    "**CLI:**\n```bash\nagentmail lists list --direction <direction> --type <type>\n```",
-		Example: "  cli lists list --direction reply --type allow",
+		Example: "  agentmail lists list --direction reply --type allow",
 		RunE:    runListsListCmd,
 	}
 	flagutil.RegisterFlags(cmd, listsListCmdMeta)

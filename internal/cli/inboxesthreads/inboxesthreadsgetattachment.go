@@ -26,7 +26,7 @@ func initInboxesThreadsGetAttachmentCmd(parent *cobra.Command) error {
 		Use:     "get-attachment",
 		Short:   "Get Attachment",
 		Long:    "**CLI:**\n```bash\nagentmail inboxes:threads get-attachment --inbox-id <inbox_id> --thread-id <thread_id> --attachment-id <attachment_id>\n```",
-		Example: "  cli inboxes-threads get-attachment --inbox-id <id> --thread-id <id> --attachment-id <id>",
+		Example: "  agentmail inboxes-threads get-attachment --inbox-id <id> --thread-id <id> --attachment-id <id>",
 		RunE:    runInboxesThreadsGetAttachmentCmd,
 		Aliases: []string{"ga"},
 	}

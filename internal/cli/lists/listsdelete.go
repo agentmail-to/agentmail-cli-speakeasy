@@ -26,7 +26,7 @@ func initListsDeleteCmd(parent *cobra.Command) error {
 		Use:     "delete",
 		Short:   "Delete List Entry",
 		Long:    "**CLI:**\n```bash\nagentmail lists delete --direction <direction> --type <type> --entry <entry>\n```",
-		Example: "  cli lists delete --direction reply --type block --entry <value>",
+		Example: "  agentmail lists delete --direction reply --type block --entry <value>",
 		RunE:    runListsDeleteCmd,
 	}
 	flagutil.RegisterFlags(cmd, listsDeleteCmdMeta)

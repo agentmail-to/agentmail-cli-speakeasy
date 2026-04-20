@@ -26,7 +26,7 @@ func initAgentSignUpCmd(parent *cobra.Command) error {
 		Use:     "sign-up",
 		Short:   "Sign Up",
 		Long:    "Create a new agent organization with an inbox and API key. This endpoint is for signing up for the first time. If you've already signed up, you're all set — just use your existing API key.\n\nA 6-digit OTP is sent to the human's email for verification.\n\nThis endpoint is idempotent. Calling it again with the same `human_email` will rotate the API key and resend the OTP if expired.\n\nThe returned API key has limited permissions until the organization is verified via the verify endpoint.\n\n**CLI:**\n```bash\nagentmail agent sign-up --human-email user@example.com --username my-agent\n```",
-		Example: "  cli agent sign-up --human-email <value> --username Ernest_Padberg",
+		Example: "  agentmail agent sign-up --human-email <value> --username Ernest_Padberg",
 		RunE:    runAgentSignUpCmd,
 		Aliases: []string{"su"},
 	}

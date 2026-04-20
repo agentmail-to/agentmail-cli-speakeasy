@@ -24,7 +24,7 @@ func initInboxesDeleteCmd(parent *cobra.Command) error {
 		Use:     "delete",
 		Short:   "Delete Inbox",
 		Long:    "**CLI:**\n```bash\nagentmail inboxes delete --inbox-id <inbox_id>\n```",
-		Example: "  cli inboxes delete --inbox-id <id>",
+		Example: "  agentmail inboxes delete --inbox-id <id>",
 		RunE:    runInboxesDeleteCmd,
 	}
 	flagutil.RegisterFlags(cmd, inboxesDeleteCmdMeta)

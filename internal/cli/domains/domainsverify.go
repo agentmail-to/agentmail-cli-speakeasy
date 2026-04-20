@@ -24,7 +24,7 @@ func initDomainsVerifyCmd(parent *cobra.Command) error {
 		Use:     "verify",
 		Short:   "Verify Domain",
 		Long:    "**CLI:**\n```bash\nagentmail domains verify --domain-id <domain_id>\n```",
-		Example: "  cli domains verify --domain-id <id>",
+		Example: "  agentmail domains verify --domain-id <id>",
 		RunE:    runDomainsVerifyCmd,
 	}
 	flagutil.RegisterFlags(cmd, domainsVerifyCmdMeta)

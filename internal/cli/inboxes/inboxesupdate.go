@@ -25,7 +25,7 @@ func initInboxesUpdateCmd(parent *cobra.Command) error {
 		Use:     "update",
 		Short:   "Update Inbox",
 		Long:    "**CLI:**\n```bash\nagentmail inboxes update --inbox-id <inbox_id> --display-name \"Updated Name\"\n```",
-		Example: "  cli inboxes update --inbox-id <id> --display-name Alexandra73",
+		Example: "  agentmail inboxes update --inbox-id <id> --display-name Alexandra73",
 		RunE:    runInboxesUpdateCmd,
 	}
 	flagutil.RegisterFlags(cmd, inboxesUpdateCmdMeta)

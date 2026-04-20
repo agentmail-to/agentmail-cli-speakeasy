@@ -29,7 +29,7 @@ func initMetricsQueryCmd(parent *cobra.Command) error {
 		Use:     "query",
 		Short:   "Query Metrics",
 		Long:    "**CLI:**\n```bash\nagentmail metrics list\n```",
-		Example: "  cli metrics query",
+		Example: "  agentmail metrics query",
 		RunE:    runMetricsQueryCmd,
 	}
 	flagutil.RegisterFlags(cmd, metricsQueryCmdMeta)

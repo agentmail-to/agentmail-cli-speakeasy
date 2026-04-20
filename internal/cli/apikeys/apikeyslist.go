@@ -26,7 +26,7 @@ func initApiKeysListCmd(parent *cobra.Command) error {
 		Use:     "api-keys-list",
 		Short:   "List API Keys",
 		Long:    "**CLI:**\n```bash\nagentmail api-keys list\n```",
-		Example: "  cli API-keys api-keys-list",
+		Example: "  agentmail API-keys api-keys-list",
 		RunE:    runApiKeysListCmd,
 		Aliases: []string{"akl"},
 	}

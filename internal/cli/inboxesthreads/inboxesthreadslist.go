@@ -33,7 +33,7 @@ func initInboxesThreadsListCmd(parent *cobra.Command) error {
 		Use:     "list",
 		Short:   "List Threads",
 		Long:    "**CLI:**\n```bash\nagentmail inboxes:threads list --inbox-id <inbox_id>\n```",
-		Example: "  cli inboxes-threads list --inbox-id <id>",
+		Example: "  agentmail inboxes-threads list --inbox-id <id>",
 		RunE:    runInboxesThreadsListCmd,
 	}
 	flagutil.RegisterFlags(cmd, inboxesThreadsListCmdMeta)

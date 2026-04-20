@@ -25,7 +25,7 @@ import (
 )
 
 // cliName is the CLI binary name, injected at generation time.
-const cliName = "cli"
+const cliName = "agentmail"
 
 // formatErrorBody pretty-prints a JSON body string, or returns it as-is if not valid JSON.
 func formatErrorBody(body string) string {

@@ -27,7 +27,7 @@ func initInboxesListsGetCmd(parent *cobra.Command) error {
 		Use:     "get",
 		Short:   "Get List Entry",
 		Long:    "**CLI:**\n```bash\nagentmail inboxes:lists get --inbox-id <inbox_id> --direction <direction> --type <type> --entry <entry>\n```",
-		Example: "  cli inboxes-lists get --inbox-id <id> --direction send --type block --entry <value>",
+		Example: "  agentmail inboxes-lists get --inbox-id <id> --direction send --type block --entry <value>",
 		RunE:    runInboxesListsGetCmd,
 	}
 	flagutil.RegisterFlags(cmd, inboxesListsGetCmdMeta)

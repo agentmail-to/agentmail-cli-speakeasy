@@ -40,7 +40,7 @@ Command-line interface for the *api* API.
 
 To install the CLI, use `go install`:
 ```bash
-go install agentmail-cli/cmd/cli@latest
+go install agentmail-cli/cmd/agentmail@latest
 ```
 
 Or download a pre-built binary from the [releases page](https://agentmail-cli/releases) if available.
@@ -55,35 +55,35 @@ Shell completions are available for Bash, Zsh, Fish, and PowerShell.
 
 ```bash
 # Add to ~/.bashrc:
-source <(cli completion bash)
+source <(agentmail completion bash)
 
 # Or install permanently:
-cli completion bash > /etc/bash_completion.d/cli
+agentmail completion bash > /etc/bash_completion.d/agentmail
 ```
 
 ### Zsh
 
 ```zsh
 # Add to ~/.zshrc:
-source <(cli completion zsh)
+source <(agentmail completion zsh)
 
 # Or install permanently:
-cli completion zsh > "${fpath[1]}/_cli"
+agentmail completion zsh > "${fpath[1]}/_agentmail"
 ```
 
 ### Fish
 
 ```fish
-cli completion fish | source
+agentmail completion fish | source
 
 # Or install permanently:
-cli completion fish > ~/.config/fish/completions/cli.fish
+agentmail completion fish > ~/.config/fish/completions/agentmail.fish
 ```
 
 ### PowerShell
 
 ```powershell
-cli completion powershell | Out-String | Invoke-Expression
+agentmail completion powershell | Out-String | Invoke-Expression
 ```
 <!-- End Shell Completion [completion] -->
 
@@ -93,7 +93,7 @@ cli completion powershell | Out-String | Invoke-Expression
 ### Example
 
 ```bash
-cli inboxes list --bearer-auth 'Bearer test_token'
+agentmail inboxes list --bearer-auth 'Bearer test_token'
 
 ```
 <!-- End CLI Example Usage [usage] -->
@@ -108,7 +108,7 @@ Authentication credentials can be configured in four ways (in order of priority)
 Pass credentials directly as flags to any command:
 
 ```bash
-cli --bearer-auth <value> <command> [arguments]
+agentmail --bearer-auth <value> <command> [arguments]
 ```
 
 ### 2. Environment variables
@@ -117,14 +117,14 @@ Set credentials via environment variables:
 
 | Variable | Description |
 |----------|-------------|
-| `CLI_BEARER_AUTH` | HTTP Bearer |
+| `AGENTMAIL_BEARER_AUTH` | HTTP Bearer |
 
 ### 3. OS Keychain (recommended for workstations)
 
 Credentials are stored securely in your operating system's keychain when you run:
 
 ```bash
-cli configure
+agentmail configure
 ```
 
 Secret credentials (tokens, API keys, passwords) are automatically stored in:
@@ -139,10 +139,10 @@ If no keychain is available (e.g., in CI environments), credentials fall back to
 Run the interactive `configure` command to store non-secret settings:
 
 ```bash
-cli configure
+agentmail configure
 ```
 
-Configuration is stored in `~/.config/cli/config.yaml`.
+Configuration is stored in `~/.config/agentmail/config.yaml`.
 <!-- End Authentication [security] -->
 
 <!-- Start Available Commands [operations] -->
@@ -151,179 +151,179 @@ Configuration is stored in `~/.config/cli/config.yaml`.
 <details open>
 <summary>Available commands</summary>
 
-### [inboxes](docs/cli_inboxes.md)
+### [inboxes](docs/agentmail_inboxes.md)
 
-* [`list`](docs/cli_inboxes_list.md) - List Inboxes
-* [`create`](docs/cli_inboxes_create.md) - Create Inbox
-* [`get`](docs/cli_inboxes_get.md) - Get Inbox
-* [`update`](docs/cli_inboxes_update.md) - Update Inbox
-* [`delete`](docs/cli_inboxes_delete.md) - Delete Inbox
+* [`list`](docs/agentmail_inboxes_list.md) - List Inboxes
+* [`create`](docs/agentmail_inboxes_create.md) - Create Inbox
+* [`get`](docs/agentmail_inboxes_get.md) - Get Inbox
+* [`update`](docs/agentmail_inboxes_update.md) - Update Inbox
+* [`delete`](docs/agentmail_inboxes_delete.md) - Delete Inbox
 
-### [pods](docs/cli_pods.md)
+### [pods](docs/agentmail_pods.md)
 
-* [`list`](docs/cli_pods_list.md) - List Pods
-* [`create`](docs/cli_pods_create.md) - Create Pod
-* [`get`](docs/cli_pods_get.md) - Get Pod
-* [`delete`](docs/cli_pods_delete.md) - Delete Pod
+* [`list`](docs/agentmail_pods_list.md) - List Pods
+* [`create`](docs/agentmail_pods_create.md) - Create Pod
+* [`get`](docs/agentmail_pods_get.md) - Get Pod
+* [`delete`](docs/agentmail_pods_delete.md) - Delete Pod
 
-### [webhooks](docs/cli_webhooks.md)
+### [webhooks](docs/agentmail_webhooks.md)
 
-* [`list`](docs/cli_webhooks_list.md) - List Webhooks
-* [`create`](docs/cli_webhooks_create.md) - Create Webhook
-* [`get`](docs/cli_webhooks_get.md) - Get Webhook
-* [`update`](docs/cli_webhooks_update.md) - Update Webhook
-* [`delete`](docs/cli_webhooks_delete.md) - Delete Webhook
+* [`list`](docs/agentmail_webhooks_list.md) - List Webhooks
+* [`create`](docs/agentmail_webhooks_create.md) - Create Webhook
+* [`get`](docs/agentmail_webhooks_get.md) - Get Webhook
+* [`update`](docs/agentmail_webhooks_update.md) - Update Webhook
+* [`delete`](docs/agentmail_webhooks_delete.md) - Delete Webhook
 
-### [agent](docs/cli_agent.md)
+### [agent](docs/agentmail_agent.md)
 
-* [`sign-up`](docs/cli_agent_sign-up.md) - Sign Up
-* [`verify`](docs/cli_agent_verify.md) - Verify
+* [`sign-up`](docs/agentmail_agent_sign-up.md) - Sign Up
+* [`verify`](docs/agentmail_agent_verify.md) - Verify
 
-### [API-keys](docs/cli_API-keys.md)
+### [API-keys](docs/agentmail_API-keys.md)
 
-* [`api-keys-list`](docs/cli_API-keys_api-keys-list.md) - List API Keys
-* [`api-keys-create`](docs/cli_API-keys_api-keys-create.md) - Create API Key
-* [`api-keys-delete`](docs/cli_API-keys_api-keys-delete.md) - Delete API Key
+* [`api-keys-list`](docs/agentmail_API-keys_api-keys-list.md) - List API Keys
+* [`api-keys-create`](docs/agentmail_API-keys_api-keys-create.md) - Create API Key
+* [`api-keys-delete`](docs/agentmail_API-keys_api-keys-delete.md) - Delete API Key
 
-### [domains](docs/cli_domains.md)
+### [domains](docs/agentmail_domains.md)
 
-* [`list`](docs/cli_domains_list.md) - List Domains
-* [`create`](docs/cli_domains_create.md) - Create Domain
-* [`get`](docs/cli_domains_get.md) - Get Domain
-* [`update`](docs/cli_domains_update.md) - Update Domain
-* [`delete`](docs/cli_domains_delete.md) - Delete Domain
-* [`get-zone-file`](docs/cli_domains_get-zone-file.md) - Get Zone File
-* [`verify`](docs/cli_domains_verify.md) - Verify Domain
+* [`list`](docs/agentmail_domains_list.md) - List Domains
+* [`create`](docs/agentmail_domains_create.md) - Create Domain
+* [`get`](docs/agentmail_domains_get.md) - Get Domain
+* [`update`](docs/agentmail_domains_update.md) - Update Domain
+* [`delete`](docs/agentmail_domains_delete.md) - Delete Domain
+* [`get-zone-file`](docs/agentmail_domains_get-zone-file.md) - Get Zone File
+* [`verify`](docs/agentmail_domains_verify.md) - Verify Domain
 
-### [drafts](docs/cli_drafts.md)
+### [drafts](docs/agentmail_drafts.md)
 
-* [`list`](docs/cli_drafts_list.md) - List Drafts
-* [`get`](docs/cli_drafts_get.md) - Get Draft
-* [`get-attachment`](docs/cli_drafts_get-attachment.md) - Get Attachment
+* [`list`](docs/agentmail_drafts_list.md) - List Drafts
+* [`get`](docs/agentmail_drafts_get.md) - Get Draft
+* [`get-attachment`](docs/agentmail_drafts_get-attachment.md) - Get Attachment
 
-### [inboxes-API-keys](docs/cli_inboxes-API-keys.md)
+### [inboxes-API-keys](docs/agentmail_inboxes-API-keys.md)
 
-* [`inboxes-api-keys-list`](docs/cli_inboxes-API-keys_inboxes-api-keys-list.md) - List API Keys
-* [`inboxes-api-keys-create`](docs/cli_inboxes-API-keys_inboxes-api-keys-create.md) - Create API Key
-* [`inboxes-api-keys-delete`](docs/cli_inboxes-API-keys_inboxes-api-keys-delete.md) - Delete API Key
+* [`inboxes-api-keys-list`](docs/agentmail_inboxes-API-keys_inboxes-api-keys-list.md) - List API Keys
+* [`inboxes-api-keys-create`](docs/agentmail_inboxes-API-keys_inboxes-api-keys-create.md) - Create API Key
+* [`inboxes-api-keys-delete`](docs/agentmail_inboxes-API-keys_inboxes-api-keys-delete.md) - Delete API Key
 
-### [inboxes-drafts](docs/cli_inboxes-drafts.md)
+### [inboxes-drafts](docs/agentmail_inboxes-drafts.md)
 
-* [`list`](docs/cli_inboxes-drafts_list.md) - List Drafts
-* [`create`](docs/cli_inboxes-drafts_create.md) - Create Draft
-* [`get`](docs/cli_inboxes-drafts_get.md) - Get Draft
-* [`update`](docs/cli_inboxes-drafts_update.md) - Update Draft
-* [`delete`](docs/cli_inboxes-drafts_delete.md) - Delete Draft
-* [`get-attachment`](docs/cli_inboxes-drafts_get-attachment.md) - Get Attachment
-* [`send`](docs/cli_inboxes-drafts_send.md) - Send Draft
+* [`list`](docs/agentmail_inboxes-drafts_list.md) - List Drafts
+* [`create`](docs/agentmail_inboxes-drafts_create.md) - Create Draft
+* [`get`](docs/agentmail_inboxes-drafts_get.md) - Get Draft
+* [`update`](docs/agentmail_inboxes-drafts_update.md) - Update Draft
+* [`delete`](docs/agentmail_inboxes-drafts_delete.md) - Delete Draft
+* [`get-attachment`](docs/agentmail_inboxes-drafts_get-attachment.md) - Get Attachment
+* [`send`](docs/agentmail_inboxes-drafts_send.md) - Send Draft
 
-### [inboxes-events](docs/cli_inboxes-events.md)
+### [inboxes-events](docs/agentmail_inboxes-events.md)
 
-* [`list`](docs/cli_inboxes-events_list.md) - List Inbox Events
+* [`list`](docs/agentmail_inboxes-events_list.md) - List Inbox Events
 
-### [inboxes-lists](docs/cli_inboxes-lists.md)
+### [inboxes-lists](docs/agentmail_inboxes-lists.md)
 
-* [`list`](docs/cli_inboxes-lists_list.md) - List Entries
-* [`create`](docs/cli_inboxes-lists_create.md) - Create List Entry
-* [`get`](docs/cli_inboxes-lists_get.md) - Get List Entry
-* [`delete`](docs/cli_inboxes-lists_delete.md) - Delete List Entry
+* [`list`](docs/agentmail_inboxes-lists_list.md) - List Entries
+* [`create`](docs/agentmail_inboxes-lists_create.md) - Create List Entry
+* [`get`](docs/agentmail_inboxes-lists_get.md) - Get List Entry
+* [`delete`](docs/agentmail_inboxes-lists_delete.md) - Delete List Entry
 
-### [inboxes-messages](docs/cli_inboxes-messages.md)
+### [inboxes-messages](docs/agentmail_inboxes-messages.md)
 
-* [`list`](docs/cli_inboxes-messages_list.md) - List Messages
-* [`get`](docs/cli_inboxes-messages_get.md) - Get Message
-* [`update`](docs/cli_inboxes-messages_update.md) - Update Message
-* [`delete`](docs/cli_inboxes-messages_delete.md) - Delete Message
-* [`get-attachment`](docs/cli_inboxes-messages_get-attachment.md) - Get Attachment
-* [`get-raw`](docs/cli_inboxes-messages_get-raw.md) - Get Raw Message
-* [`send`](docs/cli_inboxes-messages_send.md) - Send Message
-* [`reply`](docs/cli_inboxes-messages_reply.md) - Reply To Message
-* [`reply-all`](docs/cli_inboxes-messages_reply-all.md) - Reply All Message
-* [`forward`](docs/cli_inboxes-messages_forward.md) - Forward Message
+* [`list`](docs/agentmail_inboxes-messages_list.md) - List Messages
+* [`get`](docs/agentmail_inboxes-messages_get.md) - Get Message
+* [`update`](docs/agentmail_inboxes-messages_update.md) - Update Message
+* [`delete`](docs/agentmail_inboxes-messages_delete.md) - Delete Message
+* [`get-attachment`](docs/agentmail_inboxes-messages_get-attachment.md) - Get Attachment
+* [`get-raw`](docs/agentmail_inboxes-messages_get-raw.md) - Get Raw Message
+* [`send`](docs/agentmail_inboxes-messages_send.md) - Send Message
+* [`reply`](docs/agentmail_inboxes-messages_reply.md) - Reply To Message
+* [`reply-all`](docs/agentmail_inboxes-messages_reply-all.md) - Reply All Message
+* [`forward`](docs/agentmail_inboxes-messages_forward.md) - Forward Message
 
-### [inboxes-metrics](docs/cli_inboxes-metrics.md)
+### [inboxes-metrics](docs/agentmail_inboxes-metrics.md)
 
-* [`query`](docs/cli_inboxes-metrics_query.md) - Query Metrics
+* [`query`](docs/agentmail_inboxes-metrics_query.md) - Query Metrics
 
-### [inboxes-threads](docs/cli_inboxes-threads.md)
+### [inboxes-threads](docs/agentmail_inboxes-threads.md)
 
-* [`list`](docs/cli_inboxes-threads_list.md) - List Threads
-* [`get`](docs/cli_inboxes-threads_get.md) - Get Thread
-* [`update`](docs/cli_inboxes-threads_update.md) - Update Thread
-* [`delete`](docs/cli_inboxes-threads_delete.md) - Delete Thread
-* [`get-attachment`](docs/cli_inboxes-threads_get-attachment.md) - Get Attachment
+* [`list`](docs/agentmail_inboxes-threads_list.md) - List Threads
+* [`get`](docs/agentmail_inboxes-threads_get.md) - Get Thread
+* [`update`](docs/agentmail_inboxes-threads_update.md) - Update Thread
+* [`delete`](docs/agentmail_inboxes-threads_delete.md) - Delete Thread
+* [`get-attachment`](docs/agentmail_inboxes-threads_get-attachment.md) - Get Attachment
 
-### [lists](docs/cli_lists.md)
+### [lists](docs/agentmail_lists.md)
 
-* [`list`](docs/cli_lists_list.md) - List Entries
-* [`create`](docs/cli_lists_create.md) - Create List Entry
-* [`get`](docs/cli_lists_get.md) - Get List Entry
-* [`delete`](docs/cli_lists_delete.md) - Delete List Entry
+* [`list`](docs/agentmail_lists_list.md) - List Entries
+* [`create`](docs/agentmail_lists_create.md) - Create List Entry
+* [`get`](docs/agentmail_lists_get.md) - Get List Entry
+* [`delete`](docs/agentmail_lists_delete.md) - Delete List Entry
 
-### [metrics](docs/cli_metrics.md)
+### [metrics](docs/agentmail_metrics.md)
 
-* [`query`](docs/cli_metrics_query.md) - Query Metrics
+* [`query`](docs/agentmail_metrics_query.md) - Query Metrics
 
-### [organizations](docs/cli_organizations.md)
+### [organizations](docs/agentmail_organizations.md)
 
-* [`get`](docs/cli_organizations_get.md) - Get Organization
+* [`get`](docs/agentmail_organizations_get.md) - Get Organization
 
-### [pods-API-keys](docs/cli_pods-API-keys.md)
+### [pods-API-keys](docs/agentmail_pods-API-keys.md)
 
-* [`pods-api-keys-list`](docs/cli_pods-API-keys_pods-api-keys-list.md) - List API Keys
-* [`pods-api-keys-create`](docs/cli_pods-API-keys_pods-api-keys-create.md) - Create API Key
-* [`pods-api-keys-delete`](docs/cli_pods-API-keys_pods-api-keys-delete.md) - Delete API Key
+* [`pods-api-keys-list`](docs/agentmail_pods-API-keys_pods-api-keys-list.md) - List API Keys
+* [`pods-api-keys-create`](docs/agentmail_pods-API-keys_pods-api-keys-create.md) - Create API Key
+* [`pods-api-keys-delete`](docs/agentmail_pods-API-keys_pods-api-keys-delete.md) - Delete API Key
 
-### [pods-domains](docs/cli_pods-domains.md)
+### [pods-domains](docs/agentmail_pods-domains.md)
 
-* [`list`](docs/cli_pods-domains_list.md) - List Domains
-* [`create`](docs/cli_pods-domains_create.md) - Create Domain
-* [`get`](docs/cli_pods-domains_get.md) - Get Domain
-* [`update`](docs/cli_pods-domains_update.md) - Update Domain
-* [`delete`](docs/cli_pods-domains_delete.md) - Delete Domain
-* [`get-zone-file`](docs/cli_pods-domains_get-zone-file.md) - Get Zone File
-* [`verify`](docs/cli_pods-domains_verify.md) - Verify Domain
+* [`list`](docs/agentmail_pods-domains_list.md) - List Domains
+* [`create`](docs/agentmail_pods-domains_create.md) - Create Domain
+* [`get`](docs/agentmail_pods-domains_get.md) - Get Domain
+* [`update`](docs/agentmail_pods-domains_update.md) - Update Domain
+* [`delete`](docs/agentmail_pods-domains_delete.md) - Delete Domain
+* [`get-zone-file`](docs/agentmail_pods-domains_get-zone-file.md) - Get Zone File
+* [`verify`](docs/agentmail_pods-domains_verify.md) - Verify Domain
 
-### [pods-drafts](docs/cli_pods-drafts.md)
+### [pods-drafts](docs/agentmail_pods-drafts.md)
 
-* [`list`](docs/cli_pods-drafts_list.md) - List Drafts
-* [`get`](docs/cli_pods-drafts_get.md) - Get Draft
-* [`get-attachment`](docs/cli_pods-drafts_get-attachment.md) - Get Attachment
+* [`list`](docs/agentmail_pods-drafts_list.md) - List Drafts
+* [`get`](docs/agentmail_pods-drafts_get.md) - Get Draft
+* [`get-attachment`](docs/agentmail_pods-drafts_get-attachment.md) - Get Attachment
 
-### [pods-inboxes](docs/cli_pods-inboxes.md)
+### [pods-inboxes](docs/agentmail_pods-inboxes.md)
 
-* [`list`](docs/cli_pods-inboxes_list.md) - List Inboxes
-* [`create`](docs/cli_pods-inboxes_create.md) - Create Inbox
-* [`get`](docs/cli_pods-inboxes_get.md) - Get Inbox
-* [`update`](docs/cli_pods-inboxes_update.md) - Update Inbox
-* [`delete`](docs/cli_pods-inboxes_delete.md) - Delete Inbox
+* [`list`](docs/agentmail_pods-inboxes_list.md) - List Inboxes
+* [`create`](docs/agentmail_pods-inboxes_create.md) - Create Inbox
+* [`get`](docs/agentmail_pods-inboxes_get.md) - Get Inbox
+* [`update`](docs/agentmail_pods-inboxes_update.md) - Update Inbox
+* [`delete`](docs/agentmail_pods-inboxes_delete.md) - Delete Inbox
 
-### [pods-lists](docs/cli_pods-lists.md)
+### [pods-lists](docs/agentmail_pods-lists.md)
 
-* [`list`](docs/cli_pods-lists_list.md) - List Entries
-* [`create`](docs/cli_pods-lists_create.md) - Create List Entry
-* [`get`](docs/cli_pods-lists_get.md) - Get List Entry
-* [`delete`](docs/cli_pods-lists_delete.md) - Delete List Entry
+* [`list`](docs/agentmail_pods-lists_list.md) - List Entries
+* [`create`](docs/agentmail_pods-lists_create.md) - Create List Entry
+* [`get`](docs/agentmail_pods-lists_get.md) - Get List Entry
+* [`delete`](docs/agentmail_pods-lists_delete.md) - Delete List Entry
 
-### [pods-metrics](docs/cli_pods-metrics.md)
+### [pods-metrics](docs/agentmail_pods-metrics.md)
 
-* [`query`](docs/cli_pods-metrics_query.md) - Query Metrics
+* [`query`](docs/agentmail_pods-metrics_query.md) - Query Metrics
 
-### [pods-threads](docs/cli_pods-threads.md)
+### [pods-threads](docs/agentmail_pods-threads.md)
 
-* [`list`](docs/cli_pods-threads_list.md) - List Threads
-* [`get`](docs/cli_pods-threads_get.md) - Get Thread
-* [`update`](docs/cli_pods-threads_update.md) - Update Thread
-* [`delete`](docs/cli_pods-threads_delete.md) - Delete Thread
-* [`get-attachment`](docs/cli_pods-threads_get-attachment.md) - Get Attachment
+* [`list`](docs/agentmail_pods-threads_list.md) - List Threads
+* [`get`](docs/agentmail_pods-threads_get.md) - Get Thread
+* [`update`](docs/agentmail_pods-threads_update.md) - Update Thread
+* [`delete`](docs/agentmail_pods-threads_delete.md) - Delete Thread
+* [`get-attachment`](docs/agentmail_pods-threads_get-attachment.md) - Get Attachment
 
-### [threads](docs/cli_threads.md)
+### [threads](docs/agentmail_threads.md)
 
-* [`list`](docs/cli_threads_list.md) - List Threads
-* [`get`](docs/cli_threads_get.md) - Get Thread
-* [`update`](docs/cli_threads_update.md) - Update Thread
-* [`delete`](docs/cli_threads_delete.md) - Delete Thread
-* [`get-attachment`](docs/cli_threads_get-attachment.md) - Get Attachment
+* [`list`](docs/agentmail_threads_list.md) - List Threads
+* [`get`](docs/agentmail_threads_get.md) - Get Thread
+* [`update`](docs/agentmail_threads_update.md) - Update Thread
+* [`delete`](docs/agentmail_threads_delete.md) - Delete Thread
+* [`get-attachment`](docs/agentmail_threads_get-attachment.md) - Get Attachment
 
 </details>
 <!-- End Available Commands [operations] -->
@@ -336,7 +336,7 @@ Operations that accept a request body support three input methods, with a clear 
 ### Individual flags (highest priority)
 
 ```bash
-cli <command> --name "Jane" --age 30
+agentmail <command> --name "Jane" --age 30
 ```
 
 ### `--body` flag
@@ -344,14 +344,14 @@ cli <command> --name "Jane" --age 30
 Provide the entire request body as a JSON string:
 
 ```bash
-cli <command> --body '{"name": "John", "age": 30}'
+agentmail <command> --body '{"name": "John", "age": 30}'
 ```
 
 Individual flags override `--body` values:
 
 ```bash
 # Result: {name: "Jane", age: 30}
-cli <command> --body '{"name": "John", "age": 30}' --name "Jane"
+agentmail <command> --body '{"name": "John", "age": 30}' --name "Jane"
 ```
 
 ### Stdin piping (lowest priority)
@@ -359,24 +359,24 @@ cli <command> --body '{"name": "John", "age": 30}' --name "Jane"
 Pipe JSON into any command that accepts a request body:
 
 ```bash
-echo '{"name": "John", "age": 30}' | cli <command>
+echo '{"name": "John", "age": 30}' | agentmail <command>
 ```
 
 Individual flags override stdin values:
 
 ```bash
 # Result: {name: "Jane", age: 30}
-echo '{"name": "John", "age": 30}' | cli <command> --name "Jane"
+echo '{"name": "John", "age": 30}' | agentmail <command> --name "Jane"
 ```
 
 This is useful for chaining commands, reading from files, or scripting:
 
 ```bash
 # Read body from a file
-cli <command> < request.json
+agentmail <command> < request.json
 
 # Pipe from another command
-curl -s https://example.com/data.json | cli <command>
+curl -s https://example.com/data.json | agentmail <command>
 ```
 
 ### Priority
@@ -407,16 +407,16 @@ Every command supports a `--output-format` flag that controls how the response i
 
 ```bash
 # Default pretty output
-cli <command>
+agentmail <command>
 
 # Machine-readable JSON
-cli <command> --output-format json
+agentmail <command> --output-format json
 
 # TOON for LLM-friendly compact output
-cli <command> --output-format toon
+agentmail <command> --output-format toon
 
 # Pipe JSON to jq without using --output-format
-cli <command> --output-format json | jq '.fieldName'
+agentmail <command> --output-format json | jq '.fieldName'
 ```
 
 ### jq filtering
@@ -425,10 +425,10 @@ Use `--jq` to filter or transform the response inline using a [jq](https://jqlan
 
 ```bash
 # Extract a single field
-cli <command> --jq '.name'
+agentmail <command> --jq '.name'
 
 # Filter an array
-cli <command> --jq '.items[] | select(.active == true)'
+agentmail <command> --jq '.items[] | select(.active == true)'
 ```
 
 ### Color control
@@ -469,7 +469,7 @@ On success, the response data is printed to **stdout** as JSON. On failure, erro
 
 ```bash
 # Capture output and handle errors
-cli ... > output.json 2> error.log
+agentmail ... > output.json 2> error.log
 if [ $? -ne 0 ]; then
   echo "Error occurred, see error.log"
 fi
@@ -486,7 +486,7 @@ The CLI includes two diagnostic flags available on all commands:
 Preview what would be sent without making any network calls:
 
 ```bash
-cli <command> --dry-run
+agentmail <command> --dry-run
 ```
 
 Output goes to stderr and includes:
@@ -501,7 +501,7 @@ The command exits successfully without contacting the API. This is useful for ve
 Log request and response diagnostics while running normally:
 
 ```bash
-cli <command> --debug
+agentmail <command> --debug
 ```
 
 Debug output goes to stderr and includes:

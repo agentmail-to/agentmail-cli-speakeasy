@@ -25,7 +25,7 @@ func initInboxesMessagesDeleteCmd(parent *cobra.Command) error {
 		Use:     "delete",
 		Short:   "Delete Message",
 		Long:    "Permanently deletes a message.\n\n**CLI:**\n```bash\nagentmail inboxes:messages delete --inbox-id <inbox_id> --message-id <message_id>\n```",
-		Example: "  cli inboxes-messages delete --inbox-id <id> --message-id <id>",
+		Example: "  agentmail inboxes-messages delete --inbox-id <id> --message-id <id>",
 		RunE:    runInboxesMessagesDeleteCmd,
 	}
 	flagutil.RegisterFlags(cmd, inboxesMessagesDeleteCmdMeta)

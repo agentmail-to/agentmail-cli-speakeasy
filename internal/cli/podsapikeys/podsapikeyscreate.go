@@ -26,7 +26,7 @@ func initPodsApiKeysCreateCmd(parent *cobra.Command) error {
 		Use:     "pods-api-keys-create",
 		Short:   "Create API Key",
 		Long:    "**CLI:**\n```bash\nagentmail pods:api-keys create --pod-id <pod_id> --name \"My Key\"\n```",
-		Example: "  cli pods-API-keys pods-api-keys-create --pod-id <id>",
+		Example: "  agentmail pods-API-keys pods-api-keys-create --pod-id <id>",
 		RunE:    runPodsApiKeysCreateCmd,
 		Aliases: []string{"pakc"},
 	}

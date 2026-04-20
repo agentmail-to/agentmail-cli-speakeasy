@@ -25,7 +25,7 @@ func initInboxesThreadsGetCmd(parent *cobra.Command) error {
 		Use:     "get",
 		Short:   "Get Thread",
 		Long:    "**CLI:**\n```bash\nagentmail inboxes:threads get --inbox-id <inbox_id> --thread-id <thread_id>\n```",
-		Example: "  cli inboxes-threads get --inbox-id <id> --thread-id <id>",
+		Example: "  agentmail inboxes-threads get --inbox-id <id> --thread-id <id>",
 		RunE:    runInboxesThreadsGetCmd,
 	}
 	flagutil.RegisterFlags(cmd, inboxesThreadsGetCmdMeta)

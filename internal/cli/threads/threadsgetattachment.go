@@ -25,7 +25,7 @@ func initThreadsGetAttachmentCmd(parent *cobra.Command) error {
 		Use:     "get-attachment",
 		Short:   "Get Attachment",
 		Long:    "**CLI:**\n```bash\nagentmail threads get-attachment --thread-id <thread_id> --attachment-id <attachment_id>\n```",
-		Example: "  cli threads get-attachment --thread-id <id> --attachment-id <id>",
+		Example: "  agentmail threads get-attachment --thread-id <id> --attachment-id <id>",
 		RunE:    runThreadsGetAttachmentCmd,
 		Aliases: []string{"ga"},
 	}

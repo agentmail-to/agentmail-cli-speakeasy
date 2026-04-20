@@ -30,7 +30,7 @@ func initInboxesMetricsQueryCmd(parent *cobra.Command) error {
 		Use:     "query",
 		Short:   "Query Metrics",
 		Long:    "**CLI:**\n```bash\nagentmail inboxes:metrics query --inbox-id <inbox_id>\n```",
-		Example: "  cli inboxes-metrics query --inbox-id <id>",
+		Example: "  agentmail inboxes-metrics query --inbox-id <id>",
 		RunE:    runInboxesMetricsQueryCmd,
 	}
 	flagutil.RegisterFlags(cmd, inboxesMetricsQueryCmdMeta)

@@ -35,7 +35,7 @@ func initInboxesMessagesForwardCmd(parent *cobra.Command) error {
 		Use:     "forward",
 		Short:   "Forward Message",
 		Long:    "**CLI:**\n```bash\nagentmail inboxes:messages forward --inbox-id <inbox_id> --message-id <message_id> --to recipient@example.com\n```",
-		Example: "  cli inboxes-messages forward --inbox-id <id> --message-id <id>",
+		Example: "  agentmail inboxes-messages forward --inbox-id <id> --message-id <id>",
 		RunE:    runInboxesMessagesForwardCmd,
 	}
 	flagutil.RegisterFlags(cmd, inboxesMessagesForwardCmdMeta)

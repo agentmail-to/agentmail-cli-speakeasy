@@ -25,7 +25,7 @@ func initPodsThreadsGetCmd(parent *cobra.Command) error {
 		Use:     "get",
 		Short:   "Get Thread",
 		Long:    "**CLI:**\n```bash\nagentmail pods:threads get --pod-id <pod_id> --thread-id <thread_id>\n```",
-		Example: "  cli pods-threads get --pod-id <id> --thread-id <id>",
+		Example: "  agentmail pods-threads get --pod-id <id> --thread-id <id>",
 		RunE:    runPodsThreadsGetCmd,
 	}
 	flagutil.RegisterFlags(cmd, podsThreadsGetCmdMeta)

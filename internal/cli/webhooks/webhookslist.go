@@ -26,7 +26,7 @@ func initWebhooksListCmd(parent *cobra.Command) error {
 		Use:     "list",
 		Short:   "List Webhooks",
 		Long:    "**CLI:**\n```bash\nagentmail webhooks list\n```",
-		Example: "  cli webhooks list",
+		Example: "  agentmail webhooks list",
 		RunE:    runWebhooksListCmd,
 	}
 	flagutil.RegisterFlags(cmd, webhooksListCmdMeta)

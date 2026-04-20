@@ -26,7 +26,7 @@ func initPodsDomainsUpdateCmd(parent *cobra.Command) error {
 		Use:     "update",
 		Short:   "Update Domain",
 		Long:    "**CLI:**\n```bash\nagentmail pods:domains update --pod-id <pod_id> --domain-id <domain_id>\n```",
-		Example: "  cli pods-domains update --pod-id <id> --domain-id <id>",
+		Example: "  agentmail pods-domains update --pod-id <id> --domain-id <id>",
 		RunE:    runPodsDomainsUpdateCmd,
 	}
 	flagutil.RegisterFlags(cmd, podsDomainsUpdateCmdMeta)

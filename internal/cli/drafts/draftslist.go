@@ -29,7 +29,7 @@ func initDraftsListCmd(parent *cobra.Command) error {
 		Use:     "list",
 		Short:   "List Drafts",
 		Long:    "**CLI:**\n```bash\nagentmail drafts list\n```",
-		Example: "  cli drafts list",
+		Example: "  agentmail drafts list",
 		RunE:    runDraftsListCmd,
 	}
 	flagutil.RegisterFlags(cmd, draftsListCmdMeta)

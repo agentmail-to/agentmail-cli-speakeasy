@@ -27,7 +27,7 @@ func initInboxesDraftsSendCmd(parent *cobra.Command) error {
 		Use:     "send",
 		Short:   "Send Draft",
 		Long:    "**CLI:**\n```bash\nagentmail inboxes:drafts send --inbox-id <inbox_id> --draft-id <draft_id>\n```",
-		Example: "  cli inboxes-drafts send --inbox-id <id> --draft-id <id>",
+		Example: "  agentmail inboxes-drafts send --inbox-id <id> --draft-id <id>",
 		RunE:    runInboxesDraftsSendCmd,
 	}
 	flagutil.RegisterFlags(cmd, inboxesDraftsSendCmdMeta)

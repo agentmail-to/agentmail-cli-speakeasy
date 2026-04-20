@@ -27,7 +27,7 @@ func initListsCreateCmd(parent *cobra.Command) error {
 		Use:     "create",
 		Short:   "Create List Entry",
 		Long:    "**CLI:**\n```bash\nagentmail lists create --direction <direction> --type <type> --entry user@example.com\n```",
-		Example: "  cli lists create --direction receive --type allow --entry <value>",
+		Example: "  agentmail lists create --direction receive --type allow --entry <value>",
 		RunE:    runListsCreateCmd,
 	}
 	flagutil.RegisterFlags(cmd, listsCreateCmdMeta)

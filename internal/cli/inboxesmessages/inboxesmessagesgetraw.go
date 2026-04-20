@@ -25,7 +25,7 @@ func initInboxesMessagesGetRawCmd(parent *cobra.Command) error {
 		Use:     "get-raw",
 		Short:   "Get Raw Message",
 		Long:    "**CLI:**\n```bash\nagentmail inboxes:messages get-raw --inbox-id <inbox_id> --message-id <message_id>\n```",
-		Example: "  cli inboxes-messages get-raw --inbox-id <id> --message-id <id>",
+		Example: "  agentmail inboxes-messages get-raw --inbox-id <id> --message-id <id>",
 		RunE:    runInboxesMessagesGetRawCmd,
 		Aliases: []string{"gr"},
 	}

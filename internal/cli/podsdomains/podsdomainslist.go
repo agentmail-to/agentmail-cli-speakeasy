@@ -27,7 +27,7 @@ func initPodsDomainsListCmd(parent *cobra.Command) error {
 		Use:     "list",
 		Short:   "List Domains",
 		Long:    "**CLI:**\n```bash\nagentmail pods:domains list --pod-id <pod_id>\n```",
-		Example: "  cli pods-domains list --pod-id <id>",
+		Example: "  agentmail pods-domains list --pod-id <id>",
 		RunE:    runPodsDomainsListCmd,
 	}
 	flagutil.RegisterFlags(cmd, podsDomainsListCmdMeta)

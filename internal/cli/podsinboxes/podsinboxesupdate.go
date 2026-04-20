@@ -26,7 +26,7 @@ func initPodsInboxesUpdateCmd(parent *cobra.Command) error {
 		Use:     "update",
 		Short:   "Update Inbox",
 		Long:    "**CLI:**\n```bash\nagentmail pods:inboxes update --pod-id <pod_id> --inbox-id <inbox_id>\n```",
-		Example: "  cli pods-inboxes update --pod-id <id> --inbox-id <id> --display-name Newton87",
+		Example: "  agentmail pods-inboxes update --pod-id <id> --inbox-id <id> --display-name Newton87",
 		RunE:    runPodsInboxesUpdateCmd,
 	}
 	flagutil.RegisterFlags(cmd, podsInboxesUpdateCmdMeta)
