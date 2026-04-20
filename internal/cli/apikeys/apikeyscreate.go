@@ -23,12 +23,11 @@ var apiKeysCreateCmdMeta = []flagutil.FlagMeta{
 // initApiKeysCreateCmd initializes the api-keys-create command.
 func initApiKeysCreateCmd(parent *cobra.Command) error {
 	var cmd = &cobra.Command{
-		Use:     "api-keys-create",
+		Use:     "create",
 		Short:   "Create API Key",
 		Long:    "**CLI:**\n```bash\nagentmail api-keys create --name \"My Key\"\n```",
-		Example: "  agentmail API-keys api-keys-create",
+		Example: "  agentmail api-keys create",
 		RunE:    runApiKeysCreateCmd,
-		Aliases: []string{"akc"},
 	}
 	flagutil.RegisterFlags(cmd, apiKeysCreateCmdMeta)
 	if err := flagutil.ValidateMeta[components.CreateAPIKeyRequest](apiKeysCreateCmdMeta); err != nil {

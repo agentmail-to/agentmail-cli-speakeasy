@@ -23,12 +23,11 @@ var inboxesAPIKeysCreateCmdMeta = []flagutil.FlagMeta{
 // initInboxesApiKeysCreateCmd initializes the inboxes-api-keys-create command.
 func initInboxesApiKeysCreateCmd(parent *cobra.Command) error {
 	var cmd = &cobra.Command{
-		Use:     "inboxes-api-keys-create",
+		Use:     "create",
 		Short:   "Create API Key",
 		Long:    "**CLI:**\n```bash\nagentmail inboxes:api-keys create --inbox-id <inbox_id> --name \"My Key\"\n```",
-		Example: "  agentmail inboxes-API-keys inboxes-api-keys-create --inbox-id <id>",
+		Example: "  agentmail inboxes-api-keys create --inbox-id <id>",
 		RunE:    runInboxesApiKeysCreateCmd,
-		Aliases: []string{"iakc"},
 	}
 	flagutil.RegisterFlags(cmd, inboxesAPIKeysCreateCmdMeta)
 	if err := flagutil.ValidateMeta[operations.InboxesAPIKeysCreateRequest](inboxesAPIKeysCreateCmdMeta); err != nil {

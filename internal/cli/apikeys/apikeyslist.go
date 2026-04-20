@@ -23,12 +23,11 @@ var apiKeysListCmdMeta = []flagutil.FlagMeta{
 // initApiKeysListCmd initializes the api-keys-list command.
 func initApiKeysListCmd(parent *cobra.Command) error {
 	var cmd = &cobra.Command{
-		Use:     "api-keys-list",
+		Use:     "list",
 		Short:   "List API Keys",
 		Long:    "**CLI:**\n```bash\nagentmail api-keys list\n```",
-		Example: "  agentmail API-keys api-keys-list",
+		Example: "  agentmail api-keys list",
 		RunE:    runApiKeysListCmd,
-		Aliases: []string{"akl"},
 	}
 	flagutil.RegisterFlags(cmd, apiKeysListCmdMeta)
 	if err := flagutil.ValidateMeta[operations.APIKeysListRequest](apiKeysListCmdMeta); err != nil {

@@ -1,19 +1,32 @@
-## agentmail pods-api-keys
+## agentmail inboxes-api-keys create
 
-Operations for pods-api-keys
+Create API Key
 
 ### Synopsis
 
-Operations for pods-api-keys
+**CLI:**
+```bash
+agentmail inboxes:api-keys create --inbox-id <inbox_id> --name "My Key"
+```
 
 ```
-agentmail pods-api-keys [flags]
+agentmail inboxes-api-keys create [flags]
+```
+
+### Examples
+
+```
+  agentmail inboxes-api-keys create --inbox-id <id>
 ```
 
 ### Options
 
 ```
-  -h, --help   help for pods-api-keys
+      --body string          Request body as JSON (alternative to individual flags). Can also be provided via stdin.
+  -h, --help                 help for create
+  -i, --inbox-id string      [required]
+  -n, --name string          Name of api key.
+  -p, --permissions string   Granular permissions for the API key. When ommitted all permissions are granted. Otherwise, only permissions set to true are granted.
 ```
 
 ### Options inherited from parent commands
@@ -37,7 +50,4 @@ agentmail pods-api-keys [flags]
 
 ### SEE ALSO
 
-* [agentmail](agentmail.md)	 - agentmail command-line interface
-* [agentmail pods-api-keys create](agentmail_pods-api-keys_create.md)	 - Create API Key
-* [agentmail pods-api-keys delete](agentmail_pods-api-keys_delete.md)	 - Delete API Key
-* [agentmail pods-api-keys list](agentmail_pods-api-keys_list.md)	 - List API Keys
+* [agentmail inboxes-api-keys](agentmail_inboxes-api-keys.md)	 - Operations for inboxes-api-keys

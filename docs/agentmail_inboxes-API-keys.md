@@ -1,19 +1,19 @@
-## agentmail inboxes-API-keys
+## agentmail inboxes-api-keys
 
-Operations for inboxes-API-keys
+Operations for inboxes-api-keys
 
 ### Synopsis
 
-Operations for inboxes-API-keys
+Operations for inboxes-api-keys
 
 ```
-agentmail inboxes-API-keys [flags]
+agentmail inboxes-api-keys [flags]
 ```
 
 ### Options
 
 ```
-  -h, --help   help for inboxes-API-keys
+  -h, --help   help for inboxes-api-keys
 ```
 
 ### Options inherited from parent commands
@@ -38,6 +38,6 @@ agentmail inboxes-API-keys [flags]
 ### SEE ALSO
 
 * [agentmail](agentmail.md)	 - agentmail command-line interface
-* [agentmail inboxes-API-keys inboxes-api-keys-create](agentmail_inboxes-API-keys_inboxes-api-keys-create.md)	 - Create API Key
-* [agentmail inboxes-API-keys inboxes-api-keys-delete](agentmail_inboxes-API-keys_inboxes-api-keys-delete.md)	 - Delete API Key
-* [agentmail inboxes-API-keys inboxes-api-keys-list](agentmail_inboxes-API-keys_inboxes-api-keys-list.md)	 - List API Keys
+* [agentmail inboxes-api-keys create](agentmail_inboxes-api-keys_create.md)	 - Create API Key
+* [agentmail inboxes-api-keys delete](agentmail_inboxes-api-keys_delete.md)	 - Delete API Key
+* [agentmail inboxes-api-keys list](agentmail_inboxes-api-keys_list.md)	 - List API Keys

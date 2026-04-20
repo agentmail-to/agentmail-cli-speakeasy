@@ -1,19 +1,19 @@
-## agentmail pods-api-keys
+## agentmail apikeys
 
-Operations for pods-api-keys
+Operations for apikeys
 
 ### Synopsis
 
-Operations for pods-api-keys
+Operations for apikeys
 
 ```
-agentmail pods-api-keys [flags]
+agentmail apikeys [flags]
 ```
 
 ### Options
 
 ```
-  -h, --help   help for pods-api-keys
+  -h, --help   help for apikeys
 ```
 
 ### Options inherited from parent commands
@@ -38,6 +38,6 @@ agentmail pods-api-keys [flags]
 ### SEE ALSO
 
 * [agentmail](agentmail.md)	 - agentmail command-line interface
-* [agentmail pods-api-keys create](agentmail_pods-api-keys_create.md)	 - Create API Key
-* [agentmail pods-api-keys delete](agentmail_pods-api-keys_delete.md)	 - Delete API Key
-* [agentmail pods-api-keys list](agentmail_pods-api-keys_list.md)	 - List API Keys
+* [agentmail apikeys create](agentmail_apikeys_create.md)	 - Create API Key
+* [agentmail apikeys delete](agentmail_apikeys_delete.md)	 - Delete API Key
+* [agentmail apikeys list](agentmail_apikeys_list.md)	 - List API Keys

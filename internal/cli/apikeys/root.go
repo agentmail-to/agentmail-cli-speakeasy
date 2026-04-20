@@ -7,32 +7,32 @@ import (
 	"github.com/spf13/cobra"
 )
 
-func InitAPIKeysRoot(parent *cobra.Command) error {
-	var APIKeysCmd = &cobra.Command{
-		Use:   "API-keys",
-		Short: "Operations for API-keys",
-		Long:  "Operations for API-keys",
+func InitApiKeysRoot(parent *cobra.Command) error {
+	var ApiKeysCmd = &cobra.Command{
+		Use:   "api-keys",
+		Short: "Operations for api-keys",
+		Long:  "Operations for api-keys",
 		RunE: func(cmd *cobra.Command, args []string) error {
 			if usage.UsageRequested(cmd) {
 				return usage.EmitSchema(cmd, cmd.OutOrStdout())
 			}
 			return cmd.Help()
 		},
-		Aliases: []string{"Ak"},
+		Aliases: []string{"ak"},
 	}
 
-	if err := initApiKeysListCmd(APIKeysCmd); err != nil {
+	if err := initApiKeysListCmd(ApiKeysCmd); err != nil {
 		return err
 	}
 
-	if err := initApiKeysCreateCmd(APIKeysCmd); err != nil {
+	if err := initApiKeysCreateCmd(ApiKeysCmd); err != nil {
 		return err
 	}
 
-	if err := initApiKeysDeleteCmd(APIKeysCmd); err != nil {
+	if err := initApiKeysDeleteCmd(ApiKeysCmd); err != nil {
 		return err
 	}
 
-	parent.AddCommand(APIKeysCmd)
+	parent.AddCommand(ApiKeysCmd)
 	return nil
 }

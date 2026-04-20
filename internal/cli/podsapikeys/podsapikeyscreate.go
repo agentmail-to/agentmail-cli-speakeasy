@@ -23,12 +23,11 @@ var podsAPIKeysCreateCmdMeta = []flagutil.FlagMeta{
 // initPodsApiKeysCreateCmd initializes the pods-api-keys-create command.
 func initPodsApiKeysCreateCmd(parent *cobra.Command) error {
 	var cmd = &cobra.Command{
-		Use:     "pods-api-keys-create",
+		Use:     "create",
 		Short:   "Create API Key",
 		Long:    "**CLI:**\n```bash\nagentmail pods:api-keys create --pod-id <pod_id> --name \"My Key\"\n```",
-		Example: "  agentmail pods-API-keys pods-api-keys-create --pod-id <id>",
+		Example: "  agentmail pods-api-keys create --pod-id <id>",
 		RunE:    runPodsApiKeysCreateCmd,
-		Aliases: []string{"pakc"},
 	}
 	flagutil.RegisterFlags(cmd, podsAPIKeysCreateCmdMeta)
 	if err := flagutil.ValidateMeta[operations.PodsAPIKeysCreateRequest](podsAPIKeysCreateCmdMeta); err != nil {

@@ -23,12 +23,11 @@ var podsAPIKeysListCmdMeta = []flagutil.FlagMeta{
 // initPodsApiKeysListCmd initializes the pods-api-keys-list command.
 func initPodsApiKeysListCmd(parent *cobra.Command) error {
 	var cmd = &cobra.Command{
-		Use:     "pods-api-keys-list",
+		Use:     "list",
 		Short:   "List API Keys",
 		Long:    "**CLI:**\n```bash\nagentmail pods:api-keys list --pod-id <pod_id>\n```",
-		Example: "  agentmail pods-API-keys pods-api-keys-list --pod-id <id>",
+		Example: "  agentmail pods-api-keys list --pod-id <id>",
 		RunE:    runPodsApiKeysListCmd,
-		Aliases: []string{"pakl"},
 	}
 	flagutil.RegisterFlags(cmd, podsAPIKeysListCmdMeta)
 	if err := flagutil.ValidateMeta[operations.PodsAPIKeysListRequest](podsAPIKeysListCmdMeta); err != nil {

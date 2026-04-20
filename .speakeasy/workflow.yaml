@@ -4,6 +4,8 @@ sources:
     api:
         inputs:
             - location: openapi.yaml
+        overlays:
+            - location: overlays/normalize-tags.yaml
         output: .speakeasy/out.openapi.yaml
         registry:
             location: registry.speakeasyapi.dev/agentmail/agentmail/api

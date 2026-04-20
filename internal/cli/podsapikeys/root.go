@@ -7,32 +7,32 @@ import (
 	"github.com/spf13/cobra"
 )
 
-func InitPodsAPIKeysRoot(parent *cobra.Command) error {
-	var PodsAPIKeysCmd = &cobra.Command{
-		Use:   "pods-API-keys",
-		Short: "Operations for pods-API-keys",
-		Long:  "Operations for pods-API-keys",
+func InitPodsApiKeysRoot(parent *cobra.Command) error {
+	var PodsApiKeysCmd = &cobra.Command{
+		Use:   "pods-api-keys",
+		Short: "Operations for pods-api-keys",
+		Long:  "Operations for pods-api-keys",
 		RunE: func(cmd *cobra.Command, args []string) error {
 			if usage.UsageRequested(cmd) {
 				return usage.EmitSchema(cmd, cmd.OutOrStdout())
 			}
 			return cmd.Help()
 		},
-		Aliases: []string{"pAk"},
+		Aliases: []string{"pak"},
 	}
 
-	if err := initPodsApiKeysListCmd(PodsAPIKeysCmd); err != nil {
+	if err := initPodsApiKeysListCmd(PodsApiKeysCmd); err != nil {
 		return err
 	}
 
-	if err := initPodsApiKeysCreateCmd(PodsAPIKeysCmd); err != nil {
+	if err := initPodsApiKeysCreateCmd(PodsApiKeysCmd); err != nil {
 		return err
 	}
 
-	if err := initPodsApiKeysDeleteCmd(PodsAPIKeysCmd); err != nil {
+	if err := initPodsApiKeysDeleteCmd(PodsApiKeysCmd); err != nil {
 		return err
 	}
 
-	parent.AddCommand(PodsAPIKeysCmd)
+	parent.AddCommand(PodsApiKeysCmd)
 	return nil
 }

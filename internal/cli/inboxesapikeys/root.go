@@ -7,32 +7,32 @@ import (
 	"github.com/spf13/cobra"
 )
 
-func InitInboxesAPIKeysRoot(parent *cobra.Command) error {
-	var InboxesAPIKeysCmd = &cobra.Command{
-		Use:   "inboxes-API-keys",
-		Short: "Operations for inboxes-API-keys",
-		Long:  "Operations for inboxes-API-keys",
+func InitInboxesApiKeysRoot(parent *cobra.Command) error {
+	var InboxesApiKeysCmd = &cobra.Command{
+		Use:   "inboxes-api-keys",
+		Short: "Operations for inboxes-api-keys",
+		Long:  "Operations for inboxes-api-keys",
 		RunE: func(cmd *cobra.Command, args []string) error {
 			if usage.UsageRequested(cmd) {
 				return usage.EmitSchema(cmd, cmd.OutOrStdout())
 			}
 			return cmd.Help()
 		},
-		Aliases: []string{"iAk"},
+		Aliases: []string{"iak"},
 	}
 
-	if err := initInboxesApiKeysListCmd(InboxesAPIKeysCmd); err != nil {
+	if err := initInboxesApiKeysListCmd(InboxesApiKeysCmd); err != nil {
 		return err
 	}
 
-	if err := initInboxesApiKeysCreateCmd(InboxesAPIKeysCmd); err != nil {
+	if err := initInboxesApiKeysCreateCmd(InboxesApiKeysCmd); err != nil {
 		return err
 	}
 
-	if err := initInboxesApiKeysDeleteCmd(InboxesAPIKeysCmd); err != nil {
+	if err := initInboxesApiKeysDeleteCmd(InboxesApiKeysCmd); err != nil {
 		return err
 	}
 
-	parent.AddCommand(InboxesAPIKeysCmd)
+	parent.AddCommand(InboxesApiKeysCmd)
 	return nil
 }

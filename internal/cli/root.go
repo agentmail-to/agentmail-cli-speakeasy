@@ -82,8 +82,8 @@ func NewRootCommand() (*cobra.Command, error) {
 	if err := agent.InitAgentRoot(rootCmd); err != nil {
 		return nil, fmt.Errorf("init agent: %w", err)
 	}
-	if err := apikeys.InitAPIKeysRoot(rootCmd); err != nil {
-		return nil, fmt.Errorf("init API-keys: %w", err)
+	if err := apikeys.InitApiKeysRoot(rootCmd); err != nil {
+		return nil, fmt.Errorf("init api-keys: %w", err)
 	}
 	if err := domains.InitDomainsRoot(rootCmd); err != nil {
 		return nil, fmt.Errorf("init domains: %w", err)
@@ -91,8 +91,8 @@ func NewRootCommand() (*cobra.Command, error) {
 	if err := drafts.InitDraftsRoot(rootCmd); err != nil {
 		return nil, fmt.Errorf("init drafts: %w", err)
 	}
-	if err := inboxesapikeys.InitInboxesAPIKeysRoot(rootCmd); err != nil {
-		return nil, fmt.Errorf("init inboxes-API-keys: %w", err)
+	if err := inboxesapikeys.InitInboxesApiKeysRoot(rootCmd); err != nil {
+		return nil, fmt.Errorf("init inboxes-api-keys: %w", err)
 	}
 	if err := inboxesdrafts.InitInboxesDraftsRoot(rootCmd); err != nil {
 		return nil, fmt.Errorf("init inboxes-drafts: %w", err)
@@ -121,8 +121,8 @@ func NewRootCommand() (*cobra.Command, error) {
 	if err := organizations.InitOrganizationsRoot(rootCmd); err != nil {
 		return nil, fmt.Errorf("init organizations: %w", err)
 	}
-	if err := podsapikeys.InitPodsAPIKeysRoot(rootCmd); err != nil {
-		return nil, fmt.Errorf("init pods-API-keys: %w", err)
+	if err := podsapikeys.InitPodsApiKeysRoot(rootCmd); err != nil {
+		return nil, fmt.Errorf("init pods-api-keys: %w", err)
 	}
 	if err := podsdomains.InitPodsDomainsRoot(rootCmd); err != nil {
 		return nil, fmt.Errorf("init pods-domains: %w", err)

@@ -23,12 +23,11 @@ var inboxesAPIKeysListCmdMeta = []flagutil.FlagMeta{
 // initInboxesApiKeysListCmd initializes the inboxes-api-keys-list command.
 func initInboxesApiKeysListCmd(parent *cobra.Command) error {
 	var cmd = &cobra.Command{
-		Use:     "inboxes-api-keys-list",
+		Use:     "list",
 		Short:   "List API Keys",
 		Long:    "**CLI:**\n```bash\nagentmail inboxes:api-keys list --inbox-id <inbox_id>\n```",
-		Example: "  agentmail inboxes-API-keys inboxes-api-keys-list --inbox-id <id>",
+		Example: "  agentmail inboxes-api-keys list --inbox-id <id>",
 		RunE:    runInboxesApiKeysListCmd,
-		Aliases: []string{"iakl"},
 	}
 	flagutil.RegisterFlags(cmd, inboxesAPIKeysListCmdMeta)
 	if err := flagutil.ValidateMeta[operations.InboxesAPIKeysListRequest](inboxesAPIKeysListCmdMeta); err != nil {

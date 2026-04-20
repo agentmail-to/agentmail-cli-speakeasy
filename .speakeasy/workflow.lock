@@ -2,16 +2,16 @@ speakeasyVersion: 1.761.8
 sources:
     api:
         sourceNamespace: api
-        sourceRevisionDigest: sha256:aad40a413f7229efeedfdd8a3d01418c595661caee3ab4f1fa54fb9f4744a953
-        sourceBlobDigest: sha256:4f6d450a123f4d71e9e9a7a9af484fa41d74b6a7805647c8aad2f06b8d22376b
+        sourceRevisionDigest: sha256:8460944c26d6b91523ec0583ad6fdfa558653c7cf4f113bd1e9b99f9d437db08
+        sourceBlobDigest: sha256:043248f3044176faef7826ca0d1fc65cd2696a672a45bdc2f40e2e4948222e6d
         tags:
             - latest
 targets:
     agentmail-cli:
         source: api
         sourceNamespace: api
-        sourceRevisionDigest: sha256:aad40a413f7229efeedfdd8a3d01418c595661caee3ab4f1fa54fb9f4744a953
-        sourceBlobDigest: sha256:4f6d450a123f4d71e9e9a7a9af484fa41d74b6a7805647c8aad2f06b8d22376b
+        sourceRevisionDigest: sha256:8460944c26d6b91523ec0583ad6fdfa558653c7cf4f113bd1e9b99f9d437db08
+        sourceBlobDigest: sha256:043248f3044176faef7826ca0d1fc65cd2696a672a45bdc2f40e2e4948222e6d
 workflow:
     workflowVersion: 1.0.0
     speakeasyVersion: latest
@@ -19,6 +19,8 @@ workflow:
         api:
             inputs:
                 - location: openapi.yaml
+            overlays:
+                - location: overlays/normalize-tags.yaml
             output: .speakeasy/out.openapi.yaml
             registry:
                 location: registry.speakeasyapi.dev/agentmail/agentmail/api

@@ -179,11 +179,11 @@ Configuration is stored in `~/.config/agentmail/config.yaml`.
 * [`sign-up`](docs/agentmail_agent_sign-up.md) - Sign Up
 * [`verify`](docs/agentmail_agent_verify.md) - Verify
 
-### [API-keys](docs/agentmail_API-keys.md)
+### [api-keys](docs/agentmail_api-keys.md)
 
-* [`api-keys-list`](docs/agentmail_API-keys_api-keys-list.md) - List API Keys
-* [`api-keys-create`](docs/agentmail_API-keys_api-keys-create.md) - Create API Key
-* [`api-keys-delete`](docs/agentmail_API-keys_api-keys-delete.md) - Delete API Key
+* [`list`](docs/agentmail_api-keys_list.md) - List API Keys
+* [`create`](docs/agentmail_api-keys_create.md) - Create API Key
+* [`delete`](docs/agentmail_api-keys_delete.md) - Delete API Key
 
 ### [domains](docs/agentmail_domains.md)
 
@@ -201,11 +201,11 @@ Configuration is stored in `~/.config/agentmail/config.yaml`.
 * [`get`](docs/agentmail_drafts_get.md) - Get Draft
 * [`get-attachment`](docs/agentmail_drafts_get-attachment.md) - Get Attachment
 
-### [inboxes-API-keys](docs/agentmail_inboxes-API-keys.md)
+### [inboxes-api-keys](docs/agentmail_inboxes-api-keys.md)
 
-* [`inboxes-api-keys-list`](docs/agentmail_inboxes-API-keys_inboxes-api-keys-list.md) - List API Keys
-* [`inboxes-api-keys-create`](docs/agentmail_inboxes-API-keys_inboxes-api-keys-create.md) - Create API Key
-* [`inboxes-api-keys-delete`](docs/agentmail_inboxes-API-keys_inboxes-api-keys-delete.md) - Delete API Key
+* [`list`](docs/agentmail_inboxes-api-keys_list.md) - List API Keys
+* [`create`](docs/agentmail_inboxes-api-keys_create.md) - Create API Key
+* [`delete`](docs/agentmail_inboxes-api-keys_delete.md) - Delete API Key
 
 ### [inboxes-drafts](docs/agentmail_inboxes-drafts.md)
 
@@ -268,11 +268,11 @@ Configuration is stored in `~/.config/agentmail/config.yaml`.
 
 * [`get`](docs/agentmail_organizations_get.md) - Get Organization
 
-### [pods-API-keys](docs/agentmail_pods-API-keys.md)
+### [pods-api-keys](docs/agentmail_pods-api-keys.md)
 
-* [`pods-api-keys-list`](docs/agentmail_pods-API-keys_pods-api-keys-list.md) - List API Keys
-* [`pods-api-keys-create`](docs/agentmail_pods-API-keys_pods-api-keys-create.md) - Create API Key
-* [`pods-api-keys-delete`](docs/agentmail_pods-API-keys_pods-api-keys-delete.md) - Delete API Key
+* [`list`](docs/agentmail_pods-api-keys_list.md) - List API Keys
+* [`create`](docs/agentmail_pods-api-keys_create.md) - Create API Key
+* [`delete`](docs/agentmail_pods-api-keys_delete.md) - Delete API Key
 
 ### [pods-domains](docs/agentmail_pods-domains.md)
 

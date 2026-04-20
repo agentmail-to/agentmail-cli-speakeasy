@@ -22,12 +22,11 @@ var inboxesAPIKeysDeleteCmdMeta = []flagutil.FlagMeta{
 // initInboxesApiKeysDeleteCmd initializes the inboxes-api-keys-delete command.
 func initInboxesApiKeysDeleteCmd(parent *cobra.Command) error {
 	var cmd = &cobra.Command{
-		Use:     "inboxes-api-keys-delete",
+		Use:     "delete",
 		Short:   "Delete API Key",
 		Long:    "**CLI:**\n```bash\nagentmail inboxes:api-keys delete --inbox-id <inbox_id> --api-key-id <api_key_id>\n```",
-		Example: "  agentmail inboxes-API-keys inboxes-api-keys-delete --inbox-id <id> --api-key-id <id>",
+		Example: "  agentmail inboxes-api-keys delete --inbox-id <id> --api-key-id <id>",
 		RunE:    runInboxesApiKeysDeleteCmd,
-		Aliases: []string{"iakd"},
 	}
 	flagutil.RegisterFlags(cmd, inboxesAPIKeysDeleteCmdMeta)
 	if err := flagutil.ValidateMeta[operations.InboxesAPIKeysDeleteRequest](inboxesAPIKeysDeleteCmdMeta); err != nil {

@@ -1,19 +1,19 @@
-## agentmail API-keys
+## agentmail api-keys
 
-Operations for API-keys
+Operations for api-keys
 
 ### Synopsis
 
-Operations for API-keys
+Operations for api-keys
 
 ```
-agentmail API-keys [flags]
+agentmail api-keys [flags]
 ```
 
 ### Options
 
 ```
-  -h, --help   help for API-keys
+  -h, --help   help for api-keys
 ```
 
 ### Options inherited from parent commands
@@ -38,6 +38,6 @@ agentmail API-keys [flags]
 ### SEE ALSO
 
 * [agentmail](agentmail.md)	 - agentmail command-line interface
-* [agentmail API-keys api-keys-create](agentmail_API-keys_api-keys-create.md)	 - Create API Key
-* [agentmail API-keys api-keys-delete](agentmail_API-keys_api-keys-delete.md)	 - Delete API Key
-* [agentmail API-keys api-keys-list](agentmail_API-keys_api-keys-list.md)	 - List API Keys
+* [agentmail api-keys create](agentmail_api-keys_create.md)	 - Create API Key
+* [agentmail api-keys delete](agentmail_api-keys_delete.md)	 - Delete API Key
+* [agentmail api-keys list](agentmail_api-keys_list.md)	 - List API Keys

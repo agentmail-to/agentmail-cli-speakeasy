@@ -1,0 +1,17 @@
+overlay: 1.0.0
+info:
+  title: Normalize acronym tags for CLI casing
+  version: 0.0.1
+# Fern emits tags as APIKeys / InboxesAPIKeys / PodsAPIKeys because the
+# source file is api-keys.yml. Speakeasy's kebab-case conversion preserves
+# consecutive-uppercase runs, producing API-keys / inboxes-API-keys /
+# pods-API-keys in the CLI. Rewrite these to the Pascal form with only the
+# first letter uppercased so the generated commands render as api-keys,
+# inboxes-api-keys, pods-api-keys.
+actions:
+  - target: $.paths.*.*.tags[?(@ == 'APIKeys')]
+    update: ApiKeys
+  - target: $.paths.*.*.tags[?(@ == 'InboxesAPIKeys')]
+    update: InboxesApiKeys
+  - target: $.paths.*.*.tags[?(@ == 'PodsAPIKeys')]
+    update: PodsApiKeys
