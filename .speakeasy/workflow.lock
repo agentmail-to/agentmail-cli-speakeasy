@@ -1,0 +1,28 @@
+speakeasyVersion: 1.761.8
+sources:
+    api:
+        sourceNamespace: api
+        sourceRevisionDigest: sha256:aad40a413f7229efeedfdd8a3d01418c595661caee3ab4f1fa54fb9f4744a953
+        sourceBlobDigest: sha256:4f6d450a123f4d71e9e9a7a9af484fa41d74b6a7805647c8aad2f06b8d22376b
+        tags:
+            - latest
+targets:
+    agentmail-cli:
+        source: api
+        sourceNamespace: api
+        sourceRevisionDigest: sha256:aad40a413f7229efeedfdd8a3d01418c595661caee3ab4f1fa54fb9f4744a953
+        sourceBlobDigest: sha256:4f6d450a123f4d71e9e9a7a9af484fa41d74b6a7805647c8aad2f06b8d22376b
+workflow:
+    workflowVersion: 1.0.0
+    speakeasyVersion: latest
+    sources:
+        api:
+            inputs:
+                - location: openapi.yaml
+            output: .speakeasy/out.openapi.yaml
+            registry:
+                location: registry.speakeasyapi.dev/agentmail/agentmail/api
+    targets:
+        agentmail-cli:
+            target: cli
+            source: api

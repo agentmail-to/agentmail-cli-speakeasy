@@ -1,0 +1,2604 @@
+lockVersion: 2.0.0
+id: 357e6474-f2c3-4257-8ba2-b5a5c9ab6b72
+management:
+  docChecksum: 19b4b3020c920e218ebbcb0653ae6f35
+  speakeasyVersion: 1.761.8
+  generationVersion: 2.881.2
+  releaseVersion: 0.0.1
+  configChecksum: abb20356dd4f9433b5af5fca7d9016c1
+persistentEdits:
+  generation_id: e973e772-fbda-4ace-ae4e-75a0c6c9ddf5
+  pristine_commit_hash: 8a322f5c068250085ca38ab2c781e98370e9d8dd
+  pristine_tree_hash: fcb82b2da39e8e888b7cdf183751bd153d129b06
+features:
+  cli:
+    core: 0.2.8
+    downloadStreams: 0.0.1
+    globalSecurity: 0.0.1
+    globalServerURLs: 0.0.0
+    methodServerURLs: 0.0.0
+    responseFormat: 0.1.1
+    unions: 0.0.1
+trackedFiles:
+  .gitattributes:
+    id: 24139dae6567
+    last_write_checksum: sha1:84b0115789fc3ea52e31df701d8a27f76077e29f
+    pristine_git_object: e6a994416d0f527912d2d272e2583458f4fc9bcb
+  .github/workflows/release.yaml:
+    id: 3679a1429145
+    last_write_checksum: sha1:ff4e1df729b880f7e346d013376669ee52735e11
+    pristine_git_object: 847aeb6046d7cb0c98b8dfe965ed33c18e3fca93
+  .goreleaser.yaml:
+    id: 3c333d227063
+    last_write_checksum: sha1:b9387c3c18a34c200ab91b1c8fb9f1af6cf2aff9
+    pristine_git_object: 4e8abbab6ff2abe89f8a90df725b166c5c7ba362
+  USAGE.md:
+    id: 3aed33ce6e6f
+    last_write_checksum: sha1:b8ee4a829c15e614a4946f12e1b17f9a2c76530b
+    pristine_git_object: 941dc61ac518841e5217b328c7881ba7758663bf
+  cmd/cli/main.go:
+    id: 05ddbacfc729
+    last_write_checksum: sha1:6f60a298152dea3ea3e211f82ee66ad91b30205a
+    pristine_git_object: d9a491c8d528f81e3d07d789d4051e6a1e407845
+  cmd/gendocs/main.go:
+    id: 20d9382a7dff
+    last_write_checksum: sha1:98ec665f8567b5fe0be9b9fb167adb1d3cb23425
+    pristine_git_object: 367281846b2b4ef7098b355eb72b6da2469533a5
+  go.mod:
+    id: c47645c391ad
+    last_write_checksum: sha1:6e093d70fee919dffd77d1e22e1424ede2c5ae50
+    pristine_git_object: a9a2aa003b5393675bed7a63c8ad6ffd89eb0be4
+  internal/cli/agent/agentsignup.go:
+    id: 83c1526efdf5
+    last_write_checksum: sha1:6648deef2ae17250cf0b000c8e5bf853ec182fb8
+    pristine_git_object: 9fed9598a2a4b519e1e2a155b7108d41071783b7
+  internal/cli/agent/agentverify.go:
+    id: 31e00f01767b
+    last_write_checksum: sha1:39dcd0cb0b99ce1b9e8dc667c04f783148f57c08
+    pristine_git_object: 6888ca3fb37b9c44e2bad66097a195995266f580
+  internal/cli/agent/root.go:
+    id: 667fb833a048
+    last_write_checksum: sha1:8fa1a7635653430a288b8fab3cacdee46a21f8d7
+    pristine_git_object: 6bc52a2e45283a26dc79b5941165e4863a2aea37
+  internal/cli/apikeys/apikeyscreate.go:
+    id: b0045ffdef0c
+    last_write_checksum: sha1:6166470f168eab9e0e13900902b2f41b2c3ae81a
+    pristine_git_object: e2ac8f103cfa8bc75bf5b814d0693cf333676d79
+  internal/cli/apikeys/apikeysdelete.go:
+    id: 9d8841b41626
+    last_write_checksum: sha1:b51d30b58cf18b97ec6f9f89dd1eb5ff71377c05
+    pristine_git_object: a18b45e2d442446a4b2675480b2dc365d007a2f5
+  internal/cli/apikeys/apikeyslist.go:
+    id: 3508db7cc8ad
+    last_write_checksum: sha1:d8c1116d3eeec3260210b8202a7e48d8d9bf0c2f
+    pristine_git_object: 48471f079c2f65a1d9cc15e48a9b75d70816a513
+  internal/cli/apikeys/root.go:
+    id: 0cbf54558d00
+    last_write_checksum: sha1:20bf3a194907688630ffc783e424adc1a9d0ffb8
+    pristine_git_object: a270381a5250332c762395c68e6d7757099fa539
+  internal/cli/auth.go:
+    id: 5ae1b1dce495
+    last_write_checksum: sha1:bf7b20a9c61857b8359225459f85158a15b2ef6e
+    pristine_git_object: 4793f312642059dd789a8e384ee6a091a943cc5a
+  internal/cli/configure.go:
+    id: 36d400bc4372
+    last_write_checksum: sha1:e7a1ff44d085688140891b6d9d2331535aa631ae
+    pristine_git_object: c8a5ba7e2a878d8589e17377f53c5ba5d7d2f872
+  internal/cli/domains/domainscreate.go:
+    id: c535ba49f9e3
+    last_write_checksum: sha1:178fa5ec3995f4c0efe5c9a2144657e0b366987c
+    pristine_git_object: 65634feb547e6be33fb1c1eceba2c726af3c742c
+  internal/cli/domains/domainsdelete.go:
+    id: c3002a854129
+    last_write_checksum: sha1:73d8d55e2ab5bd9279ef1fa6ee50d7c5fe141f80
+    pristine_git_object: 0f1cfd556ee379ba4f9d91d634060af2f7d365df
+  internal/cli/domains/domainsget.go:
+    id: 3201587a8f8c
+    last_write_checksum: sha1:f4963345e43fb8ff268a0ee62a8d396a22d88e1b
+    pristine_git_object: 6d8cbd6fe9c6db92f019255dfd0e7c883cedfcd1
+  internal/cli/domains/domainsgetzonefile.go:
+    id: d6eddd4bb97c
+    last_write_checksum: sha1:08d88d4410c4531ebdc1d564d1ec155ad59f15b8
+    pristine_git_object: acf1a86af0eb11251302321117e63f9eee54e6ad
+  internal/cli/domains/domainslist.go:
+    id: faf6beb68ecb
+    last_write_checksum: sha1:c436bc26db77aad6a82963aabc82e70ff957588f
+    pristine_git_object: 00c7ce5d5e7e97bdc4bdcaec762e4f3e1ad0a9f1
+  internal/cli/domains/domainsupdate.go:
+    id: 204f8f48da89
+    last_write_checksum: sha1:f590f40288496d7adb16611b91a3abc871c02947
+    pristine_git_object: b064bd161686c0040e6732c51fe668bdd56dd4b5
+  internal/cli/domains/domainsverify.go:
+    id: 54115b3f0e36
+    last_write_checksum: sha1:e2bc3b785497be59664280453670e9ca4f0346c8
+    pristine_git_object: 58f00644997b27f14f54081e84292b71f17baef0
+  internal/cli/domains/root.go:
+    id: 3a1bd4058525
+    last_write_checksum: sha1:eb4ec727a3363f83c5c4d6bcb0bb84de803975e4
+    pristine_git_object: cf2723cafb9a94365c1a43f21e0f948171c1c51c
+  internal/cli/drafts/draftsget.go:
+    id: 978a108a35db
+    last_write_checksum: sha1:5a4eb858e8be65453b74da3d4dbc5c27e55fac24
+    pristine_git_object: 27d4c59e6e3cda1dcc6dd513b2786b9fc4dfc709
+  internal/cli/drafts/draftsgetattachment.go:
+    id: 1ed1f955ed15
+    last_write_checksum: sha1:3c38d96bb363f483f57a429e45e0ed187912ae8c
+    pristine_git_object: f88adb9d343007fc4a964a627632b5949361d2ae
+  internal/cli/drafts/draftslist.go:
+    id: 0525a024e94e
+    last_write_checksum: sha1:a61b47e1873d604422c4b4c41eed716af8486108
+    pristine_git_object: 7e931c059eda36280bd8b2785d75d51a1b8628e1
+  internal/cli/drafts/root.go:
+    id: 728d3a8f913f
+    last_write_checksum: sha1:b3843da684a46390ed377180dc3d84d804562a4b
+    pristine_git_object: 28068e2f1afee2812802ff85d726e5f87a72a59c
+  internal/cli/inboxes/inboxescreate.go:
+    id: afdb92d1b5af
+    last_write_checksum: sha1:88dca075c8797137d08b73d99eee8277a31b3470
+    pristine_git_object: 7dbaee21bed2f49789b7c021561680545524d19d
+  internal/cli/inboxes/inboxesdelete.go:
+    id: bc8e0c1e2e7d
+    last_write_checksum: sha1:5534c0655462fbf8b94d41fe6fd4f25f33f19d6a
+    pristine_git_object: 72b6d774b254b8f68fb2784684d112bf62af34e7
+  internal/cli/inboxes/inboxesget.go:
+    id: b12f77cd5c3a
+    last_write_checksum: sha1:938347708abcbcba8fd4a7dd87307263eed1b73d
+    pristine_git_object: fbe72a8ba5b0b6e00a0e8bbb5e74246c254f11d9
+  internal/cli/inboxes/inboxeslist.go:
+    id: 729a167ff0e9
+    last_write_checksum: sha1:b706cf06c0ff8ae96cad0d1267145d269d967a28
+    pristine_git_object: 5c823ecdb446b8316e3f4f762a5cad793e8a9fe6
+  internal/cli/inboxes/inboxesupdate.go:
+    id: 76cbc16d5585
+    last_write_checksum: sha1:7ec89f716dbfd42a7f71d25b76bcaeec28cb5d10
+    pristine_git_object: 73f26fa99bb23640fa9042439525c42a29b84651
+  internal/cli/inboxes/root.go:
+    id: 4a0bdc352dee
+    last_write_checksum: sha1:52071e7c5f8cc3834d4b8b6495b47c211c02b648
+    pristine_git_object: 3ca516b086ee5ae2a60d25574ed5d54054184071
+  internal/cli/inboxesapikeys/inboxesapikeyscreate.go:
+    id: 7c248524fd45
+    last_write_checksum: sha1:0fc4aceeac3d83171d119ebc85506fcd5e255e6a
+    pristine_git_object: 8f06519500e6f8f482ab6ab116aaa0b829acd024
+  internal/cli/inboxesapikeys/inboxesapikeysdelete.go:
+    id: 1200d9210ed2
+    last_write_checksum: sha1:e64c620a1be8297fa74fd065123bbe593b43c933
+    pristine_git_object: acb1b6a88298be0afd0826915f96bcd26d558d42
+  internal/cli/inboxesapikeys/inboxesapikeyslist.go:
+    id: f867cf98d5fc
+    last_write_checksum: sha1:26dba8b7c597fd78c0b7e027e770f7a00043385c
+    pristine_git_object: ec062ba3c095cc592addf9b28ef4eef9b087fce7
+  internal/cli/inboxesapikeys/root.go:
+    id: 170ceaef6731
+    last_write_checksum: sha1:13cbdfe3dc05f636897ff567a4628489310c1a61
+    pristine_git_object: 85c2a7a04bcfcf62f2dffcb54c671c4fe40dfb0b
+  internal/cli/inboxesdrafts/inboxesdraftscreate.go:
+    id: 5a905bd149a4
+    last_write_checksum: sha1:a85e19830d78e88281708e11b2933b65efabbd1a
+    pristine_git_object: dbbdb9dbf1f6cfc9dbff9a4f54844e677e5788a6
+  internal/cli/inboxesdrafts/inboxesdraftsdelete.go:
+    id: a4c5ca7160c3
+    last_write_checksum: sha1:457fa38343c4206e3f5524f23a2b45a88d3d29f8
+    pristine_git_object: 7049ce536e6996be3a913d10b67e5c6856e8796d
+  internal/cli/inboxesdrafts/inboxesdraftsget.go:
+    id: ac37a01bc727
+    last_write_checksum: sha1:211ecafc63688342bb1d4f7cfac664dbc184aaeb
+    pristine_git_object: 982cd0697fb9ce17107bcfa3162d8f83373e9bd3
+  internal/cli/inboxesdrafts/inboxesdraftsgetattachment.go:
+    id: cf789cd73024
+    last_write_checksum: sha1:fef188e6be99019bb26f0b55932dbbb13b93e130
+    pristine_git_object: ba134f271fa7e3e82d67ddc7e605803e0e436671
+  internal/cli/inboxesdrafts/inboxesdraftslist.go:
+    id: 251d4f0a2bba
+    last_write_checksum: sha1:943515ceeeddbdbe1641598b4b279c2a064627fc
+    pristine_git_object: 8827965d10e7c4b4137d279dd43007e9b2a2f8b7
+  internal/cli/inboxesdrafts/inboxesdraftssend.go:
+    id: 8265df27f75e
+    last_write_checksum: sha1:e508312c527ec72760d4c6a562d84299ba03a3f6
+    pristine_git_object: 1f34b7d660e903089e814bd709aeb11ce0b5ff50
+  internal/cli/inboxesdrafts/inboxesdraftsupdate.go:
+    id: c686a38c3769
+    last_write_checksum: sha1:a77a6db477803051b4fcdec8613708cf7ec2424e
+    pristine_git_object: 9190aa25b583b2c684ac0fe999a8ec3b6d4db128
+  internal/cli/inboxesdrafts/root.go:
+    id: 3b3e05690493
+    last_write_checksum: sha1:38ee363e1468c1f122db7c70fbe2a99da1b9bc26
+    pristine_git_object: fe6b3b7987aaee547c3788b503b5b27e04070741
+  internal/cli/inboxesevents/inboxeseventslist.go:
+    id: d0da610929f6
+    last_write_checksum: sha1:90751a952f64464d93b2e3cff34889046e18e5e5
+    pristine_git_object: e830a514e63bc1ca9646f24e7c82d022ee3fede6
+  internal/cli/inboxesevents/root.go:
+    id: 532f1c520ba5
+    last_write_checksum: sha1:4ea913c84439e22998eeab965d5462a47f01e0ab
+    pristine_git_object: bedf52a1434affb7173054082c3cf630f75dc485
+  internal/cli/inboxeslists/inboxeslistscreate.go:
+    id: bb9c9930204b
+    last_write_checksum: sha1:44a79a532193b7d705c4df6c5389e8bd8ba4b351
+    pristine_git_object: 09f403a8988e1d3dd332891952b1d693851ed586
+  internal/cli/inboxeslists/inboxeslistsdelete.go:
+    id: a2be5bcbdb4e
+    last_write_checksum: sha1:b330f76d21bfc6d4efe1635514bce44011c057d1
+    pristine_git_object: b762f11512ab48a9d03d9ebc690b921b14f094b2
+  internal/cli/inboxeslists/inboxeslistsget.go:
+    id: d5f27b810e4c
+    last_write_checksum: sha1:5cf865d3058445049554d67c5cc27e74bbcbc061
+    pristine_git_object: 245d16775781c2b9a9c9daaae11c588d7b4b03c6
+  internal/cli/inboxeslists/inboxeslistslist.go:
+    id: 3ff6a6714ae1
+    last_write_checksum: sha1:54f4ee4966fb76f7c43abd50dc0c5ca96f76ece3
+    pristine_git_object: 950da708d9b650a0bca8b0319b7a0f71412f66f9
+  internal/cli/inboxeslists/root.go:
+    id: 951d5652c9a8
+    last_write_checksum: sha1:88eff07757f778bc8146f0fba8c0db60476382f9
+    pristine_git_object: 2061670123317e92a0f8b9a799c349cb325c45fb
+  internal/cli/inboxesmessages/inboxesmessagesdelete.go:
+    id: 769bc7dc88ed
+    last_write_checksum: sha1:d31fde1f1ee21aac07fdadf6cb1610fffbd46bb2
+    pristine_git_object: faf1e6229dc71125ec773f0728757c12d6d4950a
+  internal/cli/inboxesmessages/inboxesmessagesforward.go:
+    id: 17b96b8cab1f
+    last_write_checksum: sha1:b41c585ea9a2392670b1f5ad3166465f43dc3843
+    pristine_git_object: e1d23c44c6f26de89f65d899d13cfd0c4dfcf448
+  internal/cli/inboxesmessages/inboxesmessagesget.go:
+    id: aa9f3028fe69
+    last_write_checksum: sha1:1a371d26b9e2a7c72c49dddc3b89311c8c41d84c
+    pristine_git_object: 858702e2d23c9f4f4c605deb508e5891a6d18c8a
+  internal/cli/inboxesmessages/inboxesmessagesgetattachment.go:
+    id: d3478a1b8428
+    last_write_checksum: sha1:72cb1337695ba9a94d65f5f3e3848ceea402b46f
+    pristine_git_object: 385b43f75de7761fbed87183efb0130eedb5ebf0
+  internal/cli/inboxesmessages/inboxesmessagesgetraw.go:
+    id: 8c2af83a248f
+    last_write_checksum: sha1:d66cff88b105417696a4d306121b5d5b0f620982
+    pristine_git_object: 1238260ecf066fb02dc6ca317f76c013c974a698
+  internal/cli/inboxesmessages/inboxesmessageslist.go:
+    id: cf3c6470515d
+    last_write_checksum: sha1:27e204af7ce9753977acae3918e0bb09e8dce5c8
+    pristine_git_object: 507aa036e08409e3ed0571f8a4dd3eb1067b4976
+  internal/cli/inboxesmessages/inboxesmessagesreply.go:
+    id: 6969fe882d84
+    last_write_checksum: sha1:8aeeb85b1c08e002c15eea5a425c3d251fc21827
+    pristine_git_object: f19a0e37cbf71015ed4ab632136b2eb4480cbb2c
+  internal/cli/inboxesmessages/inboxesmessagesreplyall.go:
+    id: 2976dedc3574
+    last_write_checksum: sha1:ca6e1cd26cfcc26beb443256165b3876a3a770af
+    pristine_git_object: d7a6cfccc78a9540febcbb93b674aafa1d7be171
+  internal/cli/inboxesmessages/inboxesmessagessend.go:
+    id: beab915bca92
+    last_write_checksum: sha1:bf62824ed0f87b3d724e5a028af34e1b8556a990
+    pristine_git_object: be1bc1fdf821b0be28ab2e2231cc4888e55fa3e0
+  internal/cli/inboxesmessages/inboxesmessagesupdate.go:
+    id: 0a116ef33bfc
+    last_write_checksum: sha1:62dc113af2ab582c2d246eb88c6b8334a40e7f30
+    pristine_git_object: 28a4dc82c944bd3101bf2bb7e4ae79966b53d575
+  internal/cli/inboxesmessages/root.go:
+    id: 388b51ae55c4
+    last_write_checksum: sha1:668af43339e89dd09a7f1beec96246a8468ee893
+    pristine_git_object: 96e0836af74e9586ebea2d00955c7552e28eaa46
+  internal/cli/inboxesmetrics/inboxesmetricsquery.go:
+    id: 98e31b3db91f
+    last_write_checksum: sha1:b0d890e892b96b6a1d9a75f13ba208150063325c
+    pristine_git_object: 8da4a4249b43dc8288d0634b4f708f8244cfb13c
+  internal/cli/inboxesmetrics/root.go:
+    id: 6b251ce6ebcd
+    last_write_checksum: sha1:d4551601e8b798eef713f4fcb42ae2a27085524f
+    pristine_git_object: 77917437c5be8375fea1e7b11908fb83feaacd90
+  internal/cli/inboxesthreads/inboxesthreadsdelete.go:
+    id: fce05ecddfe0
+    last_write_checksum: sha1:b17a3369de66d76aa9a9624d0da18a986bf776c2
+    pristine_git_object: 08e794b7bca1ce773607a32613b9aec6fe3b7776
+  internal/cli/inboxesthreads/inboxesthreadsget.go:
+    id: f121cb9e60b2
+    last_write_checksum: sha1:fe641e4a34e8e85a652395de51d848009c806bb3
+    pristine_git_object: d0b5e2e7c4d1788fcc875f6b15567b46d1b21421
+  internal/cli/inboxesthreads/inboxesthreadsgetattachment.go:
+    id: 0d9134f73cba
+    last_write_checksum: sha1:5178dae9449b849e7fbafbdb84e2552420e55c86
+    pristine_git_object: ece9e636242f77e22e5337cb7bf65b5704b89756
+  internal/cli/inboxesthreads/inboxesthreadslist.go:
+    id: 6f9cb298af77
+    last_write_checksum: sha1:739fdb753e61a8b0240ed136d3aa05885601a100
+    pristine_git_object: dd8e1c4bb43f50285ed6d658459e5ace85410d11
+  internal/cli/inboxesthreads/inboxesthreadsupdate.go:
+    id: 830905739f31
+    last_write_checksum: sha1:4e1e2db2123d22d6964858c3dbc4560c411def16
+    pristine_git_object: acaec55ccbb3b9e6e869a86317ded73d05fbb0bd
+  internal/cli/inboxesthreads/root.go:
+    id: 5f36e7654fa5
+    last_write_checksum: sha1:6b99fe3472df256d360e15120dbd4f1c6cd452f5
+    pristine_git_object: 25dbd3591925951ecf61130a6107ade27e9ddea5
+  internal/cli/lists/listscreate.go:
+    id: 8645214ea8f5
+    last_write_checksum: sha1:c063040941e82868db83fca47f74246faf9e4848
+    pristine_git_object: 77038089ae13ac36502faf944592547ffb2912aa
+  internal/cli/lists/listsdelete.go:
+    id: 7c589b767e8d
+    last_write_checksum: sha1:96648de71e860774ab1a0eb94969026a9953bb51
+    pristine_git_object: 9aa89f47c737280afa4f74daa63e535f402139b9
+  internal/cli/lists/listsget.go:
+    id: ac669b95b385
+    last_write_checksum: sha1:7d5afd54d0e460a883ac9946bb7f756aea99760b
+    pristine_git_object: 06c79c93d1aae52430352fb73cf94f1a66528b70
+  internal/cli/lists/listslist.go:
+    id: e3e505a83abe
+    last_write_checksum: sha1:d45c0e7e82dc2238147cdc5fb6b200e9b7543811
+    pristine_git_object: ea61a5177287415331f500fc9c33e1937e1e75d8
+  internal/cli/lists/root.go:
+    id: 5d9951893a14
+    last_write_checksum: sha1:15e899cdb84186a7ecf97c0295ecb8f37eef5c81
+    pristine_git_object: c2a585cd6c29b7af9b9ffe623411ecad9f4f3dec
+  internal/cli/masking.go:
+    id: dd6ad60ba8bc
+    last_write_checksum: sha1:5a69fa055d628c1b8507cd123f3cd18309aa9a53
+    pristine_git_object: 50ef7ee485832714bbbc1c86cb50b7bcc8eb92c7
+  internal/cli/metrics/metricsquery.go:
+    id: 3f1cc3fc481b
+    last_write_checksum: sha1:ff1a08672832d7a55d23930fb785136ddc7caced
+    pristine_git_object: 6b6c34463fd23ca3595099353c32c692c1272a19
+  internal/cli/metrics/root.go:
+    id: 5d4e5d1419f0
+    last_write_checksum: sha1:b0db5d29be597aab7f76afb0045225c096b6e551
+    pristine_git_object: 2dfec3cbab45d3b68c49104fdd985c22404f8225
+  internal/cli/organizations/organizationsget.go:
+    id: 4819b688650f
+    last_write_checksum: sha1:a9b2ce61d258f34d67708ff01909f2a51503d2d1
+    pristine_git_object: aa5b4368235b7927495f40f342da681950022a77
+  internal/cli/organizations/root.go:
+    id: 3bb199705c62
+    last_write_checksum: sha1:497ecbcc8e25f652f55f680868d0f14070f56066
+    pristine_git_object: f797e8ed72d71d4a6f75129ce5d23542f2f195af
+  internal/cli/pods/podscreate.go:
+    id: 818e2d3983cf
+    last_write_checksum: sha1:5cacaeb573c18f0bf72a8607325a16972d330b21
+    pristine_git_object: f3b1b8db261f087e22173582e79e233d847884fa
+  internal/cli/pods/podsdelete.go:
+    id: 9f7644a42d85
+    last_write_checksum: sha1:757a5cefd1ec18f74d83eedc389fa19e3f7e301c
+    pristine_git_object: 9f31bfd31d9043dac412bbb597fd9535642795ff
+  internal/cli/pods/podsget.go:
+    id: aff71a588605
+    last_write_checksum: sha1:693b31cf1ad5e87514951555806feb0092af4d88
+    pristine_git_object: dc47ecfa9b7b25f06b7a4250abf24bd406be9b17
+  internal/cli/pods/podslist.go:
+    id: ebb45479e52a
+    last_write_checksum: sha1:f493c3d9f48af48c7e53feeb806fd24c3906434f
+    pristine_git_object: 5469fec3146c62f1ed1e8d01c407bf60416d4934
+  internal/cli/pods/root.go:
+    id: 26f759915161
+    last_write_checksum: sha1:58503cfc1f28b69923750c3e3afa8187d9e097eb
+    pristine_git_object: 618a8e5082ecd0e24cc5e04c5c2b1ec978b29ab4
+  internal/cli/podsapikeys/podsapikeyscreate.go:
+    id: e81b8023ff20
+    last_write_checksum: sha1:277b2da9315165ec2cd7f1e2c7649846f3a4180b
+    pristine_git_object: 535b952dc0bb41a4f779f1baf411a52913500f49
+  internal/cli/podsapikeys/podsapikeysdelete.go:
+    id: 9c19145b93ec
+    last_write_checksum: sha1:78a7cd37da871a8f7150322a0f53bd3be426d33c
+    pristine_git_object: fd1afc3ace2555cefa06ec55f15d097ed087c4ed
+  internal/cli/podsapikeys/podsapikeyslist.go:
+    id: 39663a67043e
+    last_write_checksum: sha1:eaf2bb5813b4253a0ea8410f54d756a12f32d0cd
+    pristine_git_object: e3f66f7d2a98773999027096cf1516e6af65e2af
+  internal/cli/podsapikeys/root.go:
+    id: 26a4c4393703
+    last_write_checksum: sha1:933e313087185cce7cbfc4428054ffd952127431
+    pristine_git_object: 83fc4f172e748763283b44d173c8d8cf578ee079
+  internal/cli/podsdomains/podsdomainscreate.go:
+    id: bd0e3e85bab0
+    last_write_checksum: sha1:c10e3d5ef9b3bc83b8e8bef96f8d4fa70a767609
+    pristine_git_object: b7b8a4c422d529be64b06eccf97d01cab0884ce1
+  internal/cli/podsdomains/podsdomainsdelete.go:
+    id: df43a0e1bd99
+    last_write_checksum: sha1:d6451484915908f318198741ffb143710d8f4436
+    pristine_git_object: 4cb40aa9459cc17fba28bab92d834713bab7d29c
+  internal/cli/podsdomains/podsdomainsget.go:
+    id: 18476d0b4211
+    last_write_checksum: sha1:c36a99e3cf5e864ef8a5d864dc524c980a5eacbb
+    pristine_git_object: fad3c8afb5f036f028d162668781cbfaa23d2cf0
+  internal/cli/podsdomains/podsdomainsgetzonefile.go:
+    id: 10ed6b0829a0
+    last_write_checksum: sha1:67d1e97e76d9e2767d8ea5fa5ffb4e62eff89323
+    pristine_git_object: 871d034cb48cbec23a10fcf645b0a112c391fcd4
+  internal/cli/podsdomains/podsdomainslist.go:
+    id: d0a731850a20
+    last_write_checksum: sha1:63385d04c0a965c3bf66a0abce1ab7d7b44ea743
+    pristine_git_object: c613e80f4f3b40440e4067819acab7c9ee765fdf
+  internal/cli/podsdomains/podsdomainsupdate.go:
+    id: b6a44c1cac2b
+    last_write_checksum: sha1:a5503cc970d7ada91dd61f22019f100f80419977
+    pristine_git_object: d5f239af8bb655279f0b921e5c04d0acd1f18490
+  internal/cli/podsdomains/podsdomainsverify.go:
+    id: 4c99b371b0c4
+    last_write_checksum: sha1:48690e7704ad46b3c4d1ef0f3696090578f9acb1
+    pristine_git_object: 5eaae8d36c76e143352ccb409cdfcd14d2062aa1
+  internal/cli/podsdomains/root.go:
+    id: 312329b1f213
+    last_write_checksum: sha1:34364fa54bcab74acaa040c37ae390df050416cf
+    pristine_git_object: 52626a9ec08113703bdcc61df616a2b450810fe5
+  internal/cli/podsdrafts/podsdraftsget.go:
+    id: d03f04b68d9e
+    last_write_checksum: sha1:4337a49e0bc8bb96aad0fe05eb3b75ba518dc56e
+    pristine_git_object: 173a07a99441cc6d29393de3c65660944758d14f
+  internal/cli/podsdrafts/podsdraftsgetattachment.go:
+    id: 96f5820dcbaf
+    last_write_checksum: sha1:b0cc38209b4dc34ac25bff2f38b0f89aee7274b4
+    pristine_git_object: e395a955ea4456f757550445828f42c811214d5b
+  internal/cli/podsdrafts/podsdraftslist.go:
+    id: ff3435c932b4
+    last_write_checksum: sha1:518ffec2d703106b17f91b872a1c51de9f858ca5
+    pristine_git_object: a92d7f5917d851f0031c256e6b53562f3027ea24
+  internal/cli/podsdrafts/root.go:
+    id: 6902b97d0292
+    last_write_checksum: sha1:784f5f42ed9d7736fba5dac0d7838f42a2685ed2
+    pristine_git_object: a94672eeec5dc4a3f603c6523399c89de25917f3
+  internal/cli/podsinboxes/podsinboxescreate.go:
+    id: 8a71e942d1f6
+    last_write_checksum: sha1:05bd4a0898b40fd103f571e7ae91c2f544d747e1
+    pristine_git_object: bb18ff000e185e453a0d0426d62927dd398aa779
+  internal/cli/podsinboxes/podsinboxesdelete.go:
+    id: 62237220942d
+    last_write_checksum: sha1:2d37c415b8f9e5ac627b948b7f8a62155fd60e56
+    pristine_git_object: ba26b9b2667beddcc807f1600232f5c58400c10c
+  internal/cli/podsinboxes/podsinboxesget.go:
+    id: 80399b702210
+    last_write_checksum: sha1:eb9c9542a4397fba230476767cf39c25e2de17b1
+    pristine_git_object: 0a9bcd8abcc26bb0c66c95e3ec72fba1b30c38f2
+  internal/cli/podsinboxes/podsinboxeslist.go:
+    id: 3b384129e469
+    last_write_checksum: sha1:66fd0b6fb3c9192179ff3c43eb4d00aecb1b3375
+    pristine_git_object: cc629593293bb6e53363d73ea03cf65cd73dec99
+  internal/cli/podsinboxes/podsinboxesupdate.go:
+    id: 9070ae7449f0
+    last_write_checksum: sha1:ef82a021bba629cf4c65e96044809635360c06f6
+    pristine_git_object: 99ca59b678fc8f66dd23cb5e8805e7b6b6c3d54e
+  internal/cli/podsinboxes/root.go:
+    id: 7899d2984fba
+    last_write_checksum: sha1:7c2f88c37d590b65e56edee23415a99d89f77a2c
+    pristine_git_object: cf2fc8815d31cf2a682a4cdfa37b2ded39bf78ff
+  internal/cli/podslists/podslistscreate.go:
+    id: 0a0b9f53a272
+    last_write_checksum: sha1:8f1309228ce485a031e7fe8d9781f1f44d6fa8cc
+    pristine_git_object: 36c34e316436da147c862eab3d897d09a536ce7d
+  internal/cli/podslists/podslistsdelete.go:
+    id: c5cbb440836f
+    last_write_checksum: sha1:100544302f21ac542f5b77d2053f3aaac036eed3
+    pristine_git_object: 3e1d7800a3c49469ed1aab6f78db7d8d46d1444e
+  internal/cli/podslists/podslistsget.go:
+    id: 57ddd23a1c7a
+    last_write_checksum: sha1:e1ca1b1ef305a94fe256394832ae996c6b5c5cc7
+    pristine_git_object: 32c925a29ca522714a8c84c8428a8f7fce1dbf40
+  internal/cli/podslists/podslistslist.go:
+    id: 003587eeca8c
+    last_write_checksum: sha1:4d7b0f8d92aecc8ff8536341a0de6ea4d44f42cb
+    pristine_git_object: 216c8a3e53dd040b7289eec1d590df449602f6f2
+  internal/cli/podslists/root.go:
+    id: ccc85ebfcb8f
+    last_write_checksum: sha1:9ae84871e54688e163f27e6ae6c22d7e10cfade4
+    pristine_git_object: 63cc54aa81ed932a1368b30b53e5fe26dc5e38a4
+  internal/cli/podsmetrics/podsmetricsquery.go:
+    id: 71de223e4aaf
+    last_write_checksum: sha1:87d3bda526cc0d811bc9575fa97ea3354794c16d
+    pristine_git_object: fbc122f3486389bf8cca74a390ec2135d981c650
+  internal/cli/podsmetrics/root.go:
+    id: 65e9d7d5132e
+    last_write_checksum: sha1:68dee4e62c53a5871417e3208fb6148b713dce94
+    pristine_git_object: 02973a2ab06c670d4c5792961ecb4b90f411d63f
+  internal/cli/podsthreads/podsthreadsdelete.go:
+    id: 1c5eafe97abe
+    last_write_checksum: sha1:7e2ccd79d5d1d0c6e2cb3e8d376f36a6614561a6
+    pristine_git_object: 75022768df243222076c1fdb7434015ac2e73295
+  internal/cli/podsthreads/podsthreadsget.go:
+    id: 41cf529f02e5
+    last_write_checksum: sha1:f0b7b976f29e438b31934aacf7d3b5009bba684e
+    pristine_git_object: 5c60e563987c12fcbaf9d0984457331b5c02a8ad
+  internal/cli/podsthreads/podsthreadsgetattachment.go:
+    id: ff3f2404ca2a
+    last_write_checksum: sha1:cc56268806b9b454f86a262a671690eeafe64e30
+    pristine_git_object: 0c363eec539f294949e7fe55b1ea3c778b555d4b
+  internal/cli/podsthreads/podsthreadslist.go:
+    id: 240eeeb9e9f5
+    last_write_checksum: sha1:8d5dcb6dfeb9667f5f7735d4c727375d4f767984
+    pristine_git_object: 30297595f8876c5325da5509d019b44785cc218b
+  internal/cli/podsthreads/podsthreadsupdate.go:
+    id: e9887212c945
+    last_write_checksum: sha1:f808d59b4ce8824a5a532c1d51e88f8b15d6d7e1
+    pristine_git_object: 7778594d890ac287d47e1e99b8d64894e563649b
+  internal/cli/podsthreads/root.go:
+    id: 65a094c45e82
+    last_write_checksum: sha1:5557257d9663f4c1618e38dad0c9d3b4d1c3a01c
+    pristine_git_object: 7547356379375a9da3a1c72b7782834ad9fa4dac
+  internal/cli/root.go:
+    id: 239d55a0d6be
+    last_write_checksum: sha1:081f8521f5db391326bad1d5fe2fc98c9ddb863d
+    pristine_git_object: de7e58c8d67ed7bbb16330f14a1afdd92414f63f
+  internal/cli/threads/root.go:
+    id: 9bda5a508612
+    last_write_checksum: sha1:dc86c01d3ff82c29a3ba57649c7650815a8335a5
+    pristine_git_object: 69ce2d86902e54f29fb289ecf7168d6a5cddabf3
+  internal/cli/threads/threadsdelete.go:
+    id: b47eac51ee75
+    last_write_checksum: sha1:ad96db10b8b6a90f87c436f7509b6aeb64f2a5b2
+    pristine_git_object: c3cdf3c00a3b0fff6bfde3fb9ae59a15fa120e01
+  internal/cli/threads/threadsget.go:
+    id: a79671e51651
+    last_write_checksum: sha1:f0484a739214b48c39f7deeaa9e522b7e949761a
+    pristine_git_object: 60500c4110360691ea83d6871a6ce23da6918901
+  internal/cli/threads/threadsgetattachment.go:
+    id: 1032d1ed6eb2
+    last_write_checksum: sha1:b43a1431eda02cf8c49590c641f264e51aa34bab
+    pristine_git_object: b7cce2fe33cec765df49ff1e4acfba0b8a621626
+  internal/cli/threads/threadslist.go:
+    id: 82f19c8b6e23
+    last_write_checksum: sha1:c5b6e452795e48f860ebf2206f4494793efe91fb
+    pristine_git_object: 0129f978a1aca0097a5936379f969d4d28158902
+  internal/cli/threads/threadsupdate.go:
+    id: cdf0c7d59e6f
+    last_write_checksum: sha1:dcd168992567b941231b88f572480c0167ca36de
+    pristine_git_object: 4b5b8034219a8c62271b3fe926fb843af8e1abb7
+  internal/cli/version.go:
+    id: 7b0665492f72
+    last_write_checksum: sha1:ef560ae5b8a86eebf2a85d70fba7442e98cf816f
+    pristine_git_object: 20266a11364ffb80a68c7ee66a5f5a63e8d6ccbb
+  internal/cli/webhooks/root.go:
+    id: 5a347bd41522
+    last_write_checksum: sha1:07f0e71fac79561ec5ae555c841aebc4de91a7ed
+    pristine_git_object: 52657463eb88f02446f2206d2075e67fe070775a
+  internal/cli/webhooks/webhookscreate.go:
+    id: 02d6fc314517
+    last_write_checksum: sha1:812453120ab67a2992f1ed659016cc5ff1fc71cf
+    pristine_git_object: d79a6ab354c6130f5a6e8daaede88128aa38f19f
+  internal/cli/webhooks/webhooksdelete.go:
+    id: 8317d9c03834
+    last_write_checksum: sha1:d28845ccdc7597dedb7cf516099bc9e56a62640e
+    pristine_git_object: 4ac499842894068266992671b9e1f3413e1073a8
+  internal/cli/webhooks/webhooksget.go:
+    id: a41efdb3cd9d
+    last_write_checksum: sha1:1eb91af5f5c0065cb06a3b49f82d0c085b8316ce
+    pristine_git_object: a931d7b8bad5b477af1e38baf192f9a0756e80b3
+  internal/cli/webhooks/webhookslist.go:
+    id: a1b1995938f6
+    last_write_checksum: sha1:8bc222c622d470acaf7a1e6c33c7800721c4ae78
+    pristine_git_object: 4680eb00b4d23ce2a484a806a0eb918a85c2b691
+  internal/cli/webhooks/webhooksupdate.go:
+    id: 40a2d328a985
+    last_write_checksum: sha1:54fa59cc5a06a70ab1426d9b04e07f1ddd95824e
+    pristine_git_object: 3e609ae35a8a655d73a763125e3d3995e722a935
+  internal/cli/whoami.go:
+    id: c1787f2298ec
+    last_write_checksum: sha1:285db795e2097afdfd46d882f488f6493d1b065b
+    pristine_git_object: 9ba50bfafd26504e839bb810fd9a5f01626a8ac5
+  internal/client/client.go:
+    id: 5898305eedad
+    last_write_checksum: sha1:0fa24c8d4445a274bd8c2bb2f23aa017e1588172
+    pristine_git_object: a8d058685ad109a6f5c8a28af247008032897445
+  internal/client/diagnostics.go:
+    id: b4a77b4f6df9
+    last_write_checksum: sha1:bc8ed2c78ce6c3846aec4158a543157baf99f9ca
+    pristine_git_object: ba850e0a7767ab6480ad30eaff0b6714da58cee0
+  internal/config/config.go:
+    id: 4ccc1a5e56a7
+    last_write_checksum: sha1:d043a801d6d382340ce530315b9e757c8c7dee9d
+    pristine_git_object: b0df87b3929777c70ae74be1b764c0cfef9705a6
+  internal/config/keyring.go:
+    id: 61bf1449e290
+    last_write_checksum: sha1:26003ef4f52c8734520f8ab8950f3f56a61f16e8
+    pristine_git_object: d54bfc80f87672db97d9638d7f8efcc6c220fa78
+  internal/explorer/explorer.go:
+    id: 544a9bc78db8
+    last_write_checksum: sha1:fce74125eb90e8db82b77cc0f0c96d10bc30bfb9
+    pristine_git_object: 5ef8f627ea103e8970265e216e4a49945dfd9b06
+  internal/explorer/styles.go:
+    id: f50091b6a6af
+    last_write_checksum: sha1:2828c2efe410bee01a8563e1cf7cc985d4d29ee8
+    pristine_git_object: f1124744344d02757ed0a8c87518a714e59cb854
+  internal/explorer/tree.go:
+    id: 81129f3c3c04
+    last_write_checksum: sha1:16dea1c4b16d808202bf0c6f819fb5fba285ade7
+    pristine_git_object: c85dee2441a6a8490edc0a5e7fbf33cde92f088e
+  internal/explorer/tui.go:
+    id: 9bee7d6a891e
+    last_write_checksum: sha1:6323b44c3089bf6cab45c7c7df1d862fea349b7c
+    pristine_git_object: 7035f3c6dbeb6eb30001ddb1d6d8ba97802183e3
+  internal/flagutil/flags.go:
+    id: 9e81d6ab2674
+    last_write_checksum: sha1:d4a4640b46562ae38fb0d55ec14eee7a7bcc7601
+    pristine_git_object: 469b0c9597280df2da7d1bda77c7ea06f9ed132f
+  internal/flagutil/metadata.go:
+    id: d22ccf2128e9
+    last_write_checksum: sha1:b8dea4727c760ac7bd3efd0d928ab25b7ae5be80
+    pristine_git_object: f94e46f078944275b98acfe35ae8731ba8c68c66
+  internal/interactive/interactive.go:
+    id: 35e3347980bb
+    last_write_checksum: sha1:e18dc5f3f2d95de789d2742e3d74acb3e213eabc
+    pristine_git_object: 4bbfb6f1a760245960ff8673734b62c23f6dd8de
+  internal/output/agentmode.go:
+    id: de6b0ed77d1c
+    last_write_checksum: sha1:8b00562c6a1be95838ab0a8654e7ffd0aa6c6599
+    pristine_git_object: 42953aba5becd0822171a605990b71c46487c63d
+  internal/output/binary.go:
+    id: 2fe6fdfa4747
+    last_write_checksum: sha1:6f8ee6dc8ee45547c3d5cb2d86e78f65f1d273be
+    pristine_git_object: 61bad43b10a5031b7373300ac171d1d362990918
+  internal/output/color.go:
+    id: d240050a2a84
+    last_write_checksum: sha1:c618ec769569213c248114c0e42b07582fffefcc
+    pristine_git_object: d7c74560e580e33392f0667297d9fd6f5f0cd55e
+  internal/output/jq.go:
+    id: a0e589d8385d
+    last_write_checksum: sha1:37f028aa252cf0ae8b4c90b49396bcddab05c900
+    pristine_git_object: 93e700b50ec83246fa1ac65b530c41f89cb0806f
+  internal/output/output.go:
+    id: a9c3352b3b56
+    last_write_checksum: sha1:0e18233497715025c1ade647da63f05d95e593a2
+    pristine_git_object: a5193eb19f9cad2eb713e677af2c866bfdcd03bf
+  internal/output/pretty.go:
+    id: ef4c76789fd4
+    last_write_checksum: sha1:3a40fae5d40a578667ba06448419d8f6c5549e20
+    pristine_git_object: 942a964e78a81ad9d9590cc67138a0c4c3569fc9
+  internal/sdk/.gitattributes:
+    id: 1ea4c4e0a39d
+    last_write_checksum: sha1:84b0115789fc3ea52e31df701d8a27f76077e29f
+    pristine_git_object: e6a994416d0f527912d2d272e2583458f4fc9bcb
+  internal/sdk/agent.go:
+    id: 2bc402f33132
+    last_write_checksum: sha1:52101d316ff4e7df31210aad534ff9c596adc682
+    pristine_git_object: 9efb4e0771c6b537787727fafd2f6d4cca81c651
+  internal/sdk/agentmailcli.go:
+    id: 86d18d36f19f
+    last_write_checksum: sha1:328789cdce9168a24dc3c5eea226deb0e68a9d79
+    pristine_git_object: cf55c29598f71d3ae888d03dfc0d9252050ce922
+  internal/sdk/apikeys.go:
+    id: a40d4b208cc3
+    last_write_checksum: sha1:699b9fa8ff59d9e4d6d4143ab7ab6bb9ea3669ed
+    pristine_git_object: c193946bc3d8509cd5dfa53609171a088935ed04
+  internal/sdk/docs/models/operations/option.md:
+    id: a35737eb2e35
+    last_write_checksum: sha1:2c277f71acf0959ac1870d901d71c0ccd39bae42
+    pristine_git_object: 4e1c86ed3a7d4f752cdf3f365055df50f4e997aa
+  internal/sdk/domains.go:
+    id: b0cb4c52ef7b
+    last_write_checksum: sha1:907e5e2d827a8b556c4042d25a3b28cf94239e05
+    pristine_git_object: 15021f723646838a964473b14748a007980570ee
+  internal/sdk/drafts.go:
+    id: dc71bff05366
+    last_write_checksum: sha1:9e8d1cde38023918f58619acbac160a2e58b8bbf
+    pristine_git_object: d666c48f8ebbd82be5896ba173260ce9b548acc6
+  internal/sdk/inboxes.go:
+    id: ccf45aed945f
+    last_write_checksum: sha1:a83348d2fb3224b1c4f86d78d882ae660bf5dba1
+    pristine_git_object: ec0bc4b37c28c9893bdf5d6ad4249d45adf3c831
+  internal/sdk/inboxesapikeys.go:
+    id: cc2d5f8db9e7
+    last_write_checksum: sha1:687aa9ad8bcd016fef2bf14216379e50abe810e6
+    pristine_git_object: b5982f78f26e1c6be58700acb6cd410cf3d25f36
+  internal/sdk/inboxesdrafts.go:
+    id: 89d2a7c0e362
+    last_write_checksum: sha1:d1aa3650cd660c629827945e20597314559fd62d
+    pristine_git_object: df4364cfe23b34e218f8e4a5e465763ec58a3240
+  internal/sdk/inboxesevents.go:
+    id: 7d125da904ca
+    last_write_checksum: sha1:e9de1160cb0d389a132a7bb2f522127078b817d7
+    pristine_git_object: bf14a0fb6ce8c41c798fd2d4facf349ce068af63
+  internal/sdk/inboxeslists.go:
+    id: eae7ddfef843
+    last_write_checksum: sha1:09197928a0f66899baf11de704279e3ac6218dcd
+    pristine_git_object: d919ee354e5c3f7d4e91b6804aa7fea726841efe
+  internal/sdk/inboxesmessages.go:
+    id: cf3740c2358b
+    last_write_checksum: sha1:47a4bf9df9b0b913b5419bc6ac1968f3cae28f38
+    pristine_git_object: ca6f0e0b2f1c4ee87bdb4d945513350e9e16b9cc
+  internal/sdk/inboxesmetrics.go:
+    id: ac42518c7c94
+    last_write_checksum: sha1:ea71a691d975ffa9d478e3eaad7e27fcce34ee14
+    pristine_git_object: 81a36acd7b97f0d43eebb7af775ee11fbbe4cf9c
+  internal/sdk/inboxesthreads.go:
+    id: 9ca5d9a9d54d
+    last_write_checksum: sha1:afe5aa6a6fde9549922a5465afc55260b45a7128
+    pristine_git_object: 715770cdcd222bf939d063d791b0baf5fca51ee9
+  internal/sdk/lists.go:
+    id: 0511e477d9a2
+    last_write_checksum: sha1:27186bdbcdd3bdbbcaad4a4628eea6c5db76b02d
+    pristine_git_object: cabe65c5595108ce009cb7b973480acaee8ff482
+  internal/sdk/metrics.go:
+    id: c7e79e689e86
+    last_write_checksum: sha1:d705677f30cc64741a5bc64047e7a503248ae1e2
+    pristine_git_object: 1458443a471ff1544739683d3555819affaf74a8
+  internal/sdk/models/components/agentsignuprequest.go:
+    id: 644f147adf39
+    last_write_checksum: sha1:f0c672a018d08724dce3651eb05e26d86a93a13d
+    pristine_git_object: a6a31b9997a4a60bd56e6dbc81a55448a57741f1
+  internal/sdk/models/components/agentsignupresponse.go:
+    id: 634e240d87f0
+    last_write_checksum: sha1:97e7322156fcff38571332aa140264acfa82770a
+    pristine_git_object: 33bf83fa98d494800f0ed152544adf12ffcd7435
+  internal/sdk/models/components/agentverifyrequest.go:
+    id: fd514773ab7b
+    last_write_checksum: sha1:97b0d025b81444113003499565b9b7ab46b9c3c4
+    pristine_git_object: 2aaab71a1cf68cef0f26802ca93b4da0e0311a1e
+  internal/sdk/models/components/agentverifyresponse.go:
+    id: 88f99100a6bd
+    last_write_checksum: sha1:b9c4a89cd3520ab6cb095bb8f59cab3fc75f8ad3
+    pristine_git_object: 8f32f139ae6b26e97cc86417e716e668237b7077
+  internal/sdk/models/components/apikey.go:
+    id: 4631567a5c50
+    last_write_checksum: sha1:2c2e3dd37124576ea3776a4f276792dc5eebcbc5
+    pristine_git_object: 9236adfa7dbda2470f4ee285fe84ebd410118f53
+  internal/sdk/models/components/apikeypermissions.go:
+    id: 39b5ed6b2e82
+    last_write_checksum: sha1:4be912b589677914a13ba9e72d880f2c382b4184
+    pristine_git_object: 677c575caac6c1b76b58a24cf51e6f94761bfa55
+  internal/sdk/models/components/attachment.go:
+    id: c3a4c7172031
+    last_write_checksum: sha1:8d9099798d8a3c8a67e4b8db05254a441a69258d
+    pristine_git_object: e01ac05ed65220272cda8044cbb2ec9648c91bb4
+  internal/sdk/models/components/attachmentcontentdisposition.go:
+    id: 5e52a2285d6a
+    last_write_checksum: sha1:14d894dfc6dac2280d4318bb5c55437fbdee9d97
+    pristine_git_object: 35ea8926971da00eb4850f4433a32b40e1b81dce
+  internal/sdk/models/components/attachmentresponse.go:
+    id: 0b4bdf8ef250
+    last_write_checksum: sha1:2dac5c55761a93ae861abcac10217d13f5f991a0
+    pristine_git_object: 2c0cc039f4a37e6c61b9fe6654fba40107d7d068
+  internal/sdk/models/components/createapikeyrequest.go:
+    id: d93d93569f6d
+    last_write_checksum: sha1:7d58f8b57f5f086eaa536fc72b6ecadb728ad549
+    pristine_git_object: 8de0990224731d0d66a2d0b55e06c46b7b81add5
+  internal/sdk/models/components/createapikeyresponse.go:
+    id: 3dcfc5ab28a8
+    last_write_checksum: sha1:90a908f280672cefa6a2c75e170685740bda53e7
+    pristine_git_object: 4777f475878810925841fa8ce1b9101b90823184
+  internal/sdk/models/components/createdomainrequest.go:
+    id: e560b9777d6c
+    last_write_checksum: sha1:640365ddf49a02de0dadacab6459648edf0a9bec
+    pristine_git_object: 9249f82b577a8dabb0af6b61634472b9565ebfc9
+  internal/sdk/models/components/createdraftrequest.go:
+    id: c6664837bcb5
+    last_write_checksum: sha1:22972ca1bc9234caa1918394a4f3a5934941c01a
+    pristine_git_object: a7a7c0ca4744d9a221e549fc0f6ff35b769165d4
+  internal/sdk/models/components/createlistentryrequest.go:
+    id: 33553e9c5073
+    last_write_checksum: sha1:669bc6ba98463fc1ce1c64764288bc804ff95d50
+    pristine_git_object: 2ef4681c2f46de0bc1d571cd14192d40762eb118
+  internal/sdk/models/components/direction.go:
+    id: 49878c72e52c
+    last_write_checksum: sha1:bcb62cf12502883a6406667e6745d1680046f6c2
+    pristine_git_object: 059a311253ef91b0339a234835ed821416a3e8fb
+  internal/sdk/models/components/domain.go:
+    id: a6700439568d
+    last_write_checksum: sha1:cbbed655ba0837bdb10b3fd732b967472b2a8cb4
+    pristine_git_object: c742bcdda19bb209cb81408b4bdd78eb2857ee12
+  internal/sdk/models/components/domainitem.go:
+    id: bf504e5e1380
+    last_write_checksum: sha1:aef4888465bef1fa333bfd3062f93631dfe16eb3
+    pristine_git_object: 0d4114ea36f48e66f103a5dc28bac4989fa54ee3
+  internal/sdk/models/components/draft.go:
+    id: b590563ce2c6
+    last_write_checksum: sha1:23a351f2c0333472f7e0cee9b6d196bdae795ead
+    pristine_git_object: e265d23b582bf994b20a2d40473bb5898e0d02fa
+  internal/sdk/models/components/draftitem.go:
+    id: 89da804a9c33
+    last_write_checksum: sha1:b16fd0c111bede6b458b4adebae665171c1a5361
+    pristine_git_object: 458c9615f08614e2b7e26a19458b578991ed2fde
+  internal/sdk/models/components/draftsendstatus.go:
+    id: f3184ee376a3
+    last_write_checksum: sha1:adc372eace1171db630717090cfb797acdf96fc0
+    pristine_git_object: 6af3e2d03ead1562a3a4f062d6ee691b23972949
+  internal/sdk/models/components/entrytype.go:
+    id: 769cf250a6f7
+    last_write_checksum: sha1:5e5a362e64f98af3e773d8005bb5367a297fecff
+    pristine_git_object: 0300907bbf4b2e73b66f355ba21bc2159f1ac123
+  internal/sdk/models/components/eventtype.go:
+    id: 9d01b56dc0ce
+    last_write_checksum: sha1:6c3838863493d96af982d5edf21a5fb649e614e1
+    pristine_git_object: 24f3eb91e0a8445a363cc1bc3e1ca5e6458436c2
+  internal/sdk/models/components/httpmetadata.go:
+    id: 2e30cdb779b3
+    last_write_checksum: sha1:01a20fcff33179809ff9920ee431c7adabbd98f1
+    pristine_git_object: 148ec47fb2dea6c188ec68eb3532d93169608168
+  internal/sdk/models/components/inboxescreateinboxrequest.go:
+    id: 24389c667b79
+    last_write_checksum: sha1:c9d20b0d7c1777831225fb8b960ecb3929819c85
+    pristine_git_object: 657bda89909476c7f9314003c4d8a8338c68422a
+  internal/sdk/models/components/inboxesinbox.go:
+    id: 75fe7afd4955
+    last_write_checksum: sha1:e919c673adcaaabe3247ad45ffec4d8178aa482a
+    pristine_git_object: 10fc230221c0bd547cac5abac777356f86dc402e
+  internal/sdk/models/components/inboxeslistinboxesresponse.go:
+    id: a4199acac27f
+    last_write_checksum: sha1:ae18a82f25a4bc234edbb9df525785ce474f9de8
+    pristine_git_object: 0bafe2484ade3244aa33145038f53756c3e7df1d
+  internal/sdk/models/components/inboxesupdateinboxrequest.go:
+    id: 15100a4022cd
+    last_write_checksum: sha1:aa848d3a3e223d5e337bec8e7700e3c5e9262473
+    pristine_git_object: 40dac4308ff6b1023e22806853c0d5b0c20fd940
+  internal/sdk/models/components/inboxevent.go:
+    id: e482012045f8
+    last_write_checksum: sha1:f9f0bf1f6d39238045b6e25c1b1579ac5c9e737b
+    pristine_git_object: 88562927b95cad0137ef1855a4f6c81f00d8523c
+  internal/sdk/models/components/inboxeventtype.go:
+    id: ff937e50e28f
+    last_write_checksum: sha1:319a0a6717157d2c192773ae434f6a89074275bf
+    pristine_git_object: f8850d386b5d4b1a40645614b74a36abc298d86d
+  internal/sdk/models/components/listapikeysresponse.go:
+    id: a0e17f0c41e4
+    last_write_checksum: sha1:5a68e8b6ef4ca914473084ebf078f83909e67722
+    pristine_git_object: 3484e1ca6657bf90ad9ed70cc58ffcf515f3b4c9
+  internal/sdk/models/components/listdomainsresponse.go:
+    id: d1dc6f929f8d
+    last_write_checksum: sha1:690ef17cbd422fc4d3e3f11ff21308fd41a33b16
+    pristine_git_object: e2ed214344e6e2ae9c79c94d8d1a420310806a65
+  internal/sdk/models/components/listdraftsresponse.go:
+    id: 0c410d3e4f98
+    last_write_checksum: sha1:7ca7176bf951b677e4e4b89b878bd6a1f15180c9
+    pristine_git_object: 0d545051f81c8357b08300f0ef1c705933300045
+  internal/sdk/models/components/listentry.go:
+    id: e67c5ce381c4
+    last_write_checksum: sha1:eecf1cb5dbcb39ffc2382e03674555c5d692aac5
+    pristine_git_object: 8363f0777b320fe6abafe05cec112234ae7351c0
+  internal/sdk/models/components/listinboxeventsresponse.go:
+    id: 4dd22ad7fa9c
+    last_write_checksum: sha1:dec44fa2d694a6447035f62b39e2f9fde5884a20
+    pristine_git_object: 248cb3a8890ec368a3ea089a57bca9c44e384ff1
+  internal/sdk/models/components/listlistentriesresponse.go:
+    id: 97505096126c
+    last_write_checksum: sha1:7fdbb229c1d679081f2f8c1c9824c9d99ae51c6a
+    pristine_git_object: 1217b24ba157e3bf60f1f2c595d1c0d629350c90
+  internal/sdk/models/components/listmessagesresponse.go:
+    id: ecd6c6851358
+    last_write_checksum: sha1:fa53c3f2e348c83c3b128d63714475d8d890c7df
+    pristine_git_object: c3b09a70bf782cb62c384c1fa5f9ac1dee2b0e58
+  internal/sdk/models/components/listthreadsresponse.go:
+    id: 202cfed5d66a
+    last_write_checksum: sha1:b3f774cbd95da116530b9bf84584a56f2d8c9590
+    pristine_git_object: b7bcfa1a9734238f3359acdad83bda5a9b2d5b80
+  internal/sdk/models/components/listtype.go:
+    id: 89e2b39d1986
+    last_write_checksum: sha1:85d4bccdff8cc9871ca73cac12ab147704223c15
+    pristine_git_object: fbcd406f90d1e80f8de9f0d402f751474b3a6620
+  internal/sdk/models/components/message.go:
+    id: f7bd73edcf7f
+    last_write_checksum: sha1:d1d4629e3e3614827eb3662cab85480b0d697b93
+    pristine_git_object: e7cca99700a542289c0077b7a3081ad21c03c174
+  internal/sdk/models/components/messageitem.go:
+    id: 4f7f198409b3
+    last_write_checksum: sha1:c9bff89bde9f808767ea09239aba0288f96e6c8c
+    pristine_git_object: adcb53398049f11b94c2a3b86f3091c92bec40e4
+  internal/sdk/models/components/metricbucket.go:
+    id: 029a37bd4343
+    last_write_checksum: sha1:f61df038db8b7d42496c61d414dbc389def18df0
+    pristine_git_object: 435c09f3182369006232b5024723fc9c4e6fe4c1
+  internal/sdk/models/components/metriceventtype.go:
+    id: fa598f62b27f
+    last_write_checksum: sha1:7ec5ede14bfc2d665da8bbcffd2fb0faa472bd54
+    pristine_git_object: a9a3ad3c1add15ba3b511f4234f58395c0cbd16d
+  internal/sdk/models/components/organization.go:
+    id: e22cf06c6338
+    last_write_checksum: sha1:0e831c3b716613d9db92e6a2f98e0658fa0875fb
+    pristine_git_object: 200668b71633e9d09f5b17f63a6fcda0b7dcac08
+  internal/sdk/models/components/podlistentry.go:
+    id: 7d47c4ef5ce3
+    last_write_checksum: sha1:0a4c47f9917d8e4920cc9f610dcd2416d983b25e
+    pristine_git_object: 8f649343866f044f26c1009c13f85cbbf83a8dd8
+  internal/sdk/models/components/podlistlistentriesresponse.go:
+    id: 7add0f20c9fb
+    last_write_checksum: sha1:33ac0a7f11eea996596a59abb6e7bbcab0b41bee
+    pristine_git_object: 5c55f4fafd3b2dc36b1cd410c55ec806a7bc9086
+  internal/sdk/models/components/podscreatepodrequest.go:
+    id: a5d3a666ed69
+    last_write_checksum: sha1:13eea070efa2d1644609f111639612f7d16cf0fd
+    pristine_git_object: 8115ae41749b91ddb0c3461e57636e74cab0524a
+  internal/sdk/models/components/podslistpodsresponse.go:
+    id: 6f1261315eca
+    last_write_checksum: sha1:913fa230e9612369e39a7dd28d170bffa3d8bc51
+    pristine_git_object: 46067927ec6381719ec77894c226c62ccd97227a
+  internal/sdk/models/components/podspod.go:
+    id: baf26bff2fe6
+    last_write_checksum: sha1:9980087ba18aa2769ef9ad7d24e7dd125d7a5370
+    pristine_git_object: dc12880f685ebc196ea6e9ba600184131c229176
+  internal/sdk/models/components/rawmessageresponse.go:
+    id: 9441b3394c71
+    last_write_checksum: sha1:0b2b0dd6c6a14d6cc2442591d90a52ed874fe822
+    pristine_git_object: 2264466aa5e14f1c6408b54b486ba11ae1a9f6be
+  internal/sdk/models/components/recordstatus.go:
+    id: 49a65b469e5f
+    last_write_checksum: sha1:8ef40cf07dfd557b1abd08042dd09b8480d559c3
+    pristine_git_object: ff7eacb80cf5f1781d47ee64aee18128753e34bd
+  internal/sdk/models/components/recordtype.go:
+    id: 961ce1a53487
+    last_write_checksum: sha1:0c777a06c88d849756c1b473e236dbca6daca4db
+    pristine_git_object: 44fcbf73949b6ee8c0f6382d9cc627ac74162ca2
+  internal/sdk/models/components/replyallmessagerequest.go:
+    id: 7146bf0c6e19
+    last_write_checksum: sha1:aa542d19dbb0611ac7cf7f99704cd942c9aeb2d6
+    pristine_git_object: d821d6a91f0ee594d51ab29cc3711e645bacd64d
+  internal/sdk/models/components/replytomessagerequest.go:
+    id: 14334582be34
+    last_write_checksum: sha1:ea9fceb98ce921ed03ea663eba0de534aa3c5736
+    pristine_git_object: c43d6df065703d10f6d886df87361fcc2814ee7f
+  internal/sdk/models/components/security.go:
+    id: c1a78fe12ea5
+    last_write_checksum: sha1:4014b6a8bd76fb56465994151c97abc70c680327
+    pristine_git_object: 5a269d345281333bfcfbb840dcffa0d47f025c2f
+  internal/sdk/models/components/sendattachment.go:
+    id: f8813272abef
+    last_write_checksum: sha1:d289c0c6f9712f302a3bb4083d2935adbacf2adb
+    pristine_git_object: a6c76bc40910f0ff747aec50bd1b1554c1cf0712
+  internal/sdk/models/components/sendmessagebcc.go:
+    id: 40d83900415e
+    last_write_checksum: sha1:35b3c1a90ca0c926e13e55d21cdff1f686fdaf4c
+    pristine_git_object: 7579a61f3707bc15a82c9f8b424fd026ca66c764
+  internal/sdk/models/components/sendmessagecc.go:
+    id: 9a58918ae98d
+    last_write_checksum: sha1:4fef3f263a7bf40ed0541ea56d6599c12d1df6f1
+    pristine_git_object: 7b73243910f0e3a6d8d4ff45204a5be91f312fbb
+  internal/sdk/models/components/sendmessagereplyto.go:
+    id: f9c3f49a11c5
+    last_write_checksum: sha1:05d16d3373fee924376346f5934e7ce6136054e8
+    pristine_git_object: 451458ecc339d066e1240cb3f7398d6f10dbe02c
+  internal/sdk/models/components/sendmessagerequest.go:
+    id: 491aa40aac66
+    last_write_checksum: sha1:5ca2ae56c5ac7eed6054c221e5695d5add7f4bea
+    pristine_git_object: 9c76bdb38e4f5c5d6a4f2dd11d46736ad2530035
+  internal/sdk/models/components/sendmessageresponse.go:
+    id: b97e5a4934df
+    last_write_checksum: sha1:e68e1d0f6ac970c65a932587ca93eb3ec1f08814
+    pristine_git_object: e42fc6c0bbd57da58675ba2e01ab0e6d8fe7cd95
+  internal/sdk/models/components/sendmessageto.go:
+    id: 83c0185cfd91
+    last_write_checksum: sha1:68ced924688902b36fee69888039704d7111b44b
+    pristine_git_object: 02269e3209671420fbe788740b00036ea827594f
+  internal/sdk/models/components/status.go:
+    id: bf85eba857ca
+    last_write_checksum: sha1:ba7b5ac6a49affaa0a0afe8911c0befbe166a61a
+    pristine_git_object: e1fe3267a998b748bb9187e8de8bce56cf3d052f
+  internal/sdk/models/components/thread.go:
+    id: ca84841db7c0
+    last_write_checksum: sha1:8c75d8198fb530a9b6045c142797c779b7009d27
+    pristine_git_object: 0540161c936437774423a61767e65c206073ac88
+  internal/sdk/models/components/threaditem.go:
+    id: f2aee6dae584
+    last_write_checksum: sha1:5d1e3d3c80902261cc25a015733c3f346a95c8be
+    pristine_git_object: f354aa3a3099d0e04a7a85f7b6394e79ae7bd20f
+  internal/sdk/models/components/updatedomainrequest.go:
+    id: f4673a93a123
+    last_write_checksum: sha1:c49b058bf2727dcda8f003ca137566b1b9dda5cc
+    pristine_git_object: f0d36cec587900d58abd52c8953d877c51c303b1
+  internal/sdk/models/components/updatedraftrequest.go:
+    id: 6ce510692497
+    last_write_checksum: sha1:de24fd4a1acabbee313b4059c724d94f52d51cdc
+    pristine_git_object: f5b531d572498d1fc7df689fb630c3e9eb2cb403
+  internal/sdk/models/components/updatemessagelabels.go:
+    id: 2e77f8576188
+    last_write_checksum: sha1:832d815e8e9950f6c740c28f1b0a7c26495200df
+    pristine_git_object: 8550ced8cea3a9794305a752eb0d0c1e2dadae38
+  internal/sdk/models/components/updatemessagerequest.go:
+    id: b48511e15d65
+    last_write_checksum: sha1:bfcc0ed91810f7eff832aa542a758b0a44334905
+    pristine_git_object: 1e2428e9d7d6614d793055e819bd9c82051c4a44
+  internal/sdk/models/components/updatemessageresponse.go:
+    id: d1911cf815ac
+    last_write_checksum: sha1:c096a2e8f1b011d97a5fa788fb86478874656c03
+    pristine_git_object: 730bce2313de9a44c4430723730a24569c89a680
+  internal/sdk/models/components/updatethreadrequest.go:
+    id: 5ffe9ae107b6
+    last_write_checksum: sha1:3a0118a0918542133e21ac9249ed65df86dc5c3a
+    pristine_git_object: 6672de105a71bb8268716e5cb275fa3d1cd1f6be
+  internal/sdk/models/components/updatethreadresponse.go:
+    id: 33a2a32debbf
+    last_write_checksum: sha1:10802d811bd4d00d299535a1336f8a63793c7b5b
+    pristine_git_object: f070ce3ecb1af4ce22eab0478435f80cd6061657
+  internal/sdk/models/components/verificationrecord.go:
+    id: b9c6870f74f6
+    last_write_checksum: sha1:5f7878d9095bf8eb1c3ae73a32fbb942220189b1
+    pristine_git_object: 02abbd7cfa65d81134e6c15cfb4b3886de16777a
+  internal/sdk/models/components/webhookscreatewebhookrequest.go:
+    id: b16c7b139760
+    last_write_checksum: sha1:10a678172df1a7c58318ba7f417e7d4932241085
+    pristine_git_object: 4a2ba17ef5fafa3efea65996c76534111f57ec68
+  internal/sdk/models/components/webhookslistwebhooksresponse.go:
+    id: d26bf9158c94
+    last_write_checksum: sha1:ed794ada7a37cb8e98fd597f1f1f11f95fa1966b
+    pristine_git_object: 03ae3a10256480dc9757d5fa0012196381d75c93
+  internal/sdk/models/components/webhooksupdatewebhookrequest.go:
+    id: c5e0ede969b5
+    last_write_checksum: sha1:0e13d2131be31ea203ccc3891d9b6d2fc59ac01f
+    pristine_git_object: 4fb5e3bf9a4f82d283be940a5c0a92a609ab88b3
+  internal/sdk/models/components/webhookswebhook.go:
+    id: 363fa9a045a6
+    last_write_checksum: sha1:f61adea1f5ee82a5c63091a731f5fb9ffe062dc5
+    pristine_git_object: 2e07cd8b5ea911b1f9d9a0bae4def632cc8cfaf5
+  internal/sdk/models/operations/agentsignup.go:
+    id: 046d541ca315
+    last_write_checksum: sha1:f8ea02f968b396ed830c809da7c876e88870a889
+    pristine_git_object: 3867a7a4a99df38eca0a95495ee189c72877cdae
+  internal/sdk/models/operations/agentverify.go:
+    id: 97674936a685
+    last_write_checksum: sha1:038eeec647c4726ab496f769b157b60349cebabb
+    pristine_git_object: d8b8c4d9311f218e7791cca1ec5e73bb881b7140
+  internal/sdk/models/operations/apikeyscreate.go:
+    id: a16de98795f9
+    last_write_checksum: sha1:8b0cb482f6b38100eac404bb95e37f08ee0f4242
+    pristine_git_object: 367b796d7ff74fb2e51ca9c4c52ee8d51dc1c7c6
+  internal/sdk/models/operations/apikeysdelete.go:
+    id: 387113c949e9
+    last_write_checksum: sha1:21bce16d39840377f0ffcb9c9b8c46c9c9e659ab
+    pristine_git_object: 8448a9da41979a95d7d9e819e0f9f74259fb00ac
+  internal/sdk/models/operations/apikeyslist.go:
+    id: 40c9a0368418
+    last_write_checksum: sha1:bbc5566a0fc5d4a1563b4efc92f8aa1dc731ab0f
+    pristine_git_object: 2f653f18ac8db0aa52fdc5960168d569527901e2
+  internal/sdk/models/operations/domainscreate.go:
+    id: f8d78550c15d
+    last_write_checksum: sha1:4c032a195af76d28fdb9c75d208a0b3484165101
+    pristine_git_object: c429c0bd99fb20dbb0b95a65a337cd58097cbab4
+  internal/sdk/models/operations/domainsdelete.go:
+    id: 6bd18676455e
+    last_write_checksum: sha1:9d55ea070a3fdf4425cb905d8a396aef0bad1116
+    pristine_git_object: 164da4911fe8e6eee9a71500a90556bc5ddee1b9
+  internal/sdk/models/operations/domainsget.go:
+    id: 016e6880e3e1
+    last_write_checksum: sha1:bc5a3c2bc47ebb85a4536d27eec000086a68e7a6
+    pristine_git_object: 9a44bd2aa5e725c176adef06623c0d4f2dfcb437
+  internal/sdk/models/operations/domainsgetzonefile.go:
+    id: 3cd556b48970
+    last_write_checksum: sha1:2fad65f6900a6fa4f032193ff4691cfb9970c6aa
+    pristine_git_object: 27dca3487d4a4f12690e7ea7ac28b6fa8e0cfe1c
+  internal/sdk/models/operations/domainslist.go:
+    id: 7780e8a09884
+    last_write_checksum: sha1:0d16e2509c74f061fe48442fbf556963e83274ac
+    pristine_git_object: 671fd2749bf222770a7049874ff72485866ffb0b
+  internal/sdk/models/operations/domainsupdate.go:
+    id: c29a25c2e6af
+    last_write_checksum: sha1:539cba8aab9f2231311f03b931ee301ed91e3ce3
+    pristine_git_object: 7ab4e409ae6593673a54f7d2aa55af65bb21cfbc
+  internal/sdk/models/operations/domainsverify.go:
+    id: a59f894dfbcb
+    last_write_checksum: sha1:d09e92cf3debf30be9e926ee2ab5cb1491d7e01f
+    pristine_git_object: 1ce0b07f0fb4de909c547a626c502518ddba6116
+  internal/sdk/models/operations/draftsget.go:
+    id: d7d54ff5c4c3
+    last_write_checksum: sha1:b27a1a769753ee74e98e7de0ffcb0ddd2d76697e
+    pristine_git_object: 91faf5f9d7bb435dc8a081417c4639c1bcad9a82
+  internal/sdk/models/operations/draftsgetattachment.go:
+    id: 1232eae07f3f
+    last_write_checksum: sha1:86d420a7ddc9531296e4c661f6b5064ac9afbae2
+    pristine_git_object: 461b70db64b990b3b91412d4d9106d8de74fc9dd
+  internal/sdk/models/operations/draftslist.go:
+    id: d4a1df1d2960
+    last_write_checksum: sha1:13cb15ff35a4220981c339fe4daaf4196eb46bd5
+    pristine_git_object: 9db97edf31e401cc564b3628841760cdae7a95b7
+  internal/sdk/models/operations/inboxesapikeyscreate.go:
+    id: 9a45062fc935
+    last_write_checksum: sha1:aec814d8b7b1201b9e54dbcdf48a2331ae89a404
+    pristine_git_object: 845749ab0da25d1878f619812182e8852e1de5a4
+  internal/sdk/models/operations/inboxesapikeysdelete.go:
+    id: 03a0a267f3f9
+    last_write_checksum: sha1:458f4ba531d3ab531e01bb11b043535bb1e67be1
+    pristine_git_object: 78dfdd031b345d84945404b04c4f4c468bb0258c
+  internal/sdk/models/operations/inboxesapikeyslist.go:
+    id: a119a7a62203
+    last_write_checksum: sha1:a6026057fe784b698879be89d13213652428deb4
+    pristine_git_object: 1c4bebde4e721f5f321592191e3ee79c8652142f
+  internal/sdk/models/operations/inboxescreate.go:
+    id: 214a6c5bbdc0
+    last_write_checksum: sha1:3dcebdb4ca39200c3d854a4a142c7081b4fc1996
+    pristine_git_object: ef6ddf01339edccfec22b4abe8e8001363a3de6f
+  internal/sdk/models/operations/inboxesdelete.go:
+    id: d84e36a356e1
+    last_write_checksum: sha1:c6200f204fd4650d7dd66e46ee1d922e97684cf7
+    pristine_git_object: a22123e8821acceac3e9a6cc41a6d6d63d784479
+  internal/sdk/models/operations/inboxesdraftscreate.go:
+    id: 0d1e11890ea3
+    last_write_checksum: sha1:4288f7fc9af6a4d4b7a0d22c67b1f82a3376a970
+    pristine_git_object: 77b162bdacd9fa651c151e00fa2a6807828f7def
+  internal/sdk/models/operations/inboxesdraftsdelete.go:
+    id: 071f1811ec64
+    last_write_checksum: sha1:e9989977c4942ba218e6d0de66dda37b0577cc55
+    pristine_git_object: d426e1a1fe8be0f0177e6bad01b232ded1bc9280
+  internal/sdk/models/operations/inboxesdraftsget.go:
+    id: d2a8a6b93ef0
+    last_write_checksum: sha1:fe992e50228998419c50f954ad9c84ba2e57cc8b
+    pristine_git_object: 5ce0a81efbfdee94bb14b36517e83a9accdd70b9
+  internal/sdk/models/operations/inboxesdraftsgetattachment.go:
+    id: 5d0ede65f0d4
+    last_write_checksum: sha1:e76dd93f5ed9b33f342bf8ee87bf6cb16e9300e7
+    pristine_git_object: e3d74eb3e52441ad39baff482cc770a9ff10cf1f
+  internal/sdk/models/operations/inboxesdraftslist.go:
+    id: 75ead97a6928
+    last_write_checksum: sha1:74ce6e142fb30affe5160cdb28ae07ec449bcdb0
+    pristine_git_object: 3ecc3942d4122abd48f94a98b9a63b926c788e81
+  internal/sdk/models/operations/inboxesdraftssend.go:
+    id: 82f25e8c2645
+    last_write_checksum: sha1:ca8314c2e78c935ab5d6a4159842964de80d5e18
+    pristine_git_object: 93e707570161d205ac7f1e5182ecd8ee1cb04ee2
+  internal/sdk/models/operations/inboxesdraftsupdate.go:
+    id: 55e409893519
+    last_write_checksum: sha1:9436de7e6085edbc5cbb8847d65329ebcfe67df3
+    pristine_git_object: 5bfa18d0597de4214a0df13a768d4e58b895d197
+  internal/sdk/models/operations/inboxeseventslist.go:
+    id: d1a1cd6e7a40
+    last_write_checksum: sha1:14422bc2957bf05f4c308711deeb2216e35af421
+    pristine_git_object: db86e6e70369221a165fa7b82ee7121d281fb48f
+  internal/sdk/models/operations/inboxesget.go:
+    id: 017e31c0d1ef
+    last_write_checksum: sha1:8af7b29bafdbca23fc5bb7bcce1f1d9571e70207
+    pristine_git_object: 569e6147a89d425bfbebc3e4eb79fc971d1dcd17
+  internal/sdk/models/operations/inboxeslist.go:
+    id: 020ef756ac82
+    last_write_checksum: sha1:baf7e14a8736428ffdd51e472d9e04ed15fa89b2
+    pristine_git_object: f0559882141cc91fe64a4773dded63554e084d5f
+  internal/sdk/models/operations/inboxeslistscreate.go:
+    id: a9994a64d3ea
+    last_write_checksum: sha1:775ec726d2cda40eb02cc927e198d12bae523dc8
+    pristine_git_object: 4a2432562054508aceb23086ed647af1d6da799a
+  internal/sdk/models/operations/inboxeslistsdelete.go:
+    id: 3265de6f519d
+    last_write_checksum: sha1:b9b21b40bcd91eaba760e28242332323cc92adcf
+    pristine_git_object: 2e2b02f2f6e27277d3cc2660cb1c2e01a6173318
+  internal/sdk/models/operations/inboxeslistsget.go:
+    id: 1fade88d0bae
+    last_write_checksum: sha1:1778adac54322edf23f6663be33fd7c9c3f39f25
+    pristine_git_object: da6a3ace79dfc4ea787ea09cea91235a0b6f0d7c
+  internal/sdk/models/operations/inboxeslistslist.go:
+    id: 548ed3fb5607
+    last_write_checksum: sha1:935d2002ae721fa6b56d3597795ae26169039f21
+    pristine_git_object: 4743b3b6270a94ece5f82715877e9581feb49ed0
+  internal/sdk/models/operations/inboxesmessagesdelete.go:
+    id: 8a29a5a5cdfe
+    last_write_checksum: sha1:cefb96e6af7e431394b2d9ed93a85f597a986759
+    pristine_git_object: dd57df153415466451a5bb8b3e9e7416cdb93a43
+  internal/sdk/models/operations/inboxesmessagesforward.go:
+    id: c6ea1882608c
+    last_write_checksum: sha1:5d0d3a8185f9e184f784c77f93392a08661d6b2d
+    pristine_git_object: 0288e38035b9b208f88134daf456a61771ef2e7d
+  internal/sdk/models/operations/inboxesmessagesget.go:
+    id: b11717f976ec
+    last_write_checksum: sha1:1da13e009bb95fb72939eb05bbf648015d49c40e
+    pristine_git_object: 0d6d973de969893c08755628e4ec52cf46e58214
+  internal/sdk/models/operations/inboxesmessagesgetattachment.go:
+    id: ebffe2f2f5be
+    last_write_checksum: sha1:4541e1c21906098a610705861219567982c095a4
+    pristine_git_object: bb7118bfd669ac1fe459afcb678d0c9a3b4b98eb
+  internal/sdk/models/operations/inboxesmessagesgetraw.go:
+    id: f5796a2ac140
+    last_write_checksum: sha1:41d47d290d319635f305379655a6cb44ca7eba24
+    pristine_git_object: bbd5070e386514e9cc887bdc33dc8f66e16cbaed
+  internal/sdk/models/operations/inboxesmessageslist.go:
+    id: c4e1373aba6f
+    last_write_checksum: sha1:1720775418ff8708e86834722f5daa49981adc2d
+    pristine_git_object: 907acafcdbdae65f0a9051eb3b34bb366d72b953
+  internal/sdk/models/operations/inboxesmessagesreply.go:
+    id: ff5b76b620b0
+    last_write_checksum: sha1:35f95ec81cf8f492e9e2b49d88308f1798c58055
+    pristine_git_object: e3f66de7144b74ee7895f9ead68c42d85b3347db
+  internal/sdk/models/operations/inboxesmessagesreplyall.go:
+    id: 7d13133a548a
+    last_write_checksum: sha1:1a55da33d873355a0737af6b008b6c7515eea1ba
+    pristine_git_object: 64c26709f0d646f33fe9e489ac602a14bca254d3
+  internal/sdk/models/operations/inboxesmessagessend.go:
+    id: f7fcd7491ec1
+    last_write_checksum: sha1:09889f8304aeec2fd995460cfccd9923205f9746
+    pristine_git_object: a069070fa680971ee0eaad2c0e42ca1adefd6a6f
+  internal/sdk/models/operations/inboxesmessagesupdate.go:
+    id: e903f0a8d320
+    last_write_checksum: sha1:f941f060d7ad1e42de82f870e65e71fae3e03249
+    pristine_git_object: 76ed604fd5de68e9cdc3a3b684211bf6c5774ec2
+  internal/sdk/models/operations/inboxesmetricsquery.go:
+    id: 51e1cb830837
+    last_write_checksum: sha1:d59ccb824828e94b81b1acd1eea1ef3ac153aeea
+    pristine_git_object: 89e0f2e840116cb2e0113dbc8e6ed1ff72d77a3a
+  internal/sdk/models/operations/inboxesthreadsdelete.go:
+    id: ebc58d990b93
+    last_write_checksum: sha1:4e951d8a18b2c0d69212d10498f00d587eabecc3
+    pristine_git_object: c65855007deb325fd87029ae470f3fb4437c2092
+  internal/sdk/models/operations/inboxesthreadsget.go:
+    id: e2a50fa7fdcf
+    last_write_checksum: sha1:aa12c0f69cba113ff4da4a7399b425442661c0b7
+    pristine_git_object: 714aea21debbbbf5f75901b597d87c4a0b4e69ed
+  internal/sdk/models/operations/inboxesthreadsgetattachment.go:
+    id: e2a9f888a827
+    last_write_checksum: sha1:cd04d8d5d872a935fa1e980794d8d7efefbdb53d
+    pristine_git_object: da765b3fa3a630d77765d3013ba19a76cbeb9060
+  internal/sdk/models/operations/inboxesthreadslist.go:
+    id: 5345baf2f56b
+    last_write_checksum: sha1:959ed4d55fe263992f14fc98ce1141003d6bf0c6
+    pristine_git_object: c6d9e9508753f63c39ea47ec951e204bcf2474ef
+  internal/sdk/models/operations/inboxesthreadsupdate.go:
+    id: f73e89c5442a
+    last_write_checksum: sha1:a85b4b5e5cc57f8d17bd25693d0371a4d654b526
+    pristine_git_object: 891cfecc469388971adb43bb4449eae013ce97c3
+  internal/sdk/models/operations/inboxesupdate.go:
+    id: 4bc7debbf83b
+    last_write_checksum: sha1:33f5eac04303317ab56691c2510366f11f2b0e04
+    pristine_git_object: eafedcb3b108597ab2564ce47d7b3bb7e998f9b9
+  internal/sdk/models/operations/listscreate.go:
+    id: 1fb88f2bf1d1
+    last_write_checksum: sha1:de2789c049178ebdea6740a1673385da13f59fc3
+    pristine_git_object: dfbc9070476bb97d42dfeb83e14b34b1760d5345
+  internal/sdk/models/operations/listsdelete.go:
+    id: 6ae948c7bb30
+    last_write_checksum: sha1:d5061b43866f0243232443c556a00ece7ef6c6c7
+    pristine_git_object: 7e20fc96721ca012c944a4a52a2a7fe66e92c85d
+  internal/sdk/models/operations/listsget.go:
+    id: "865731547067"
+    last_write_checksum: sha1:b571f5e0bd7593e4f53931f6d267b6f6a9211273
+    pristine_git_object: fce7a07dc64e2d81013c4c6e0273069db1a8d0c1
+  internal/sdk/models/operations/listslist.go:
+    id: 91be76825563
+    last_write_checksum: sha1:fd1dc2be1041d937d2b8994b633f9b0f1b068adf
+    pristine_git_object: 22945111102156550527d696cce9092255681994
+  internal/sdk/models/operations/metricsquery.go:
+    id: cc2ca235f586
+    last_write_checksum: sha1:108f61e13510fe9029f33836000cf37477b16881
+    pristine_git_object: 751b8b46a3f640298cce3716bd7e001112de1ec4
+  internal/sdk/models/operations/options.go:
+    id: 6d0d29414e00
+    last_write_checksum: sha1:3075c67997664acee95e8b581e67a929a678238d
+    pristine_git_object: c8d25a33892bd206f2f325dcaada38f97ba66738
+  internal/sdk/models/operations/organizationsget.go:
+    id: e706a532e587
+    last_write_checksum: sha1:79dd215d502b600729b56e21cabaa7d3adc20764
+    pristine_git_object: d42cc82cdeae1b964f9522b1671864507e6de665
+  internal/sdk/models/operations/podsapikeyscreate.go:
+    id: 31d0322b576d
+    last_write_checksum: sha1:6a61251ef19f3981642d76f67719d75912275d7b
+    pristine_git_object: d64d3d5d5a66c998d5ae3d0d8441e001308b6cec
+  internal/sdk/models/operations/podsapikeysdelete.go:
+    id: 6864f09226a6
+    last_write_checksum: sha1:fa0d0610dab13ffd3c8b39d542b954f76ddc96c8
+    pristine_git_object: c28a9b0cfdc3479eab73ef7f0edd07125e20cf26
+  internal/sdk/models/operations/podsapikeyslist.go:
+    id: b1e66d705eba
+    last_write_checksum: sha1:5c41216bb31ee13344fefc814b089d54cf9daf0e
+    pristine_git_object: f6ff0b07f7ad3cda10962d2ad134b4260c377d1c
+  internal/sdk/models/operations/podscreate.go:
+    id: cbe3ac2688b6
+    last_write_checksum: sha1:ade993a46437c672c9138f577a25932bc69da854
+    pristine_git_object: eae70c829aba3f82b21934941520823d7cf42631
+  internal/sdk/models/operations/podsdelete.go:
+    id: 2fb95fd44dac
+    last_write_checksum: sha1:2219acd4569d61f2106c86f21bc93ecb2606ce64
+    pristine_git_object: 5058fb512b7b1d6a8508842b03a65f6e321f25f6
+  internal/sdk/models/operations/podsdomainscreate.go:
+    id: 898d0417b6da
+    last_write_checksum: sha1:ce6110e2d3f0914c84c915b8ede4c7b1cec5398a
+    pristine_git_object: f2b76a501a08e1bdf3f48ca331ad3ba7a19f40bd
+  internal/sdk/models/operations/podsdomainsdelete.go:
+    id: 42678409bce2
+    last_write_checksum: sha1:de4bdc995258284cbe8b9074ed8fdfa052fd6dd2
+    pristine_git_object: d8775534d4123ed93ab0b72dd59d8ed97531272a
+  internal/sdk/models/operations/podsdomainsget.go:
+    id: b814d40a4b36
+    last_write_checksum: sha1:01411038fef0c4a6fbeb05dd19cf75eafd1390a8
+    pristine_git_object: ac4d1b634e17c12e0f266955a74cc7dc54df4c53
+  internal/sdk/models/operations/podsdomainsgetzonefile.go:
+    id: cec17f24931f
+    last_write_checksum: sha1:a3d6179fe88652a0e6d82126d909190ae77cac30
+    pristine_git_object: a5baf554a71f080f0bdb7802c191d252bf22871c
+  internal/sdk/models/operations/podsdomainslist.go:
+    id: c7740bb44245
+    last_write_checksum: sha1:db161c8af2c17d9318fd9f2a2e4d50890e9b6053
+    pristine_git_object: 96dbadc6b028af75aaaf3886bf67a463fdddf8f9
+  internal/sdk/models/operations/podsdomainsupdate.go:
+    id: 7bf13d6797bb
+    last_write_checksum: sha1:f73214b907b00e53506d5bd3b628d5e39ce4534d
+    pristine_git_object: e839370a7effa8e0637438abe8c36e8d870077da
+  internal/sdk/models/operations/podsdomainsverify.go:
+    id: 28f83abd51da
+    last_write_checksum: sha1:123fd7b035ac2ba6c8f0e696b4098c84f1f29827
+    pristine_git_object: abf36c281d7ea54381e0ad09481e0e5a7f425c81
+  internal/sdk/models/operations/podsdraftsget.go:
+    id: 6efb18c1c46b
+    last_write_checksum: sha1:648a0bbc9d12e17e81b1cfb413a31c7a25a7d2ef
+    pristine_git_object: dc1677ec855b017e475ab249543cce635bb4b8ad
+  internal/sdk/models/operations/podsdraftsgetattachment.go:
+    id: 331f915c9342
+    last_write_checksum: sha1:5c28e3026fa13b38ed22147f41aeb2d63023e61b
+    pristine_git_object: 2b6cf05e0aa09f153dd0dcec504a530f1c1146a5
+  internal/sdk/models/operations/podsdraftslist.go:
+    id: 8cc469d8bf60
+    last_write_checksum: sha1:c36e2be10dc3ce409b147ed77a88b8ef2fa05d50
+    pristine_git_object: d2a80fdad631d38d8b05d5077eb46477ff831c09
+  internal/sdk/models/operations/podsget.go:
+    id: 1c8a22aa83a2
+    last_write_checksum: sha1:43b2002d547067af810f15a2f4852e22aa5d9872
+    pristine_git_object: 98d885238d4a5ea2a384bf063810b97ac3159c24
+  internal/sdk/models/operations/podsinboxescreate.go:
+    id: 0f87a4252b92
+    last_write_checksum: sha1:b8ede2b07a2b191d7d9665faa08a6d7b79a7e1fb
+    pristine_git_object: c0a9335c9ba15dcc6cfaa06cee03a4e193658a67
+  internal/sdk/models/operations/podsinboxesdelete.go:
+    id: e6136f83f804
+    last_write_checksum: sha1:a6316fcdf3e3c727f0d13f04713a642595164a97
+    pristine_git_object: 1b49cee4d18dc1e9089670e58e510b68fe08a7c8
+  internal/sdk/models/operations/podsinboxesget.go:
+    id: 1b1bf58e7e24
+    last_write_checksum: sha1:d2a3e46746e5880a170de1eb8ce66b08ff4ded34
+    pristine_git_object: 73bfccdeb6f337f2589aafaae67ee7b87fd5663f
+  internal/sdk/models/operations/podsinboxeslist.go:
+    id: 33c03793e8c4
+    last_write_checksum: sha1:d7786331e1227ee037f749729fd4d0fd947615e6
+    pristine_git_object: 639b578158870f18370c200bd18ec014939b0dd8
+  internal/sdk/models/operations/podsinboxesupdate.go:
+    id: b84fad019e84
+    last_write_checksum: sha1:8dff4e7aef4462a766aca3699b8764bfa9515f1a
+    pristine_git_object: c059ddadb3e2588354f341c2442407b428d21bfc
+  internal/sdk/models/operations/podslist.go:
+    id: ace5c0d1b555
+    last_write_checksum: sha1:4687c936305749dc752605634512e2f1bd58d0b5
+    pristine_git_object: 4be5806ed9cebdc1e036e879bf12f0f5001db649
+  internal/sdk/models/operations/podslistscreate.go:
+    id: c7304b16c01e
+    last_write_checksum: sha1:1c93f4cb81fc11969a049945e7ead48c8f8c4ac5
+    pristine_git_object: 57c955d0197ca0ad9f983313e86ba2948e48d042
+  internal/sdk/models/operations/podslistsdelete.go:
+    id: 8375a899e1c2
+    last_write_checksum: sha1:2da371b30d61770bf0470c91c119ac998e16f4ae
+    pristine_git_object: 92126c1b83cda9ed8b5a051bcd8cc9e151bd0f86
+  internal/sdk/models/operations/podslistsget.go:
+    id: 5973b276c2d7
+    last_write_checksum: sha1:672c7ba2778884a9b21a2c25effe3a12af900cfb
+    pristine_git_object: ae9ecc67218eac4b67f9f9193097402d52c1b9bf
+  internal/sdk/models/operations/podslistslist.go:
+    id: b5b26b31f6d2
+    last_write_checksum: sha1:a68da29dcfc8650a18453de4faefef2a3369a19d
+    pristine_git_object: 6bb4ce4c85d85c24d82129f56a82f4397582f7e7
+  internal/sdk/models/operations/podsmetricsquery.go:
+    id: 790cff52b4f6
+    last_write_checksum: sha1:11daddd4ea6e3665d8d1ea4b9140cf03a209a845
+    pristine_git_object: b8b7db0d73eb007bbdb1c8b183551a2c7dcf55c8
+  internal/sdk/models/operations/podsthreadsdelete.go:
+    id: c839c4590270
+    last_write_checksum: sha1:d4ccf581f9ca855f6a727c2fbc85ba26d53a5aef
+    pristine_git_object: 592cb726bfda49609af22e39a5e062bf1c4f7779
+  internal/sdk/models/operations/podsthreadsget.go:
+    id: 5ef82b131b7d
+    last_write_checksum: sha1:1cbf80b82738b72e03542cf65e153c0ec176742e
+    pristine_git_object: b412b3e673001229dd2af7f37754397db5b0d353
+  internal/sdk/models/operations/podsthreadsgetattachment.go:
+    id: 220486efe92a
+    last_write_checksum: sha1:3140801216684e48ab21b36c8b34d649302ff629
+    pristine_git_object: 7e991888deca236bda191bb470479ac8126f3a4b
+  internal/sdk/models/operations/podsthreadslist.go:
+    id: 092e9de30d16
+    last_write_checksum: sha1:5b50c4d78abfbfbd5b3356e7d8159daa3eaff2d0
+    pristine_git_object: 92860069853a6996563d0a1243759be12fbe2294
+  internal/sdk/models/operations/podsthreadsupdate.go:
+    id: 842c44ede19e
+    last_write_checksum: sha1:d987f96705457354fe015f990ae4ca52dd1c6b94
+    pristine_git_object: de8e131739068134f528ec7dc7848214a3d8ddb0
+  internal/sdk/models/operations/threadsdelete.go:
+    id: c90e79e09ba5
+    last_write_checksum: sha1:ee3ce945db61dd17a8834f3add9c588d33e0a757
+    pristine_git_object: bb53995c058ec65bf910c7ece0e775645c794ee3
+  internal/sdk/models/operations/threadsget.go:
+    id: f99daecc58e9
+    last_write_checksum: sha1:5a9c817b2fd335d0df78c03bb2a0eadcfa3ebb48
+    pristine_git_object: bfd826f88be9a003481836590fdb7522f6a1f384
+  internal/sdk/models/operations/threadsgetattachment.go:
+    id: 96332ceb83dd
+    last_write_checksum: sha1:58974d65f6185fc44b693de767c987c6825eae13
+    pristine_git_object: 309e73c026cd2c3067e15ce76adb567bba41007e
+  internal/sdk/models/operations/threadslist.go:
+    id: eae85f20805f
+    last_write_checksum: sha1:8c56e0c1e850cf84d0ab0d5f1d948c1dd4eea62a
+    pristine_git_object: 089cbc324781ec9e5fe490a49543bbed290e6b35
+  internal/sdk/models/operations/threadsupdate.go:
+    id: 24fbb7c97926
+    last_write_checksum: sha1:d6408ff3e2cd68b5c1a6b510095ab2ba5ea0492d
+    pristine_git_object: 4d347e88371c4010e5117a7e44e4951c7dcccf81
+  internal/sdk/models/operations/webhookscreate.go:
+    id: 503e8104f34d
+    last_write_checksum: sha1:3f68e77fa6a6006528ee408464a9cac1831f3319
+    pristine_git_object: da511805985691787e4fe08df8f4cbda7e32d3ba
+  internal/sdk/models/operations/webhooksdelete.go:
+    id: c7694c4c610e
+    last_write_checksum: sha1:42cc653e37335d59e17032dec19ba27d28db72e9
+    pristine_git_object: 5d3fb771662657dca7565a01989dc9f02ba726da
+  internal/sdk/models/operations/webhooksget.go:
+    id: c0046aaae640
+    last_write_checksum: sha1:409f52d6ecadd80a6a4508f0a5b030761ac15bfd
+    pristine_git_object: ea10cead10e7e5bb0b7a03c38009f1228f920fc6
+  internal/sdk/models/operations/webhookslist.go:
+    id: 3faabbecf9c5
+    last_write_checksum: sha1:b86d99a6ee04c588965169b50935116becce8c67
+    pristine_git_object: ad9bebde3ca35e29d9565895ed5af78f7f159239
+  internal/sdk/models/operations/webhooksupdate.go:
+    id: 84f5fcd89969
+    last_write_checksum: sha1:04bca43a1170031f34fa6f561a22dfef9ea8675b
+    pristine_git_object: 73b37d468ba239024f4ee7d76d1ba36821d7d21b
+  internal/sdk/models/sdkerrors/errorresponse.go:
+    id: c94d2b74aadb
+    last_write_checksum: sha1:afa4df76560648d9e84bd39a6fd7a87d8dfc0229
+    pristine_git_object: 753b3959ef79183dde3d25ccffcd2f9995c58b21
+  internal/sdk/models/sdkerrors/sdkdefaulterror.go:
+    id: 78e4ee2e2586
+    last_write_checksum: sha1:437b3a3eacb54d8648a68f80b3cd38fa5019f006
+    pristine_git_object: 29ad145394a59846a19bcb95c3f4cb4e0d5ba373
+  internal/sdk/models/sdkerrors/validationerrorresponse.go:
+    id: 8f623ea6b0a8
+    last_write_checksum: sha1:4a82a7f33ece4d3373f3ca33bceb4961f6ad0e10
+    pristine_git_object: 4e0f4c9e5ab53f74079cb561ba95384285437b33
+  internal/sdk/optionalnullable/optionalnullable.go:
+    id: 4b83aa3f3df3
+    last_write_checksum: sha1:d6aff1a420c31e025ea21d46cf056e305ae76fe8
+    pristine_git_object: c6739be0619b6726565e0f11855ffe44b0e5607e
+  internal/sdk/optionalnullable/optionalnullable_test.go:
+    id: 3920a41dfc4c
+    last_write_checksum: sha1:2e9433eff1651ac77d6678ea76880d9a4980cbc2
+    pristine_git_object: e6e5a01c6e721e879e24a38a1f97e3e27d4686d4
+  internal/sdk/organizations.go:
+    id: df1bc34ceddd
+    last_write_checksum: sha1:5379178ee2bfb5085fb6b070ccb4e3e01b10886f
+    pristine_git_object: f427c3008f5cde0a248a96d35879c1bf25f610b0
+  internal/sdk/pods.go:
+    id: abc574389f5c
+    last_write_checksum: sha1:8afa69340e766eed72280ab3fbe6403f983762d2
+    pristine_git_object: e35ef19b86ea61b7f2e3101fbb94479645680451
+  internal/sdk/podsapikeys.go:
+    id: b94624bd80d5
+    last_write_checksum: sha1:400f3de2550553bcdb5b1fe67e0d9c158112f2f4
+    pristine_git_object: 697bfb8e9df52e6bbec73509a8454a3ba7db0eb7
+  internal/sdk/podsdomains.go:
+    id: 6df84170f7c3
+    last_write_checksum: sha1:78fb6185dd2eb9572b27ef4f03e0f1c0f9afb29f
+    pristine_git_object: ad4cce479882b7a0865187e053db1b9d91c9f76c
+  internal/sdk/podsdrafts.go:
+    id: 4ed539042c98
+    last_write_checksum: sha1:3ef7da5f1d711eeccbb01f703e50cb062141f15f
+    pristine_git_object: 6ddbcdf49211b4532e5b8a2036bfb47c33147e79
+  internal/sdk/podsinboxes.go:
+    id: 358160f98966
+    last_write_checksum: sha1:a774864f3fb0ccaef65a73cde5ca4dba85e60bd5
+    pristine_git_object: 216dcd59a23000ff60335797e37859cd62062c9b
+  internal/sdk/podslists.go:
+    id: ab4252634858
+    last_write_checksum: sha1:22d38e8a728f82ad270729970ab885e2b62f93ea
+    pristine_git_object: 4152dfb7e85ae50283191eaab2997a2e75f78e2a
+  internal/sdk/podsmetrics.go:
+    id: c4988d2177b5
+    last_write_checksum: sha1:79002c90be3d222d66ef83e7e7d54ab27fae94db
+    pristine_git_object: a2c98716f76591707c225f16f25ae061042d1045
+  internal/sdk/podsthreads.go:
+    id: 158d98ffb69b
+    last_write_checksum: sha1:2898c400d71248b78320075cedbce96d6274ca26
+    pristine_git_object: 625920ecf4126973612b6ffa65e3bf9354867ad4
+  internal/sdk/retry/config.go:
+    id: 7ea5fa9128b6
+    last_write_checksum: sha1:7f7d96b59a18e95bac847ae09c63bbd911ee8432
+    pristine_git_object: 5b3dc7c122d8ab08905485342d7474f8f163888d
+  internal/sdk/sdkinternal/config/sdkconfiguration.go:
+    id: f175ab9b0273
+    last_write_checksum: sha1:fc78a3bb0085cee81daea78861ec7d391005b5a1
+    pristine_git_object: a814893a85b69f9b3fe3b5c1a0ff56e8e6cc1276
+  internal/sdk/sdkinternal/hooks/hooks.go:
+    id: 0cdbe7360fd5
+    last_write_checksum: sha1:0d2ee1994c8a7c2664ed9c7faf25b093146c826f
+    pristine_git_object: eaadf9f7b05540a4b505849067c43e87bfc074da
+  internal/sdk/sdkinternal/utils/contenttype.go:
+    id: ad544f05ded3
+    last_write_checksum: sha1:ab5cfd860d02c6e6a37f89e2b5649a9859947fb1
+    pristine_git_object: f6487e01eb987c0aa49e7aa50b5ff24830314c63
+  internal/sdk/sdkinternal/utils/env.go:
+    id: 53fb5707bfee
+    last_write_checksum: sha1:1e0bcb2d2caed9f3657f1dbc99b55811bed0298c
+    pristine_git_object: 110d464eacf2387b347bad1cb903666354a339e9
+  internal/sdk/sdkinternal/utils/form.go:
+    id: d685469eb548
+    last_write_checksum: sha1:9dbb33255e225583c7b50be3c0ed8066e898acc5
+    pristine_git_object: 78ef9f7cdd59638370e085c96169c82c5662fd85
+  internal/sdk/sdkinternal/utils/headers.go:
+    id: 8688b3dd5618
+    last_write_checksum: sha1:9d3fb7fed3f1fa2cfc906ee6670b080459520366
+    pristine_git_object: 602c3085e5dbd73d4b0fd0108104f942fab9b9a0
+  internal/sdk/sdkinternal/utils/json.go:
+    id: 3204a301ca6d
+    last_write_checksum: sha1:1e1e5aca7f572d3eaf1735e315f76fe7a6bb58a7
+    pristine_git_object: 4e8ebdbbe1bcbf86f7fcc660de9d9e0a640a84d9
+  internal/sdk/sdkinternal/utils/pathparams.go:
+    id: 9fe9b40a3c1c
+    last_write_checksum: sha1:d0c3a98bb6e28558a06cb882a569537d40225412
+    pristine_git_object: 211ced11c975cf26bc4ff20eaae4b311f3b12588
+  internal/sdk/sdkinternal/utils/queryparams.go:
+    id: beaa4ae6c0a4
+    last_write_checksum: sha1:cca26546339eceefafa292361fa96701683d6684
+    pristine_git_object: 3b256907b78fb9e46a75ad9b179ce27aafbdb182
+  internal/sdk/sdkinternal/utils/requestbody.go:
+    id: d0da812b8a0b
+    last_write_checksum: sha1:31546c5dba8492024adc0c6e2a67b128491c8c53
+    pristine_git_object: 9aa201a62d5b41f1ceda1d569141b15f4a739434
+  internal/sdk/sdkinternal/utils/retries.go:
+    id: 95ebeea8a512
+    last_write_checksum: sha1:420792ac8f01058776dc0bc0d7079219e3db15d5
+    pristine_git_object: 11892d513ab403f7acf8b7d2b2b49f09112a0901
+  internal/sdk/sdkinternal/utils/security.go:
+    id: 3c39d5f860f3
+    last_write_checksum: sha1:49fee4e9252239953611e6de36f4682851499ab5
+    pristine_git_object: a2332ee8de013a2121880e4b7be332d3385c6f41
+  internal/sdk/sdkinternal/utils/union.go:
+    id: ec0c94b40a7d
+    last_write_checksum: sha1:dce2778e41bf7233458beec3ed1d7df8860e486c
+    pristine_git_object: b512a515465db6f7b77fe699405dc604a3b17af6
+  internal/sdk/sdkinternal/utils/union_test.go:
+    id: 79cdd83fbae3
+    last_write_checksum: sha1:83ac73c1901de4c6db90f65cf5879163f3d47a00
+    pristine_git_object: f66814c73ace94d8e71d785fd6161fb405745754
+  internal/sdk/sdkinternal/utils/utils.go:
+    id: f79aa64cde4d
+    last_write_checksum: sha1:c03378176a107205b8938606faef3fd8fb8f91a0
+    pristine_git_object: a614e37673d3ea81eabc6139236edfb22a15dc55
+  internal/sdk/threads.go:
+    id: 42556ee96e17
+    last_write_checksum: sha1:6e8f143febff8d6791dcf60aa18f7905063fbb88
+    pristine_git_object: ea7b4070519f4457fef4a8d6b0d5af83bed723eb
+  internal/sdk/types/bigint.go:
+    id: fc530b70337e
+    last_write_checksum: sha1:49b004005d0461fb04b846eca062b070b0360b31
+    pristine_git_object: 9c6a086d51595888a6ff787ebcb8693559afee95
+  internal/sdk/types/date.go:
+    id: c4bff082c66f
+    last_write_checksum: sha1:3036a2e1ed15a1d484c093367eba000c38f384d0
+    pristine_git_object: 5b2782f219efe6bfbce46fc2dec68998eb759438
+  internal/sdk/types/datetime.go:
+    id: a8109857c712
+    last_write_checksum: sha1:196d050af6450669214e9ae4fd28e56263ae2b5d
+    pristine_git_object: 3eff332daa04e34cec5ffb10add670bafd8ac454
+  internal/sdk/types/pointers.go:
+    id: 2f3f971639f6
+    last_write_checksum: sha1:fc2275ea006257ba9ba4ff6f2a2cdb6205371eef
+    pristine_git_object: 35c439d2661e08fcb6a854096fd7b9a8561b3938
+  internal/sdk/webhooks.go:
+    id: 459d0815e45d
+    last_write_checksum: sha1:4e9fe85c11bea2f66f377fb8caa3aeefd4a65db5
+    pristine_git_object: e3851127a2fd91163f0a7eb347630ce665e9cfb8
+  internal/testclient/testclient.go:
+    id: 20fc511b8b00
+    last_write_checksum: sha1:7107e59d336235c44af152c5a61ee3896a7841fa
+    pristine_git_object: 159a87ec97aba99e4edd132f69652e123434303e
+  internal/usage/schema.go:
+    id: 0f40f4612437
+    last_write_checksum: sha1:f6c9bcc6f8b3f5755e55ed237319fad77143254f
+    pristine_git_object: b6e092f07ef067a304ff7598799636daff207dbf
+  scripts/install.ps1:
+    id: fee0853709e9
+    last_write_checksum: sha1:9f6f80dcb8754c80dd8c3d8bee918305b5e0d546
+    pristine_git_object: ab0aac1fef2cf54c7db74075c3e62381bea4733f
+  scripts/install.sh:
+    id: 1f022802374d
+    last_write_checksum: sha1:ba255d220bc830375d4f2bc34a7ca01e0a0a8fe2
+    pristine_git_object: c824e5ba4566d53053edfb44e5489028eb1be7f5
+examples:
+  inboxes_list:
+    speakeasy-default-inboxes-list:
+      responses:
+        "200":
+          application/json: {"count": 34482, "inboxes": []}
+  inboxes_create:
+    speakeasy-default-inboxes-create:
+      responses:
+        "200":
+          application/json: {"pod_id": "<id>", "inbox_id": "<id>", "email": "Kari36@hotmail.com", "updated_at": "2025-12-05T22:42:29.440Z", "created_at": "2024-06-26T08:29:56.095Z"}
+        "400":
+          application/json: {"name": "<value>", "errors": "<value>"}
+  inboxes_get:
+    speakeasy-default-inboxes-get:
+      parameters:
+        path:
+          inbox_id: "<id>"
+      responses:
+        "200":
+          application/json: {"pod_id": "<id>", "inbox_id": "<id>", "email": "Maxie_Kirlin@gmail.com", "updated_at": "2026-08-17T18:51:05.295Z", "created_at": "2025-04-07T08:57:38.224Z"}
+        "404":
+          application/json: {"name": "<value>", "message": "<value>"}
+  inboxes_update:
+    speakeasy-default-inboxes-update:
+      parameters:
+        path:
+          inbox_id: "<id>"
+      requestBody:
+        application/json: {"display_name": "Alexandra73"}
+      responses:
+        "200":
+          application/json: {"pod_id": "<id>", "inbox_id": "<id>", "email": "Erick.Lemke@yahoo.com", "updated_at": "2025-04-28T09:44:42.443Z", "created_at": "2024-09-14T00:15:56.746Z"}
+        "404":
+          application/json: {"name": "<value>", "message": "<value>"}
+  inboxes_delete:
+    speakeasy-default-inboxes-delete:
+      parameters:
+        path:
+          inbox_id: "<id>"
+      responses:
+        "404":
+          application/json: {"name": "<value>", "message": "<value>"}
+  pods_list:
+    speakeasy-default-pods-list:
+      responses:
+        "200":
+          application/json: {"count": 588644, "pods": [{"pod_id": "<id>", "name": "<value>", "updated_at": "2024-03-19T11:04:54.092Z", "created_at": "2026-05-11T15:16:39.315Z"}]}
+  pods_create:
+    speakeasy-default-pods-create:
+      requestBody:
+        application/json: {}
+      responses:
+        "200":
+          application/json: {"pod_id": "<id>", "name": "<value>", "updated_at": "2026-01-10T08:46:43.607Z", "created_at": "2026-08-18T06:27:44.576Z"}
+        "400":
+          application/json: {"name": "<value>", "errors": "<value>"}
+  pods_get:
+    speakeasy-default-pods-get:
+      parameters:
+        path:
+          pod_id: "<id>"
+      responses:
+        "200":
+          application/json: {"pod_id": "<id>", "name": "<value>", "updated_at": "2024-03-30T04:02:01.827Z", "created_at": "2026-10-22T19:38:04.179Z"}
+        "404":
+          application/json: {"name": "<value>", "message": "<value>"}
+  pods_delete:
+    speakeasy-default-pods-delete:
+      parameters:
+        path:
+          pod_id: "<id>"
+      responses:
+        "404":
+          application/json: {"name": "<value>", "message": "<value>"}
+  webhooks_list:
+    speakeasy-default-webhooks-list:
+      responses:
+        "200":
+          application/json: {"count": 769017, "webhooks": []}
+  webhooks_create:
+    speakeasy-default-webhooks-create:
+      requestBody:
+        application/json: {"url": "https://odd-zebra.org/", "event_types": ["message.rejected"]}
+      responses:
+        "200":
+          application/json: {"webhook_id": "<id>", "url": "https://blushing-onset.com", "secret": "<value>", "enabled": true, "updated_at": "2026-05-27T09:58:18.620Z", "created_at": "2026-01-03T10:15:40.841Z"}
+        "400":
+          application/json: {"name": "<value>", "errors": "<value>"}
+  webhooks_get:
+    speakeasy-default-webhooks-get:
+      parameters:
+        path:
+          webhook_id: "<id>"
+      responses:
+        "200":
+          application/json: {"webhook_id": "<id>", "url": "https://yearly-courtroom.org", "secret": "<value>", "enabled": true, "updated_at": "2026-09-04T11:04:36.802Z", "created_at": "2024-02-05T10:25:10.853Z"}
+        "404":
+          application/json: {"name": "<value>", "message": "<value>"}
+  webhooks_update:
+    speakeasy-default-webhooks-update:
+      parameters:
+        path:
+          webhook_id: "<id>"
+      requestBody:
+        application/json: {}
+      responses:
+        "200":
+          application/json: {"webhook_id": "<id>", "url": "https://educated-oil.info/", "secret": "<value>", "enabled": true, "updated_at": "2025-01-24T03:41:32.677Z", "created_at": "2026-07-06T03:14:34.916Z"}
+        "400":
+          application/json: {"name": "<value>", "errors": "<value>"}
+        "404":
+          application/json: {"name": "<value>", "message": "<value>"}
+  webhooks_delete:
+    speakeasy-default-webhooks-delete:
+      parameters:
+        path:
+          webhook_id: "<id>"
+      responses:
+        "404":
+          application/json: {"name": "<value>", "message": "<value>"}
+  agent_signUp:
+    speakeasy-default-agent-sign-up:
+      requestBody:
+        application/json: {"human_email": "<value>", "username": "Ernest_Padberg"}
+      responses:
+        "200":
+          application/json: {"organization_id": "<id>", "inbox_id": "<id>", "api_key": "<value>"}
+        "400":
+          application/json: {"name": "<value>", "errors": "<value>"}
+  agent_verify:
+    speakeasy-default-agent-verify:
+      requestBody:
+        application/json: {"otp_code": "<value>"}
+      responses:
+        "200":
+          application/json: {"verified": true}
+  apiKeys_list:
+    speakeasy-default-api-keys-list:
+      responses:
+        "200":
+          application/json: {"count": 688408, "api_keys": [{"api_key_id": "<id>", "prefix": "<value>", "name": "<value>", "created_at": "2024-07-23T18:38:11.043Z"}]}
+  apiKeys_create:
+    speakeasy-default-api-keys-create:
+      requestBody:
+        application/json: {}
+      responses:
+        "200":
+          application/json: {"api_key_id": "<id>", "api_key": "<value>", "prefix": "<value>", "name": "<value>", "created_at": "2024-04-25T04:17:00.312Z"}
+        "400":
+          application/json: {"name": "<value>", "errors": "<value>"}
+  apiKeys_delete:
+    speakeasy-default-api-keys-delete:
+      parameters:
+        path:
+          api_key_id: "<id>"
+      responses:
+        "404":
+          application/json: {"name": "<value>", "message": "<value>"}
+  domains_list:
+    speakeasy-default-domains-list:
+      responses:
+        "200":
+          application/json: {"count": 150026, "domains": []}
+  domains_create:
+    speakeasy-default-domains-create:
+      requestBody:
+        application/json: {"domain": "unhappy-meal.name", "feedback_enabled": false}
+      responses:
+        "200":
+          application/json: {"domain_id": "<id>", "domain": "repentant-tribe.biz", "status": "VERIFYING", "feedback_enabled": true, "records": [], "updated_at": "2025-12-13T18:24:06.375Z", "created_at": "2024-12-08T15:01:30.796Z"}
+        "400":
+          application/json: {"name": "<value>", "errors": "<value>"}
+  domains_get:
+    speakeasy-default-domains-get:
+      parameters:
+        path:
+          domain_id: "<id>"
+      responses:
+        "200":
+          application/json: {"domain_id": "<id>", "domain": "golden-spear.name", "status": "VERIFYING", "feedback_enabled": false, "records": [], "updated_at": "2025-07-19T22:43:19.645Z", "created_at": "2025-02-02T18:33:28.889Z"}
+        "404":
+          application/json: {"name": "<value>", "message": "<value>"}
+  domains_update:
+    speakeasy-default-domains-update:
+      parameters:
+        path:
+          domain_id: "<id>"
+      requestBody:
+        application/json: {}
+      responses:
+        "200":
+          application/json: {"domain_id": "<id>", "domain": "sardonic-crest.biz", "status": "NOT_STARTED", "feedback_enabled": true, "records": [], "updated_at": "2024-08-14T00:43:15.113Z", "created_at": "2025-09-04T13:59:48.223Z"}
+        "404":
+          application/json: {"name": "<value>", "message": "<value>"}
+  domains_delete:
+    speakeasy-default-domains-delete:
+      parameters:
+        path:
+          domain_id: "<id>"
+      responses:
+        "404":
+          application/json: {"name": "<value>", "message": "<value>"}
+  domains_getZoneFile:
+    speakeasy-default-domains-get-zone-file:
+      parameters:
+        path:
+          domain_id: "<id>"
+      responses:
+        "200":
+          application/octet-stream: "x-file: example.file"
+        "404":
+          application/json: {"name": "<value>", "message": "<value>"}
+  domains_verify:
+    speakeasy-default-domains-verify:
+      parameters:
+        path:
+          domain_id: "<id>"
+      responses:
+        "404":
+          application/json: {"name": "<value>", "message": "<value>"}
+  drafts_list:
+    speakeasy-default-drafts-list:
+      responses:
+        "200":
+          application/json: {"count": 937522, "drafts": [{"inbox_id": "<id>", "draft_id": "<id>", "labels": ["<value 1>", "<value 2>", "<value 3>"], "updated_at": "2025-12-31T10:33:21.784Z"}]}
+        "404":
+          application/json: {"name": "<value>", "message": "<value>"}
+  drafts_get:
+    speakeasy-default-drafts-get:
+      parameters:
+        path:
+          draft_id: "<id>"
+      responses:
+        "200":
+          application/json: {"inbox_id": "<id>", "draft_id": "<id>", "labels": ["<value 1>", "<value 2>", "<value 3>"], "updated_at": "2024-04-09T22:06:20.263Z", "created_at": "2025-12-10T01:25:30.534Z"}
+        "404":
+          application/json: {"name": "<value>", "message": "<value>"}
+  drafts_getAttachment:
+    speakeasy-default-drafts-get-attachment:
+      parameters:
+        path:
+          draft_id: "<id>"
+          attachment_id: "<id>"
+      responses:
+        "200":
+          application/json: {"attachment_id": "<id>", "size": 365771, "download_url": "https://realistic-appliance.name", "expires_at": "2024-09-19T12:56:31.992Z"}
+        "404":
+          application/json: {"name": "<value>", "message": "<value>"}
+  inboxes_apiKeys_list:
+    speakeasy-default-inboxes-api-keys-list:
+      parameters:
+        path:
+          inbox_id: "<id>"
+      responses:
+        "200":
+          application/json: {"count": 24240, "api_keys": [{"api_key_id": "<id>", "prefix": "<value>", "name": "<value>", "created_at": "2024-07-12T04:53:32.714Z"}]}
+        "404":
+          application/json: {"name": "<value>", "message": "<value>"}
+  inboxes_apiKeys_create:
+    speakeasy-default-inboxes-api-keys-create:
+      parameters:
+        path:
+          inbox_id: "<id>"
+      requestBody:
+        application/json: {}
+      responses:
+        "200":
+          application/json: {"api_key_id": "<id>", "api_key": "<value>", "prefix": "<value>", "name": "<value>", "created_at": "2025-05-03T10:26:58.200Z"}
+        "400":
+          application/json: {"name": "<value>", "errors": "<value>"}
+        "404":
+          application/json: {"name": "<value>", "message": "<value>"}
+  inboxes_apiKeys_delete:
+    speakeasy-default-inboxes-api-keys-delete:
+      parameters:
+        path:
+          inbox_id: "<id>"
+          api_key_id: "<id>"
+      responses:
+        "404":
+          application/json: {"name": "<value>", "message": "<value>"}
+  inboxes_drafts_list:
+    speakeasy-default-inboxes-drafts-list:
+      parameters:
+        path:
+          inbox_id: "<id>"
+      responses:
+        "200":
+          application/json: {"count": 963294, "drafts": []}
+        "404":
+          application/json: {"name": "<value>", "message": "<value>"}
+  inboxes_drafts_create:
+    speakeasy-default-inboxes-drafts-create:
+      parameters:
+        path:
+          inbox_id: "<id>"
+      requestBody:
+        application/json: {}
+      responses:
+        "200":
+          application/json: {"inbox_id": "<id>", "draft_id": "<id>", "labels": ["<value 1>", "<value 2>"], "updated_at": "2024-03-23T00:55:23.098Z", "created_at": "2024-05-22T23:50:32.704Z"}
+        "404":
+          application/json: {"name": "<value>", "message": "<value>"}
+  inboxes_drafts_get:
+    speakeasy-default-inboxes-drafts-get:
+      parameters:
+        path:
+          inbox_id: "<id>"
+          draft_id: "<id>"
+      responses:
+        "200":
+          application/json: {"inbox_id": "<id>", "draft_id": "<id>", "labels": ["<value 1>"], "updated_at": "2025-03-09T09:11:21.678Z", "created_at": "2026-11-11T06:13:39.153Z"}
+        "404":
+          application/json: {"name": "<value>", "message": "<value>"}
+  inboxes_drafts_update:
+    speakeasy-default-inboxes-drafts-update:
+      parameters:
+        path:
+          inbox_id: "<id>"
+          draft_id: "<id>"
+      requestBody:
+        application/json: {}
+      responses:
+        "200":
+          application/json: {"inbox_id": "<id>", "draft_id": "<id>", "labels": ["<value 1>"], "updated_at": "2025-10-28T01:59:20.878Z", "created_at": "2025-08-07T05:49:58.228Z"}
+        "404":
+          application/json: {"name": "<value>", "message": "<value>"}
+  inboxes_drafts_delete:
+    speakeasy-default-inboxes-drafts-delete:
+      parameters:
+        path:
+          inbox_id: "<id>"
+          draft_id: "<id>"
+      responses:
+        "404":
+          application/json: {"name": "<value>", "message": "<value>"}
+  inboxes_drafts_getAttachment:
+    speakeasy-default-inboxes-drafts-get-attachment:
+      parameters:
+        path:
+          inbox_id: "<id>"
+          draft_id: "<id>"
+          attachment_id: "<id>"
+      responses:
+        "200":
+          application/json: {"attachment_id": "<id>", "size": 257707, "download_url": "https://naughty-lounge.org/", "expires_at": "2025-04-24T16:08:34.590Z"}
+        "404":
+          application/json: {"name": "<value>", "message": "<value>"}
+  inboxes_drafts_send:
+    speakeasy-default-inboxes-drafts-send:
+      parameters:
+        path:
+          inbox_id: "<id>"
+          draft_id: "<id>"
+      requestBody:
+        application/json: {}
+      responses:
+        "200":
+          application/json: {"message_id": "<id>", "thread_id": "<id>"}
+        "400":
+          application/json: {"name": "<value>", "errors": "<value>"}
+        "403":
+          application/json: {"name": "<value>", "message": "<value>"}
+  inboxes_events_list:
+    speakeasy-default-inboxes-events-list:
+      parameters:
+        path:
+          inbox_id: "<id>"
+      responses:
+        "200":
+          application/json: {"count": 814483, "events": [{"organization_id": "<id>", "pod_id": "<id>", "inbox_id": "<id>", "event_id": "<id>", "event_type": "label_removed", "message_id": "<id>", "label": "<value>", "event_at": "2024-10-12T00:55:58.739Z", "created_at": "2025-06-22T17:16:31.388Z"}]}
+        "404":
+          application/json: {"name": "<value>", "message": "<value>"}
+  inboxes_lists_list:
+    speakeasy-default-inboxes-lists-list:
+      parameters:
+        path:
+          inbox_id: "<id>"
+          direction: "reply"
+          type: "allow"
+      responses:
+        "200":
+          application/json: {"count": 680351, "entries": []}
+  inboxes_lists_create:
+    speakeasy-default-inboxes-lists-create:
+      parameters:
+        path:
+          inbox_id: "<id>"
+          direction: "reply"
+          type: "allow"
+      requestBody:
+        application/json: {"entry": "<value>"}
+      responses:
+        "200":
+          application/json: {"entry": "<value>", "organization_id": "<id>", "direction": "reply", "list_type": "allow", "entry_type": "domain", "created_at": "2026-07-15T11:28:59.735Z", "pod_id": "<id>"}
+        "400":
+          application/json: {"name": "<value>", "errors": "<value>"}
+  inboxes_lists_get:
+    speakeasy-default-inboxes-lists-get:
+      parameters:
+        path:
+          inbox_id: "<id>"
+          direction: "send"
+          type: "block"
+          entry: "<value>"
+      responses:
+        "200":
+          application/json: {"entry": "<value>", "organization_id": "<id>", "direction": "send", "list_type": "block", "entry_type": "domain", "created_at": "2024-02-05T03:08:20.817Z", "pod_id": "<id>"}
+        "404":
+          application/json: {"name": "<value>", "message": "<value>"}
+  inboxes_lists_delete:
+    speakeasy-default-inboxes-lists-delete:
+      parameters:
+        path:
+          inbox_id: "<id>"
+          direction: "reply"
+          type: "allow"
+          entry: "<value>"
+      responses:
+        "404":
+          application/json: {"name": "<value>", "message": "<value>"}
+  inboxes_messages_list:
+    speakeasy-default-inboxes-messages-list:
+      parameters:
+        path:
+          inbox_id: "<id>"
+      responses:
+        "200":
+          application/json: {"count": 164595, "messages": []}
+        "404":
+          application/json: {"name": "<value>", "message": "<value>"}
+  inboxes_messages_get:
+    speakeasy-default-inboxes-messages-get:
+      parameters:
+        path:
+          inbox_id: "<id>"
+          message_id: "<id>"
+      responses:
+        "200":
+          application/json: {"inbox_id": "<id>", "thread_id": "<id>", "message_id": "<id>", "labels": ["<value 1>", "<value 2>", "<value 3>"], "timestamp": "2025-07-06T11:11:01.103Z", "from": "<value>", "to": ["<value 1>"], "size": 70754, "updated_at": "2025-05-07T23:42:33.231Z", "created_at": "2024-12-07T19:18:39.044Z"}
+        "404":
+          application/json: {"name": "<value>", "message": "<value>"}
+  inboxes_messages_update:
+    speakeasy-default-inboxes-messages-update:
+      parameters:
+        path:
+          inbox_id: "<id>"
+          message_id: "<id>"
+      requestBody:
+        application/json: {}
+      responses:
+        "200":
+          application/json: {"message_id": "<id>", "labels": []}
+        "400":
+          application/json: {"name": "<value>", "errors": "<value>"}
+        "404":
+          application/json: {"name": "<value>", "message": "<value>"}
+  inboxes_messages_delete:
+    speakeasy-default-inboxes-messages-delete:
+      parameters:
+        path:
+          inbox_id: "<id>"
+          message_id: "<id>"
+      responses:
+        "404":
+          application/json: {"name": "<value>", "message": "<value>"}
+  inboxes_messages_getAttachment:
+    speakeasy-default-inboxes-messages-get-attachment:
+      parameters:
+        path:
+          inbox_id: "<id>"
+          message_id: "<id>"
+          attachment_id: "<id>"
+      responses:
+        "200":
+          application/json: {"attachment_id": "<id>", "size": 163092, "download_url": "https://skeletal-obedience.biz", "expires_at": "2025-05-27T19:22:12.219Z"}
+        "404":
+          application/json: {"name": "<value>", "message": "<value>"}
+  inboxes_messages_getRaw:
+    speakeasy-default-inboxes-messages-get-raw:
+      parameters:
+        path:
+          inbox_id: "<id>"
+          message_id: "<id>"
+      responses:
+        "200":
+          application/json: {"message_id": "<id>", "size": 122074, "download_url": "https://petty-nun.com", "expires_at": "2025-09-02T14:11:01.426Z"}
+        "404":
+          application/json: {"name": "<value>", "message": "<value>"}
+  inboxes_messages_send:
+    speakeasy-default-inboxes-messages-send:
+      parameters:
+        path:
+          inbox_id: "<id>"
+      requestBody:
+        application/json: {}
+      responses:
+        "200":
+          application/json: {"message_id": "<id>", "thread_id": "<id>"}
+        "400":
+          application/json: {"name": "<value>", "errors": "<value>"}
+        "403":
+          application/json: {"name": "<value>", "message": "<value>"}
+  inboxes_messages_reply:
+    speakeasy-default-inboxes-messages-reply:
+      parameters:
+        path:
+          inbox_id: "<id>"
+          message_id: "<id>"
+      requestBody:
+        application/json: {}
+      responses:
+        "200":
+          application/json: {"message_id": "<id>", "thread_id": "<id>"}
+        "400":
+          application/json: {"name": "<value>", "errors": "<value>"}
+        "403":
+          application/json: {"name": "<value>", "message": "<value>"}
+  inboxes_messages_reply-all:
+    speakeasy-default-inboxes-messages-reply-all:
+      parameters:
+        path:
+          inbox_id: "<id>"
+          message_id: "<id>"
+      requestBody:
+        application/json: {}
+      responses:
+        "200":
+          application/json: {"message_id": "<id>", "thread_id": "<id>"}
+        "400":
+          application/json: {"name": "<value>", "errors": "<value>"}
+        "403":
+          application/json: {"name": "<value>", "message": "<value>"}
+  inboxes_messages_forward:
+    speakeasy-default-inboxes-messages-forward:
+      parameters:
+        path:
+          inbox_id: "<id>"
+          message_id: "<id>"
+      requestBody:
+        application/json: {}
+      responses:
+        "200":
+          application/json: {"message_id": "<id>", "thread_id": "<id>"}
+        "400":
+          application/json: {"name": "<value>", "errors": "<value>"}
+        "403":
+          application/json: {"name": "<value>", "message": "<value>"}
+  inboxes_metrics_query:
+    speakeasy-default-inboxes-metrics-query:
+      parameters:
+        path:
+          inbox_id: "<id>"
+      responses:
+        "200":
+          application/json: {"key": [{"timestamp": "2026-01-24T10:16:04.830Z", "count": 509028}], "key1": [], "key2": []}
+        "400":
+          application/json: {"name": "<value>", "errors": "<value>"}
+  inboxes_threads_list:
+    speakeasy-default-inboxes-threads-list:
+      parameters:
+        path:
+          inbox_id: "<id>"
+      responses:
+        "200":
+          application/json: {"count": 191581, "threads": [{"inbox_id": "<id>", "thread_id": "<id>", "labels": ["<value 1>", "<value 2>", "<value 3>"], "timestamp": "2024-03-24T03:34:58.405Z", "senders": ["<value 1>"], "recipients": ["<value 1>", "<value 2>", "<value 3>"], "last_message_id": "<id>", "message_count": 321382, "size": 741215, "updated_at": "2025-10-20T03:20:11.662Z", "created_at": "2024-09-03T22:13:49.032Z"}]}
+        "404":
+          application/json: {"name": "<value>", "message": "<value>"}
+  inboxes_threads_get:
+    speakeasy-default-inboxes-threads-get:
+      parameters:
+        path:
+          inbox_id: "<id>"
+          thread_id: "<id>"
+      responses:
+        "200":
+          application/json: {"inbox_id": "<id>", "thread_id": "<id>", "labels": ["<value 1>"], "timestamp": "2026-12-26T21:24:09.435Z", "senders": [], "recipients": ["<value 1>", "<value 2>", "<value 3>"], "last_message_id": "<id>", "message_count": 875717, "size": 223310, "updated_at": "2025-07-14T13:04:31.016Z", "created_at": "2026-11-28T12:49:34.165Z", "messages": [{"inbox_id": "<id>", "thread_id": "<id>", "message_id": "<id>", "labels": ["<value 1>", "<value 2>"], "timestamp": "2026-12-23T08:21:55.804Z", "from": "<value>", "to": ["<value 1>", "<value 2>"], "size": 561232, "updated_at": "2026-11-26T12:33:10.913Z", "created_at": "2025-09-28T23:16:44.608Z"}]}
+        "404":
+          application/json: {"name": "<value>", "message": "<value>"}
+  inboxes_threads_update:
+    speakeasy-default-inboxes-threads-update:
+      parameters:
+        path:
+          inbox_id: "<id>"
+          thread_id: "<id>"
+      requestBody:
+        application/json: {}
+      responses:
+        "200":
+          application/json: {"thread_id": "<id>", "labels": []}
+        "400":
+          application/json: {"name": "<value>", "errors": "<value>"}
+        "404":
+          application/json: {"name": "<value>", "message": "<value>"}
+  inboxes_threads_delete:
+    speakeasy-default-inboxes-threads-delete:
+      parameters:
+        path:
+          inbox_id: "<id>"
+          thread_id: "<id>"
+      responses:
+        "404":
+          application/json: {"name": "<value>", "message": "<value>"}
+  inboxes_threads_getAttachment:
+    speakeasy-default-inboxes-threads-get-attachment:
+      parameters:
+        path:
+          inbox_id: "<id>"
+          thread_id: "<id>"
+          attachment_id: "<id>"
+      responses:
+        "200":
+          application/json: {"attachment_id": "<id>", "size": 758865, "download_url": "https://heavenly-armchair.info/", "expires_at": "2026-12-20T19:45:53.516Z"}
+        "404":
+          application/json: {"name": "<value>", "message": "<value>"}
+  lists_list:
+    speakeasy-default-lists-list:
+      parameters:
+        path:
+          direction: "reply"
+          type: "allow"
+      responses:
+        "200":
+          application/json: {"count": 178421, "entries": [{"entry": "<value>", "organization_id": "<id>", "direction": "send", "list_type": "allow", "entry_type": "domain", "created_at": "2024-07-30T12:27:34.081Z"}]}
+  lists_create:
+    speakeasy-default-lists-create:
+      parameters:
+        path:
+          direction: "receive"
+          type: "allow"
+      requestBody:
+        application/json: {"entry": "<value>"}
+      responses:
+        "200":
+          application/json: {"entry": "<value>", "organization_id": "<id>", "direction": "reply", "list_type": "block", "entry_type": "email", "created_at": "2024-12-14T07:05:54.915Z"}
+        "400":
+          application/json: {"name": "<value>", "errors": "<value>"}
+  lists_get:
+    speakeasy-default-lists-get:
+      parameters:
+        path:
+          direction: "send"
+          type: "allow"
+          entry: "<value>"
+      responses:
+        "200":
+          application/json: {"entry": "<value>", "organization_id": "<id>", "direction": "reply", "list_type": "block", "entry_type": "email", "created_at": "2025-07-27T02:33:28.272Z"}
+        "404":
+          application/json: {"name": "<value>", "message": "<value>"}
+  lists_delete:
+    speakeasy-default-lists-delete:
+      parameters:
+        path:
+          direction: "reply"
+          type: "block"
+          entry: "<value>"
+      responses:
+        "404":
+          application/json: {"name": "<value>", "message": "<value>"}
+  metrics_query:
+    speakeasy-default-metrics-query:
+      responses:
+        "200":
+          application/json: {"key": [], "key1": [{"timestamp": "2026-02-03T15:04:24.083Z", "count": 157125}], "key2": []}
+        "400":
+          application/json: {"name": "<value>", "errors": "<value>"}
+  organizations_get:
+    speakeasy-default-organizations-get:
+      responses:
+        "200":
+          application/json: {"organization_id": "<id>", "inbox_count": 847534, "domain_count": 817855, "updated_at": "2025-06-04T16:37:22.745Z", "created_at": "2026-10-14T08:00:06.144Z"}
+  pods_apiKeys_list:
+    speakeasy-default-pods-api-keys-list:
+      parameters:
+        path:
+          pod_id: "<id>"
+      responses:
+        "200":
+          application/json: {"count": 635691, "api_keys": []}
+        "404":
+          application/json: {"name": "<value>", "message": "<value>"}
+  pods_apiKeys_create:
+    speakeasy-default-pods-api-keys-create:
+      parameters:
+        path:
+          pod_id: "<id>"
+      requestBody:
+        application/json: {}
+      responses:
+        "200":
+          application/json: {"api_key_id": "<id>", "api_key": "<value>", "prefix": "<value>", "name": "<value>", "created_at": "2026-11-13T21:53:31.993Z"}
+        "400":
+          application/json: {"name": "<value>", "errors": "<value>"}
+        "404":
+          application/json: {"name": "<value>", "message": "<value>"}
+  pods_apiKeys_delete:
+    speakeasy-default-pods-api-keys-delete:
+      parameters:
+        path:
+          pod_id: "<id>"
+          api_key_id: "<id>"
+      responses:
+        "404":
+          application/json: {"name": "<value>", "message": "<value>"}
+  pods_domains_list:
+    speakeasy-default-pods-domains-list:
+      parameters:
+        path:
+          pod_id: "<id>"
+      responses:
+        "200":
+          application/json: {"count": 92150, "domains": []}
+        "404":
+          application/json: {"name": "<value>", "message": "<value>"}
+  pods_domains_create:
+    speakeasy-default-pods-domains-create:
+      parameters:
+        path:
+          pod_id: "<id>"
+      requestBody:
+        application/json: {"domain": "scientific-swanling.org", "feedback_enabled": true}
+      responses:
+        "200":
+          application/json: {"domain_id": "<id>", "domain": "vivid-sock.info", "status": "VERIFIED", "feedback_enabled": false, "records": [], "updated_at": "2024-04-26T05:12:36.657Z", "created_at": "2026-08-07T18:44:48.938Z"}
+        "400":
+          application/json: {"name": "<value>", "errors": "<value>"}
+  pods_domains_get:
+    speakeasy-default-pods-domains-get:
+      parameters:
+        path:
+          pod_id: "<id>"
+          domain_id: "<id>"
+      responses:
+        "200":
+          application/json: {"domain_id": "<id>", "domain": "quick-cheese.net", "status": "VERIFYING", "feedback_enabled": true, "records": [{"type": "CNAME", "name": "<value>", "value": "<value>", "status": "VALID"}], "updated_at": "2026-11-26T11:08:49.863Z", "created_at": "2025-05-28T02:36:24.899Z"}
+        "404":
+          application/json: {"name": "<value>", "message": "<value>"}
+  pods_domains_update:
+    speakeasy-default-pods-domains-update:
+      parameters:
+        path:
+          pod_id: "<id>"
+          domain_id: "<id>"
+      requestBody:
+        application/json: {}
+      responses:
+        "200":
+          application/json: {"domain_id": "<id>", "domain": "squeaky-fax.com", "status": "FAILED", "feedback_enabled": true, "records": [], "updated_at": "2025-03-30T07:16:05.962Z", "created_at": "2026-11-16T01:36:43.509Z"}
+        "404":
+          application/json: {"name": "<value>", "message": "<value>"}
+  pods_domains_delete:
+    speakeasy-default-pods-domains-delete:
+      parameters:
+        path:
+          pod_id: "<id>"
+          domain_id: "<id>"
+      responses:
+        "404":
+          application/json: {"name": "<value>", "message": "<value>"}
+  pods_domains_getZoneFile:
+    speakeasy-default-pods-domains-get-zone-file:
+      parameters:
+        path:
+          pod_id: "<id>"
+          domain_id: "<id>"
+      responses:
+        "200":
+          application/octet-stream: "x-file: example.file"
+        "404":
+          application/json: {"name": "<value>", "message": "<value>"}
+  pods_domains_verify:
+    speakeasy-default-pods-domains-verify:
+      parameters:
+        path:
+          pod_id: "<id>"
+          domain_id: "<id>"
+      responses:
+        "404":
+          application/json: {"name": "<value>", "message": "<value>"}
+  pods_drafts_list:
+    speakeasy-default-pods-drafts-list:
+      parameters:
+        path:
+          pod_id: "<id>"
+      responses:
+        "200":
+          application/json: {"count": 297090, "drafts": []}
+        "404":
+          application/json: {"name": "<value>", "message": "<value>"}
+  pods_drafts_get:
+    speakeasy-default-pods-drafts-get:
+      parameters:
+        path:
+          pod_id: "<id>"
+          draft_id: "<id>"
+      responses:
+        "200":
+          application/json: {"inbox_id": "<id>", "draft_id": "<id>", "labels": ["<value 1>", "<value 2>"], "updated_at": "2026-08-21T21:02:13.079Z", "created_at": "2024-06-29T00:37:30.453Z"}
+        "404":
+          application/json: {"name": "<value>", "message": "<value>"}
+  pods_drafts_getAttachment:
+    speakeasy-default-pods-drafts-get-attachment:
+      parameters:
+        path:
+          pod_id: "<id>"
+          draft_id: "<id>"
+          attachment_id: "<id>"
+      responses:
+        "200":
+          application/json: {"attachment_id": "<id>", "size": 907184, "download_url": "https://prudent-daddy.name/", "expires_at": "2026-10-19T01:31:31.695Z"}
+        "404":
+          application/json: {"name": "<value>", "message": "<value>"}
+  pods_inboxes_list:
+    speakeasy-default-pods-inboxes-list:
+      parameters:
+        path:
+          pod_id: "<id>"
+      responses:
+        "200":
+          application/json: {"count": 683379, "inboxes": []}
+        "404":
+          application/json: {"name": "<value>", "message": "<value>"}
+  pods_inboxes_create:
+    speakeasy-default-pods-inboxes-create:
+      parameters:
+        path:
+          pod_id: "<id>"
+      requestBody:
+        application/json: {}
+      responses:
+        "200":
+          application/json: {"pod_id": "<id>", "inbox_id": "<id>", "email": "Pasquale.Hettinger@hotmail.com", "updated_at": "2024-12-19T23:58:33.348Z", "created_at": "2024-11-24T08:04:43.830Z"}
+        "400":
+          application/json: {"name": "<value>", "errors": "<value>"}
+  pods_inboxes_get:
+    speakeasy-default-pods-inboxes-get:
+      parameters:
+        path:
+          pod_id: "<id>"
+          inbox_id: "<id>"
+      responses:
+        "200":
+          application/json: {"pod_id": "<id>", "inbox_id": "<id>", "email": "Mac_Bashirian2@yahoo.com", "updated_at": "2026-10-07T08:15:53.318Z", "created_at": "2026-08-11T14:21:56.332Z"}
+        "404":
+          application/json: {"name": "<value>", "message": "<value>"}
+  pods_inboxes_update:
+    speakeasy-default-pods-inboxes-update:
+      parameters:
+        path:
+          pod_id: "<id>"
+          inbox_id: "<id>"
+      requestBody:
+        application/json: {"display_name": "Newton87"}
+      responses:
+        "200":
+          application/json: {"pod_id": "<id>", "inbox_id": "<id>", "email": "Cara.Breitenberg@hotmail.com", "updated_at": "2025-06-03T10:46:10.982Z", "created_at": "2026-07-24T14:27:17.531Z"}
+        "404":
+          application/json: {"name": "<value>", "message": "<value>"}
+  pods_inboxes_delete:
+    speakeasy-default-pods-inboxes-delete:
+      parameters:
+        path:
+          pod_id: "<id>"
+          inbox_id: "<id>"
+      responses:
+        "404":
+          application/json: {"name": "<value>", "message": "<value>"}
+  pods_lists_list:
+    speakeasy-default-pods-lists-list:
+      parameters:
+        path:
+          pod_id: "<id>"
+          direction: "send"
+          type: "block"
+      responses:
+        "200":
+          application/json: {"count": 388277, "entries": []}
+  pods_lists_create:
+    speakeasy-default-pods-lists-create:
+      parameters:
+        path:
+          pod_id: "<id>"
+          direction: "send"
+          type: "allow"
+      requestBody:
+        application/json: {"entry": "<value>"}
+      responses:
+        "200":
+          application/json: {"entry": "<value>", "organization_id": "<id>", "direction": "receive", "list_type": "allow", "entry_type": "email", "created_at": "2025-02-06T01:34:58.514Z", "pod_id": "<id>"}
+        "400":
+          application/json: {"name": "<value>", "errors": "<value>"}
+  pods_lists_get:
+    speakeasy-default-pods-lists-get:
+      parameters:
+        path:
+          pod_id: "<id>"
+          direction: "reply"
+          type: "block"
+          entry: "<value>"
+      responses:
+        "200":
+          application/json: {"entry": "<value>", "organization_id": "<id>", "direction": "receive", "list_type": "allow", "entry_type": "email", "created_at": "2026-05-09T12:54:55.550Z", "pod_id": "<id>"}
+        "404":
+          application/json: {"name": "<value>", "message": "<value>"}
+  pods_lists_delete:
+    speakeasy-default-pods-lists-delete:
+      parameters:
+        path:
+          pod_id: "<id>"
+          direction: "reply"
+          type: "block"
+          entry: "<value>"
+      responses:
+        "404":
+          application/json: {"name": "<value>", "message": "<value>"}
+  pods_metrics_query:
+    speakeasy-default-pods-metrics-query:
+      parameters:
+        path:
+          pod_id: "<id>"
+      responses:
+        "200":
+          application/json: {"key": [{"timestamp": "2024-06-05T11:26:42.467Z", "count": 146590}], "key1": []}
+        "400":
+          application/json: {"name": "<value>", "errors": "<value>"}
+  pods_threads_list:
+    speakeasy-default-pods-threads-list:
+      parameters:
+        path:
+          pod_id: "<id>"
+      responses:
+        "200":
+          application/json: {"count": 987631, "threads": [{"inbox_id": "<id>", "thread_id": "<id>", "labels": ["<value 1>"], "timestamp": "2026-12-05T17:16:01.555Z", "senders": ["<value 1>", "<value 2>", "<value 3>"], "recipients": ["<value 1>", "<value 2>"], "last_message_id": "<id>", "message_count": 821117, "size": 610308, "updated_at": "2024-08-15T04:35:29.700Z", "created_at": "2024-09-29T00:29:30.483Z"}]}
+        "404":
+          application/json: {"name": "<value>", "message": "<value>"}
+  pods_threads_get:
+    speakeasy-default-pods-threads-get:
+      parameters:
+        path:
+          pod_id: "<id>"
+          thread_id: "<id>"
+      responses:
+        "200":
+          application/json: {"inbox_id": "<id>", "thread_id": "<id>", "labels": ["<value 1>", "<value 2>"], "timestamp": "2024-05-20T15:38:03.459Z", "senders": [], "recipients": ["<value 1>", "<value 2>"], "last_message_id": "<id>", "message_count": 172393, "size": 609851, "updated_at": "2024-03-05T05:53:56.851Z", "created_at": "2025-02-01T06:05:59.460Z", "messages": [{"inbox_id": "<id>", "thread_id": "<id>", "message_id": "<id>", "labels": [], "timestamp": "2024-02-24T14:15:46.503Z", "from": "<value>", "to": ["<value 1>", "<value 2>"], "size": 805978, "updated_at": "2024-09-20T03:40:33.496Z", "created_at": "2026-05-13T02:05:40.324Z"}]}
+        "404":
+          application/json: {"name": "<value>", "message": "<value>"}
+  pods_threads_update:
+    speakeasy-default-pods-threads-update:
+      parameters:
+        path:
+          pod_id: "<id>"
+          thread_id: "<id>"
+      requestBody:
+        application/json: {}
+      responses:
+        "200":
+          application/json: {"thread_id": "<id>", "labels": ["<value 1>", "<value 2>", "<value 3>"]}
+        "400":
+          application/json: {"name": "<value>", "errors": "<value>"}
+        "404":
+          application/json: {"name": "<value>", "message": "<value>"}
+  pods_threads_delete:
+    speakeasy-default-pods-threads-delete:
+      parameters:
+        path:
+          pod_id: "<id>"
+          thread_id: "<id>"
+      responses:
+        "404":
+          application/json: {"name": "<value>", "message": "<value>"}
+  pods_threads_getAttachment:
+    speakeasy-default-pods-threads-get-attachment:
+      parameters:
+        path:
+          pod_id: "<id>"
+          thread_id: "<id>"
+          attachment_id: "<id>"
+      responses:
+        "200":
+          application/json: {"attachment_id": "<id>", "size": 878568, "download_url": "https://adolescent-lid.net/", "expires_at": "2026-06-12T10:26:12.903Z"}
+        "404":
+          application/json: {"name": "<value>", "message": "<value>"}
+  threads_list:
+    speakeasy-default-threads-list:
+      responses:
+        "200":
+          application/json: {"count": 132001, "threads": []}
+        "404":
+          application/json: {"name": "<value>", "message": "<value>"}
+  threads_get:
+    speakeasy-default-threads-get:
+      parameters:
+        path:
+          thread_id: "<id>"
+      responses:
+        "200":
+          application/json: {"inbox_id": "<id>", "thread_id": "<id>", "labels": ["<value 1>", "<value 2>"], "timestamp": "2026-10-01T14:39:18.098Z", "senders": ["<value 1>", "<value 2>", "<value 3>"], "recipients": ["<value 1>", "<value 2>", "<value 3>"], "last_message_id": "<id>", "message_count": 129315, "size": 459840, "updated_at": "2024-01-20T18:19:57.769Z", "created_at": "2026-05-31T06:57:37.996Z", "messages": [{"inbox_id": "<id>", "thread_id": "<id>", "message_id": "<id>", "labels": ["<value 1>"], "timestamp": "2025-07-25T06:15:46.913Z", "from": "<value>", "to": ["<value 1>", "<value 2>"], "size": 768075, "updated_at": "2024-07-29T18:26:55.707Z", "created_at": "2024-05-22T04:43:39.477Z"}]}
+        "404":
+          application/json: {"name": "<value>", "message": "<value>"}
+  threads_update:
+    speakeasy-default-threads-update:
+      parameters:
+        path:
+          thread_id: "<id>"
+      requestBody:
+        application/json: {}
+      responses:
+        "200":
+          application/json: {"thread_id": "<id>", "labels": ["<value 1>"]}
+        "400":
+          application/json: {"name": "<value>", "errors": "<value>"}
+        "404":
+          application/json: {"name": "<value>", "message": "<value>"}
+  threads_delete:
+    speakeasy-default-threads-delete:
+      parameters:
+        path:
+          thread_id: "<id>"
+      responses:
+        "404":
+          application/json: {"name": "<value>", "message": "<value>"}
+  threads_getAttachment:
+    speakeasy-default-threads-get-attachment:
+      parameters:
+        path:
+          thread_id: "<id>"
+          attachment_id: "<id>"
+      responses:
+        "200":
+          application/json: {"attachment_id": "<id>", "size": 687992, "download_url": "https://uncommon-submitter.net", "expires_at": "2024-03-20T19:28:19.420Z"}
+        "404":
+          application/json: {"name": "<value>", "message": "<value>"}
+examplesVersion: 1.0.2

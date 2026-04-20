@@ -1,0 +1,13 @@
+workflowVersion: 1.0.0
+speakeasyVersion: latest
+sources:
+    api:
+        inputs:
+            - location: openapi.yaml
+        output: .speakeasy/out.openapi.yaml
+        registry:
+            location: registry.speakeasyapi.dev/agentmail/agentmail/api
+targets:
+    agentmail-cli:
+        target: cli
+        source: api
