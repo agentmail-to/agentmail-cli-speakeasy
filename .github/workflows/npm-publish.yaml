@@ -1,8 +1,12 @@
 name: Publish to npm
 
 on:
-  release:
-    types: [published]
+  # Chained off the Release workflow so the `GITHUB_TOKEN`-created release
+  # still triggers us (a `release: published` trigger alone would NOT fire,
+  # since GitHub doesn't cascade workflow-created release events).
+  workflow_run:
+    workflows: ["Release"]
+    types: [completed]
   workflow_dispatch:
     inputs:
       version:
@@ -12,11 +16,16 @@ on:
 jobs:
   npm-publish:
     runs-on: ubuntu-latest
+    # Only run when the upstream Release workflow finished successfully on a tag push.
+    if: github.event_name == 'workflow_dispatch' || (github.event.workflow_run.conclusion == 'success' && startsWith(github.event.workflow_run.head_branch, 'v'))
     permissions:
       contents: read
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          # workflow_run runs against the default branch by default; checkout the tag/commit that triggered upstream.
+          ref: ${{ github.event.workflow_run.head_sha || github.ref }}
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -29,6 +38,9 @@ jobs:
         run: |
           if [ -n "${{ inputs.version }}" ]; then
             echo "version=${{ inputs.version }}" >> "$GITHUB_OUTPUT"
+          elif [ -n "${{ github.event.workflow_run.head_branch }}" ]; then
+            tag="${{ github.event.workflow_run.head_branch }}"
+            echo "version=${tag#v}" >> "$GITHUB_OUTPUT"
           else
             tag="${GITHUB_REF_NAME}"
             echo "version=${tag#v}" >> "$GITHUB_OUTPUT"
