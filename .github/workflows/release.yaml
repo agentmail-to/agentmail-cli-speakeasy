@@ -40,3 +40,31 @@ jobs:
             dist/
             !dist/*.txt
           retention-days: 30
+
+  npm-publish:
+    needs: goreleaser
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          registry-url: "https://registry.npmjs.org"
+
+      - name: Sync npm package version + copy LICENSE
+        working-directory: npm
+        run: |
+          VERSION="${GITHUB_REF_NAME#v}"
+          node -e "const fs=require('fs'); const p=require('./package.json'); p.version='${VERSION}'; fs.writeFileSync('package.json', JSON.stringify(p, null, 2)+'\n');"
+          cp ../LICENSE LICENSE
+
+      - name: Publish
+        working-directory: npm
+        run: npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
