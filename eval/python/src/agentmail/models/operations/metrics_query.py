@@ -9,13 +9,24 @@ from pydantic import model_serializer
 from typing import List, Optional
 from typing_extensions import Annotated, NotRequired, TypedDict
 
+METRICS_QUERY_SERVER_PROD = "prod"
+r"""Default production"""
 
-METRICS_QUERY_SERVERS = [
-    "https://api.agentmail.to",
-    "https://x402.api.agentmail.to",
-    "https://mpp.api.agentmail.to",
-    "https://api.agentmail.eu",
-]
+METRICS_QUERY_SERVER_PROD_X402 = "prod-x402"
+r"""x402 pay-per-use endpoint"""
+
+METRICS_QUERY_SERVER_PROD_MPP = "prod-mpp"
+r"""MPP routing endpoint"""
+
+METRICS_QUERY_SERVER_EU_PROD = "eu-prod"
+r"""EU production"""
+
+METRICS_QUERY_SERVERS = {
+    METRICS_QUERY_SERVER_PROD: "https://api.agentmail.to",
+    METRICS_QUERY_SERVER_PROD_X402: "https://x402.api.agentmail.to",
+    METRICS_QUERY_SERVER_PROD_MPP: "https://mpp.api.agentmail.to",
+    METRICS_QUERY_SERVER_EU_PROD: "https://api.agentmail.eu",
+}
 
 
 class MetricsQueryRequestTypedDict(TypedDict):

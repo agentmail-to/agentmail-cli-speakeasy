@@ -3,6 +3,13 @@
 package pods
 
 import (
+	"agentmail-cli/internal/cli/pods/podsapikeys"
+	"agentmail-cli/internal/cli/pods/podsdomains"
+	"agentmail-cli/internal/cli/pods/podsdrafts"
+	"agentmail-cli/internal/cli/pods/podsinboxes"
+	"agentmail-cli/internal/cli/pods/podslists"
+	"agentmail-cli/internal/cli/pods/podsmetrics"
+	"agentmail-cli/internal/cli/pods/podsthreads"
 	"agentmail-cli/internal/usage"
 	"github.com/spf13/cobra"
 )
@@ -18,6 +25,28 @@ func InitPodsRoot(parent *cobra.Command) error {
 			}
 			return cmd.Help()
 		},
+	}
+
+	if err := podsapikeys.InitPodsApiKeysRoot(PodsCmd); err != nil {
+		return err
+	}
+	if err := podsdomains.InitPodsDomainsRoot(PodsCmd); err != nil {
+		return err
+	}
+	if err := podsdrafts.InitPodsDraftsRoot(PodsCmd); err != nil {
+		return err
+	}
+	if err := podsinboxes.InitPodsInboxesRoot(PodsCmd); err != nil {
+		return err
+	}
+	if err := podslists.InitPodsListsRoot(PodsCmd); err != nil {
+		return err
+	}
+	if err := podsmetrics.InitPodsMetricsRoot(PodsCmd); err != nil {
+		return err
+	}
+	if err := podsthreads.InitPodsThreadsRoot(PodsCmd); err != nil {
+		return err
 	}
 
 	if err := initPodsListCmd(PodsCmd); err != nil {

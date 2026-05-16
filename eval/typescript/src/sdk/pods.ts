@@ -9,8 +9,50 @@ import { podsPodsList } from "../funcs/pods-pods-list.js";
 import { ClientSDK, RequestOptions } from "../lib/sdks.js";
 import * as components from "../models/components/index.js";
 import { unwrapAsync } from "../types/fp.js";
+import { PodsApiKeys } from "./pods-api-keys.js";
+import { PodsDomains } from "./pods-domains.js";
+import { PodsDrafts } from "./pods-drafts.js";
+import { PodsInboxes } from "./pods-inboxes.js";
+import { PodsLists } from "./pods-lists.js";
+import { PodsMetrics } from "./pods-metrics.js";
+import { PodsThreads } from "./pods-threads.js";
 
 export class Pods extends ClientSDK {
+  private _apiKeys?: PodsApiKeys;
+  get apiKeys(): PodsApiKeys {
+    return (this._apiKeys ??= new PodsApiKeys(this._options));
+  }
+
+  private _domains?: PodsDomains;
+  get domains(): PodsDomains {
+    return (this._domains ??= new PodsDomains(this._options));
+  }
+
+  private _drafts?: PodsDrafts;
+  get drafts(): PodsDrafts {
+    return (this._drafts ??= new PodsDrafts(this._options));
+  }
+
+  private _inboxes?: PodsInboxes;
+  get inboxes(): PodsInboxes {
+    return (this._inboxes ??= new PodsInboxes(this._options));
+  }
+
+  private _lists?: PodsLists;
+  get lists(): PodsLists {
+    return (this._lists ??= new PodsLists(this._options));
+  }
+
+  private _metrics?: PodsMetrics;
+  get metrics(): PodsMetrics {
+    return (this._metrics ??= new PodsMetrics(this._options));
+  }
+
+  private _threads?: PodsThreads;
+  get threads(): PodsThreads {
+    return (this._threads ??= new PodsThreads(this._options));
+  }
+
   /**
    * List Pods
    *

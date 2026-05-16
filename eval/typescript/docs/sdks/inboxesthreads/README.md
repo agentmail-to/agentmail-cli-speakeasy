@@ -1,16 +1,16 @@
-# InboxesThreads
+# Inboxes.Threads
 
 ## Overview
 
 ### Available Operations
 
-* [inboxesThreadsList](#inboxesthreadslist) - List Threads
-* [inboxesThreadsGet](#inboxesthreadsget) - Get Thread
-* [inboxesThreadsUpdate](#inboxesthreadsupdate) - Update Thread
-* [inboxesThreadsDelete](#inboxesthreadsdelete) - Delete Thread
-* [inboxesThreadsGetAttachment](#inboxesthreadsgetattachment) - Get Attachment
+* [list](#list) - List Threads
+* [get](#get) - Get Thread
+* [update](#update) - Update Thread
+* [delete](#delete) - Delete Thread
+* [getAttachment](#getattachment) - Get Attachment
 
-## inboxesThreadsList
+## list
 
 **CLI:**
 ```bash
@@ -28,7 +28,7 @@ const agentmailCli = new AgentmailCli({
 });
 
 async function run() {
-  const result = await agentmailCli.inboxesThreads.inboxesThreadsList({
+  const result = await agentmailCli.inboxes.threads.list({
     inboxId: "<id>",
   });
 
@@ -44,7 +44,7 @@ The standalone function version of this method:
 
 ```typescript
 import { AgentmailCliCore } from "agentmail/core.js";
-import { inboxesThreadsInboxesThreadsList } from "agentmail/funcs/inboxes-threads-inboxes-threads-list.js";
+import { inboxesThreadsList } from "agentmail/funcs/inboxes-threads-list.js";
 
 // Use `AgentmailCliCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
@@ -53,14 +53,14 @@ const agentmailCli = new AgentmailCliCore({
 });
 
 async function run() {
-  const res = await inboxesThreadsInboxesThreadsList(agentmailCli, {
+  const res = await inboxesThreadsList(agentmailCli, {
     inboxId: "<id>",
   });
   if (res.ok) {
     const { value: result } = res;
     console.log(result);
   } else {
-    console.log("inboxesThreadsInboxesThreadsList failed:", res.error);
+    console.log("inboxesThreadsList failed:", res.error);
   }
 }
 
@@ -88,7 +88,7 @@ run();
 | errors.ErrorResponse            | 404                             | application/json                |
 | errors.AgentmailCliDefaultError | 4XX, 5XX                        | \*/\*                           |
 
-## inboxesThreadsGet
+## get
 
 **CLI:**
 ```bash
@@ -106,7 +106,7 @@ const agentmailCli = new AgentmailCli({
 });
 
 async function run() {
-  const result = await agentmailCli.inboxesThreads.inboxesThreadsGet("<id>", "<id>");
+  const result = await agentmailCli.inboxes.threads.get("<id>", "<id>");
 
   console.log(result);
 }
@@ -120,7 +120,7 @@ The standalone function version of this method:
 
 ```typescript
 import { AgentmailCliCore } from "agentmail/core.js";
-import { inboxesThreadsInboxesThreadsGet } from "agentmail/funcs/inboxes-threads-inboxes-threads-get.js";
+import { inboxesThreadsGet } from "agentmail/funcs/inboxes-threads-get.js";
 
 // Use `AgentmailCliCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
@@ -129,12 +129,12 @@ const agentmailCli = new AgentmailCliCore({
 });
 
 async function run() {
-  const res = await inboxesThreadsInboxesThreadsGet(agentmailCli, "<id>", "<id>");
+  const res = await inboxesThreadsGet(agentmailCli, "<id>", "<id>");
   if (res.ok) {
     const { value: result } = res;
     console.log(result);
   } else {
-    console.log("inboxesThreadsInboxesThreadsGet failed:", res.error);
+    console.log("inboxesThreadsGet failed:", res.error);
   }
 }
 
@@ -163,7 +163,7 @@ run();
 | errors.ErrorResponse            | 404                             | application/json                |
 | errors.AgentmailCliDefaultError | 4XX, 5XX                        | \*/\*                           |
 
-## inboxesThreadsUpdate
+## update
 
 Updates thread labels. Cannot add or remove system labels (sent, received, bounced, etc.). Rejects requests with a `422` for threads with 100 or more messages.
 
@@ -178,7 +178,7 @@ const agentmailCli = new AgentmailCli({
 });
 
 async function run() {
-  const result = await agentmailCli.inboxesThreads.inboxesThreadsUpdate("<id>", "<id>", {});
+  const result = await agentmailCli.inboxes.threads.update("<id>", "<id>", {});
 
   console.log(result);
 }
@@ -192,7 +192,7 @@ The standalone function version of this method:
 
 ```typescript
 import { AgentmailCliCore } from "agentmail/core.js";
-import { inboxesThreadsInboxesThreadsUpdate } from "agentmail/funcs/inboxes-threads-inboxes-threads-update.js";
+import { inboxesThreadsUpdate } from "agentmail/funcs/inboxes-threads-update.js";
 
 // Use `AgentmailCliCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
@@ -201,12 +201,12 @@ const agentmailCli = new AgentmailCliCore({
 });
 
 async function run() {
-  const res = await inboxesThreadsInboxesThreadsUpdate(agentmailCli, "<id>", "<id>", {});
+  const res = await inboxesThreadsUpdate(agentmailCli, "<id>", "<id>", {});
   if (res.ok) {
     const { value: result } = res;
     console.log(result);
   } else {
-    console.log("inboxesThreadsInboxesThreadsUpdate failed:", res.error);
+    console.log("inboxesThreadsUpdate failed:", res.error);
   }
 }
 
@@ -237,7 +237,7 @@ run();
 | errors.ErrorResponse            | 404, 422                        | application/json                |
 | errors.AgentmailCliDefaultError | 4XX, 5XX                        | \*/\*                           |
 
-## inboxesThreadsDelete
+## delete
 
 Moves the thread to trash by adding a trash label to all messages. If the thread is already in trash, it will be permanently deleted. Use `permanent=true` to force permanent deletion.
 
@@ -257,7 +257,7 @@ const agentmailCli = new AgentmailCli({
 });
 
 async function run() {
-  await agentmailCli.inboxesThreads.inboxesThreadsDelete("<id>", "<id>");
+  await agentmailCli.inboxes.threads.delete("<id>", "<id>");
 
 
 }
@@ -271,7 +271,7 @@ The standalone function version of this method:
 
 ```typescript
 import { AgentmailCliCore } from "agentmail/core.js";
-import { inboxesThreadsInboxesThreadsDelete } from "agentmail/funcs/inboxes-threads-inboxes-threads-delete.js";
+import { inboxesThreadsDelete } from "agentmail/funcs/inboxes-threads-delete.js";
 
 // Use `AgentmailCliCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
@@ -280,12 +280,12 @@ const agentmailCli = new AgentmailCliCore({
 });
 
 async function run() {
-  const res = await inboxesThreadsInboxesThreadsDelete(agentmailCli, "<id>", "<id>");
+  const res = await inboxesThreadsDelete(agentmailCli, "<id>", "<id>");
   if (res.ok) {
     const { value: result } = res;
     
   } else {
-    console.log("inboxesThreadsInboxesThreadsDelete failed:", res.error);
+    console.log("inboxesThreadsDelete failed:", res.error);
   }
 }
 
@@ -315,7 +315,7 @@ run();
 | errors.ErrorResponse            | 404                             | application/json                |
 | errors.AgentmailCliDefaultError | 4XX, 5XX                        | \*/\*                           |
 
-## inboxesThreadsGetAttachment
+## getAttachment
 
 **CLI:**
 ```bash
@@ -333,7 +333,7 @@ const agentmailCli = new AgentmailCli({
 });
 
 async function run() {
-  const result = await agentmailCli.inboxesThreads.inboxesThreadsGetAttachment("<id>", "<id>", "<id>");
+  const result = await agentmailCli.inboxes.threads.getAttachment("<id>", "<id>", "<id>");
 
   console.log(result);
 }
@@ -347,7 +347,7 @@ The standalone function version of this method:
 
 ```typescript
 import { AgentmailCliCore } from "agentmail/core.js";
-import { inboxesThreadsInboxesThreadsGetAttachment } from "agentmail/funcs/inboxes-threads-inboxes-threads-get-attachment.js";
+import { inboxesThreadsGetAttachment } from "agentmail/funcs/inboxes-threads-get-attachment.js";
 
 // Use `AgentmailCliCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
@@ -356,12 +356,12 @@ const agentmailCli = new AgentmailCliCore({
 });
 
 async function run() {
-  const res = await inboxesThreadsInboxesThreadsGetAttachment(agentmailCli, "<id>", "<id>", "<id>");
+  const res = await inboxesThreadsGetAttachment(agentmailCli, "<id>", "<id>", "<id>");
   if (res.ok) {
     const { value: result } = res;
     console.log(result);
   } else {
-    console.log("inboxesThreadsInboxesThreadsGetAttachment failed:", res.error);
+    console.log("inboxesThreadsGetAttachment failed:", res.error);
   }
 }
 

@@ -5,13 +5,24 @@ from agentmail.types import BaseModel
 from agentmail.utils import FieldMetadata, PathParamMetadata
 from typing_extensions import Annotated, TypedDict
 
+THREADS_GET_ATTACHMENT_SERVER_PROD = "prod"
+r"""Default production"""
 
-THREADS_GET_ATTACHMENT_SERVERS = [
-    "https://api.agentmail.to",
-    "https://x402.api.agentmail.to",
-    "https://mpp.api.agentmail.to",
-    "https://api.agentmail.eu",
-]
+THREADS_GET_ATTACHMENT_SERVER_PROD_X402 = "prod-x402"
+r"""x402 pay-per-use endpoint"""
+
+THREADS_GET_ATTACHMENT_SERVER_PROD_MPP = "prod-mpp"
+r"""MPP routing endpoint"""
+
+THREADS_GET_ATTACHMENT_SERVER_EU_PROD = "eu-prod"
+r"""EU production"""
+
+THREADS_GET_ATTACHMENT_SERVERS = {
+    THREADS_GET_ATTACHMENT_SERVER_PROD: "https://api.agentmail.to",
+    THREADS_GET_ATTACHMENT_SERVER_PROD_X402: "https://x402.api.agentmail.to",
+    THREADS_GET_ATTACHMENT_SERVER_PROD_MPP: "https://mpp.api.agentmail.to",
+    THREADS_GET_ATTACHMENT_SERVER_EU_PROD: "https://api.agentmail.eu",
+}
 
 
 class ThreadsGetAttachmentRequestTypedDict(TypedDict):

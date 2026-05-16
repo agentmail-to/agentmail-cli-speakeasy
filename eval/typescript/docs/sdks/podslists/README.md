@@ -1,15 +1,15 @@
-# PodsLists
+# Pods.Lists
 
 ## Overview
 
 ### Available Operations
 
-* [podsListsList](#podslistslist) - List Entries
-* [podsListsCreate](#podslistscreate) - Create List Entry
-* [podsListsGet](#podslistsget) - Get List Entry
-* [podsListsDelete](#podslistsdelete) - Delete List Entry
+* [list](#list) - List Entries
+* [create](#create) - Create List Entry
+* [get](#get) - Get List Entry
+* [delete](#delete) - Delete List Entry
 
-## podsListsList
+## list
 
 **CLI:**
 ```bash
@@ -27,7 +27,7 @@ const agentmailCli = new AgentmailCli({
 });
 
 async function run() {
-  const result = await agentmailCli.podsLists.podsListsList({
+  const result = await agentmailCli.pods.lists.list({
     podId: "<id>",
     direction: "send",
     type: "block",
@@ -45,7 +45,7 @@ The standalone function version of this method:
 
 ```typescript
 import { AgentmailCliCore } from "agentmail/core.js";
-import { podsListsPodsListsList } from "agentmail/funcs/pods-lists-pods-lists-list.js";
+import { podsListsList } from "agentmail/funcs/pods-lists-list.js";
 
 // Use `AgentmailCliCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
@@ -54,7 +54,7 @@ const agentmailCli = new AgentmailCliCore({
 });
 
 async function run() {
-  const res = await podsListsPodsListsList(agentmailCli, {
+  const res = await podsListsList(agentmailCli, {
     podId: "<id>",
     direction: "send",
     type: "block",
@@ -63,7 +63,7 @@ async function run() {
     const { value: result } = res;
     console.log(result);
   } else {
-    console.log("podsListsPodsListsList failed:", res.error);
+    console.log("podsListsList failed:", res.error);
   }
 }
 
@@ -90,7 +90,7 @@ run();
 | ------------------------------- | ------------------------------- | ------------------------------- |
 | errors.AgentmailCliDefaultError | 4XX, 5XX                        | \*/\*                           |
 
-## podsListsCreate
+## create
 
 **CLI:**
 ```bash
@@ -108,7 +108,7 @@ const agentmailCli = new AgentmailCli({
 });
 
 async function run() {
-  const result = await agentmailCli.podsLists.podsListsCreate("<id>", "send", "allow", {
+  const result = await agentmailCli.pods.lists.create("<id>", "send", "allow", {
     entry: "<value>",
   });
 
@@ -124,7 +124,7 @@ The standalone function version of this method:
 
 ```typescript
 import { AgentmailCliCore } from "agentmail/core.js";
-import { podsListsPodsListsCreate } from "agentmail/funcs/pods-lists-pods-lists-create.js";
+import { podsListsCreate } from "agentmail/funcs/pods-lists-create.js";
 
 // Use `AgentmailCliCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
@@ -133,14 +133,14 @@ const agentmailCli = new AgentmailCliCore({
 });
 
 async function run() {
-  const res = await podsListsPodsListsCreate(agentmailCli, "<id>", "send", "allow", {
+  const res = await podsListsCreate(agentmailCli, "<id>", "send", "allow", {
     entry: "<value>",
   });
   if (res.ok) {
     const { value: result } = res;
     console.log(result);
   } else {
-    console.log("podsListsPodsListsCreate failed:", res.error);
+    console.log("podsListsCreate failed:", res.error);
   }
 }
 
@@ -171,7 +171,7 @@ run();
 | errors.ValidationErrorResponse  | 400                             | application/json                |
 | errors.AgentmailCliDefaultError | 4XX, 5XX                        | \*/\*                           |
 
-## podsListsGet
+## get
 
 **CLI:**
 ```bash
@@ -189,7 +189,7 @@ const agentmailCli = new AgentmailCli({
 });
 
 async function run() {
-  const result = await agentmailCli.podsLists.podsListsGet("<id>", "reply", "block", "<value>");
+  const result = await agentmailCli.pods.lists.get("<id>", "reply", "block", "<value>");
 
   console.log(result);
 }
@@ -203,7 +203,7 @@ The standalone function version of this method:
 
 ```typescript
 import { AgentmailCliCore } from "agentmail/core.js";
-import { podsListsPodsListsGet } from "agentmail/funcs/pods-lists-pods-lists-get.js";
+import { podsListsGet } from "agentmail/funcs/pods-lists-get.js";
 
 // Use `AgentmailCliCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
@@ -212,12 +212,12 @@ const agentmailCli = new AgentmailCliCore({
 });
 
 async function run() {
-  const res = await podsListsPodsListsGet(agentmailCli, "<id>", "reply", "block", "<value>");
+  const res = await podsListsGet(agentmailCli, "<id>", "reply", "block", "<value>");
   if (res.ok) {
     const { value: result } = res;
     console.log(result);
   } else {
-    console.log("podsListsPodsListsGet failed:", res.error);
+    console.log("podsListsGet failed:", res.error);
   }
 }
 
@@ -248,7 +248,7 @@ run();
 | errors.ErrorResponse            | 404                             | application/json                |
 | errors.AgentmailCliDefaultError | 4XX, 5XX                        | \*/\*                           |
 
-## podsListsDelete
+## delete
 
 **CLI:**
 ```bash
@@ -266,7 +266,7 @@ const agentmailCli = new AgentmailCli({
 });
 
 async function run() {
-  await agentmailCli.podsLists.podsListsDelete("<id>", "reply", "block", "<value>");
+  await agentmailCli.pods.lists.delete("<id>", "reply", "block", "<value>");
 
 
 }
@@ -280,7 +280,7 @@ The standalone function version of this method:
 
 ```typescript
 import { AgentmailCliCore } from "agentmail/core.js";
-import { podsListsPodsListsDelete } from "agentmail/funcs/pods-lists-pods-lists-delete.js";
+import { podsListsDelete } from "agentmail/funcs/pods-lists-delete.js";
 
 // Use `AgentmailCliCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
@@ -289,12 +289,12 @@ const agentmailCli = new AgentmailCliCore({
 });
 
 async function run() {
-  const res = await podsListsPodsListsDelete(agentmailCli, "<id>", "reply", "block", "<value>");
+  const res = await podsListsDelete(agentmailCli, "<id>", "reply", "block", "<value>");
   if (res.ok) {
     const { value: result } = res;
     
   } else {
-    console.log("podsListsPodsListsDelete failed:", res.error);
+    console.log("podsListsDelete failed:", res.error);
   }
 }
 

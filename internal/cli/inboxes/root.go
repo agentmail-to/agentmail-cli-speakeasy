@@ -3,6 +3,13 @@
 package inboxes
 
 import (
+	"agentmail-cli/internal/cli/inboxes/events"
+	"agentmail-cli/internal/cli/inboxes/inboxesapikeys"
+	"agentmail-cli/internal/cli/inboxes/inboxesdrafts"
+	"agentmail-cli/internal/cli/inboxes/inboxeslists"
+	"agentmail-cli/internal/cli/inboxes/inboxesmetrics"
+	"agentmail-cli/internal/cli/inboxes/inboxesthreads"
+	"agentmail-cli/internal/cli/inboxes/messages"
 	"agentmail-cli/internal/usage"
 	"github.com/spf13/cobra"
 )
@@ -18,6 +25,28 @@ func InitInboxesRoot(parent *cobra.Command) error {
 			}
 			return cmd.Help()
 		},
+	}
+
+	if err := inboxesapikeys.InitInboxesApiKeysRoot(InboxesCmd); err != nil {
+		return err
+	}
+	if err := inboxesdrafts.InitInboxesDraftsRoot(InboxesCmd); err != nil {
+		return err
+	}
+	if err := events.InitEventsRoot(InboxesCmd); err != nil {
+		return err
+	}
+	if err := inboxeslists.InitInboxesListsRoot(InboxesCmd); err != nil {
+		return err
+	}
+	if err := messages.InitMessagesRoot(InboxesCmd); err != nil {
+		return err
+	}
+	if err := inboxesmetrics.InitInboxesMetricsRoot(InboxesCmd); err != nil {
+		return err
+	}
+	if err := inboxesthreads.InitInboxesThreadsRoot(InboxesCmd); err != nil {
+		return err
 	}
 
 	if err := initInboxesListCmd(InboxesCmd); err != nil {

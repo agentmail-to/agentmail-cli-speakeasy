@@ -1,15 +1,15 @@
-# PodsLists
+# Pods.Lists
 
 ## Overview
 
 ### Available Operations
 
-* [pods_lists_list](#pods_lists_list) - List Entries
-* [pods_lists_create](#pods_lists_create) - Create List Entry
-* [pods_lists_get](#pods_lists_get) - Get List Entry
-* [pods_lists_delete](#pods_lists_delete) - Delete List Entry
+* [list](#list) - List Entries
+* [create](#create) - Create List Entry
+* [get](#get) - Get List Entry
+* [delete](#delete) - Delete List Entry
 
-## pods_lists_list
+## list
 
 **CLI:**
 ```bash
@@ -27,7 +27,7 @@ with AgentmailCli(
     bearer_auth="<YOUR_BEARER_TOKEN_HERE>",
 ) as agentmail_cli:
 
-    res = agentmail_cli.pods_lists.pods_lists_list(pod_id="<id>", direction="send", type_="block")
+    res = agentmail_cli.pods.lists.list(pod_id="<id>", direction="send", type_="block")
 
     # Handle response
     print(res)
@@ -56,7 +56,7 @@ with AgentmailCli(
 | -------------------------------------- | -------------------------------------- | -------------------------------------- |
 | models.errors.AgentmailCliDefaultError | 4XX, 5XX                               | \*/\*                                  |
 
-## pods_lists_create
+## create
 
 **CLI:**
 ```bash
@@ -74,7 +74,7 @@ with AgentmailCli(
     bearer_auth="<YOUR_BEARER_TOKEN_HERE>",
 ) as agentmail_cli:
 
-    res = agentmail_cli.pods_lists.pods_lists_create(pod_id="<id>", direction="send", type_="allow", entry="<value>")
+    res = agentmail_cli.pods.lists.create(pod_id="<id>", direction="send", type_="allow", entry="<value>")
 
     # Handle response
     print(res)
@@ -104,7 +104,7 @@ with AgentmailCli(
 | models.errors.ValidationErrorResponse  | 400                                    | application/json                       |
 | models.errors.AgentmailCliDefaultError | 4XX, 5XX                               | \*/\*                                  |
 
-## pods_lists_get
+## get
 
 **CLI:**
 ```bash
@@ -122,7 +122,7 @@ with AgentmailCli(
     bearer_auth="<YOUR_BEARER_TOKEN_HERE>",
 ) as agentmail_cli:
 
-    res = agentmail_cli.pods_lists.pods_lists_get(pod_id="<id>", direction="reply", type_="block", entry="<value>")
+    res = agentmail_cli.pods.lists.get(pod_id="<id>", direction="reply", type_="block", entry="<value>")
 
     # Handle response
     print(res)
@@ -151,7 +151,7 @@ with AgentmailCli(
 | models.errors.ErrorResponse            | 404                                    | application/json                       |
 | models.errors.AgentmailCliDefaultError | 4XX, 5XX                               | \*/\*                                  |
 
-## pods_lists_delete
+## delete
 
 **CLI:**
 ```bash
@@ -169,7 +169,7 @@ with AgentmailCli(
     bearer_auth="<YOUR_BEARER_TOKEN_HERE>",
 ) as agentmail_cli:
 
-    agentmail_cli.pods_lists.pods_lists_delete(pod_id="<id>", direction="reply", type_="block", entry="<value>")
+    agentmail_cli.pods.lists.delete(pod_id="<id>", direction="reply", type_="block", entry="<value>")
 
     # Use the SDK ...
 

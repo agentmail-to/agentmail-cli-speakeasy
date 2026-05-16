@@ -1,16 +1,16 @@
-# PodsInboxes
+# Pods.Inboxes
 
 ## Overview
 
 ### Available Operations
 
-* [pods_inboxes_list](#pods_inboxes_list) - List Inboxes
-* [pods_inboxes_create](#pods_inboxes_create) - Create Inbox
-* [pods_inboxes_get](#pods_inboxes_get) - Get Inbox
-* [pods_inboxes_update](#pods_inboxes_update) - Update Inbox
-* [pods_inboxes_delete](#pods_inboxes_delete) - Delete Inbox
+* [list](#list) - List Inboxes
+* [create](#create) - Create Inbox
+* [get](#get) - Get Inbox
+* [update](#update) - Update Inbox
+* [delete](#delete) - Delete Inbox
 
-## pods_inboxes_list
+## list
 
 **CLI:**
 ```bash
@@ -28,7 +28,7 @@ with AgentmailCli(
     bearer_auth="<YOUR_BEARER_TOKEN_HERE>",
 ) as agentmail_cli:
 
-    res = agentmail_cli.pods_inboxes.pods_inboxes_list(pod_id="<id>")
+    res = agentmail_cli.pods.inboxes.list(pod_id="<id>")
 
     # Handle response
     print(res)
@@ -57,7 +57,7 @@ with AgentmailCli(
 | models.errors.ErrorResponse            | 404                                    | application/json                       |
 | models.errors.AgentmailCliDefaultError | 4XX, 5XX                               | \*/\*                                  |
 
-## pods_inboxes_create
+## create
 
 **CLI:**
 ```bash
@@ -75,7 +75,7 @@ with AgentmailCli(
     bearer_auth="<YOUR_BEARER_TOKEN_HERE>",
 ) as agentmail_cli:
 
-    res = agentmail_cli.pods_inboxes.pods_inboxes_create(pod_id="<id>")
+    res = agentmail_cli.pods.inboxes.create(pod_id="<id>")
 
     # Handle response
     print(res)
@@ -105,7 +105,7 @@ with AgentmailCli(
 | models.errors.ValidationErrorResponse  | 400                                    | application/json                       |
 | models.errors.AgentmailCliDefaultError | 4XX, 5XX                               | \*/\*                                  |
 
-## pods_inboxes_get
+## get
 
 **CLI:**
 ```bash
@@ -123,7 +123,7 @@ with AgentmailCli(
     bearer_auth="<YOUR_BEARER_TOKEN_HERE>",
 ) as agentmail_cli:
 
-    res = agentmail_cli.pods_inboxes.pods_inboxes_get(pod_id="<id>", inbox_id="<id>")
+    res = agentmail_cli.pods.inboxes.get(pod_id="<id>", inbox_id="<id>")
 
     # Handle response
     print(res)
@@ -150,7 +150,7 @@ with AgentmailCli(
 | models.errors.ErrorResponse            | 404                                    | application/json                       |
 | models.errors.AgentmailCliDefaultError | 4XX, 5XX                               | \*/\*                                  |
 
-## pods_inboxes_update
+## update
 
 **CLI:**
 ```bash
@@ -168,7 +168,7 @@ with AgentmailCli(
     bearer_auth="<YOUR_BEARER_TOKEN_HERE>",
 ) as agentmail_cli:
 
-    res = agentmail_cli.pods_inboxes.pods_inboxes_update(pod_id="<id>", inbox_id="<id>", display_name="Newton87")
+    res = agentmail_cli.pods.inboxes.update(pod_id="<id>", inbox_id="<id>", display_name="Newton87")
 
     # Handle response
     print(res)
@@ -196,7 +196,7 @@ with AgentmailCli(
 | models.errors.ErrorResponse            | 404                                    | application/json                       |
 | models.errors.AgentmailCliDefaultError | 4XX, 5XX                               | \*/\*                                  |
 
-## pods_inboxes_delete
+## delete
 
 **CLI:**
 ```bash
@@ -214,7 +214,7 @@ with AgentmailCli(
     bearer_auth="<YOUR_BEARER_TOKEN_HERE>",
 ) as agentmail_cli:
 
-    agentmail_cli.pods_inboxes.pods_inboxes_delete(pod_id="<id>", inbox_id="<id>")
+    agentmail_cli.pods.inboxes.delete(pod_id="<id>", inbox_id="<id>")
 
     # Use the SDK ...
 

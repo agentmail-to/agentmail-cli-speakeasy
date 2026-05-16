@@ -173,57 +173,57 @@ run();
 * [inboxesUpdate](docs/sdks/inboxes/README.md#inboxesupdate) - Update Inbox
 * [inboxesDelete](docs/sdks/inboxes/README.md#inboxesdelete) - Delete Inbox
 
-### [InboxesApiKeys](docs/sdks/inboxesapikeys/README.md)
+### [Inboxes.ApiKeys](docs/sdks/inboxesapikeys/README.md)
 
 * [inboxesApiKeysList](docs/sdks/inboxesapikeys/README.md#inboxesapikeyslist) - List API Keys
 * [inboxesApiKeysCreate](docs/sdks/inboxesapikeys/README.md#inboxesapikeyscreate) - Create API Key
 * [inboxesApiKeysDelete](docs/sdks/inboxesapikeys/README.md#inboxesapikeysdelete) - Delete API Key
 
-### [InboxesDrafts](docs/sdks/inboxesdrafts/README.md)
+### [Inboxes.Drafts](docs/sdks/inboxesdrafts/README.md)
 
-* [inboxesDraftsList](docs/sdks/inboxesdrafts/README.md#inboxesdraftslist) - List Drafts
-* [inboxesDraftsCreate](docs/sdks/inboxesdrafts/README.md#inboxesdraftscreate) - Create Draft
-* [inboxesDraftsGet](docs/sdks/inboxesdrafts/README.md#inboxesdraftsget) - Get Draft
-* [inboxesDraftsUpdate](docs/sdks/inboxesdrafts/README.md#inboxesdraftsupdate) - Update Draft
-* [inboxesDraftsDelete](docs/sdks/inboxesdrafts/README.md#inboxesdraftsdelete) - Delete Draft
-* [inboxesDraftsGetAttachment](docs/sdks/inboxesdrafts/README.md#inboxesdraftsgetattachment) - Get Attachment
-* [inboxesDraftsSend](docs/sdks/inboxesdrafts/README.md#inboxesdraftssend) - Send Draft
+* [list](docs/sdks/inboxesdrafts/README.md#list) - List Drafts
+* [create](docs/sdks/inboxesdrafts/README.md#create) - Create Draft
+* [get](docs/sdks/inboxesdrafts/README.md#get) - Get Draft
+* [update](docs/sdks/inboxesdrafts/README.md#update) - Update Draft
+* [delete](docs/sdks/inboxesdrafts/README.md#delete) - Delete Draft
+* [getAttachment](docs/sdks/inboxesdrafts/README.md#getattachment) - Get Attachment
+* [send](docs/sdks/inboxesdrafts/README.md#send) - Send Draft
 
-### [InboxesEvents](docs/sdks/inboxesevents/README.md)
+### [Inboxes.Events](docs/sdks/events/README.md)
 
-* [inboxesEventsList](docs/sdks/inboxesevents/README.md#inboxeseventslist) - List Inbox Events
+* [list](docs/sdks/events/README.md#list) - List Inbox Events
 
-### [InboxesLists](docs/sdks/inboxeslists/README.md)
+### [Inboxes.Lists](docs/sdks/inboxeslists/README.md)
 
-* [inboxesListsList](docs/sdks/inboxeslists/README.md#inboxeslistslist) - List Entries
-* [inboxesListsCreate](docs/sdks/inboxeslists/README.md#inboxeslistscreate) - Create List Entry
-* [inboxesListsGet](docs/sdks/inboxeslists/README.md#inboxeslistsget) - Get List Entry
-* [inboxesListsDelete](docs/sdks/inboxeslists/README.md#inboxeslistsdelete) - Delete List Entry
+* [list](docs/sdks/inboxeslists/README.md#list) - List Entries
+* [create](docs/sdks/inboxeslists/README.md#create) - Create List Entry
+* [get](docs/sdks/inboxeslists/README.md#get) - Get List Entry
+* [delete](docs/sdks/inboxeslists/README.md#delete) - Delete List Entry
 
-### [InboxesMessages](docs/sdks/inboxesmessages/README.md)
+### [Inboxes.Messages](docs/sdks/messages/README.md)
 
-* [inboxesMessagesList](docs/sdks/inboxesmessages/README.md#inboxesmessageslist) - List Messages
-* [inboxesMessagesGet](docs/sdks/inboxesmessages/README.md#inboxesmessagesget) - Get Message
-* [inboxesMessagesUpdate](docs/sdks/inboxesmessages/README.md#inboxesmessagesupdate) - Update Message
-* [inboxesMessagesDelete](docs/sdks/inboxesmessages/README.md#inboxesmessagesdelete) - Delete Message
-* [inboxesMessagesGetAttachment](docs/sdks/inboxesmessages/README.md#inboxesmessagesgetattachment) - Get Attachment
-* [inboxesMessagesGetRaw](docs/sdks/inboxesmessages/README.md#inboxesmessagesgetraw) - Get Raw Message
-* [inboxesMessagesSend](docs/sdks/inboxesmessages/README.md#inboxesmessagessend) - Send Message
-* [inboxesMessagesReply](docs/sdks/inboxesmessages/README.md#inboxesmessagesreply) - Reply To Message
-* [inboxesMessagesReplyAll](docs/sdks/inboxesmessages/README.md#inboxesmessagesreplyall) - Reply All Message
-* [inboxesMessagesForward](docs/sdks/inboxesmessages/README.md#inboxesmessagesforward) - Forward Message
+* [list](docs/sdks/messages/README.md#list) - List Messages
+* [get](docs/sdks/messages/README.md#get) - Get Message
+* [update](docs/sdks/messages/README.md#update) - Update Message
+* [delete](docs/sdks/messages/README.md#delete) - Delete Message
+* [getAttachment](docs/sdks/messages/README.md#getattachment) - Get Attachment
+* [getRaw](docs/sdks/messages/README.md#getraw) - Get Raw Message
+* [send](docs/sdks/messages/README.md#send) - Send Message
+* [reply](docs/sdks/messages/README.md#reply) - Reply To Message
+* [replyAll](docs/sdks/messages/README.md#replyall) - Reply All Message
+* [forward](docs/sdks/messages/README.md#forward) - Forward Message
 
-### [InboxesMetrics](docs/sdks/inboxesmetrics/README.md)
+### [Inboxes.Metrics](docs/sdks/inboxesmetrics/README.md)
 
-* [inboxesMetricsQuery](docs/sdks/inboxesmetrics/README.md#inboxesmetricsquery) - Query Metrics
+* [query](docs/sdks/inboxesmetrics/README.md#query) - Query Metrics
 
-### [InboxesThreads](docs/sdks/inboxesthreads/README.md)
+### [Inboxes.Threads](docs/sdks/inboxesthreads/README.md)
 
-* [inboxesThreadsList](docs/sdks/inboxesthreads/README.md#inboxesthreadslist) - List Threads
-* [inboxesThreadsGet](docs/sdks/inboxesthreads/README.md#inboxesthreadsget) - Get Thread
-* [inboxesThreadsUpdate](docs/sdks/inboxesthreads/README.md#inboxesthreadsupdate) - Update Thread
-* [inboxesThreadsDelete](docs/sdks/inboxesthreads/README.md#inboxesthreadsdelete) - Delete Thread
-* [inboxesThreadsGetAttachment](docs/sdks/inboxesthreads/README.md#inboxesthreadsgetattachment) - Get Attachment
+* [list](docs/sdks/inboxesthreads/README.md#list) - List Threads
+* [get](docs/sdks/inboxesthreads/README.md#get) - Get Thread
+* [update](docs/sdks/inboxesthreads/README.md#update) - Update Thread
+* [delete](docs/sdks/inboxesthreads/README.md#delete) - Delete Thread
+* [getAttachment](docs/sdks/inboxesthreads/README.md#getattachment) - Get Attachment
 
 ### [Lists](docs/sdks/lists/README.md)
 
@@ -247,54 +247,54 @@ run();
 * [podsGet](docs/sdks/pods/README.md#podsget) - Get Pod
 * [podsDelete](docs/sdks/pods/README.md#podsdelete) - Delete Pod
 
-### [PodsApiKeys](docs/sdks/podsapikeys/README.md)
+### [Pods.ApiKeys](docs/sdks/podsapikeys/README.md)
 
 * [podsApiKeysList](docs/sdks/podsapikeys/README.md#podsapikeyslist) - List API Keys
 * [podsApiKeysCreate](docs/sdks/podsapikeys/README.md#podsapikeyscreate) - Create API Key
 * [podsApiKeysDelete](docs/sdks/podsapikeys/README.md#podsapikeysdelete) - Delete API Key
 
-### [PodsDomains](docs/sdks/podsdomains/README.md)
+### [Pods.Domains](docs/sdks/podsdomains/README.md)
 
-* [podsDomainsList](docs/sdks/podsdomains/README.md#podsdomainslist) - List Domains
-* [podsDomainsCreate](docs/sdks/podsdomains/README.md#podsdomainscreate) - Create Domain
-* [podsDomainsGet](docs/sdks/podsdomains/README.md#podsdomainsget) - Get Domain
-* [podsDomainsUpdate](docs/sdks/podsdomains/README.md#podsdomainsupdate) - Update Domain
-* [podsDomainsDelete](docs/sdks/podsdomains/README.md#podsdomainsdelete) - Delete Domain
-* [podsDomainsGetZoneFile](docs/sdks/podsdomains/README.md#podsdomainsgetzonefile) - Get Zone File
-* [podsDomainsVerify](docs/sdks/podsdomains/README.md#podsdomainsverify) - Verify Domain
+* [list](docs/sdks/podsdomains/README.md#list) - List Domains
+* [create](docs/sdks/podsdomains/README.md#create) - Create Domain
+* [get](docs/sdks/podsdomains/README.md#get) - Get Domain
+* [update](docs/sdks/podsdomains/README.md#update) - Update Domain
+* [delete](docs/sdks/podsdomains/README.md#delete) - Delete Domain
+* [getZoneFile](docs/sdks/podsdomains/README.md#getzonefile) - Get Zone File
+* [verify](docs/sdks/podsdomains/README.md#verify) - Verify Domain
 
-### [PodsDrafts](docs/sdks/podsdrafts/README.md)
+### [Pods.Drafts](docs/sdks/podsdrafts/README.md)
 
-* [podsDraftsList](docs/sdks/podsdrafts/README.md#podsdraftslist) - List Drafts
-* [podsDraftsGet](docs/sdks/podsdrafts/README.md#podsdraftsget) - Get Draft
-* [podsDraftsGetAttachment](docs/sdks/podsdrafts/README.md#podsdraftsgetattachment) - Get Attachment
+* [list](docs/sdks/podsdrafts/README.md#list) - List Drafts
+* [get](docs/sdks/podsdrafts/README.md#get) - Get Draft
+* [getAttachment](docs/sdks/podsdrafts/README.md#getattachment) - Get Attachment
 
-### [PodsInboxes](docs/sdks/podsinboxes/README.md)
+### [Pods.Inboxes](docs/sdks/podsinboxes/README.md)
 
-* [podsInboxesList](docs/sdks/podsinboxes/README.md#podsinboxeslist) - List Inboxes
-* [podsInboxesCreate](docs/sdks/podsinboxes/README.md#podsinboxescreate) - Create Inbox
-* [podsInboxesGet](docs/sdks/podsinboxes/README.md#podsinboxesget) - Get Inbox
-* [podsInboxesUpdate](docs/sdks/podsinboxes/README.md#podsinboxesupdate) - Update Inbox
-* [podsInboxesDelete](docs/sdks/podsinboxes/README.md#podsinboxesdelete) - Delete Inbox
+* [list](docs/sdks/podsinboxes/README.md#list) - List Inboxes
+* [create](docs/sdks/podsinboxes/README.md#create) - Create Inbox
+* [get](docs/sdks/podsinboxes/README.md#get) - Get Inbox
+* [update](docs/sdks/podsinboxes/README.md#update) - Update Inbox
+* [delete](docs/sdks/podsinboxes/README.md#delete) - Delete Inbox
 
-### [PodsLists](docs/sdks/podslists/README.md)
+### [Pods.Lists](docs/sdks/podslists/README.md)
 
-* [podsListsList](docs/sdks/podslists/README.md#podslistslist) - List Entries
-* [podsListsCreate](docs/sdks/podslists/README.md#podslistscreate) - Create List Entry
-* [podsListsGet](docs/sdks/podslists/README.md#podslistsget) - Get List Entry
-* [podsListsDelete](docs/sdks/podslists/README.md#podslistsdelete) - Delete List Entry
+* [list](docs/sdks/podslists/README.md#list) - List Entries
+* [create](docs/sdks/podslists/README.md#create) - Create List Entry
+* [get](docs/sdks/podslists/README.md#get) - Get List Entry
+* [delete](docs/sdks/podslists/README.md#delete) - Delete List Entry
 
-### [PodsMetrics](docs/sdks/podsmetrics/README.md)
+### [Pods.Metrics](docs/sdks/podsmetrics/README.md)
 
-* [podsMetricsQuery](docs/sdks/podsmetrics/README.md#podsmetricsquery) - Query Metrics
+* [query](docs/sdks/podsmetrics/README.md#query) - Query Metrics
 
-### [PodsThreads](docs/sdks/podsthreads/README.md)
+### [Pods.Threads](docs/sdks/podsthreads/README.md)
 
-* [podsThreadsList](docs/sdks/podsthreads/README.md#podsthreadslist) - List Threads
-* [podsThreadsGet](docs/sdks/podsthreads/README.md#podsthreadsget) - Get Thread
-* [podsThreadsUpdate](docs/sdks/podsthreads/README.md#podsthreadsupdate) - Update Thread
-* [podsThreadsDelete](docs/sdks/podsthreads/README.md#podsthreadsdelete) - Delete Thread
-* [podsThreadsGetAttachment](docs/sdks/podsthreads/README.md#podsthreadsgetattachment) - Get Attachment
+* [list](docs/sdks/podsthreads/README.md#list) - List Threads
+* [get](docs/sdks/podsthreads/README.md#get) - Get Thread
+* [update](docs/sdks/podsthreads/README.md#update) - Update Thread
+* [delete](docs/sdks/podsthreads/README.md#delete) - Delete Thread
+* [getAttachment](docs/sdks/podsthreads/README.md#getattachment) - Get Attachment
 
 ### [Threads](docs/sdks/threads/README.md)
 
@@ -348,39 +348,39 @@ To read more about standalone functions, check [FUNCTIONS.md](./FUNCTIONS.md).
 - [`inboxesApiKeysInboxesApiKeysCreate`](docs/sdks/inboxesapikeys/README.md#inboxesapikeyscreate) - Create API Key
 - [`inboxesApiKeysInboxesApiKeysDelete`](docs/sdks/inboxesapikeys/README.md#inboxesapikeysdelete) - Delete API Key
 - [`inboxesApiKeysInboxesApiKeysList`](docs/sdks/inboxesapikeys/README.md#inboxesapikeyslist) - List API Keys
-- [`inboxesDraftsInboxesDraftsCreate`](docs/sdks/inboxesdrafts/README.md#inboxesdraftscreate) - Create Draft
-- [`inboxesDraftsInboxesDraftsDelete`](docs/sdks/inboxesdrafts/README.md#inboxesdraftsdelete) - Delete Draft
-- [`inboxesDraftsInboxesDraftsGet`](docs/sdks/inboxesdrafts/README.md#inboxesdraftsget) - Get Draft
-- [`inboxesDraftsInboxesDraftsGetAttachment`](docs/sdks/inboxesdrafts/README.md#inboxesdraftsgetattachment) - Get Attachment
-- [`inboxesDraftsInboxesDraftsList`](docs/sdks/inboxesdrafts/README.md#inboxesdraftslist) - List Drafts
-- [`inboxesDraftsInboxesDraftsSend`](docs/sdks/inboxesdrafts/README.md#inboxesdraftssend) - Send Draft
-- [`inboxesDraftsInboxesDraftsUpdate`](docs/sdks/inboxesdrafts/README.md#inboxesdraftsupdate) - Update Draft
-- [`inboxesEventsInboxesEventsList`](docs/sdks/inboxesevents/README.md#inboxeseventslist) - List Inbox Events
+- [`inboxesDraftsCreate`](docs/sdks/inboxesdrafts/README.md#create) - Create Draft
+- [`inboxesDraftsDelete`](docs/sdks/inboxesdrafts/README.md#delete) - Delete Draft
+- [`inboxesDraftsGet`](docs/sdks/inboxesdrafts/README.md#get) - Get Draft
+- [`inboxesDraftsGetAttachment`](docs/sdks/inboxesdrafts/README.md#getattachment) - Get Attachment
+- [`inboxesDraftsList`](docs/sdks/inboxesdrafts/README.md#list) - List Drafts
+- [`inboxesDraftsSend`](docs/sdks/inboxesdrafts/README.md#send) - Send Draft
+- [`inboxesDraftsUpdate`](docs/sdks/inboxesdrafts/README.md#update) - Update Draft
+- [`inboxesEventsList`](docs/sdks/events/README.md#list) - List Inbox Events
 - [`inboxesInboxesCreate`](docs/sdks/inboxes/README.md#inboxescreate) - Create Inbox
 - [`inboxesInboxesDelete`](docs/sdks/inboxes/README.md#inboxesdelete) - Delete Inbox
 - [`inboxesInboxesGet`](docs/sdks/inboxes/README.md#inboxesget) - Get Inbox
 - [`inboxesInboxesList`](docs/sdks/inboxes/README.md#inboxeslist) - List Inboxes
 - [`inboxesInboxesUpdate`](docs/sdks/inboxes/README.md#inboxesupdate) - Update Inbox
-- [`inboxesListsInboxesListsCreate`](docs/sdks/inboxeslists/README.md#inboxeslistscreate) - Create List Entry
-- [`inboxesListsInboxesListsDelete`](docs/sdks/inboxeslists/README.md#inboxeslistsdelete) - Delete List Entry
-- [`inboxesListsInboxesListsGet`](docs/sdks/inboxeslists/README.md#inboxeslistsget) - Get List Entry
-- [`inboxesListsInboxesListsList`](docs/sdks/inboxeslists/README.md#inboxeslistslist) - List Entries
-- [`inboxesMessagesInboxesMessagesDelete`](docs/sdks/inboxesmessages/README.md#inboxesmessagesdelete) - Delete Message
-- [`inboxesMessagesInboxesMessagesForward`](docs/sdks/inboxesmessages/README.md#inboxesmessagesforward) - Forward Message
-- [`inboxesMessagesInboxesMessagesGet`](docs/sdks/inboxesmessages/README.md#inboxesmessagesget) - Get Message
-- [`inboxesMessagesInboxesMessagesGetAttachment`](docs/sdks/inboxesmessages/README.md#inboxesmessagesgetattachment) - Get Attachment
-- [`inboxesMessagesInboxesMessagesGetRaw`](docs/sdks/inboxesmessages/README.md#inboxesmessagesgetraw) - Get Raw Message
-- [`inboxesMessagesInboxesMessagesList`](docs/sdks/inboxesmessages/README.md#inboxesmessageslist) - List Messages
-- [`inboxesMessagesInboxesMessagesReply`](docs/sdks/inboxesmessages/README.md#inboxesmessagesreply) - Reply To Message
-- [`inboxesMessagesInboxesMessagesReplyAll`](docs/sdks/inboxesmessages/README.md#inboxesmessagesreplyall) - Reply All Message
-- [`inboxesMessagesInboxesMessagesSend`](docs/sdks/inboxesmessages/README.md#inboxesmessagessend) - Send Message
-- [`inboxesMessagesInboxesMessagesUpdate`](docs/sdks/inboxesmessages/README.md#inboxesmessagesupdate) - Update Message
-- [`inboxesMetricsInboxesMetricsQuery`](docs/sdks/inboxesmetrics/README.md#inboxesmetricsquery) - Query Metrics
-- [`inboxesThreadsInboxesThreadsDelete`](docs/sdks/inboxesthreads/README.md#inboxesthreadsdelete) - Delete Thread
-- [`inboxesThreadsInboxesThreadsGet`](docs/sdks/inboxesthreads/README.md#inboxesthreadsget) - Get Thread
-- [`inboxesThreadsInboxesThreadsGetAttachment`](docs/sdks/inboxesthreads/README.md#inboxesthreadsgetattachment) - Get Attachment
-- [`inboxesThreadsInboxesThreadsList`](docs/sdks/inboxesthreads/README.md#inboxesthreadslist) - List Threads
-- [`inboxesThreadsInboxesThreadsUpdate`](docs/sdks/inboxesthreads/README.md#inboxesthreadsupdate) - Update Thread
+- [`inboxesListsCreate`](docs/sdks/inboxeslists/README.md#create) - Create List Entry
+- [`inboxesListsDelete`](docs/sdks/inboxeslists/README.md#delete) - Delete List Entry
+- [`inboxesListsGet`](docs/sdks/inboxeslists/README.md#get) - Get List Entry
+- [`inboxesListsList`](docs/sdks/inboxeslists/README.md#list) - List Entries
+- [`inboxesMessagesDelete`](docs/sdks/messages/README.md#delete) - Delete Message
+- [`inboxesMessagesForward`](docs/sdks/messages/README.md#forward) - Forward Message
+- [`inboxesMessagesGet`](docs/sdks/messages/README.md#get) - Get Message
+- [`inboxesMessagesGetAttachment`](docs/sdks/messages/README.md#getattachment) - Get Attachment
+- [`inboxesMessagesGetRaw`](docs/sdks/messages/README.md#getraw) - Get Raw Message
+- [`inboxesMessagesList`](docs/sdks/messages/README.md#list) - List Messages
+- [`inboxesMessagesReply`](docs/sdks/messages/README.md#reply) - Reply To Message
+- [`inboxesMessagesReplyAll`](docs/sdks/messages/README.md#replyall) - Reply All Message
+- [`inboxesMessagesSend`](docs/sdks/messages/README.md#send) - Send Message
+- [`inboxesMessagesUpdate`](docs/sdks/messages/README.md#update) - Update Message
+- [`inboxesMetricsQuery`](docs/sdks/inboxesmetrics/README.md#query) - Query Metrics
+- [`inboxesThreadsDelete`](docs/sdks/inboxesthreads/README.md#delete) - Delete Thread
+- [`inboxesThreadsGet`](docs/sdks/inboxesthreads/README.md#get) - Get Thread
+- [`inboxesThreadsGetAttachment`](docs/sdks/inboxesthreads/README.md#getattachment) - Get Attachment
+- [`inboxesThreadsList`](docs/sdks/inboxesthreads/README.md#list) - List Threads
+- [`inboxesThreadsUpdate`](docs/sdks/inboxesthreads/README.md#update) - Update Thread
 - [`listsListsCreate`](docs/sdks/lists/README.md#listscreate) - Create List Entry
 - [`listsListsDelete`](docs/sdks/lists/README.md#listsdelete) - Delete List Entry
 - [`listsListsGet`](docs/sdks/lists/README.md#listsget) - Get List Entry
@@ -390,35 +390,35 @@ To read more about standalone functions, check [FUNCTIONS.md](./FUNCTIONS.md).
 - [`podsApiKeysPodsApiKeysCreate`](docs/sdks/podsapikeys/README.md#podsapikeyscreate) - Create API Key
 - [`podsApiKeysPodsApiKeysDelete`](docs/sdks/podsapikeys/README.md#podsapikeysdelete) - Delete API Key
 - [`podsApiKeysPodsApiKeysList`](docs/sdks/podsapikeys/README.md#podsapikeyslist) - List API Keys
-- [`podsDomainsPodsDomainsCreate`](docs/sdks/podsdomains/README.md#podsdomainscreate) - Create Domain
-- [`podsDomainsPodsDomainsDelete`](docs/sdks/podsdomains/README.md#podsdomainsdelete) - Delete Domain
-- [`podsDomainsPodsDomainsGet`](docs/sdks/podsdomains/README.md#podsdomainsget) - Get Domain
-- [`podsDomainsPodsDomainsGetZoneFile`](docs/sdks/podsdomains/README.md#podsdomainsgetzonefile) - Get Zone File
-- [`podsDomainsPodsDomainsList`](docs/sdks/podsdomains/README.md#podsdomainslist) - List Domains
-- [`podsDomainsPodsDomainsUpdate`](docs/sdks/podsdomains/README.md#podsdomainsupdate) - Update Domain
-- [`podsDomainsPodsDomainsVerify`](docs/sdks/podsdomains/README.md#podsdomainsverify) - Verify Domain
-- [`podsDraftsPodsDraftsGet`](docs/sdks/podsdrafts/README.md#podsdraftsget) - Get Draft
-- [`podsDraftsPodsDraftsGetAttachment`](docs/sdks/podsdrafts/README.md#podsdraftsgetattachment) - Get Attachment
-- [`podsDraftsPodsDraftsList`](docs/sdks/podsdrafts/README.md#podsdraftslist) - List Drafts
-- [`podsInboxesPodsInboxesCreate`](docs/sdks/podsinboxes/README.md#podsinboxescreate) - Create Inbox
-- [`podsInboxesPodsInboxesDelete`](docs/sdks/podsinboxes/README.md#podsinboxesdelete) - Delete Inbox
-- [`podsInboxesPodsInboxesGet`](docs/sdks/podsinboxes/README.md#podsinboxesget) - Get Inbox
-- [`podsInboxesPodsInboxesList`](docs/sdks/podsinboxes/README.md#podsinboxeslist) - List Inboxes
-- [`podsInboxesPodsInboxesUpdate`](docs/sdks/podsinboxes/README.md#podsinboxesupdate) - Update Inbox
-- [`podsListsPodsListsCreate`](docs/sdks/podslists/README.md#podslistscreate) - Create List Entry
-- [`podsListsPodsListsDelete`](docs/sdks/podslists/README.md#podslistsdelete) - Delete List Entry
-- [`podsListsPodsListsGet`](docs/sdks/podslists/README.md#podslistsget) - Get List Entry
-- [`podsListsPodsListsList`](docs/sdks/podslists/README.md#podslistslist) - List Entries
-- [`podsMetricsPodsMetricsQuery`](docs/sdks/podsmetrics/README.md#podsmetricsquery) - Query Metrics
+- [`podsDomainsCreate`](docs/sdks/podsdomains/README.md#create) - Create Domain
+- [`podsDomainsDelete`](docs/sdks/podsdomains/README.md#delete) - Delete Domain
+- [`podsDomainsGet`](docs/sdks/podsdomains/README.md#get) - Get Domain
+- [`podsDomainsGetZoneFile`](docs/sdks/podsdomains/README.md#getzonefile) - Get Zone File
+- [`podsDomainsList`](docs/sdks/podsdomains/README.md#list) - List Domains
+- [`podsDomainsUpdate`](docs/sdks/podsdomains/README.md#update) - Update Domain
+- [`podsDomainsVerify`](docs/sdks/podsdomains/README.md#verify) - Verify Domain
+- [`podsDraftsGet`](docs/sdks/podsdrafts/README.md#get) - Get Draft
+- [`podsDraftsGetAttachment`](docs/sdks/podsdrafts/README.md#getattachment) - Get Attachment
+- [`podsDraftsList`](docs/sdks/podsdrafts/README.md#list) - List Drafts
+- [`podsInboxesCreate`](docs/sdks/podsinboxes/README.md#create) - Create Inbox
+- [`podsInboxesDelete`](docs/sdks/podsinboxes/README.md#delete) - Delete Inbox
+- [`podsInboxesGet`](docs/sdks/podsinboxes/README.md#get) - Get Inbox
+- [`podsInboxesList`](docs/sdks/podsinboxes/README.md#list) - List Inboxes
+- [`podsInboxesUpdate`](docs/sdks/podsinboxes/README.md#update) - Update Inbox
+- [`podsListsCreate`](docs/sdks/podslists/README.md#create) - Create List Entry
+- [`podsListsDelete`](docs/sdks/podslists/README.md#delete) - Delete List Entry
+- [`podsListsGet`](docs/sdks/podslists/README.md#get) - Get List Entry
+- [`podsListsList`](docs/sdks/podslists/README.md#list) - List Entries
+- [`podsMetricsQuery`](docs/sdks/podsmetrics/README.md#query) - Query Metrics
 - [`podsPodsCreate`](docs/sdks/pods/README.md#podscreate) - Create Pod
 - [`podsPodsDelete`](docs/sdks/pods/README.md#podsdelete) - Delete Pod
 - [`podsPodsGet`](docs/sdks/pods/README.md#podsget) - Get Pod
 - [`podsPodsList`](docs/sdks/pods/README.md#podslist) - List Pods
-- [`podsThreadsPodsThreadsDelete`](docs/sdks/podsthreads/README.md#podsthreadsdelete) - Delete Thread
-- [`podsThreadsPodsThreadsGet`](docs/sdks/podsthreads/README.md#podsthreadsget) - Get Thread
-- [`podsThreadsPodsThreadsGetAttachment`](docs/sdks/podsthreads/README.md#podsthreadsgetattachment) - Get Attachment
-- [`podsThreadsPodsThreadsList`](docs/sdks/podsthreads/README.md#podsthreadslist) - List Threads
-- [`podsThreadsPodsThreadsUpdate`](docs/sdks/podsthreads/README.md#podsthreadsupdate) - Update Thread
+- [`podsThreadsDelete`](docs/sdks/podsthreads/README.md#delete) - Delete Thread
+- [`podsThreadsGet`](docs/sdks/podsthreads/README.md#get) - Get Thread
+- [`podsThreadsGetAttachment`](docs/sdks/podsthreads/README.md#getattachment) - Get Attachment
+- [`podsThreadsList`](docs/sdks/podsthreads/README.md#list) - List Threads
+- [`podsThreadsUpdate`](docs/sdks/podsthreads/README.md#update) - Update Thread
 - [`threadsThreadsDelete`](docs/sdks/threads/README.md#threadsdelete) - Delete Thread
 - [`threadsThreadsGet`](docs/sdks/threads/README.md#threadsget) - Get Thread
 - [`threadsThreadsGetAttachment`](docs/sdks/threads/README.md#threadsgetattachment) - Get Attachment

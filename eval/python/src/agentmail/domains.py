@@ -44,7 +44,9 @@ class Domains(BaseSDK):
         if server_url is not None:
             base_url = server_url
         else:
-            base_url = models.operations.DOMAINS_LIST_SERVERS[0]
+            base_url = models.operations.DOMAINS_LIST_SERVERS[
+                models.operations.DOMAINS_LIST_SERVER_PROD
+            ]
 
         request = models.operations.DomainsListRequest(
             limit=limit,
@@ -143,7 +145,9 @@ class Domains(BaseSDK):
         if server_url is not None:
             base_url = server_url
         else:
-            base_url = models.operations.DOMAINS_LIST_SERVERS[0]
+            base_url = models.operations.DOMAINS_LIST_SERVERS[
+                models.operations.DOMAINS_LIST_SERVER_PROD
+            ]
 
         request = models.operations.DomainsListRequest(
             limit=limit,
@@ -240,7 +244,9 @@ class Domains(BaseSDK):
         if server_url is not None:
             base_url = server_url
         else:
-            base_url = models.operations.DOMAINS_CREATE_SERVERS[0]
+            base_url = models.operations.DOMAINS_CREATE_SERVERS[
+                models.operations.DOMAINS_CREATE_SERVER_PROD
+            ]
 
         request = models.components.CreateDomainRequest(
             domain=domain,
@@ -343,7 +349,9 @@ class Domains(BaseSDK):
         if server_url is not None:
             base_url = server_url
         else:
-            base_url = models.operations.DOMAINS_CREATE_SERVERS[0]
+            base_url = models.operations.DOMAINS_CREATE_SERVERS[
+                models.operations.DOMAINS_CREATE_SERVER_PROD
+            ]
 
         request = models.components.CreateDomainRequest(
             domain=domain,
@@ -444,7 +452,9 @@ class Domains(BaseSDK):
         if server_url is not None:
             base_url = server_url
         else:
-            base_url = models.operations.DOMAINS_GET_SERVERS[0]
+            base_url = models.operations.DOMAINS_GET_SERVERS[
+                models.operations.DOMAINS_GET_SERVER_PROD
+            ]
 
         request = models.operations.DomainsGetRequest(
             domain_id=domain_id,
@@ -541,7 +551,9 @@ class Domains(BaseSDK):
         if server_url is not None:
             base_url = server_url
         else:
-            base_url = models.operations.DOMAINS_GET_SERVERS[0]
+            base_url = models.operations.DOMAINS_GET_SERVERS[
+                models.operations.DOMAINS_GET_SERVER_PROD
+            ]
 
         request = models.operations.DomainsGetRequest(
             domain_id=domain_id,
@@ -640,7 +652,9 @@ class Domains(BaseSDK):
         if server_url is not None:
             base_url = server_url
         else:
-            base_url = models.operations.DOMAINS_UPDATE_SERVERS[0]
+            base_url = models.operations.DOMAINS_UPDATE_SERVERS[
+                models.operations.DOMAINS_UPDATE_SERVER_PROD
+            ]
 
         request = models.operations.DomainsUpdateRequest(
             domain_id=domain_id,
@@ -749,7 +763,9 @@ class Domains(BaseSDK):
         if server_url is not None:
             base_url = server_url
         else:
-            base_url = models.operations.DOMAINS_UPDATE_SERVERS[0]
+            base_url = models.operations.DOMAINS_UPDATE_SERVERS[
+                models.operations.DOMAINS_UPDATE_SERVER_PROD
+            ]
 
         request = models.operations.DomainsUpdateRequest(
             domain_id=domain_id,
@@ -856,7 +872,9 @@ class Domains(BaseSDK):
         if server_url is not None:
             base_url = server_url
         else:
-            base_url = models.operations.DOMAINS_DELETE_SERVERS[0]
+            base_url = models.operations.DOMAINS_DELETE_SERVERS[
+                models.operations.DOMAINS_DELETE_SERVER_PROD
+            ]
 
         request = models.operations.DomainsDeleteRequest(
             domain_id=domain_id,
@@ -953,7 +971,9 @@ class Domains(BaseSDK):
         if server_url is not None:
             base_url = server_url
         else:
-            base_url = models.operations.DOMAINS_DELETE_SERVERS[0]
+            base_url = models.operations.DOMAINS_DELETE_SERVERS[
+                models.operations.DOMAINS_DELETE_SERVER_PROD
+            ]
 
         request = models.operations.DomainsDeleteRequest(
             domain_id=domain_id,
@@ -1050,7 +1070,9 @@ class Domains(BaseSDK):
         if server_url is not None:
             base_url = server_url
         else:
-            base_url = models.operations.DOMAINS_GET_ZONE_FILE_SERVERS[0]
+            base_url = models.operations.DOMAINS_GET_ZONE_FILE_SERVERS[
+                models.operations.DOMAINS_GET_ZONE_FILE_SERVER_PROD
+            ]
 
         request = models.operations.DomainsGetZoneFileRequest(
             domain_id=domain_id,
@@ -1150,7 +1172,9 @@ class Domains(BaseSDK):
         if server_url is not None:
             base_url = server_url
         else:
-            base_url = models.operations.DOMAINS_GET_ZONE_FILE_SERVERS[0]
+            base_url = models.operations.DOMAINS_GET_ZONE_FILE_SERVERS[
+                models.operations.DOMAINS_GET_ZONE_FILE_SERVER_PROD
+            ]
 
         request = models.operations.DomainsGetZoneFileRequest(
             domain_id=domain_id,
@@ -1250,7 +1274,9 @@ class Domains(BaseSDK):
         if server_url is not None:
             base_url = server_url
         else:
-            base_url = models.operations.DOMAINS_VERIFY_SERVERS[0]
+            base_url = models.operations.DOMAINS_VERIFY_SERVERS[
+                models.operations.DOMAINS_VERIFY_SERVER_PROD
+            ]
 
         request = models.operations.DomainsVerifyRequest(
             domain_id=domain_id,
@@ -1347,7 +1373,9 @@ class Domains(BaseSDK):
         if server_url is not None:
             base_url = server_url
         else:
-            base_url = models.operations.DOMAINS_VERIFY_SERVERS[0]
+            base_url = models.operations.DOMAINS_VERIFY_SERVERS[
+                models.operations.DOMAINS_VERIFY_SERVER_PROD
+            ]
 
         request = models.operations.DomainsVerifyRequest(
             domain_id=domain_id,

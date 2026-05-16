@@ -1,15 +1,15 @@
 lockVersion: 2.0.0
 id: 5f576409-e9b4-41aa-a6f9-6f6b5741fa26
 management:
-  docChecksum: 969122d79cc72647b2e485c773124c93
+  docChecksum: d787069be30aef6fd18c48c26c7b303f
   speakeasyVersion: 1.761.9
   generationVersion: 2.881.4
-  releaseVersion: 0.0.1
-  configChecksum: e4355a8f7939827b30eef5d78e3e934f
+  releaseVersion: 0.3.1
+  configChecksum: 3898489ebc31f84ba00354a9b4ee01a8
 persistentEdits:
-  generation_id: bee4875b-926a-419b-8182-8bf1862bdf16
-  pristine_commit_hash: 07c2c089254a299e4923983b59226de101a7ca09
-  pristine_tree_hash: a4d0db277180a8ffa4ffc9093ce84dae1a923a15
+  generation_id: b8f0602d-cfbb-45c7-b931-0ad1eb91caac
+  pristine_commit_hash: 744568db30ffc5ca1c107a6228b23106eb98e0aa
+  pristine_tree_hash: 15f694aa781c2eceaf05ea4b6c8416cd429f5983
 features:
   python:
     additionalDependencies: 1.0.0
@@ -25,11 +25,14 @@ features:
     globalSecurityCallbacks: 1.0.0
     globalSecurityFlattening: 1.0.0
     globalServerURLs: 3.2.1
+    groups: 3.0.1
     methodServerURLs: 3.1.2
+    nameOverrides: 3.0.3
     nullables: 1.0.2
     responseFormat: 1.1.0
     retries: 3.0.5
     sdkHooks: 1.2.1
+    serverIDs: 3.0.0
     unions: 3.1.4
 trackedFiles:
   .gitattributes:
@@ -736,42 +739,42 @@ trackedFiles:
     id: 6b88dd5de878
     last_write_checksum: sha1:19f36fb6099e2f522c30f00c13bf4e25795e20ac
     pristine_git_object: 941c8baa441786c5973fe01cb2199e6480baa807
+  docs/sdks/events/README.md:
+    id: cf45a4390b9b
+    last_write_checksum: sha1:ffc4a7c21ffd3e58ec99b93c217ee15f5a6d13eb
+    pristine_git_object: b10ceb953433d1957520aa7c7a7fde92160841ad
   docs/sdks/inboxes/README.md:
     id: de7d86cec05e
     last_write_checksum: sha1:6eeaf3baa10ac36d75e1775910aef12d74ff423e
     pristine_git_object: 2c74cbdeadfd8f152a93a9914754686a4fe6771e
   docs/sdks/inboxesapikeys/README.md:
     id: 9e0e74a59a95
-    last_write_checksum: sha1:6a58f1b3f97e64a29256392e5ddd77a7228bf934
-    pristine_git_object: 1bcf73fbe4bf3e9c2bd0e9a373105c7bc511436c
+    last_write_checksum: sha1:161d35b4df4d1d752b64f7e835a45ec0c8101ae8
+    pristine_git_object: 5cea6c0b9965c2e3a3603ac3b670799c1ffe9e66
   docs/sdks/inboxesdrafts/README.md:
     id: 1a2f3153103f
-    last_write_checksum: sha1:671ad36f25d49281f654e43e459e0adf0df3c95d
-    pristine_git_object: e5bf0645781e4d94940c8ade3b841b8cb241ff90
-  docs/sdks/inboxesevents/README.md:
-    id: 7fead12f9f88
-    last_write_checksum: sha1:b8c78e54aee3b369e5a450ff020d77e32f451b0e
-    pristine_git_object: 538d10f21ca91711ef9efaf70a70beb318747131
+    last_write_checksum: sha1:581931808f01e84563241d095629c013fd73f61a
+    pristine_git_object: 908660a4b07f8784aeb738bd8009cde4ec38a19e
   docs/sdks/inboxeslists/README.md:
     id: b74835fd3088
-    last_write_checksum: sha1:7920f1bd9981170be3ad6cfad19aca32e8ec590a
-    pristine_git_object: 4df25c36eb969a90c5c768a155130020073e9742
-  docs/sdks/inboxesmessages/README.md:
-    id: 881c2ca729b4
-    last_write_checksum: sha1:91cfe559a9e3efa2a7182192a5ecad06e40f41c9
-    pristine_git_object: 58e11a4014b03265d67396e12bbe501984391dad
+    last_write_checksum: sha1:8fce9134383d469bb00a5ff695625b889a540ee1
+    pristine_git_object: 4748837b305eca9337e367e4ba5cf23c79b8cb0a
   docs/sdks/inboxesmetrics/README.md:
     id: 05fa398f39c1
-    last_write_checksum: sha1:92efb5a8be2c80a93b468e49e2db55dd87074686
-    pristine_git_object: afb5d3e45be1c2b98551a3e5b52cd221be3782f0
+    last_write_checksum: sha1:13ce69e92e5b5fcf6b60342acbb6f38e48472b2b
+    pristine_git_object: d4c360b756e367fe537ed8832269c2b68b74dddd
   docs/sdks/inboxesthreads/README.md:
     id: 95470e17e64d
-    last_write_checksum: sha1:6d038167e946ff3bd28a6c082fac386cf5c08f21
-    pristine_git_object: c55a640d7a28a362a3c51d0de36a23911f076c97
+    last_write_checksum: sha1:38531fa672d2e22931c76bbaaa666212be916b75
+    pristine_git_object: eeba6a6024107c247ec6535de33e77010622760f
   docs/sdks/lists/README.md:
     id: 2bf91000d730
     last_write_checksum: sha1:e726cf0c21286df26fac33b2c1ca1ef9bbfcf189
     pristine_git_object: 99a43b1bd4a1e6663dd76242da750117f92066ec
+  docs/sdks/messages/README.md:
+    id: 3f1f6d38fc33
+    last_write_checksum: sha1:4e7ac014deb982b71230f2c7b8a227207a6d9113
+    pristine_git_object: 078150c6eec5a8897c500ead4c48a3172d895fdf
   docs/sdks/metrics/README.md:
     id: a8545d964e21
     last_write_checksum: sha1:de7d3a217039100fc8d11e9b3197e429a3bcd1ef
@@ -786,32 +789,32 @@ trackedFiles:
     pristine_git_object: ab621776921ddf1ceb481ff3141132b79dec07a4
   docs/sdks/podsapikeys/README.md:
     id: e31762e1a22d
-    last_write_checksum: sha1:4aecc406500e8b3f0e0eb123c02a46d1809af626
-    pristine_git_object: 0fd47324f2af20f7c993c09f41d7b0127c67af1c
+    last_write_checksum: sha1:cb761c9fabae660a4fd7a0ad0953df45bc40eaf3
+    pristine_git_object: 49848ee0e69b761e8ec61bd636d4ca753fb5dc17
   docs/sdks/podsdomains/README.md:
     id: 662136e33389
-    last_write_checksum: sha1:40dc4a85eaa5ed905a410aafc4f143cd3887ef5a
-    pristine_git_object: fefe7830cfd670a5f72f4e852f2fbe4f4d5fd6c0
+    last_write_checksum: sha1:a45514f99dea0cf52b74f14457f155e8157de822
+    pristine_git_object: 29343ccd343891407c568e042efa718d8b4974b5
   docs/sdks/podsdrafts/README.md:
     id: 4356d6c969aa
-    last_write_checksum: sha1:c82673246c076a435265aa47d5351a676b4139c7
-    pristine_git_object: 05c8a033ec649409d78553950c06191422e5d3c9
+    last_write_checksum: sha1:4e764736a55890a703dbc6726cf11d9d9b5132db
+    pristine_git_object: 42d8599208c6d31cd95d9610a8d38f26314be35c
   docs/sdks/podsinboxes/README.md:
     id: e8c69e0e5d2d
-    last_write_checksum: sha1:09f81d8253827e718a091c74b72c6209d0dcda8c
-    pristine_git_object: a8195e199296d9de62d64601dce2c65136e879b0
+    last_write_checksum: sha1:b5e64d2b5c09588950846a425deb8f3746af3071
+    pristine_git_object: f4439b6669dbf806cfe10aa619e4f07f929ad5a1
   docs/sdks/podslists/README.md:
     id: a65121201186
-    last_write_checksum: sha1:0d2717efd37fba9034ce9211b556ed6c09e672b7
-    pristine_git_object: 5b5571bd12cf34cc6f597f8dd65fc3f2b8320bcf
+    last_write_checksum: sha1:9cdd6af716709e61ce063c08d9018995566cd438
+    pristine_git_object: c54c2990ba84d52fcfaba37151be4f78dcc7374a
   docs/sdks/podsmetrics/README.md:
     id: c771c5f4d3f8
-    last_write_checksum: sha1:3776571fc67d5168334d812d8e0e224b9f38b4b7
-    pristine_git_object: 7492ab65c6cc2b7cdb3be25d499e034431a6e5e6
+    last_write_checksum: sha1:544622dc417bd82b70dc400db34145fd8007864a
+    pristine_git_object: cf36628588426dbc6fd52fce2aff0c01f238a2e8
   docs/sdks/podsthreads/README.md:
     id: 473758b14f8a
-    last_write_checksum: sha1:06fe0a2bc49982fe8c37008be185885bb496006a
-    pristine_git_object: 913330ab6cb83646928c0d5f751ac2c62a39a9e7
+    last_write_checksum: sha1:cbd21c852c259fb6d61f0fcdd43e13a6a0ee83b3
+    pristine_git_object: e86dfa0dce50ede349293157ec48623fe4fb31db
   docs/sdks/threads/README.md:
     id: 73fd0317d045
     last_write_checksum: sha1:24fe8ace7fa50efc8d01302b0457b34884d5ebcb
@@ -834,8 +837,8 @@ trackedFiles:
     pristine_git_object: 1bcdf11c599073a49bf4f14d9724143768dd01fb
   pyproject.toml:
     id: 5d07e7d72637
-    last_write_checksum: sha1:beef01cb9a6ec30dd1d3d70b5041f9399b708664
-    pristine_git_object: 9f477a02eb1a27995bb43814eafeee89b0cf92eb
+    last_write_checksum: sha1:0bf239e3e89d55be39bb5d494711b76a6efa6f60
+    pristine_git_object: 0e705e6593bb3366421b6b3798bb9c73bb10cc3f
   scripts/publish.sh:
     id: fe273b08f514
     last_write_checksum: sha1:11c8a74f613fdb29f432e3feafb84072eeba6428
@@ -858,72 +861,72 @@ trackedFiles:
     pristine_git_object: 72f4391e57297e6b0080f4aa31092c7173aadab6
   src/agentmail/_version.py:
     id: 263f5c698d30
-    last_write_checksum: sha1:410b104166bee5e05be925238fba5ee48cd6356e
-    pristine_git_object: b4db15b14f8dbdcb5e9a34ad539dfb4b3401485c
+    last_write_checksum: sha1:6f21463e2f081600cdeafc4bd1476f9e3097403d
+    pristine_git_object: 540d19b6a52dbc816fa6d054f0f2fd93647b5ef6
   src/agentmail/agent.py:
     id: 8470c5b93a4b
-    last_write_checksum: sha1:bfa2d37bc79ca2285c2234e246678023673fff83
-    pristine_git_object: 3ea24d21f91f0c1da84aa5fcd4153846cec659e0
+    last_write_checksum: sha1:2ac0542be161247bc9b29ae6f2ea5581b4d12dda
+    pristine_git_object: eadba8b0e85230f6ced1abef0da81a1e0258f458
   src/agentmail/apikeys.py:
     id: cd87a1e378f9
-    last_write_checksum: sha1:624804467f12396dae3340bc258d531bf5ffe15b
-    pristine_git_object: cea0c5bc62170f1bfb5486bbd3352931e415206e
+    last_write_checksum: sha1:46cc915f204c033613e8f56573b7d97608adf581
+    pristine_git_object: 042e766bf9958dfc859874e9d5b8fe085b378839
   src/agentmail/basesdk.py:
     id: 43b10be74d05
     last_write_checksum: sha1:b65c78c5c594b8c99ce72f0e4b4b2bfdef0f1919
     pristine_git_object: c0eef4120cd0cd551fdcafca77e1bfb6359307df
   src/agentmail/domains.py:
     id: efdb5741177c
-    last_write_checksum: sha1:265f5814fc59e3c78eb10983e968090c1cf1b3d4
-    pristine_git_object: 5cd973719ae63d346374c9baac4b5347efcec7d8
+    last_write_checksum: sha1:560a8a242e826daf6a0f337e64f28d4ff7514ea6
+    pristine_git_object: 6aef83ce1ac0b06e2f6b4cfdd15fed11cde05ce0
   src/agentmail/drafts.py:
     id: 23f1122a6b74
-    last_write_checksum: sha1:d8f8c8d727a3ceae6784834d86c25dab4e599472
-    pristine_git_object: 3b1cb404ff26efb81214e4db4df0f1497bc5f0e8
+    last_write_checksum: sha1:cb500a9b23f90cfd129213fb2b2930f5a4655b59
+    pristine_git_object: 326f76528c8b5158e044c93c3e59f1c90d7552c7
+  src/agentmail/events.py:
+    id: 370b9104bb79
+    last_write_checksum: sha1:d0f32aa843e3be41e2d396896b4980c94c15355d
+    pristine_git_object: 5e490b9f8d52aa0fc95e1edc4ab24b5910b92be5
   src/agentmail/httpclient.py:
     id: f447f196e42e
     last_write_checksum: sha1:5e55338d6ee9f01ab648cad4380201a8a3da7dd7
     pristine_git_object: 89560b566073785535643e694c112bedbd3db13d
   src/agentmail/inboxes.py:
     id: 4baaef1f5e83
-    last_write_checksum: sha1:ed0c2300f8fe9f5048b34efde63eb399fcbe0eef
-    pristine_git_object: 9f1ca009df0d7f5aff3ca5ecbae1454b10e7a862
-  src/agentmail/inboxesapikeys.py:
-    id: 9ef9611855a0
-    last_write_checksum: sha1:fe15c9e28d413589d06eab4c66cc4eead1bb41c3
-    pristine_git_object: ef04983d5fe2cc84ef19180c092dd89538c91fe3
-  src/agentmail/inboxesdrafts.py:
-    id: 7e89bcc14c98
-    last_write_checksum: sha1:f7e3c8d52b597349d72a4dc0aafc2fb4d7784730
-    pristine_git_object: 5ebc9748a11d0643b9b993ee94567cfe595a1578
-  src/agentmail/inboxesevents.py:
-    id: b0b738aedd5e
-    last_write_checksum: sha1:e5c07bbdd9444761931ba3d4399af51cb20f60ff
-    pristine_git_object: 87fc1f15646f58ede21cc94c513a8ea022679d19
-  src/agentmail/inboxeslists.py:
-    id: bf8e247ff5f0
-    last_write_checksum: sha1:f41b3146afb25a205abb3e33e582b82286331e00
-    pristine_git_object: e32b9d485da112e29204bfeff75fa7db1b1fd922
-  src/agentmail/inboxesmessages.py:
-    id: 4ca72dd7508a
-    last_write_checksum: sha1:b8067780a445b420342836291005a465b9d0837b
-    pristine_git_object: 01d72467594c79dc95a22c2362adb08720cb319a
-  src/agentmail/inboxesmetrics.py:
-    id: 12212bf88dfb
-    last_write_checksum: sha1:e90cc8724d0dd270e09fb3810af8f92911a2e887
-    pristine_git_object: 18f51d92981ff5ccbfe62ab47f2e9646aa951ff7
-  src/agentmail/inboxesthreads.py:
-    id: b561767f4165
-    last_write_checksum: sha1:1d441222f27421079585351550d0a9aebc3d7341
-    pristine_git_object: 65a7f763902448c1e46f237cf02eaa909d06b67f
+    last_write_checksum: sha1:cb9e3e0a2f634d7c99a2fbcc7e7f7c7de5a75c9b
+    pristine_git_object: 1312ee228ab868bf99054d5d257b35a31c61ea9f
+  src/agentmail/inboxes_api_keys.py:
+    id: c810ad7f1be3
+    last_write_checksum: sha1:0f85336104ffc6d8c7c9148536ef0dbba8281a3e
+    pristine_git_object: 04f86d8375688539a6b0ab78803bf0a8aaf5ac1e
+  src/agentmail/inboxes_drafts.py:
+    id: e71220b1fc46
+    last_write_checksum: sha1:7a1557509510a0c6dc4863474df278fe5d572883
+    pristine_git_object: b47f8d1b3681b618bac726b5650f883396b53581
+  src/agentmail/inboxes_lists.py:
+    id: 39fa086c79f3
+    last_write_checksum: sha1:30aff2ad6b941f77efabce3f6ba69ab1e371a0b2
+    pristine_git_object: e7a8ace2f418946caf0dd74eead3d849120a53cf
+  src/agentmail/inboxes_metrics.py:
+    id: 9f1aa00c3150
+    last_write_checksum: sha1:15342de2254c306ed118fa4359b57c33110a9c37
+    pristine_git_object: 8857629ef3619430d2780e7f46220012d110486e
+  src/agentmail/inboxes_threads.py:
+    id: 493cfa89cccd
+    last_write_checksum: sha1:f21a8217bdfff370cf5ca30d80e6ed0b7d22c379
+    pristine_git_object: 935103fc8ccb0d4043e846e41c2ff0b48c728720
   src/agentmail/lists.py:
     id: 767e56071567
-    last_write_checksum: sha1:593ac790481918b770f10ad6ab777e276fa5fbdb
-    pristine_git_object: 08902f7c253979431697ac7970825bbbcfa70a5a
+    last_write_checksum: sha1:e92ebe669c6ccd6761658d11d0798c2e6494dcdd
+    pristine_git_object: 1582f7e3754b1129e15299206e6affd2237a0acc
+  src/agentmail/messages.py:
+    id: 44e808dc347a
+    last_write_checksum: sha1:84efc3b790c05a5836ca893b3fbefeb42cda6e1f
+    pristine_git_object: a0519736b495fa5034d419b81d58fc91401d7b7a
   src/agentmail/metrics.py:
     id: 7f0d274f38fb
-    last_write_checksum: sha1:93419180a511a9eb263a09bb24b6ebd743cdf770
-    pristine_git_object: 9b95b255d66c1a3fcd81965a5cc3cabd1f002172
+    last_write_checksum: sha1:a7e260e2b320570dbf71106161466b437ad4cd78
+    pristine_git_object: bcd6051db83147b9be6d5ba0713d0cf7c4d2bef8
   src/agentmail/models/__init__.py:
     id: c457ebb9c217
     last_write_checksum: sha1:338e053b0fe4393cce52552a90ccebe079fd9e66
@@ -1262,456 +1265,456 @@ trackedFiles:
     pristine_git_object: ee91957baeba60bcd61976603cbe3cb910376d56
   src/agentmail/models/operations/__init__.py:
     id: 73f40b045d1c
-    last_write_checksum: sha1:2fc2da65055b65e427ecb6f2206d70af6703d4bd
-    pristine_git_object: c9a41dd6b18184d97cea5d091a9a99b82e5804a6
+    last_write_checksum: sha1:ec3a1d0c78f0376bc3dc4a016cd5a713452c9b10
+    pristine_git_object: 2ac043771c7f4d728bf9b5e0416ed88e8c8b0acb
   src/agentmail/models/operations/agent_signup.py:
     id: 767e7081fdaa
-    last_write_checksum: sha1:5cbe4f47b24cda3bd626332fe4323346c0f37706
-    pristine_git_object: bcb9928f698fa0ba185230b2bf76db6962650fbe
+    last_write_checksum: sha1:92f52f377289997b934164b845560da092e7aeef
+    pristine_git_object: 906d224c19cb59a506c2214bcc9c23cf2e82c9a1
   src/agentmail/models/operations/agent_verify.py:
     id: fb1a04868f3c
-    last_write_checksum: sha1:d9b3ac52cd9920a7605ebc122eefcdb1cabea683
-    pristine_git_object: ffe0c674f7f5402b41f30ac0015ef5421b4a3a99
+    last_write_checksum: sha1:1d3707118c618ac63169a31f525763e23b5190e5
+    pristine_git_object: b8ee39efc9fe2dfd2f2765a88c8b839e7fa1f282
   src/agentmail/models/operations/apikeys_create.py:
     id: 719e492cb63e
-    last_write_checksum: sha1:43cf9150458db716d5d2d7b504bcf4d23495b9cf
-    pristine_git_object: b9fb77495c2dd65b91164f5bf188959a49a0d6d5
+    last_write_checksum: sha1:76904e5e422074d4a5d1b114eba016a7f670127c
+    pristine_git_object: 8997777c8230ca9146ad7ced785b15b94a506092
   src/agentmail/models/operations/apikeys_delete.py:
     id: 847d4f80423f
-    last_write_checksum: sha1:05a908a635fb3b255544b543884aa14ad75fbf7a
-    pristine_git_object: c4f3768ccda01ebe1d9997e23a2ae35e2d9c7681
+    last_write_checksum: sha1:5de048c6b216add3b5306953fdd2e66f74178401
+    pristine_git_object: 4b018b0586c74622367bbcd146a32eec5d1155cd
   src/agentmail/models/operations/apikeys_list.py:
     id: 861bb0867d74
-    last_write_checksum: sha1:790ac6a3e5a41155e764a44bdc7c61f175ed3b42
-    pristine_git_object: 0fe6416b6992aef3dd41668656bead53c50d31c6
+    last_write_checksum: sha1:af3d371e097a41f9357545afa258ddf8b3ef46c1
+    pristine_git_object: 3d71e2f5084c172ccaf525cdb914329086b4357f
   src/agentmail/models/operations/domains_create.py:
     id: f081565c0506
-    last_write_checksum: sha1:5bf888742b4b3a2f715d500a4d08059b339a8705
-    pristine_git_object: 9f1b8cdaae43f31cec7598b20000e476e8568d9c
+    last_write_checksum: sha1:e7481f9a5d3bbb37c818ed00609388dd58b25ee4
+    pristine_git_object: 739c7bd04ef7397ef637d37bb4f43f157e7d6800
   src/agentmail/models/operations/domains_delete.py:
     id: 4bc73cbe131c
-    last_write_checksum: sha1:896a43f09b732405b0c115639bfccb2c8795667e
-    pristine_git_object: e26434f396ad1bbb1109f65c8172842d77c7e08c
+    last_write_checksum: sha1:dfc57b6838436ca78e39a2d00a510fa9d9c3a121
+    pristine_git_object: 765b5e10353c2ed9e30ca31fe47ec2bfe1aedac1
   src/agentmail/models/operations/domains_get.py:
     id: 06bd7985cd11
-    last_write_checksum: sha1:85fa99a06e487ab020034138e99479c88469adb3
-    pristine_git_object: 0ac4c666faae8d8120a7a8ecd223eb66464b3e29
+    last_write_checksum: sha1:58b3903653c8b3e942f9085f466e9305d3689e34
+    pristine_git_object: 5e215643fa85fcca6efdf77219ae890280c80a34
   src/agentmail/models/operations/domains_getzonefile.py:
     id: 0c640578ef26
-    last_write_checksum: sha1:e712ebbdd28415f0e66ce23cef51c2f97262b496
-    pristine_git_object: a9144ef4822e839592ab40eea11fdaef5a9231db
+    last_write_checksum: sha1:133e8ab178f8590330cd67ebad81dc98ec87e7f8
+    pristine_git_object: 564eaf9b5d4e2820a5352f4c303620f708812a3b
   src/agentmail/models/operations/domains_list.py:
     id: 9612d23fc31d
-    last_write_checksum: sha1:4143b102fc6f17bf658db397e040858e2154a8bb
-    pristine_git_object: 8bc4a708574d8f45b16ba6df595824986c09f2b5
+    last_write_checksum: sha1:a42f3d953cc674ba55dad7b5bd8be1b624db980b
+    pristine_git_object: d77eb8ff602d2ec9245f6ad1b8c22049066a8667
   src/agentmail/models/operations/domains_update.py:
     id: 260bc1b3139d
-    last_write_checksum: sha1:ddaaf571df01c1e5c03bdd0e28a9364d38945d8b
-    pristine_git_object: 62a506c75bfbb81bfd3ca2513bc9ef05a01da523
+    last_write_checksum: sha1:c8232d03d088529edc2d014a329f3f5ba70bfb45
+    pristine_git_object: 2d6eb94444017e49e96b838ccfef519fa2f7e97f
   src/agentmail/models/operations/domains_verify.py:
     id: 7543c9f4dca1
-    last_write_checksum: sha1:309a90d96829003cfc9398194ebc94bd43bc4c4e
-    pristine_git_object: 7458058d9efc3a0a24fbed3abd533378bfb2131e
+    last_write_checksum: sha1:55b0cbfd1323fca66f2e3573023b504d85b355bb
+    pristine_git_object: 11a14c207db29dacc9092b163045171dfda37f3a
   src/agentmail/models/operations/drafts_get.py:
     id: c395df1d8847
-    last_write_checksum: sha1:e77b2f0e618acb23f988a011c7aa1ce5d6124d23
-    pristine_git_object: 3b0bcb83e26d7014a8d641a5a309f654ba56a0dd
+    last_write_checksum: sha1:d07c3e376bc77bb40028087bf72d99257dd2e80c
+    pristine_git_object: 52d1eb219bcb61c3536410fbdc161fd06fde7ad5
   src/agentmail/models/operations/drafts_getattachment.py:
     id: 4e555173bfff
-    last_write_checksum: sha1:77604cb0838c3db44008fe3b78f19969b6c17207
-    pristine_git_object: 0cea2b470adf952b5f1bb76e12d1af3ca28b5f2e
+    last_write_checksum: sha1:94a19e359465b08e02e8444336defc1f0cbc7aba
+    pristine_git_object: a49823a15f363ea140a77bccb830b36ff5aabc82
   src/agentmail/models/operations/drafts_list.py:
     id: 1599fb9c3b76
-    last_write_checksum: sha1:1de9ce694b6d59c82aa7e82b3542ce91b201a48a
-    pristine_git_object: 11fab99c8584a6d32bb4c3a5064673de8286220c
+    last_write_checksum: sha1:02a6915472b8748dccc177669880a3a5a659ea19
+    pristine_git_object: 6d8b4aa754ea4b78251649dfe1f5148f6cc03281
   src/agentmail/models/operations/inboxes_apikeys_create.py:
     id: 754c2473fb18
-    last_write_checksum: sha1:8f0133745a3204cbeb2339f3903a23d466cc8ce2
-    pristine_git_object: a7e693c19d0b627544bdf37c328cbf35e7b1ee90
+    last_write_checksum: sha1:9f05f3f7d5ab22f17dec8697bf7b3b18c765f299
+    pristine_git_object: 762ba7887afd93dcb013cc94ac89d3ad88edc91c
   src/agentmail/models/operations/inboxes_apikeys_delete.py:
     id: 658f9dce96d7
-    last_write_checksum: sha1:a73778b1aceab854d137b600f70ce4faab21923f
-    pristine_git_object: 14b2d4e54f42529fa8b653846b3a3bda0b651653
+    last_write_checksum: sha1:444e7b77e0a81e6dcc4c6c26d0efe63cc43af45f
+    pristine_git_object: f8e2c364c747dd5f2fc5a859ec33b8bc6fcb0e58
   src/agentmail/models/operations/inboxes_apikeys_list.py:
     id: 333d5b8a56bc
-    last_write_checksum: sha1:b8e5fdc87a5dbe92ae16d31ec55f293f45ba8ace
-    pristine_git_object: 4f6c10a65d506fd2fdfa7f4b312eb6496d8cd7c0
+    last_write_checksum: sha1:8b91e3e425bb4261ea6f571127de9d2ee86d69cd
+    pristine_git_object: 3845fbdaa0ffbf471dff73581096996fea5cc4fd
   src/agentmail/models/operations/inboxes_create.py:
     id: 2daf84f9c67b
-    last_write_checksum: sha1:7cf77d6e913a3aaebce3ef8c8bdd6d8c4b975242
-    pristine_git_object: 6bfe0a50fe9d3fab17eeb22b04c5f7b9d9a2c52e
+    last_write_checksum: sha1:b3796a6654225266931d0fdc7ade1d54b2cca709
+    pristine_git_object: dd039f9074a80f57d64626e39094b4f0d165d654
   src/agentmail/models/operations/inboxes_delete.py:
     id: 06ece8763727
-    last_write_checksum: sha1:ab7ff79d8113321a939931806a441892abfaff4a
-    pristine_git_object: 12447dfdd0e65aba00c6698c97c16779e87f1dfc
+    last_write_checksum: sha1:a0edf816b5a80bf0faef17b7ee441aef292ce2bc
+    pristine_git_object: 1726e0f1e798792bc687d016a48378f5eaa7a036
   src/agentmail/models/operations/inboxes_drafts_create.py:
     id: c980b086c924
-    last_write_checksum: sha1:4ea6a5cc981994459d90314a575c7ce88156099e
-    pristine_git_object: 460773ee5d482918f5950e7b01cf5863a6d87209
+    last_write_checksum: sha1:10bffc3d278b12b1f6f48b78fce97e8a67d2bc44
+    pristine_git_object: f3d81d2b3beb4bf3e2f632036f46c2dd807c117f
   src/agentmail/models/operations/inboxes_drafts_delete.py:
     id: 50b2efa6a23a
-    last_write_checksum: sha1:2842b6221efc6cdaa224ee7ddd799e6fb2189dac
-    pristine_git_object: 4fcb29074960c2e665f995927ce7baaee2864976
+    last_write_checksum: sha1:ede40b9983f28ed7e7245c2ecc7e40ffafcb205f
+    pristine_git_object: 694bbbac414c6bd207ae08b6bd7501e9734367b4
   src/agentmail/models/operations/inboxes_drafts_get.py:
     id: 08603289ca5c
-    last_write_checksum: sha1:952f250cdb8f3b7dbc95fa8b44535efc2ff67ed5
-    pristine_git_object: 3060a8797630903e3590d70fc01c81f444a0881f
+    last_write_checksum: sha1:96851a274c20ea749c5ade0af59f331822aa0672
+    pristine_git_object: 73a73ece9f72731f2957fb8736760f96aa89c6db
   src/agentmail/models/operations/inboxes_drafts_getattachment.py:
     id: 017f23530bbc
-    last_write_checksum: sha1:4d0dd6af717c1a7b55044e95f97c2b34d2e2295c
-    pristine_git_object: 82292a86798ea2a0d35424caedb01734661df33e
+    last_write_checksum: sha1:bc6f8dcabc12f1a3c52b5baf7008fe4fd9fb5e28
+    pristine_git_object: aae571b6d20219900fd099fde2d396cbb2e4064d
   src/agentmail/models/operations/inboxes_drafts_list.py:
     id: ad3b302f8063
-    last_write_checksum: sha1:2d4df1181affd1bbdeeb296d56035152a68c616d
-    pristine_git_object: d18b4818be89a049b42f7eb6fbd9d990575dd197
+    last_write_checksum: sha1:4edb9faa3f3a605f2a2361defec89c026624b2cc
+    pristine_git_object: 829a26ed1636c702740f468ba7dc36a59a529595
   src/agentmail/models/operations/inboxes_drafts_send.py:
     id: 80a3b874439a
-    last_write_checksum: sha1:e0929692bf16f4bf522dfea7d0bdda4d7a61756a
-    pristine_git_object: 4e2eb0c2554b118f9f0f86a500e38d64f8d1dad0
+    last_write_checksum: sha1:bc437856edbc275165edc11205700366676c5939
+    pristine_git_object: 5f731fcf3dbd48d387cb48f0e421a8c779e27646
   src/agentmail/models/operations/inboxes_drafts_update.py:
     id: 88209ea71697
-    last_write_checksum: sha1:92185bf3201a557ad06354cc423aa7786712df43
-    pristine_git_object: e0ccf3f7ccbf76418115a5df86b223d4ddff861f
+    last_write_checksum: sha1:b3e712b54dbf14a5534d694415f72eeb0c77b24e
+    pristine_git_object: 71641bd86acd75b4fdef71f5996596439509136e
   src/agentmail/models/operations/inboxes_events_list.py:
     id: 2c7088430ae5
-    last_write_checksum: sha1:bec57c2b39278ff47361d4dea33c1a1cae900439
-    pristine_git_object: 3e4b183889d3fd4f730a053fbbad34bf63d4aece
+    last_write_checksum: sha1:30114b87b8aaa55eb5de18c9306d42c8a3209040
+    pristine_git_object: d51ee1532739be67f0fae3aae53a39fdaf9877a6
   src/agentmail/models/operations/inboxes_get.py:
     id: 84d3ac721657
-    last_write_checksum: sha1:32fd4e89582a007123c917d2e9b37fb0e411893f
-    pristine_git_object: 937c7b91d84a4a229cccdd8406d69449eb041dac
+    last_write_checksum: sha1:176e05e68b585f38a73058ee024b01ff709ac548
+    pristine_git_object: 3196a4592263843bf61275af03ebdf98ae58cb64
   src/agentmail/models/operations/inboxes_list.py:
     id: 2d559cdf75d6
-    last_write_checksum: sha1:4b8d6d8d37504626ca0754fe41c223d093c2b9b6
-    pristine_git_object: 03852b43158a5c899bfd9955e6fe0bda25cfe3cb
+    last_write_checksum: sha1:91e898b109b15a88501927b5464043d401722359
+    pristine_git_object: 286e8446df163e26ba4e9cec081889b30b911832
   src/agentmail/models/operations/inboxes_lists_create.py:
     id: c76d274664d8
-    last_write_checksum: sha1:be7bdf68d28255e31d98a44f31aef1c7766768bc
-    pristine_git_object: b3f1413dbeb1a4551e622ca7797e1e5f40f45719
+    last_write_checksum: sha1:f3e653cdfcb1a0a80094e51ee39834b3ef0d1381
+    pristine_git_object: 575fe24cd76eaa6cef8d12e895e975a8b7d8d817
   src/agentmail/models/operations/inboxes_lists_delete.py:
     id: 0c8a0eb38612
-    last_write_checksum: sha1:687f0fb87449904328af0fd479911b2f5b05e6d0
-    pristine_git_object: 84f70bc5af6ec7c5519976a1efbd50de0aa21cbd
+    last_write_checksum: sha1:745fd5183c0ecec1a9989a922db8328b3b39fd96
+    pristine_git_object: e30600637741605a263d0a1c6241a6e7866e3cfd
   src/agentmail/models/operations/inboxes_lists_get.py:
     id: 6b58ccd25c4f
-    last_write_checksum: sha1:960812d4ed58d6f99f544239e706ed34a956540e
-    pristine_git_object: ac5901df3264cfa9419f237cb1aefa32730507d2
+    last_write_checksum: sha1:57b4a6390f1e3111b2223d90824fd8bf148892e3
+    pristine_git_object: adccbebe8937225cb51cdcec8163f02ea0cd0721
   src/agentmail/models/operations/inboxes_lists_list.py:
     id: 44d84754f2b6
-    last_write_checksum: sha1:c51d24e2e7fe7356124f66dd3fbe2ad12fc3b76b
-    pristine_git_object: 8c77be1459a414acd49759fdae7679672768eab0
+    last_write_checksum: sha1:b4708f43acfe069b9878c5656bce4760ed7f7f47
+    pristine_git_object: da1b7c49c63deb2c8422f3468ecb06683ee6c272
   src/agentmail/models/operations/inboxes_messages_delete.py:
     id: da32ad837d9f
-    last_write_checksum: sha1:ec16b2beb25bdd0e0f0d9f7deffb14387fe1db64
-    pristine_git_object: 62fec9cd394e881c9292bd9fbe136d0221a93084
+    last_write_checksum: sha1:f3043b07a057f7243dd3de4a761384268297aa8e
+    pristine_git_object: 6d484e8b2557a0c9ba974d6d7b7a83d404458fc9
   src/agentmail/models/operations/inboxes_messages_forward.py:
     id: 6a04c5b6693c
-    last_write_checksum: sha1:1b39f453f03f0f62a2009d9b6c7ab7fe086d402b
-    pristine_git_object: 5ac3cdbc8b2ce9368e8f881613dff57ae504773b
+    last_write_checksum: sha1:e0cc29dd90110d79f14b006dcf1f1f717fa7f58f
+    pristine_git_object: 4a179851446881995ce4a435765bc17d83e75d76
   src/agentmail/models/operations/inboxes_messages_get.py:
     id: 23bc5c65ab17
-    last_write_checksum: sha1:62846705077e7a9a7a159fea7c4b7dc05ad491d9
-    pristine_git_object: 19bda469da5b409398c3e5c1d76c681596674627
+    last_write_checksum: sha1:b2051fd233871831baef84e7c15168be4acdd0a1
+    pristine_git_object: 9a13d1ec33d6d8cbc4a5a82961415791378511aa
   src/agentmail/models/operations/inboxes_messages_getattachment.py:
     id: 834139e8d7d6
-    last_write_checksum: sha1:ee8fdeefcd197a423f386d490c7a747860ae5e9d
-    pristine_git_object: 9c2e0ea1587cf4ae43eafafd0639094eb57152b0
+    last_write_checksum: sha1:c51d00e6106dbad810aed68efd40ca80922188ad
+    pristine_git_object: 4528b7322a067ef29b4cd5af992f8a7ed7648add
   src/agentmail/models/operations/inboxes_messages_getraw.py:
     id: 7bef9d2769d5
-    last_write_checksum: sha1:8c831a87050fa3e5bf47bee5e06d1abc1b6ad24a
-    pristine_git_object: 5bc9d6a7acc4dc3df45d5a0297ea7cf5615a8432
+    last_write_checksum: sha1:2943e35e90356497773c57c7ca6981dc8899581a
+    pristine_git_object: 1b7dad8a6858095789b023b3b8bcfb6212f3ca2c
   src/agentmail/models/operations/inboxes_messages_list.py:
     id: 495df90261fc
-    last_write_checksum: sha1:95b33dcb0064a9712433dc7ddd7d0db1e28e5f1c
-    pristine_git_object: 15aa29e67ec5a845b1789337cc7b1879f8a8ea6f
+    last_write_checksum: sha1:68be8041febf2591894bc54e6d47b1c670a4b857
+    pristine_git_object: 98a2ab07a2d18cd3670ca8759d5e6c555a7ad6aa
   src/agentmail/models/operations/inboxes_messages_reply.py:
     id: 70394270acaa
-    last_write_checksum: sha1:0fed54a48bed740486f5e99ce66b6e3755c0cf78
-    pristine_git_object: fa12bf6fb38670d9861a2cb7be3ee0852e5a29d3
+    last_write_checksum: sha1:bd4b32e62fec7a3ad20f1cd94a96b1fb0d5a7acb
+    pristine_git_object: 7cb9c7466b682a93e5481b992d0ff1e25ab2ffc3
   src/agentmail/models/operations/inboxes_messages_reply_all.py:
     id: 8f02e1fd41c3
-    last_write_checksum: sha1:36767a2dc9c08247c98f57453aed565a2e306958
-    pristine_git_object: 40e54ac98e54398513ff2a825c1c9f4406a75ad6
+    last_write_checksum: sha1:33062d3b6baa283c0e33c933f362990bcebfbdd4
+    pristine_git_object: da635738799432acc070a318ccf6ac605f5767a7
   src/agentmail/models/operations/inboxes_messages_send.py:
     id: 76a909dc5ca5
-    last_write_checksum: sha1:f9a8be3d9d1e4d94a597edc9aa5141a9a8da67fc
-    pristine_git_object: 9433c79e9a56b1b51c3b757c65461298678e2fc5
+    last_write_checksum: sha1:3cff286ffdf233afb8dc4e3a01351e05568339ea
+    pristine_git_object: 3123fc1fe077a778e0e69f5a68ba70096282c9e5
   src/agentmail/models/operations/inboxes_messages_update.py:
     id: c903269e2bc7
-    last_write_checksum: sha1:12ca49f0df68b45da1d46a1341c538e6a45ff857
-    pristine_git_object: 178681f11936a889f2d73ea3596a1a5fa8eedef3
+    last_write_checksum: sha1:1929409e8789dfce52006b157f0b30de0483458f
+    pristine_git_object: 1ec744ee2df0f946f30fed3d7a654427a96dab76
   src/agentmail/models/operations/inboxes_metrics_query.py:
     id: d9c40296cf6c
-    last_write_checksum: sha1:d0b1ee66a2b5c03a755e55e97831ee12523e9e7c
-    pristine_git_object: dd021a72f1dc2b6b1208998bb896200480e4f25d
+    last_write_checksum: sha1:9b6a6f104c04805f784673a61fe1236694899b63
+    pristine_git_object: 575b6f97c48a4aa2218b792963b6ce2abcf2b257
   src/agentmail/models/operations/inboxes_threads_delete.py:
     id: 3467a922b41d
-    last_write_checksum: sha1:a1102943207c7e3a1979e2f0be00713945fbd014
-    pristine_git_object: 4ebea247dd44334692ae856835bdde502d06fb37
+    last_write_checksum: sha1:da2ea5ed5749435662936a96f496e1b9cab596ac
+    pristine_git_object: 66ac8f010a5dfca0c430bb4abe0de3650c1e1667
   src/agentmail/models/operations/inboxes_threads_get.py:
     id: c1aa32b26279
-    last_write_checksum: sha1:2bce10e2c04707821cf3963f1f8ed67823c5906e
-    pristine_git_object: 5c6d98a483a9ff9edd6797f0f8206c1f52c4b5c2
+    last_write_checksum: sha1:0f32e2b7e4d16b6e82615ebf22c99a361ceae91b
+    pristine_git_object: 5e2b5b287da6ef1868a504012bb8d10c04042ec7
   src/agentmail/models/operations/inboxes_threads_getattachment.py:
     id: 313ca0e7b072
-    last_write_checksum: sha1:965f968dece4b95d208505ac740c4570d7865993
-    pristine_git_object: 1ad9338acc97bfe4d38be1bf4544c38237bdc439
+    last_write_checksum: sha1:bfb88602f04126a4fbadbf0f7f6b522cfcb54cc9
+    pristine_git_object: a796304b303968fbf1364e8f7e3ee3a9dc935ae1
   src/agentmail/models/operations/inboxes_threads_list.py:
     id: 9cfc1b2ff7d6
-    last_write_checksum: sha1:780256669a84d86977142e08a3a78f01debb26f8
-    pristine_git_object: 9ee7c8b65d016fcad7430e6db51259055ddaa0df
+    last_write_checksum: sha1:71ce513b0bf9cfd75f8fe896d62a52434713b000
+    pristine_git_object: 1251bd6cb32c44ea30f5fd3ef2d8079ecd0b8595
   src/agentmail/models/operations/inboxes_threads_update.py:
     id: 64a94f48a4f8
-    last_write_checksum: sha1:dfb8a198e7d2b723984b26486ed2f874157f6cf2
-    pristine_git_object: 62ae72ffaa5e550526a4e8b1ac8349599e463010
+    last_write_checksum: sha1:a5900d4daf94e0fe5488c9ec733ad40f0030e186
+    pristine_git_object: 4d5425a129cac1154a47b962939adc872446fc09
   src/agentmail/models/operations/inboxes_update.py:
     id: 44a217160925
-    last_write_checksum: sha1:31966a6f5537f4c161d4a00367ef1be67341289d
-    pristine_git_object: 0b09defb33a6d8c91a791ad9a3bc16ccda7f3b5a
+    last_write_checksum: sha1:a6f8f9fb762e1655b5601cfd43f687ade4fc9e1e
+    pristine_git_object: 73cf88c1ea4dff18ee64253ba85cbc22e2463dfc
   src/agentmail/models/operations/lists_create.py:
     id: ed796133421b
-    last_write_checksum: sha1:91f8ea7013b3ecdc08e8b069e96b92e8c73a9bb4
-    pristine_git_object: 71a22f00b8f182f61a84f05c235a2aff2ff385f2
+    last_write_checksum: sha1:a3cce045c70d1d22be1680f9d05450407a993480
+    pristine_git_object: 140f8953e72382565821631efed358f77a4009d0
   src/agentmail/models/operations/lists_delete.py:
     id: f577dd949a57
-    last_write_checksum: sha1:2ced6f662c4239cfff291e13f516397abd0a83a2
-    pristine_git_object: fa490261564ea1b9f46c3ba4f008b8f10afc98dc
+    last_write_checksum: sha1:9209aa71905f1a95ad61081cb6526a013cc4d374
+    pristine_git_object: ee9a25f7e2e665b52c67f54b245f3f12991be951
   src/agentmail/models/operations/lists_get.py:
     id: 01f8d10cadea
-    last_write_checksum: sha1:71a7a1ab88e1de59222bd283df18dbad11a96a92
-    pristine_git_object: 00517ca53a9641ac8af7170b05dc124b2ee2b00a
+    last_write_checksum: sha1:83679165acc31a162a2cc3383d52bf1a409ca6ff
+    pristine_git_object: 433ca5e6018ec388f5c417bcb5e444b167c1868a
   src/agentmail/models/operations/lists_list.py:
     id: 45b2d44479e6
-    last_write_checksum: sha1:59b7843c2bca660275f5d66a91a7a7d142dd1d04
-    pristine_git_object: ff36fb428642395a1deec4e05b05ab300b1796b3
+    last_write_checksum: sha1:50747bd68a300b128c7b8c66f10e3e5f153ac1f8
+    pristine_git_object: f5642c60bc5cd4e1da7785b3be9c2b2335ef841a
   src/agentmail/models/operations/metrics_query.py:
     id: ccf88068e360
-    last_write_checksum: sha1:a7be1f0d8e9d26dbcd789160dfeee3aec16afb01
-    pristine_git_object: 41aeb28ec90ead499332ad958d63bd9569a41658
+    last_write_checksum: sha1:bb597c3e7cb655ac2dce376f942a28557a89063f
+    pristine_git_object: 12a0668707846ad322024d57f3dd7f6b06c545a2
   src/agentmail/models/operations/organizations_get.py:
     id: cfb5dade01d7
-    last_write_checksum: sha1:243459653ca77e7ac899400e8d85ea192813ff50
-    pristine_git_object: 76a5e09d4c356f47938c2e7dacb45518290e5f97
+    last_write_checksum: sha1:c9fe65524ce06262629d10f6be01cb939bdfe473
+    pristine_git_object: b0e21b112d9c4328f7e86580b5c51657a76ec519
   src/agentmail/models/operations/pods_apikeys_create.py:
     id: 8427eeae317e
-    last_write_checksum: sha1:9d80ada404547fe98ffb90ecea07d28077e8b748
-    pristine_git_object: 68977604cad49bcd00fbd8358da83e440af5f96f
+    last_write_checksum: sha1:86f34edf02a9aa70ece9aed4c6389e5eeb1c7568
+    pristine_git_object: 3cfaa3f3a8cfdb8ce3e002e4ff8639ec97ed6302
   src/agentmail/models/operations/pods_apikeys_delete.py:
     id: e87d98fdaf24
-    last_write_checksum: sha1:e9b35c451eb6d709e8138276b8ca2d68eb3d95d6
-    pristine_git_object: 7276ce5f289d5858d4defe46d7503d8bf63ceaa3
+    last_write_checksum: sha1:26fa898d1f3d7ad8731247ed6141d69c85e4afff
+    pristine_git_object: 03a69a40c20c37aae0348f7287b8c20f02930a92
   src/agentmail/models/operations/pods_apikeys_list.py:
     id: e4561cd70ecf
-    last_write_checksum: sha1:096cb8a638afaae4a9f4023d66180283fa4aed36
-    pristine_git_object: acfa613d0bc64890ed95bcbe27c758b603ca2921
+    last_write_checksum: sha1:c0456b31c8f751e004f7974dcf7aa6025789868a
+    pristine_git_object: bbce514ab1fb7f9cb56f118f8ba91b71daf80f1d
   src/agentmail/models/operations/pods_create.py:
     id: aeab83076536
-    last_write_checksum: sha1:29e884150b4840d27ad90dd1b9004b59c2823b0f
-    pristine_git_object: 5dabbb9c2dcc0e7cd3d7c16753a351952916d99b
+    last_write_checksum: sha1:69baf027b79274e1bb15e63232f6591fa667d7d6
+    pristine_git_object: 09734ce5d2f8b316da1e9ada984087dc07c72c39
   src/agentmail/models/operations/pods_delete.py:
     id: ea006a41e70c
-    last_write_checksum: sha1:1ff570fc1c0b7ed8c9033ce8918418786b294a14
-    pristine_git_object: 8789957f6584834be88faab11eafcde8978702b3
+    last_write_checksum: sha1:0f35896d773cc2c40bdf85386699e67c96ba4df6
+    pristine_git_object: a8fd37ca319901648133273ae3ce309df50d8202
   src/agentmail/models/operations/pods_domains_create.py:
     id: dd6bda7cd55e
-    last_write_checksum: sha1:3be4edb5285f49154d24c5d59d7f93007715e038
-    pristine_git_object: 28aec83183788759134009ae645001b2df9da94a
+    last_write_checksum: sha1:8dc932c93149b276dd5f2e331828038a426b5b1c
+    pristine_git_object: e7702d493d1d3b24fbff64b6bc830961f3dfca5c
   src/agentmail/models/operations/pods_domains_delete.py:
     id: 8dced58dec91
-    last_write_checksum: sha1:16f5551d1507a7e851919fde403f9ab818d5c852
-    pristine_git_object: 995b9834d20b0d49473e0a0ea0f6353686c9f20d
+    last_write_checksum: sha1:b3844da65ef6ff383e07ad05cd89c84caaf1e4f8
+    pristine_git_object: 7679745f03c098af4918cb4ab50369312c16de48
   src/agentmail/models/operations/pods_domains_get.py:
     id: 522742f25c69
-    last_write_checksum: sha1:e58c3fb5619fe8167a2b148256657179583fe2e1
-    pristine_git_object: ba19d5e28fba8ba2ad4235ebc2c2d2c36f89f2ec
+    last_write_checksum: sha1:ca5ca65c3163032343a23b9dd488d478e882a8fd
+    pristine_git_object: eae0a80884c62260a42b77d82f664adf21c415cf
   src/agentmail/models/operations/pods_domains_getzonefile.py:
     id: 529e640c1502
-    last_write_checksum: sha1:38a827c0f5140fb988fd95cf0e6e10d99c6d63d2
-    pristine_git_object: 53f3553df199cae86c2d781b46248260c2db0a46
+    last_write_checksum: sha1:9afa2a026ed2904e8fe3f2ce5b3ba3a85f7963c0
+    pristine_git_object: 8016a7877c6566453f06b7cc92b2fb07f0edb4fd
   src/agentmail/models/operations/pods_domains_list.py:
     id: b410c0e25b80
-    last_write_checksum: sha1:f65cbbef60c73269b2ec47b88c73ffb53eaa1c5c
-    pristine_git_object: 0f3de00dc5c91a3492cd29e16d10ae8e0f5717b0
+    last_write_checksum: sha1:e7d8391d1288ba27cae1a3eed29cd871ad70bf20
+    pristine_git_object: a005d2d6eef1cf3b98212c1a018c85c0a6af9801
   src/agentmail/models/operations/pods_domains_update.py:
     id: 03aa9b53a697
-    last_write_checksum: sha1:a71033735e53b1b8f8387c16560ab2ad1c6238b0
-    pristine_git_object: 97f2f6725c6769c8e510f0569882ad88f2cf5eda
+    last_write_checksum: sha1:735b063ffffac34fe5f8d7f846af1020711947e2
+    pristine_git_object: 5c52abb150313e479627a23dd9268f2ccf1d7f00
   src/agentmail/models/operations/pods_domains_verify.py:
     id: d498446e442e
-    last_write_checksum: sha1:4e0f80ea61b88f82c54532aa71f673d3c9d0efe1
-    pristine_git_object: 72c9ffabc97ea97d9c43d90986286c1f4284d41e
+    last_write_checksum: sha1:4040173019239869d5ce98b2725ca18072887b0f
+    pristine_git_object: de227742a98c3b74dcbc2d256d6ca495807a7b54
   src/agentmail/models/operations/pods_drafts_get.py:
     id: c3498b16808d
-    last_write_checksum: sha1:7d9a5c7dad6ec00a9568961aa2b16169756f0c41
-    pristine_git_object: f9a3fe4fa167ed6e748f6c3cbf0bf825af53e9e3
+    last_write_checksum: sha1:6c84247170b7f7fbaae97e87b4af714e2ed3f71a
+    pristine_git_object: 77f1044881e4a681b5c075735a1f86741f0c9632
   src/agentmail/models/operations/pods_drafts_getattachment.py:
     id: 9e32fa8df584
-    last_write_checksum: sha1:76138d264485c7cda572bd255570bd48188029c9
-    pristine_git_object: c417238df9b03d71affe284eccb43bfbd815e76a
+    last_write_checksum: sha1:37b386c6ef8f7def558f6d6ee7d8bc38803ed5d4
+    pristine_git_object: b16da6f8d1708c8c963849b902754f3a50c3255b
   src/agentmail/models/operations/pods_drafts_list.py:
     id: 68f721648226
-    last_write_checksum: sha1:7e18d420600c6cc1b41221b9aa9dda39910878de
-    pristine_git_object: 60b02754e16d3174ebb8a5bfd8fba78af108398d
+    last_write_checksum: sha1:f013d6a78b42a80ca27af87af3b64620648bf400
+    pristine_git_object: bc806178f5f1f610025d9bb7f37e2ebcbf9892fc
   src/agentmail/models/operations/pods_get.py:
     id: 85dc64438547
-    last_write_checksum: sha1:7a0fb0189e729f9a0baca3f8fa90c8a91beef000
-    pristine_git_object: 93c60fe60eb9ca063a596b1a30b7c07ce42eb49e
+    last_write_checksum: sha1:51faa4f395ed127a30b3e49f09067681a3005936
+    pristine_git_object: 70fc1b1202a40f013e9af5355fdccc213e11d40e
   src/agentmail/models/operations/pods_inboxes_create.py:
     id: 261e458b1273
-    last_write_checksum: sha1:cb5e9a684b89d9ca085e12175cba3835c5712e97
-    pristine_git_object: e9cb4860bc1717382cc78b3ce599d49f607c5f14
+    last_write_checksum: sha1:d4a4790c1ee3a56ed9aede10054d2f5bbfe45de1
+    pristine_git_object: 1f9928271afe53c930848db40794edeea78a67a2
   src/agentmail/models/operations/pods_inboxes_delete.py:
     id: e223dc58d292
-    last_write_checksum: sha1:9a6fc2abf46406a1c0c38defee8b90c2eddc8b98
-    pristine_git_object: fc5701b3deb7046979795a639f9464800286665c
+    last_write_checksum: sha1:90eaf89ea5e959f2f3f18ce5c16a512d3347207c
+    pristine_git_object: e76d9dd148859e96361ccbb63b93e18cb57b8d79
   src/agentmail/models/operations/pods_inboxes_get.py:
     id: faa11edf3151
-    last_write_checksum: sha1:624dca2e2640027c1400fa970078ca9f53760cca
-    pristine_git_object: 0429020ccf9b3a44a6b3fe4ceac604bfb147f7c5
+    last_write_checksum: sha1:f7fb34e9e9e2d5a977d7b14f24e70ae31ce89efb
+    pristine_git_object: 0bd2f4402a7ef2e91f0d8929b195aee675781599
   src/agentmail/models/operations/pods_inboxes_list.py:
     id: ed3191960250
-    last_write_checksum: sha1:30c21a864e2e5635ed21079403a777823391c16a
-    pristine_git_object: 48beb2b61c68a02cbcbe3a493da81e77750bac07
+    last_write_checksum: sha1:9deb381f52bf9252ae6aec37ee3980f353d9050d
+    pristine_git_object: 05e1ab4de79ceaef50c01be5827fe3318d4f6287
   src/agentmail/models/operations/pods_inboxes_update.py:
     id: ee080bc99f14
-    last_write_checksum: sha1:c7bb99d8219971def6c44dcfc9731780b4827cd0
-    pristine_git_object: 7175587eb62b8aadd06487b5a8aea044a0fb1139
+    last_write_checksum: sha1:a8c3eba57e6cb95a436726b50d10a6d2448d8987
+    pristine_git_object: 499e737f9dde8204d405809f8f2f3ce7b5819da4
   src/agentmail/models/operations/pods_list.py:
     id: 8c593196e329
-    last_write_checksum: sha1:58d3d3f3e855c2e87c414eefab061a60e1cabe26
-    pristine_git_object: d28ba8bee5a6999486219e7ccd7b6d4cbcec3c46
+    last_write_checksum: sha1:1b6724f3a9115f6ef5a0bdbe5b81b1dfa34a115d
+    pristine_git_object: 49268316f8ef97480224a43e76c4ec7fd9830a65
   src/agentmail/models/operations/pods_lists_create.py:
     id: 68fd42ffa484
-    last_write_checksum: sha1:23a491e45fde010c72b7ea173d93b1ca625c9578
-    pristine_git_object: 552f9ebb0686a087135eabac9d3f2f15bf21c605
+    last_write_checksum: sha1:7a61628b5e44d60f1cc16589d86b44f8cda3375d
+    pristine_git_object: 5e3b34e2be846d19e3ccbf3f4b4575be8f89d827
   src/agentmail/models/operations/pods_lists_delete.py:
     id: da131c255db4
-    last_write_checksum: sha1:aff4e590a703c5188cc3838671e0ca8160eae0e8
-    pristine_git_object: 2c2fd65275fdc8925483bad1952895b9fbf10af3
+    last_write_checksum: sha1:6ee0464fecd708c0322935d7f7282b828f7359d4
+    pristine_git_object: 685f0d27ddbe67c1c6dc8249151d1fe9abe692c4
   src/agentmail/models/operations/pods_lists_get.py:
     id: d6f10e87be50
-    last_write_checksum: sha1:6fc036fef8884d5cb73e10f03f16a17c59fa50b2
-    pristine_git_object: 289f91c5212c231e6aa5406a8005b232572814de
+    last_write_checksum: sha1:d07b105f5d3843fe0966f640226795a2ba4ed3d7
+    pristine_git_object: 3985c1ae1173722045359f3f4b031f76e4b53b10
   src/agentmail/models/operations/pods_lists_list.py:
     id: 9e6975da2c4a
-    last_write_checksum: sha1:0ebaca4a1c7f35cba01fe11eb122662fec4a4fbd
-    pristine_git_object: 21a032b35549a70e45af527eee4924d4eb66920f
+    last_write_checksum: sha1:a04d6ccd37e7649f4f25c46261803aa8997eea96
+    pristine_git_object: 7eb466483fad876048364dbb89f1bccb9eedbdf7
   src/agentmail/models/operations/pods_metrics_query.py:
     id: 3d6301376bdf
-    last_write_checksum: sha1:1145aab6eb2241617fdcc7261226e46641c9187c
-    pristine_git_object: 79d07a0151ae8b439f7dce98fe69456d51947c10
+    last_write_checksum: sha1:7b1fcefcd0aa929e5ab7cf4cfcc3204e3b0c861f
+    pristine_git_object: 6ab3716c65c327883383271e2187e6dc0cc48333
   src/agentmail/models/operations/pods_threads_delete.py:
     id: e7c48ebfaa1e
-    last_write_checksum: sha1:152b033a5a685c5d717c171195addb87de7cc4e2
-    pristine_git_object: 1551e1e04d99523ce482b769a001c38eed75a14e
+    last_write_checksum: sha1:ffef16a0c27f822ca101a6f48d443c70676c030f
+    pristine_git_object: d43e43f2b7b6c9ab74e69bcf99442c6be4b8e806
   src/agentmail/models/operations/pods_threads_get.py:
     id: a58c28b2f829
-    last_write_checksum: sha1:efceaf9b7429957d77dfaa897eae3c50966346ca
-    pristine_git_object: 832c8e9d29d31197e9a7bf2a8629945f653c8492
+    last_write_checksum: sha1:34c05f40485a19ada8c5ecd112613d4fae2c94bc
+    pristine_git_object: d238ca6353ed317533a58144eff3ae47d2038632
   src/agentmail/models/operations/pods_threads_getattachment.py:
     id: 316846fb5a84
-    last_write_checksum: sha1:5990fa99a8066e5e78d9feaf1fb43dbcb860596f
-    pristine_git_object: caa1fd552b9160a30714b08143a4a798d663eb86
+    last_write_checksum: sha1:ea226fa7a2d64f93afecbf5c9ce1c5e2c2267de5
+    pristine_git_object: 20ad53298994ea31e4fac7b784e11507cdd9a18f
   src/agentmail/models/operations/pods_threads_list.py:
     id: a5adf73335c5
-    last_write_checksum: sha1:af17e7bace90bca4a03e70746e1a67696b70b0b0
-    pristine_git_object: beb442aba9f663f922a5f2377077d4a1047ac59c
+    last_write_checksum: sha1:249609dc2a121d2a6dbd2bd2810aa49130f8360d
+    pristine_git_object: ca4b45bed30488baf817a947194923a0c9d45e98
   src/agentmail/models/operations/pods_threads_update.py:
     id: b4473d2acbee
-    last_write_checksum: sha1:36a735dd1eec1103004f39558711846b95026fae
-    pristine_git_object: e365fdf9d9a385c1681f56db35417ea52fbab0b6
+    last_write_checksum: sha1:3d915b4b96ed74cb0f7057376a73f5686e0a58ee
+    pristine_git_object: 7d543dd94042b4c2b13fb2c81241434957dac2a2
   src/agentmail/models/operations/threads_delete.py:
     id: 26711e5e8ec5
-    last_write_checksum: sha1:e6d9ecb7a4fff3787f881284ee240a67bb1a209e
-    pristine_git_object: bee858ec07d363bc9c2e235ba277e1002bb2662f
+    last_write_checksum: sha1:a5f947422bf86982b6545de2d3341420918ac697
+    pristine_git_object: 3b55ac46318e2efbbfbfc1cc4d5d5931fbc08f43
   src/agentmail/models/operations/threads_get.py:
     id: fb3f233817db
-    last_write_checksum: sha1:6b2313293203a4f6fe27402e686899a2bad4b4ea
-    pristine_git_object: e5266884b4b4123a8b46cd8782d7288980891c86
+    last_write_checksum: sha1:6318271e9e445999299c10ad1604e5c7c0cab45a
+    pristine_git_object: c7875035da2e48521fae0fcf8f51f45cfd5431f4
   src/agentmail/models/operations/threads_getattachment.py:
     id: 2db81b1be35e
-    last_write_checksum: sha1:55638b174f96de3ec7a59cf62263a957032a693c
-    pristine_git_object: e58f686c612cc7bb0cd397673cdf0a0b9aa7c614
+    last_write_checksum: sha1:6f28b7626dec3af162e9717167dd416ef7303c88
+    pristine_git_object: d1c5222d0bbccbb5d675e3d2f82ce187a4c7bdb0
   src/agentmail/models/operations/threads_list.py:
     id: ac80e4438bad
-    last_write_checksum: sha1:cb681903d86d1c5b5fef3507cc4b5b0210f6697e
-    pristine_git_object: d43435b0bf033014c71d5ee88145443f06f7d37f
+    last_write_checksum: sha1:0e6e778e42e21777a1b596e04a973948a6a86d57
+    pristine_git_object: c05c4071be2ac25ea1503c5322c3f83b2fffd723
   src/agentmail/models/operations/threads_update.py:
     id: 2fb657f6c28d
-    last_write_checksum: sha1:f031d4c9fe727f184d2566e2c1bdd842af2af267
-    pristine_git_object: e491b6a4573d562f00e265431586e712d8904556
+    last_write_checksum: sha1:fb6cf611f04179a2cf10bf70a3267573a491ccdb
+    pristine_git_object: ad8b3f327548baf8e1adfd9daa1221cc7d85beed
   src/agentmail/models/operations/webhooks_create.py:
     id: 254b516e9e7e
-    last_write_checksum: sha1:92bb02fe32d6d1e5e6d70a7dc44170f3b6ab83fa
-    pristine_git_object: 5b3e5a94d04d05404508507b99f8b4851423c87d
+    last_write_checksum: sha1:8e76a40d015e61a1ce07d2787d467808e9f23d37
+    pristine_git_object: ae9a79be74d604d7d4098a36af77f94a6e8bc930
   src/agentmail/models/operations/webhooks_delete.py:
     id: 10542cba0007
-    last_write_checksum: sha1:3a602b02793031c9ddf8c1e9e4f785ad99273f7a
-    pristine_git_object: 827a66d72cbde570ef1f1b7cd49db1b5b037787d
+    last_write_checksum: sha1:a09436c6378609872b04645e96fa5eae23f4d4b3
+    pristine_git_object: 8c426b8bea761e0189a9649ff84d0c8f467a418a
   src/agentmail/models/operations/webhooks_get.py:
     id: 8c6c820c9d0a
-    last_write_checksum: sha1:381a9b2efb8d1ee428d0f989cb3f312a58abe36d
-    pristine_git_object: eabce51d7cf198fab9734f89bb53333d7e3163b2
+    last_write_checksum: sha1:748e24dda72625362aa0ed07c7ff5d7d9b9cf75a
+    pristine_git_object: 33d5c3200bb6a0d25660fe58d78c24dc6358e207
   src/agentmail/models/operations/webhooks_list.py:
     id: 619b2feb418f
-    last_write_checksum: sha1:0e548caaee1d6e4baf9937c00e9a872b0ed53a4d
-    pristine_git_object: edad46e1148117639add2c7bf74577ff55ee88dc
+    last_write_checksum: sha1:108400b90fb39bb5ddd115383c145eb0738c8018
+    pristine_git_object: 950b9f56cc60a8ea20c583d21e0a9c148d7b7ac5
   src/agentmail/models/operations/webhooks_update.py:
     id: 68f6e3dbfee9
-    last_write_checksum: sha1:17a565a3b9be5ef5d8050c9e94e551953402fae5
-    pristine_git_object: 2447a0bc468ff387b397758c869ffde52f69d7e0
+    last_write_checksum: sha1:5547297c36cbd7d39191e21c375def94af2c55cd
+    pristine_git_object: 7ec135331a8c76b0f330690bf587e0b2e411639a
   src/agentmail/organizations.py:
     id: 59bbafb92a2b
-    last_write_checksum: sha1:ac8308defe00714240b733254d1f3bcfd2a39e7c
-    pristine_git_object: b2fa63fc602dfe22655b9c942ec6cb1264e794ab
+    last_write_checksum: sha1:35a170ced78fe64af9fcb7dbbee2659976703dd7
+    pristine_git_object: 67a61cf11701c7d94f6a8dff75cd7f353fc6f83e
   src/agentmail/pods.py:
     id: 5e4bb6b8f239
-    last_write_checksum: sha1:1964696646ca179dbfb4dce51600294094f0fead
-    pristine_git_object: 49b4cead8931e1722f76c678e8301958e83b6fd9
-  src/agentmail/podsapikeys.py:
-    id: 5c43f2f28194
-    last_write_checksum: sha1:b35e42cdd19d200efeb0bf9c9c67f26ca8cf3661
-    pristine_git_object: 149f2c727aed099543876a6cec26d589fbf6aa73
-  src/agentmail/podsdomains.py:
-    id: 80e6de3439f8
-    last_write_checksum: sha1:dc281c6556489f1f224f8390a81e61084ff568aa
-    pristine_git_object: 8bc5aa582cccc7cc53cb6bfbfb50c2e6ef22798a
-  src/agentmail/podsdrafts.py:
-    id: 629350f5f4d2
-    last_write_checksum: sha1:69af82665f2e59a7325559aae20aa8800c123245
-    pristine_git_object: b01eb2ace38e7d610f6399871d5a9a0e3cf3ab25
-  src/agentmail/podsinboxes.py:
-    id: 3c4deb817a35
-    last_write_checksum: sha1:529a6a2240e4f3cd69202ae26f2cb51a2b776bbe
-    pristine_git_object: 7a2164cba9dcf643357dd0d4bc0eb9f55cb59042
-  src/agentmail/podslists.py:
-    id: 71c7a97d68ff
-    last_write_checksum: sha1:227f31c8167d67759bd9cf9f6dc9e18b9f42492a
-    pristine_git_object: e33d02de8f53fccaaf4f600efb22e2df31bf0551
-  src/agentmail/podsmetrics.py:
-    id: 2fc6ef0b7469
-    last_write_checksum: sha1:b05470470847744559889ca4c3181080a892d091
-    pristine_git_object: 509efceb73f086aee67b619fc42280a39464d9b7
-  src/agentmail/podsthreads.py:
-    id: bb515f9ccd17
-    last_write_checksum: sha1:faaba37798f046abd60fb954ee283c9509357363
-    pristine_git_object: b92ea6f26061082cc071dc9d8ccfdaba2d16c507
+    last_write_checksum: sha1:cbbf71a3457fa2bb2c2d8ed21bb2c9c64c0e26f5
+    pristine_git_object: f10f5b849bfc262d6c5b06cb6d57473e0c6f5cba
+  src/agentmail/pods_api_keys.py:
+    id: a99bfc6da202
+    last_write_checksum: sha1:0be4ccbc6bda63b729765716127e8b9fe985f8ec
+    pristine_git_object: 384d5e7d91f49fcc473cca3e203e00e26eb005d2
+  src/agentmail/pods_domains.py:
+    id: 27e4d15dd534
+    last_write_checksum: sha1:a8580a03a55f22d24ad29aa5559b9755b97ba2cb
+    pristine_git_object: b595d0725395b040fed1e615cd66d19c029d386d
+  src/agentmail/pods_drafts.py:
+    id: 71db34fb9b06
+    last_write_checksum: sha1:04064251ea824ece6856c7ebd88990601c2d880a
+    pristine_git_object: bb9b3466dd651fe8e71db632f934bde1de1a89ab
+  src/agentmail/pods_inboxes.py:
+    id: 72ce849afbaa
+    last_write_checksum: sha1:d0143266063474d9940291e59e7fc1662e86cd3e
+    pristine_git_object: 0758ab581ed1265048b6681e4eee710dec989fd4
+  src/agentmail/pods_lists.py:
+    id: a3c57028191a
+    last_write_checksum: sha1:1346b1e2baa47ef40657077d139dc7bbb7f64460
+    pristine_git_object: ae5fd03b88b7a4ca0c9c2b21d8931ba504879377
+  src/agentmail/pods_metrics.py:
+    id: 4137df4fee48
+    last_write_checksum: sha1:f6e3aa1523ef9d66c6d2ed99dec07313d3d5c679
+    pristine_git_object: bdf8323a6a30381fd4a8411ff7352b3083dd1833
+  src/agentmail/pods_threads.py:
+    id: bfb95a640f86
+    last_write_checksum: sha1:1ca65240294ec7ef314765457f3d2d7ecf7249c3
+    pristine_git_object: a3903f37de28e010c388be99be63153a744bafbc
   src/agentmail/py.typed:
     id: 0278bf1b2f21
     last_write_checksum: sha1:8efc425ffe830805ffcc0f3055871bdcdc542c60
     pristine_git_object: 3e38f1a929f7d6b1d6de74604aa87e3d8f010544
   src/agentmail/sdk.py:
     id: 76d6f745f382
-    last_write_checksum: sha1:9d187005a4431a68f44b9bfe3fc698eea3ad8fa4
-    pristine_git_object: 04e087ef5fbac4e309b9a986c5b8fc62b23a775f
+    last_write_checksum: sha1:77e9d372c51e07851571b1016daf808ea583a1f7
+    pristine_git_object: 3f4fa34fc33355ccf53d76621ff3865b5a4274d7
   src/agentmail/sdkconfiguration.py:
     id: fd89a6bd25fa
-    last_write_checksum: sha1:458eb4a49ac1023e743acb9fb71424c4d55c7e66
-    pristine_git_object: e2831df8bcba1e8a8b98f3802cb49ed23464b201
+    last_write_checksum: sha1:d5e8dead80d4084e631da4bf796143b668e10421
+    pristine_git_object: 71ab0e88ea372e0e9d44806ee027c2e88aa56f1a
   src/agentmail/threads.py:
     id: 4fbf9741964d
-    last_write_checksum: sha1:cdbaba0389c90f5fea46d429565e2ee533ef2b21
-    pristine_git_object: 6215f233cceda38ab369a3a96d47aea08d4fb379
+    last_write_checksum: sha1:cd9f3a562c541931f9cfd8eb16da961c18febcb3
+    pristine_git_object: f677393663f804f03e038cb73809c194bde6795d
   src/agentmail/types/__init__.py:
     id: 19033070c668
     last_write_checksum: sha1:140ebdd01a46f92ffc710c52c958c4eba3cf68ed
@@ -1794,8 +1797,8 @@ trackedFiles:
     pristine_git_object: dae01a44384ac3bc13ae07453a053bf6c898ebe3
   src/agentmail/webhooks.py:
     id: e1ac46b8d745
-    last_write_checksum: sha1:9eb468f33ae47a5ebfca2dc6c12ed691ea75f3cc
-    pristine_git_object: 0a72f91fa59b1f7de55ebd627b4b2d32a5fdb9f7
+    last_write_checksum: sha1:5548813dac10d398fd8db5df8405f22dc9c6b31d
+    pristine_git_object: f34da2b38c73f06ec0fcda2efe34bddbb86508a7
 examples:
   inboxes_list:
     speakeasy-default-inboxes-list:

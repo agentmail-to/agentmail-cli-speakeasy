@@ -1,17 +1,272 @@
 overlay: 1.0.0
 info:
-  title: Normalize acronym tags for CLI casing
-  version: 0.0.1
-# Fern emits tags as APIKeys / InboxesAPIKeys / PodsAPIKeys because the
-# source file is api-keys.yml. Speakeasy's kebab-case conversion preserves
-# consecutive-uppercase runs, producing API-keys / inboxes-API-keys /
-# pods-API-keys in the CLI. Rewrite these to the Pascal form with only the
-# first letter uppercased so the generated commands render as api-keys,
-# inboxes-api-keys, pods-api-keys.
+  title: Normalize tags + nest compound groups
+  version: 0.0.2
+# Two things happening here:
+#
+# 1. Acronym casing: Fern emits APIKeys / InboxesAPIKeys / PodsAPIKeys
+#    because the source file is api-keys.yml. Speakeasy's kebab-case
+#    conversion preserves consecutive-uppercase runs, producing
+#    API-keys / inboxes-API-keys / pods-API-keys in the CLI. Rewrite
+#    to PascalCase-per-word so they render as api-keys etc.
+#
+# 2. Compound tag nesting: Fern's OpenAPI export flattens hierarchy
+#    into single tag strings (InboxesMessages, PodsDrafts). Without
+#    help, Speakeasy produces client.inboxes_messages.inboxes_messages_send(...).
+#    The x-speakeasy-group extension tells Speakeasy to build a nested
+#    client tree so you get client.inboxes.messages.send(...) instead.
 actions:
+  # --- Acronym casing fixes ---
   - target: $.paths.*.*.tags[?(@ == 'APIKeys')]
     update: ApiKeys
   - target: $.paths.*.*.tags[?(@ == 'InboxesAPIKeys')]
     update: InboxesApiKeys
   - target: $.paths.*.*.tags[?(@ == 'PodsAPIKeys')]
     update: PodsApiKeys
+
+  # --- Nest compound groups under inboxes.* ---
+  - target: $.paths.*.*[?(@.tags && @.tags[0] == 'InboxesApiKeys')]
+    update:
+      x-speakeasy-group: inboxes.api_keys
+  - target: $.paths.*.*[?(@.tags && @.tags[0] == 'InboxesDrafts')]
+    update:
+      x-speakeasy-group: inboxes.drafts
+  - target: $.paths.*.*[?(@.tags && @.tags[0] == 'InboxesEvents')]
+    update:
+      x-speakeasy-group: inboxes.events
+  - target: $.paths.*.*[?(@.tags && @.tags[0] == 'InboxesLists')]
+    update:
+      x-speakeasy-group: inboxes.lists
+  - target: $.paths.*.*[?(@.tags && @.tags[0] == 'InboxesMessages')]
+    update:
+      x-speakeasy-group: inboxes.messages
+  - target: $.paths.*.*[?(@.tags && @.tags[0] == 'InboxesMetrics')]
+    update:
+      x-speakeasy-group: inboxes.metrics
+  - target: $.paths.*.*[?(@.tags && @.tags[0] == 'InboxesThreads')]
+    update:
+      x-speakeasy-group: inboxes.threads
+
+  # --- Nest compound groups under pods.* ---
+  - target: $.paths.*.*[?(@.tags && @.tags[0] == 'PodsApiKeys')]
+    update:
+      x-speakeasy-group: pods.api_keys
+  - target: $.paths.*.*[?(@.tags && @.tags[0] == 'PodsDomains')]
+    update:
+      x-speakeasy-group: pods.domains
+  - target: $.paths.*.*[?(@.tags && @.tags[0] == 'PodsDrafts')]
+    update:
+      x-speakeasy-group: pods.drafts
+  - target: $.paths.*.*[?(@.tags && @.tags[0] == 'PodsInboxes')]
+    update:
+      x-speakeasy-group: pods.inboxes
+  - target: $.paths.*.*[?(@.tags && @.tags[0] == 'PodsLists')]
+    update:
+      x-speakeasy-group: pods.lists
+  - target: $.paths.*.*[?(@.tags && @.tags[0] == 'PodsMetrics')]
+    update:
+      x-speakeasy-group: pods.metrics
+  - target: $.paths.*.*[?(@.tags && @.tags[0] == 'PodsThreads')]
+    update:
+      x-speakeasy-group: pods.threads
+  - target: "$.paths['/v0/inboxes/{inbox_id}/drafts'].get"
+    update:
+      x-speakeasy-name-override: list
+  - target: "$.paths['/v0/inboxes/{inbox_id}/drafts'].post"
+    update:
+      x-speakeasy-name-override: create
+  - target: "$.paths['/v0/inboxes/{inbox_id}/drafts/{draft_id}'].get"
+    update:
+      x-speakeasy-name-override: get
+  - target: "$.paths['/v0/inboxes/{inbox_id}/drafts/{draft_id}'].patch"
+    update:
+      x-speakeasy-name-override: update
+  - target: "$.paths['/v0/inboxes/{inbox_id}/drafts/{draft_id}'].delete"
+    update:
+      x-speakeasy-name-override: delete
+  - target: "$.paths['/v0/inboxes/{inbox_id}/drafts/{draft_id}/attachments/{attachment_id}'].get"
+    update:
+      x-speakeasy-name-override: getAttachment
+  - target: "$.paths['/v0/inboxes/{inbox_id}/drafts/{draft_id}/send'].post"
+    update:
+      x-speakeasy-name-override: send
+  - target: "$.paths['/v0/inboxes/{inbox_id}/events'].get"
+    update:
+      x-speakeasy-name-override: list
+  - target: "$.paths['/v0/inboxes/{inbox_id}/lists/{direction}/{type}'].get"
+    update:
+      x-speakeasy-name-override: list
+  - target: "$.paths['/v0/inboxes/{inbox_id}/lists/{direction}/{type}'].post"
+    update:
+      x-speakeasy-name-override: create
+  - target: "$.paths['/v0/inboxes/{inbox_id}/lists/{direction}/{type}/{entry}'].get"
+    update:
+      x-speakeasy-name-override: get
+  - target: "$.paths['/v0/inboxes/{inbox_id}/lists/{direction}/{type}/{entry}'].delete"
+    update:
+      x-speakeasy-name-override: delete
+  - target: "$.paths['/v0/inboxes/{inbox_id}/messages'].get"
+    update:
+      x-speakeasy-name-override: list
+  - target: "$.paths['/v0/inboxes/{inbox_id}/messages/{message_id}'].get"
+    update:
+      x-speakeasy-name-override: get
+  - target: "$.paths['/v0/inboxes/{inbox_id}/messages/{message_id}'].patch"
+    update:
+      x-speakeasy-name-override: update
+  - target: "$.paths['/v0/inboxes/{inbox_id}/messages/{message_id}'].delete"
+    update:
+      x-speakeasy-name-override: delete
+  - target: "$.paths['/v0/inboxes/{inbox_id}/messages/{message_id}/attachments/{attachment_id}'].get"
+    update:
+      x-speakeasy-name-override: getAttachment
+  - target: "$.paths['/v0/inboxes/{inbox_id}/messages/{message_id}/raw'].get"
+    update:
+      x-speakeasy-name-override: getRaw
+  - target: "$.paths['/v0/inboxes/{inbox_id}/messages/send'].post"
+    update:
+      x-speakeasy-name-override: send
+  - target: "$.paths['/v0/inboxes/{inbox_id}/messages/{message_id}/reply'].post"
+    update:
+      x-speakeasy-name-override: reply
+  - target: "$.paths['/v0/inboxes/{inbox_id}/messages/{message_id}/reply-all'].post"
+    update:
+      x-speakeasy-name-override: reply-all
+  - target: "$.paths['/v0/inboxes/{inbox_id}/messages/{message_id}/forward'].post"
+    update:
+      x-speakeasy-name-override: forward
+  - target: "$.paths['/v0/inboxes/{inbox_id}/metrics'].get"
+    update:
+      x-speakeasy-name-override: query
+  - target: "$.paths['/v0/inboxes/{inbox_id}/threads'].get"
+    update:
+      x-speakeasy-name-override: list
+  - target: "$.paths['/v0/inboxes/{inbox_id}/threads/{thread_id}'].get"
+    update:
+      x-speakeasy-name-override: get
+  - target: "$.paths['/v0/inboxes/{inbox_id}/threads/{thread_id}'].patch"
+    update:
+      x-speakeasy-name-override: update
+  - target: "$.paths['/v0/inboxes/{inbox_id}/threads/{thread_id}'].delete"
+    update:
+      x-speakeasy-name-override: delete
+  - target: "$.paths['/v0/inboxes/{inbox_id}/threads/{thread_id}/attachments/{attachment_id}'].get"
+    update:
+      x-speakeasy-name-override: getAttachment
+  - target: "$.paths['/v0/pods/{pod_id}/domains'].get"
+    update:
+      x-speakeasy-name-override: list
+  - target: "$.paths['/v0/pods/{pod_id}/domains'].post"
+    update:
+      x-speakeasy-name-override: create
+  - target: "$.paths['/v0/pods/{pod_id}/domains/{domain_id}'].get"
+    update:
+      x-speakeasy-name-override: get
+  - target: "$.paths['/v0/pods/{pod_id}/domains/{domain_id}'].patch"
+    update:
+      x-speakeasy-name-override: update
+  - target: "$.paths['/v0/pods/{pod_id}/domains/{domain_id}'].delete"
+    update:
+      x-speakeasy-name-override: delete
+  - target: "$.paths['/v0/pods/{pod_id}/domains/{domain_id}/zone-file'].get"
+    update:
+      x-speakeasy-name-override: getZoneFile
+  - target: "$.paths['/v0/pods/{pod_id}/domains/{domain_id}/verify'].post"
+    update:
+      x-speakeasy-name-override: verify
+  - target: "$.paths['/v0/pods/{pod_id}/drafts'].get"
+    update:
+      x-speakeasy-name-override: list
+  - target: "$.paths['/v0/pods/{pod_id}/drafts/{draft_id}'].get"
+    update:
+      x-speakeasy-name-override: get
+  - target: "$.paths['/v0/pods/{pod_id}/drafts/{draft_id}/attachments/{attachment_id}'].get"
+    update:
+      x-speakeasy-name-override: getAttachment
+  - target: "$.paths['/v0/pods/{pod_id}/inboxes'].get"
+    update:
+      x-speakeasy-name-override: list
+  - target: "$.paths['/v0/pods/{pod_id}/inboxes'].post"
+    update:
+      x-speakeasy-name-override: create
+  - target: "$.paths['/v0/pods/{pod_id}/inboxes/{inbox_id}'].get"
+    update:
+      x-speakeasy-name-override: get
+  - target: "$.paths['/v0/pods/{pod_id}/inboxes/{inbox_id}'].patch"
+    update:
+      x-speakeasy-name-override: update
+  - target: "$.paths['/v0/pods/{pod_id}/inboxes/{inbox_id}'].delete"
+    update:
+      x-speakeasy-name-override: delete
+  - target: "$.paths['/v0/pods/{pod_id}/lists/{direction}/{type}'].get"
+    update:
+      x-speakeasy-name-override: list
+  - target: "$.paths['/v0/pods/{pod_id}/lists/{direction}/{type}'].post"
+    update:
+      x-speakeasy-name-override: create
+  - target: "$.paths['/v0/pods/{pod_id}/lists/{direction}/{type}/{entry}'].get"
+    update:
+      x-speakeasy-name-override: get
+  - target: "$.paths['/v0/pods/{pod_id}/lists/{direction}/{type}/{entry}'].delete"
+    update:
+      x-speakeasy-name-override: delete
+  - target: "$.paths['/v0/pods/{pod_id}/metrics'].get"
+    update:
+      x-speakeasy-name-override: query
+  - target: "$.paths['/v0/pods/{pod_id}/threads'].get"
+    update:
+      x-speakeasy-name-override: list
+  - target: "$.paths['/v0/pods/{pod_id}/threads/{thread_id}'].get"
+    update:
+      x-speakeasy-name-override: get
+  - target: "$.paths['/v0/pods/{pod_id}/threads/{thread_id}'].patch"
+    update:
+      x-speakeasy-name-override: update
+  - target: "$.paths['/v0/pods/{pod_id}/threads/{thread_id}'].delete"
+    update:
+      x-speakeasy-name-override: delete
+  - target: "$.paths['/v0/pods/{pod_id}/threads/{thread_id}/attachments/{attachment_id}'].get"
+    update:
+      x-speakeasy-name-override: getAttachment
+
+  # --- Named servers ---
+  # Fern's OpenAPI export drops environment names (prod / prod-x402 / prod-mpp /
+  # eu-prod) and emits raw URLs only, repeated under every operation. We:
+  #   (a) tag each per-op server URL with x-speakeasy-server-id so per-op overrides
+  #       can use named servers, and
+  #   (b) inject a root-level servers block (which Fern omitted) so the SDK
+  #       generates a top-level AgentmailServer.ProdX402-style constant matching
+  #       Fern's existing AgentMailEnvironment.ProdX402 ergonomics.
+  - target: $.paths.*.*.servers[?(@.url == 'https://api.agentmail.to')]
+    update:
+      x-speakeasy-server-id: prod
+      description: Default production
+  - target: $.paths.*.*.servers[?(@.url == 'https://x402.api.agentmail.to')]
+    update:
+      x-speakeasy-server-id: prod-x402
+      description: x402 pay-per-use endpoint
+  - target: $.paths.*.*.servers[?(@.url == 'https://mpp.api.agentmail.to')]
+    update:
+      x-speakeasy-server-id: prod-mpp
+      description: MPP routing endpoint
+  - target: $.paths.*.*.servers[?(@.url == 'https://api.agentmail.eu')]
+    update:
+      x-speakeasy-server-id: eu-prod
+      description: EU production
+
+  # Root-level servers block (missing from Fern's export)
+  - target: $
+    update:
+      servers:
+        - url: https://api.agentmail.to
+          description: Default production
+          x-speakeasy-server-id: prod
+        - url: https://x402.api.agentmail.to
+          description: x402 pay-per-use endpoint
+          x-speakeasy-server-id: prod-x402
+        - url: https://mpp.api.agentmail.to
+          description: MPP routing endpoint
+          x-speakeasy-server-id: prod-mpp
+        - url: https://api.agentmail.eu
+          description: EU production
+          x-speakeasy-server-id: eu-prod

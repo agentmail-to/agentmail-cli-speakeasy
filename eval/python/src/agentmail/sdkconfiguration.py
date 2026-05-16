@@ -10,6 +10,23 @@ from pydantic import Field
 from typing import Callable, Dict, Optional, Tuple, Union
 
 
+SERVER_PROD = "prod"
+r"""Default production"""
+SERVER_PROD_X402 = "prod-x402"
+r"""x402 pay-per-use endpoint"""
+SERVER_PROD_MPP = "prod-mpp"
+r"""MPP routing endpoint"""
+SERVER_EU_PROD = "eu-prod"
+r"""EU production"""
+SERVERS = {
+    SERVER_PROD: "https://api.agentmail.to",
+    SERVER_PROD_X402: "https://x402.api.agentmail.to",
+    SERVER_PROD_MPP: "https://mpp.api.agentmail.to",
+    SERVER_EU_PROD: "https://api.agentmail.eu",
+}
+"""Contains the list of servers available to the SDK"""
+
+
 @dataclass
 class SDKConfiguration:
     client: Union[HttpClient, None]
@@ -21,6 +38,7 @@ class SDKConfiguration:
         Union[models.components.Security, Callable[[], models.components.Security]]
     ] = None
     server_url: Optional[str] = ""
+    server: Optional[str] = ""
     language: str = "python"
     sdk_version: str = __version__
     gen_version: str = __gen_version__
@@ -29,4 +47,12 @@ class SDKConfiguration:
     timeout_ms: Optional[int] = None
 
     def get_server_details(self) -> Tuple[str, Dict[str, str]]:
-        return remove_suffix(self.server_url or "", "/"), {}
+        if self.server_url is not None and self.server_url:
+            return remove_suffix(self.server_url, "/"), {}
+        if not self.server:
+            self.server = SERVER_PROD
+
+        if self.server not in SERVERS:
+            raise ValueError(f'Invalid server "{self.server}"')
+
+        return SERVERS[self.server], {}

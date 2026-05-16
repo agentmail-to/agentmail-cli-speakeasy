@@ -6,13 +6,24 @@ from agentmail.utils import FieldMetadata, PathParamMetadata, QueryParamMetadata
 from pydantic import model_serializer
 from typing_extensions import Annotated, NotRequired, TypedDict
 
+PODS_THREADS_DELETE_SERVER_PROD = "prod"
+r"""Default production"""
 
-PODS_THREADS_DELETE_SERVERS = [
-    "https://api.agentmail.to",
-    "https://x402.api.agentmail.to",
-    "https://mpp.api.agentmail.to",
-    "https://api.agentmail.eu",
-]
+PODS_THREADS_DELETE_SERVER_PROD_X402 = "prod-x402"
+r"""x402 pay-per-use endpoint"""
+
+PODS_THREADS_DELETE_SERVER_PROD_MPP = "prod-mpp"
+r"""MPP routing endpoint"""
+
+PODS_THREADS_DELETE_SERVER_EU_PROD = "eu-prod"
+r"""EU production"""
+
+PODS_THREADS_DELETE_SERVERS = {
+    PODS_THREADS_DELETE_SERVER_PROD: "https://api.agentmail.to",
+    PODS_THREADS_DELETE_SERVER_PROD_X402: "https://x402.api.agentmail.to",
+    PODS_THREADS_DELETE_SERVER_PROD_MPP: "https://mpp.api.agentmail.to",
+    PODS_THREADS_DELETE_SERVER_EU_PROD: "https://api.agentmail.eu",
+}
 
 
 class PodsThreadsDeleteRequestTypedDict(TypedDict):

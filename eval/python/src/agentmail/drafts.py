@@ -50,7 +50,9 @@ class Drafts(BaseSDK):
         if server_url is not None:
             base_url = server_url
         else:
-            base_url = models.operations.DRAFTS_LIST_SERVERS[0]
+            base_url = models.operations.DRAFTS_LIST_SERVERS[
+                models.operations.DRAFTS_LIST_SERVER_PROD
+            ]
 
         request = models.operations.DraftsListRequest(
             limit=limit,
@@ -164,7 +166,9 @@ class Drafts(BaseSDK):
         if server_url is not None:
             base_url = server_url
         else:
-            base_url = models.operations.DRAFTS_LIST_SERVERS[0]
+            base_url = models.operations.DRAFTS_LIST_SERVERS[
+                models.operations.DRAFTS_LIST_SERVER_PROD
+            ]
 
         request = models.operations.DraftsListRequest(
             limit=limit,
@@ -268,7 +272,9 @@ class Drafts(BaseSDK):
         if server_url is not None:
             base_url = server_url
         else:
-            base_url = models.operations.DRAFTS_GET_SERVERS[0]
+            base_url = models.operations.DRAFTS_GET_SERVERS[
+                models.operations.DRAFTS_GET_SERVER_PROD
+            ]
 
         request = models.operations.DraftsGetRequest(
             draft_id=draft_id,
@@ -365,7 +371,9 @@ class Drafts(BaseSDK):
         if server_url is not None:
             base_url = server_url
         else:
-            base_url = models.operations.DRAFTS_GET_SERVERS[0]
+            base_url = models.operations.DRAFTS_GET_SERVERS[
+                models.operations.DRAFTS_GET_SERVER_PROD
+            ]
 
         request = models.operations.DraftsGetRequest(
             draft_id=draft_id,
@@ -464,7 +472,9 @@ class Drafts(BaseSDK):
         if server_url is not None:
             base_url = server_url
         else:
-            base_url = models.operations.DRAFTS_GET_ATTACHMENT_SERVERS[0]
+            base_url = models.operations.DRAFTS_GET_ATTACHMENT_SERVERS[
+                models.operations.DRAFTS_GET_ATTACHMENT_SERVER_PROD
+            ]
 
         request = models.operations.DraftsGetAttachmentRequest(
             draft_id=draft_id,
@@ -566,7 +576,9 @@ class Drafts(BaseSDK):
         if server_url is not None:
             base_url = server_url
         else:
-            base_url = models.operations.DRAFTS_GET_ATTACHMENT_SERVERS[0]
+            base_url = models.operations.DRAFTS_GET_ATTACHMENT_SERVERS[
+                models.operations.DRAFTS_GET_ATTACHMENT_SERVER_PROD
+            ]
 
         request = models.operations.DraftsGetAttachmentRequest(
             draft_id=draft_id,

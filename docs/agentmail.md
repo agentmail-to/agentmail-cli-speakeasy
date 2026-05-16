@@ -40,24 +40,10 @@ agentmail [flags]
 * [agentmail drafts](agentmail_drafts.md)	 - Operations for drafts
 * [agentmail explore](agentmail_explore.md)	 - Interactively browse and run commands
 * [agentmail inboxes](agentmail_inboxes.md)	 - Operations for inboxes
-* [agentmail inboxes-api-keys](agentmail_inboxes-api-keys.md)	 - Operations for inboxes-api-keys
-* [agentmail inboxes-drafts](agentmail_inboxes-drafts.md)	 - Operations for inboxes-drafts
-* [agentmail inboxes-events](agentmail_inboxes-events.md)	 - Operations for inboxes-events
-* [agentmail inboxes-lists](agentmail_inboxes-lists.md)	 - Operations for inboxes-lists
-* [agentmail inboxes-messages](agentmail_inboxes-messages.md)	 - Operations for inboxes-messages
-* [agentmail inboxes-metrics](agentmail_inboxes-metrics.md)	 - Operations for inboxes-metrics
-* [agentmail inboxes-threads](agentmail_inboxes-threads.md)	 - Operations for inboxes-threads
 * [agentmail lists](agentmail_lists.md)	 - Operations for lists
 * [agentmail metrics](agentmail_metrics.md)	 - Operations for metrics
 * [agentmail organizations](agentmail_organizations.md)	 - Operations for organizations
 * [agentmail pods](agentmail_pods.md)	 - Operations for pods
-* [agentmail pods-api-keys](agentmail_pods-api-keys.md)	 - Operations for pods-api-keys
-* [agentmail pods-domains](agentmail_pods-domains.md)	 - Operations for pods-domains
-* [agentmail pods-drafts](agentmail_pods-drafts.md)	 - Operations for pods-drafts
-* [agentmail pods-inboxes](agentmail_pods-inboxes.md)	 - Operations for pods-inboxes
-* [agentmail pods-lists](agentmail_pods-lists.md)	 - Operations for pods-lists
-* [agentmail pods-metrics](agentmail_pods-metrics.md)	 - Operations for pods-metrics
-* [agentmail pods-threads](agentmail_pods-threads.md)	 - Operations for pods-threads
 * [agentmail threads](agentmail_threads.md)	 - Operations for threads
 * [agentmail version](agentmail_version.md)	 - Print the CLI version
 * [agentmail webhooks](agentmail_webhooks.md)	 - Operations for webhooks

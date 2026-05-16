@@ -1,12 +1,12 @@
-# InboxesMetrics
+# Inboxes.Metrics
 
 ## Overview
 
 ### Available Operations
 
-* [inboxesMetricsQuery](#inboxesmetricsquery) - Query Metrics
+* [query](#query) - Query Metrics
 
-## inboxesMetricsQuery
+## query
 
 **CLI:**
 ```bash
@@ -24,7 +24,7 @@ const agentmailCli = new AgentmailCli({
 });
 
 async function run() {
-  const result = await agentmailCli.inboxesMetrics.inboxesMetricsQuery({
+  const result = await agentmailCli.inboxes.metrics.query({
     inboxId: "<id>",
   });
 
@@ -40,7 +40,7 @@ The standalone function version of this method:
 
 ```typescript
 import { AgentmailCliCore } from "agentmail/core.js";
-import { inboxesMetricsInboxesMetricsQuery } from "agentmail/funcs/inboxes-metrics-inboxes-metrics-query.js";
+import { inboxesMetricsQuery } from "agentmail/funcs/inboxes-metrics-query.js";
 
 // Use `AgentmailCliCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
@@ -49,14 +49,14 @@ const agentmailCli = new AgentmailCliCore({
 });
 
 async function run() {
-  const res = await inboxesMetricsInboxesMetricsQuery(agentmailCli, {
+  const res = await inboxesMetricsQuery(agentmailCli, {
     inboxId: "<id>",
   });
   if (res.ok) {
     const { value: result } = res;
     console.log(result);
   } else {
-    console.log("inboxesMetricsInboxesMetricsQuery failed:", res.error);
+    console.log("inboxesMetricsQuery failed:", res.error);
   }
 }
 

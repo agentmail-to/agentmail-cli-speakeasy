@@ -1,12 +1,12 @@
-# PodsMetrics
+# Pods.Metrics
 
 ## Overview
 
 ### Available Operations
 
-* [podsMetricsQuery](#podsmetricsquery) - Query Metrics
+* [query](#query) - Query Metrics
 
-## podsMetricsQuery
+## query
 
 **CLI:**
 ```bash
@@ -24,7 +24,7 @@ const agentmailCli = new AgentmailCli({
 });
 
 async function run() {
-  const result = await agentmailCli.podsMetrics.podsMetricsQuery({
+  const result = await agentmailCli.pods.metrics.query({
     podId: "<id>",
   });
 
@@ -40,7 +40,7 @@ The standalone function version of this method:
 
 ```typescript
 import { AgentmailCliCore } from "agentmail/core.js";
-import { podsMetricsPodsMetricsQuery } from "agentmail/funcs/pods-metrics-pods-metrics-query.js";
+import { podsMetricsQuery } from "agentmail/funcs/pods-metrics-query.js";
 
 // Use `AgentmailCliCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
@@ -49,14 +49,14 @@ const agentmailCli = new AgentmailCliCore({
 });
 
 async function run() {
-  const res = await podsMetricsPodsMetricsQuery(agentmailCli, {
+  const res = await podsMetricsQuery(agentmailCli, {
     podId: "<id>",
   });
   if (res.ok) {
     const { value: result } = res;
     console.log(result);
   } else {
-    console.log("podsMetricsPodsMetricsQuery failed:", res.error);
+    console.log("podsMetricsQuery failed:", res.error);
   }
 }
 

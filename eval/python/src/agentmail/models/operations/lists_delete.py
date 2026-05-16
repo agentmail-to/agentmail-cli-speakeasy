@@ -9,13 +9,24 @@ from agentmail.types import BaseModel
 from agentmail.utils import FieldMetadata, PathParamMetadata
 from typing_extensions import Annotated, TypedDict
 
+LISTS_DELETE_SERVER_PROD = "prod"
+r"""Default production"""
 
-LISTS_DELETE_SERVERS = [
-    "https://api.agentmail.to",
-    "https://x402.api.agentmail.to",
-    "https://mpp.api.agentmail.to",
-    "https://api.agentmail.eu",
-]
+LISTS_DELETE_SERVER_PROD_X402 = "prod-x402"
+r"""x402 pay-per-use endpoint"""
+
+LISTS_DELETE_SERVER_PROD_MPP = "prod-mpp"
+r"""MPP routing endpoint"""
+
+LISTS_DELETE_SERVER_EU_PROD = "eu-prod"
+r"""EU production"""
+
+LISTS_DELETE_SERVERS = {
+    LISTS_DELETE_SERVER_PROD: "https://api.agentmail.to",
+    LISTS_DELETE_SERVER_PROD_X402: "https://x402.api.agentmail.to",
+    LISTS_DELETE_SERVER_PROD_MPP: "https://mpp.api.agentmail.to",
+    LISTS_DELETE_SERVER_EU_PROD: "https://api.agentmail.eu",
+}
 
 
 class ListsDeleteRequestTypedDict(TypedDict):

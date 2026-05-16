@@ -17,6 +17,14 @@ import (
 )
 
 type Pods struct {
+	APIKeys *PodsAPIKeys
+	Domains *PodsDomains
+	Drafts  *PodsDrafts
+	Inboxes *PodsInboxes
+	Lists   *PodsLists
+	Metrics *PodsMetrics
+	Threads *PodsThreads
+
 	rootSDK          *AgentmailCli
 	sdkConfiguration config.SDKConfiguration
 	hooks            *hooks.Hooks
@@ -27,6 +35,13 @@ func newPods(rootSDK *AgentmailCli, sdkConfig config.SDKConfiguration, hooks *ho
 		rootSDK:          rootSDK,
 		sdkConfiguration: sdkConfig,
 		hooks:            hooks,
+		APIKeys:          newPodsAPIKeys(rootSDK, sdkConfig, hooks),
+		Domains:          newPodsDomains(rootSDK, sdkConfig, hooks),
+		Drafts:           newPodsDrafts(rootSDK, sdkConfig, hooks),
+		Inboxes:          newPodsInboxes(rootSDK, sdkConfig, hooks),
+		Lists:            newPodsLists(rootSDK, sdkConfig, hooks),
+		Metrics:          newPodsMetrics(rootSDK, sdkConfig, hooks),
+		Threads:          newPodsThreads(rootSDK, sdkConfig, hooks),
 	}
 }
 

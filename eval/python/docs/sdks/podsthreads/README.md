@@ -1,16 +1,16 @@
-# PodsThreads
+# Pods.Threads
 
 ## Overview
 
 ### Available Operations
 
-* [pods_threads_list](#pods_threads_list) - List Threads
-* [pods_threads_get](#pods_threads_get) - Get Thread
-* [pods_threads_update](#pods_threads_update) - Update Thread
-* [pods_threads_delete](#pods_threads_delete) - Delete Thread
-* [pods_threads_get_attachment](#pods_threads_get_attachment) - Get Attachment
+* [list](#list) - List Threads
+* [get](#get) - Get Thread
+* [update](#update) - Update Thread
+* [delete](#delete) - Delete Thread
+* [get_attachment](#get_attachment) - Get Attachment
 
-## pods_threads_list
+## list
 
 **CLI:**
 ```bash
@@ -28,7 +28,7 @@ with AgentmailCli(
     bearer_auth="<YOUR_BEARER_TOKEN_HERE>",
 ) as agentmail_cli:
 
-    res = agentmail_cli.pods_threads.pods_threads_list(pod_id="<id>")
+    res = agentmail_cli.pods.threads.list(pod_id="<id>")
 
     # Handle response
     print(res)
@@ -63,7 +63,7 @@ with AgentmailCli(
 | models.errors.ErrorResponse            | 404                                    | application/json                       |
 | models.errors.AgentmailCliDefaultError | 4XX, 5XX                               | \*/\*                                  |
 
-## pods_threads_get
+## get
 
 **CLI:**
 ```bash
@@ -81,7 +81,7 @@ with AgentmailCli(
     bearer_auth="<YOUR_BEARER_TOKEN_HERE>",
 ) as agentmail_cli:
 
-    res = agentmail_cli.pods_threads.pods_threads_get(pod_id="<id>", thread_id="<id>")
+    res = agentmail_cli.pods.threads.get(pod_id="<id>", thread_id="<id>")
 
     # Handle response
     print(res)
@@ -108,7 +108,7 @@ with AgentmailCli(
 | models.errors.ErrorResponse            | 404                                    | application/json                       |
 | models.errors.AgentmailCliDefaultError | 4XX, 5XX                               | \*/\*                                  |
 
-## pods_threads_update
+## update
 
 Updates thread labels. Cannot add or remove system labels (sent, received, bounced, etc.). Rejects requests with a `422` for threads with 100 or more messages.
 
@@ -123,7 +123,7 @@ with AgentmailCli(
     bearer_auth="<YOUR_BEARER_TOKEN_HERE>",
 ) as agentmail_cli:
 
-    res = agentmail_cli.pods_threads.pods_threads_update(pod_id="<id>", thread_id="<id>")
+    res = agentmail_cli.pods.threads.update(pod_id="<id>", thread_id="<id>")
 
     # Handle response
     print(res)
@@ -153,7 +153,7 @@ with AgentmailCli(
 | models.errors.ErrorResponse            | 404, 422                               | application/json                       |
 | models.errors.AgentmailCliDefaultError | 4XX, 5XX                               | \*/\*                                  |
 
-## pods_threads_delete
+## delete
 
 Moves the thread to trash by adding a trash label to all messages. If the thread is already in trash, it will be permanently deleted. Use `permanent=true` to force permanent deletion.
 
@@ -173,7 +173,7 @@ with AgentmailCli(
     bearer_auth="<YOUR_BEARER_TOKEN_HERE>",
 ) as agentmail_cli:
 
-    agentmail_cli.pods_threads.pods_threads_delete(pod_id="<id>", thread_id="<id>")
+    agentmail_cli.pods.threads.delete(pod_id="<id>", thread_id="<id>")
 
     # Use the SDK ...
 
@@ -196,7 +196,7 @@ with AgentmailCli(
 | models.errors.ErrorResponse            | 404                                    | application/json                       |
 | models.errors.AgentmailCliDefaultError | 4XX, 5XX                               | \*/\*                                  |
 
-## pods_threads_get_attachment
+## get_attachment
 
 **CLI:**
 ```bash
@@ -214,7 +214,7 @@ with AgentmailCli(
     bearer_auth="<YOUR_BEARER_TOKEN_HERE>",
 ) as agentmail_cli:
 
-    res = agentmail_cli.pods_threads.pods_threads_get_attachment(pod_id="<id>", thread_id="<id>", attachment_id="<id>")
+    res = agentmail_cli.pods.threads.get_attachment(pod_id="<id>", thread_id="<id>", attachment_id="<id>")
 
     # Handle response
     print(res)

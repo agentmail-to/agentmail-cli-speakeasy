@@ -38,8 +38,15 @@ agentmail inboxes [flags]
 ### SEE ALSO
 
 * [agentmail](agentmail.md)	 - agentmail command-line interface
+* [agentmail inboxes api-keys](agentmail_inboxes_api-keys.md)	 - Operations for inboxes-api-keys
 * [agentmail inboxes create](agentmail_inboxes_create.md)	 - Create Inbox
 * [agentmail inboxes delete](agentmail_inboxes_delete.md)	 - Delete Inbox
+* [agentmail inboxes drafts](agentmail_inboxes_drafts.md)	 - Operations for inboxes-drafts
+* [agentmail inboxes events](agentmail_inboxes_events.md)	 - Operations for events
 * [agentmail inboxes get](agentmail_inboxes_get.md)	 - Get Inbox
 * [agentmail inboxes list](agentmail_inboxes_list.md)	 - List Inboxes
+* [agentmail inboxes lists](agentmail_inboxes_lists.md)	 - Operations for inboxes-lists
+* [agentmail inboxes messages](agentmail_inboxes_messages.md)	 - Operations for messages
+* [agentmail inboxes metrics](agentmail_inboxes_metrics.md)	 - Operations for inboxes-metrics
+* [agentmail inboxes threads](agentmail_inboxes_threads.md)	 - Operations for inboxes-threads
 * [agentmail inboxes update](agentmail_inboxes_update.md)	 - Update Inbox

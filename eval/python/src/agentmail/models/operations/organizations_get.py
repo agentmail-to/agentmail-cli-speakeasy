@@ -3,9 +3,21 @@
 from __future__ import annotations
 
 
-ORGANIZATIONS_GET_SERVERS = [
-    "https://api.agentmail.to",
-    "https://x402.api.agentmail.to",
-    "https://mpp.api.agentmail.to",
-    "https://api.agentmail.eu",
-]
+ORGANIZATIONS_GET_SERVER_PROD = "prod"
+r"""Default production"""
+
+ORGANIZATIONS_GET_SERVER_PROD_X402 = "prod-x402"
+r"""x402 pay-per-use endpoint"""
+
+ORGANIZATIONS_GET_SERVER_PROD_MPP = "prod-mpp"
+r"""MPP routing endpoint"""
+
+ORGANIZATIONS_GET_SERVER_EU_PROD = "eu-prod"
+r"""EU production"""
+
+ORGANIZATIONS_GET_SERVERS = {
+    ORGANIZATIONS_GET_SERVER_PROD: "https://api.agentmail.to",
+    ORGANIZATIONS_GET_SERVER_PROD_X402: "https://x402.api.agentmail.to",
+    ORGANIZATIONS_GET_SERVER_PROD_MPP: "https://mpp.api.agentmail.to",
+    ORGANIZATIONS_GET_SERVER_EU_PROD: "https://api.agentmail.eu",
+}

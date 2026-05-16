@@ -31,7 +31,7 @@ generation:
     generateNewTests: true
     skipResponseBodyAssertions: false
 cli:
-  version: 0.0.9
+  version: 0.1.0
   additionalDependencies:
     dependencies: {}
     dev: {}
@@ -77,7 +77,7 @@ cli:
   packageName: agentmail-cli
   removeStutter: true
 python:
-  version: 0.0.1
+  version: 0.3.1
   additionalDependencies:
     dependencies: {}
     dev: {}
@@ -129,16 +129,19 @@ python:
   preApplyUnionDiscriminators: true
   pytestFilterWarnings: []
   pytestTimeout: 0
+  removeStutter: true
   responseFormat: flat
   sseFlatResponse: false
   templateVersion: v2
   useAsyncHooks: false
 typescript:
-  version: 0.0.1
+  version: 0.2.0
   acceptHeaderEnum: false
   additionalDependencies:
     dependencies: {}
+    dev: {}
     devDependencies: {}
+    main: {}
     peerDependencies: {}
   additionalPackageJSON: {}
   additionalScripts: {}
@@ -184,6 +187,7 @@ typescript:
   packageName: agentmail
   preApplyUnionDiscriminators: true
   preserveModelFieldNames: false
+  removeStutter: true
   responseFormat: flat
   sseFlatResponse: false
   templateVersion: v2

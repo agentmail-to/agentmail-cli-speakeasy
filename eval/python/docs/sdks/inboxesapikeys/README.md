@@ -1,4 +1,4 @@
-# InboxesApiKeys
+# Inboxes.ApiKeys
 
 ## Overview
 
@@ -26,7 +26,7 @@ with AgentmailCli(
     bearer_auth="<YOUR_BEARER_TOKEN_HERE>",
 ) as agentmail_cli:
 
-    res = agentmail_cli.inboxes_api_keys.inboxes_api_keys_list(inbox_id="<id>")
+    res = agentmail_cli.inboxes.api_keys.inboxes_api_keys_list(inbox_id="<id>")
 
     # Handle response
     print(res)
@@ -72,7 +72,7 @@ with AgentmailCli(
     bearer_auth="<YOUR_BEARER_TOKEN_HERE>",
 ) as agentmail_cli:
 
-    res = agentmail_cli.inboxes_api_keys.inboxes_api_keys_create(inbox_id="<id>")
+    res = agentmail_cli.inboxes.api_keys.inboxes_api_keys_create(inbox_id="<id>")
 
     # Handle response
     print(res)
@@ -119,7 +119,7 @@ with AgentmailCli(
     bearer_auth="<YOUR_BEARER_TOKEN_HERE>",
 ) as agentmail_cli:
 
-    agentmail_cli.inboxes_api_keys.inboxes_api_keys_delete(inbox_id="<id>", api_key_id="<id>")
+    agentmail_cli.inboxes.api_keys.inboxes_api_keys_delete(inbox_id="<id>", api_key_id="<id>")
 
     # Use the SDK ...
 

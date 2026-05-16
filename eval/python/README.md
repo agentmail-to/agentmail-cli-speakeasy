@@ -27,6 +27,7 @@ Developer-friendly & type-safe Python SDK specifically catered to leverage *agen
   * [Available Resources and Operations](#available-resources-and-operations)
   * [Retries](#retries)
   * [Error Handling](#error-handling)
+  * [Server Selection](#server-selection)
   * [Custom HTTP Client](#custom-http-client)
   * [Resource Management](#resource-management)
   * [Debugging](#debugging)
@@ -229,57 +230,57 @@ with AgentmailCli(
 * [inboxes_update](docs/sdks/inboxes/README.md#inboxes_update) - Update Inbox
 * [inboxes_delete](docs/sdks/inboxes/README.md#inboxes_delete) - Delete Inbox
 
-### [InboxesApiKeys](docs/sdks/inboxesapikeys/README.md)
+### [Inboxes.ApiKeys](docs/sdks/inboxesapikeys/README.md)
 
 * [inboxes_api_keys_list](docs/sdks/inboxesapikeys/README.md#inboxes_api_keys_list) - List API Keys
 * [inboxes_api_keys_create](docs/sdks/inboxesapikeys/README.md#inboxes_api_keys_create) - Create API Key
 * [inboxes_api_keys_delete](docs/sdks/inboxesapikeys/README.md#inboxes_api_keys_delete) - Delete API Key
 
-### [InboxesDrafts](docs/sdks/inboxesdrafts/README.md)
+### [Inboxes.Drafts](docs/sdks/inboxesdrafts/README.md)
 
-* [inboxes_drafts_list](docs/sdks/inboxesdrafts/README.md#inboxes_drafts_list) - List Drafts
-* [inboxes_drafts_create](docs/sdks/inboxesdrafts/README.md#inboxes_drafts_create) - Create Draft
-* [inboxes_drafts_get](docs/sdks/inboxesdrafts/README.md#inboxes_drafts_get) - Get Draft
-* [inboxes_drafts_update](docs/sdks/inboxesdrafts/README.md#inboxes_drafts_update) - Update Draft
-* [inboxes_drafts_delete](docs/sdks/inboxesdrafts/README.md#inboxes_drafts_delete) - Delete Draft
-* [inboxes_drafts_get_attachment](docs/sdks/inboxesdrafts/README.md#inboxes_drafts_get_attachment) - Get Attachment
-* [inboxes_drafts_send](docs/sdks/inboxesdrafts/README.md#inboxes_drafts_send) - Send Draft
+* [list](docs/sdks/inboxesdrafts/README.md#list) - List Drafts
+* [create](docs/sdks/inboxesdrafts/README.md#create) - Create Draft
+* [get](docs/sdks/inboxesdrafts/README.md#get) - Get Draft
+* [update](docs/sdks/inboxesdrafts/README.md#update) - Update Draft
+* [delete](docs/sdks/inboxesdrafts/README.md#delete) - Delete Draft
+* [get_attachment](docs/sdks/inboxesdrafts/README.md#get_attachment) - Get Attachment
+* [send](docs/sdks/inboxesdrafts/README.md#send) - Send Draft
 
-### [InboxesEvents](docs/sdks/inboxesevents/README.md)
+### [Inboxes.Events](docs/sdks/events/README.md)
 
-* [inboxes_events_list](docs/sdks/inboxesevents/README.md#inboxes_events_list) - List Inbox Events
+* [list](docs/sdks/events/README.md#list) - List Inbox Events
 
-### [InboxesLists](docs/sdks/inboxeslists/README.md)
+### [Inboxes.Lists](docs/sdks/inboxeslists/README.md)
 
-* [inboxes_lists_list](docs/sdks/inboxeslists/README.md#inboxes_lists_list) - List Entries
-* [inboxes_lists_create](docs/sdks/inboxeslists/README.md#inboxes_lists_create) - Create List Entry
-* [inboxes_lists_get](docs/sdks/inboxeslists/README.md#inboxes_lists_get) - Get List Entry
-* [inboxes_lists_delete](docs/sdks/inboxeslists/README.md#inboxes_lists_delete) - Delete List Entry
+* [list](docs/sdks/inboxeslists/README.md#list) - List Entries
+* [create](docs/sdks/inboxeslists/README.md#create) - Create List Entry
+* [get](docs/sdks/inboxeslists/README.md#get) - Get List Entry
+* [delete](docs/sdks/inboxeslists/README.md#delete) - Delete List Entry
 
-### [InboxesMessages](docs/sdks/inboxesmessages/README.md)
+### [Inboxes.Messages](docs/sdks/messages/README.md)
 
-* [inboxes_messages_list](docs/sdks/inboxesmessages/README.md#inboxes_messages_list) - List Messages
-* [inboxes_messages_get](docs/sdks/inboxesmessages/README.md#inboxes_messages_get) - Get Message
-* [inboxes_messages_update](docs/sdks/inboxesmessages/README.md#inboxes_messages_update) - Update Message
-* [inboxes_messages_delete](docs/sdks/inboxesmessages/README.md#inboxes_messages_delete) - Delete Message
-* [inboxes_messages_get_attachment](docs/sdks/inboxesmessages/README.md#inboxes_messages_get_attachment) - Get Attachment
-* [inboxes_messages_get_raw](docs/sdks/inboxesmessages/README.md#inboxes_messages_get_raw) - Get Raw Message
-* [inboxes_messages_send](docs/sdks/inboxesmessages/README.md#inboxes_messages_send) - Send Message
-* [inboxes_messages_reply](docs/sdks/inboxesmessages/README.md#inboxes_messages_reply) - Reply To Message
-* [inboxes_messages_reply_all](docs/sdks/inboxesmessages/README.md#inboxes_messages_reply_all) - Reply All Message
-* [inboxes_messages_forward](docs/sdks/inboxesmessages/README.md#inboxes_messages_forward) - Forward Message
+* [list](docs/sdks/messages/README.md#list) - List Messages
+* [get](docs/sdks/messages/README.md#get) - Get Message
+* [update](docs/sdks/messages/README.md#update) - Update Message
+* [delete](docs/sdks/messages/README.md#delete) - Delete Message
+* [get_attachment](docs/sdks/messages/README.md#get_attachment) - Get Attachment
+* [get_raw](docs/sdks/messages/README.md#get_raw) - Get Raw Message
+* [send](docs/sdks/messages/README.md#send) - Send Message
+* [reply](docs/sdks/messages/README.md#reply) - Reply To Message
+* [reply_all](docs/sdks/messages/README.md#reply_all) - Reply All Message
+* [forward](docs/sdks/messages/README.md#forward) - Forward Message
 
-### [InboxesMetrics](docs/sdks/inboxesmetrics/README.md)
+### [Inboxes.Metrics](docs/sdks/inboxesmetrics/README.md)
 
-* [inboxes_metrics_query](docs/sdks/inboxesmetrics/README.md#inboxes_metrics_query) - Query Metrics
+* [query](docs/sdks/inboxesmetrics/README.md#query) - Query Metrics
 
-### [InboxesThreads](docs/sdks/inboxesthreads/README.md)
+### [Inboxes.Threads](docs/sdks/inboxesthreads/README.md)
 
-* [inboxes_threads_list](docs/sdks/inboxesthreads/README.md#inboxes_threads_list) - List Threads
-* [inboxes_threads_get](docs/sdks/inboxesthreads/README.md#inboxes_threads_get) - Get Thread
-* [inboxes_threads_update](docs/sdks/inboxesthreads/README.md#inboxes_threads_update) - Update Thread
-* [inboxes_threads_delete](docs/sdks/inboxesthreads/README.md#inboxes_threads_delete) - Delete Thread
-* [inboxes_threads_get_attachment](docs/sdks/inboxesthreads/README.md#inboxes_threads_get_attachment) - Get Attachment
+* [list](docs/sdks/inboxesthreads/README.md#list) - List Threads
+* [get](docs/sdks/inboxesthreads/README.md#get) - Get Thread
+* [update](docs/sdks/inboxesthreads/README.md#update) - Update Thread
+* [delete](docs/sdks/inboxesthreads/README.md#delete) - Delete Thread
+* [get_attachment](docs/sdks/inboxesthreads/README.md#get_attachment) - Get Attachment
 
 ### [Lists](docs/sdks/lists/README.md)
 
@@ -303,54 +304,54 @@ with AgentmailCli(
 * [pods_get](docs/sdks/pods/README.md#pods_get) - Get Pod
 * [pods_delete](docs/sdks/pods/README.md#pods_delete) - Delete Pod
 
-### [PodsApiKeys](docs/sdks/podsapikeys/README.md)
+### [Pods.ApiKeys](docs/sdks/podsapikeys/README.md)
 
 * [pods_api_keys_list](docs/sdks/podsapikeys/README.md#pods_api_keys_list) - List API Keys
 * [pods_api_keys_create](docs/sdks/podsapikeys/README.md#pods_api_keys_create) - Create API Key
 * [pods_api_keys_delete](docs/sdks/podsapikeys/README.md#pods_api_keys_delete) - Delete API Key
 
-### [PodsDomains](docs/sdks/podsdomains/README.md)
+### [Pods.Domains](docs/sdks/podsdomains/README.md)
 
-* [pods_domains_list](docs/sdks/podsdomains/README.md#pods_domains_list) - List Domains
-* [pods_domains_create](docs/sdks/podsdomains/README.md#pods_domains_create) - Create Domain
-* [pods_domains_get](docs/sdks/podsdomains/README.md#pods_domains_get) - Get Domain
-* [pods_domains_update](docs/sdks/podsdomains/README.md#pods_domains_update) - Update Domain
-* [pods_domains_delete](docs/sdks/podsdomains/README.md#pods_domains_delete) - Delete Domain
-* [pods_domains_get_zone_file](docs/sdks/podsdomains/README.md#pods_domains_get_zone_file) - Get Zone File
-* [pods_domains_verify](docs/sdks/podsdomains/README.md#pods_domains_verify) - Verify Domain
+* [list](docs/sdks/podsdomains/README.md#list) - List Domains
+* [create](docs/sdks/podsdomains/README.md#create) - Create Domain
+* [get](docs/sdks/podsdomains/README.md#get) - Get Domain
+* [update](docs/sdks/podsdomains/README.md#update) - Update Domain
+* [delete](docs/sdks/podsdomains/README.md#delete) - Delete Domain
+* [get_zone_file](docs/sdks/podsdomains/README.md#get_zone_file) - Get Zone File
+* [verify](docs/sdks/podsdomains/README.md#verify) - Verify Domain
 
-### [PodsDrafts](docs/sdks/podsdrafts/README.md)
+### [Pods.Drafts](docs/sdks/podsdrafts/README.md)
 
-* [pods_drafts_list](docs/sdks/podsdrafts/README.md#pods_drafts_list) - List Drafts
-* [pods_drafts_get](docs/sdks/podsdrafts/README.md#pods_drafts_get) - Get Draft
-* [pods_drafts_get_attachment](docs/sdks/podsdrafts/README.md#pods_drafts_get_attachment) - Get Attachment
+* [list](docs/sdks/podsdrafts/README.md#list) - List Drafts
+* [get](docs/sdks/podsdrafts/README.md#get) - Get Draft
+* [get_attachment](docs/sdks/podsdrafts/README.md#get_attachment) - Get Attachment
 
-### [PodsInboxes](docs/sdks/podsinboxes/README.md)
+### [Pods.Inboxes](docs/sdks/podsinboxes/README.md)
 
-* [pods_inboxes_list](docs/sdks/podsinboxes/README.md#pods_inboxes_list) - List Inboxes
-* [pods_inboxes_create](docs/sdks/podsinboxes/README.md#pods_inboxes_create) - Create Inbox
-* [pods_inboxes_get](docs/sdks/podsinboxes/README.md#pods_inboxes_get) - Get Inbox
-* [pods_inboxes_update](docs/sdks/podsinboxes/README.md#pods_inboxes_update) - Update Inbox
-* [pods_inboxes_delete](docs/sdks/podsinboxes/README.md#pods_inboxes_delete) - Delete Inbox
+* [list](docs/sdks/podsinboxes/README.md#list) - List Inboxes
+* [create](docs/sdks/podsinboxes/README.md#create) - Create Inbox
+* [get](docs/sdks/podsinboxes/README.md#get) - Get Inbox
+* [update](docs/sdks/podsinboxes/README.md#update) - Update Inbox
+* [delete](docs/sdks/podsinboxes/README.md#delete) - Delete Inbox
 
-### [PodsLists](docs/sdks/podslists/README.md)
+### [Pods.Lists](docs/sdks/podslists/README.md)
 
-* [pods_lists_list](docs/sdks/podslists/README.md#pods_lists_list) - List Entries
-* [pods_lists_create](docs/sdks/podslists/README.md#pods_lists_create) - Create List Entry
-* [pods_lists_get](docs/sdks/podslists/README.md#pods_lists_get) - Get List Entry
-* [pods_lists_delete](docs/sdks/podslists/README.md#pods_lists_delete) - Delete List Entry
+* [list](docs/sdks/podslists/README.md#list) - List Entries
+* [create](docs/sdks/podslists/README.md#create) - Create List Entry
+* [get](docs/sdks/podslists/README.md#get) - Get List Entry
+* [delete](docs/sdks/podslists/README.md#delete) - Delete List Entry
 
-### [PodsMetrics](docs/sdks/podsmetrics/README.md)
+### [Pods.Metrics](docs/sdks/podsmetrics/README.md)
 
-* [pods_metrics_query](docs/sdks/podsmetrics/README.md#pods_metrics_query) - Query Metrics
+* [query](docs/sdks/podsmetrics/README.md#query) - Query Metrics
 
-### [PodsThreads](docs/sdks/podsthreads/README.md)
+### [Pods.Threads](docs/sdks/podsthreads/README.md)
 
-* [pods_threads_list](docs/sdks/podsthreads/README.md#pods_threads_list) - List Threads
-* [pods_threads_get](docs/sdks/podsthreads/README.md#pods_threads_get) - Get Thread
-* [pods_threads_update](docs/sdks/podsthreads/README.md#pods_threads_update) - Update Thread
-* [pods_threads_delete](docs/sdks/podsthreads/README.md#pods_threads_delete) - Delete Thread
-* [pods_threads_get_attachment](docs/sdks/podsthreads/README.md#pods_threads_get_attachment) - Get Attachment
+* [list](docs/sdks/podsthreads/README.md#list) - List Threads
+* [get](docs/sdks/podsthreads/README.md#get) - Get Thread
+* [update](docs/sdks/podsthreads/README.md#update) - Update Thread
+* [delete](docs/sdks/podsthreads/README.md#delete) - Delete Thread
+* [get_attachment](docs/sdks/podsthreads/README.md#get_attachment) - Get Attachment
 
 ### [Threads](docs/sdks/threads/README.md)
 
@@ -482,6 +483,46 @@ with AgentmailCli(
 \* Check [the method documentation](#available-resources-and-operations) to see if the error is applicable.
 <!-- End Error Handling [errors] -->
 
+<!-- Start Server Selection [server] -->
+## Server Selection
+
+### Select Server by Name
+
+You can override the default server globally by passing a server name to the `server: str` optional parameter when initializing the SDK client instance. The selected server will then be used as the default on the operations that use it. This table lists the names associated with the available servers:
+
+| Name        | Server                          | Description               |
+| ----------- | ------------------------------- | ------------------------- |
+| `prod`      | `https://api.agentmail.to`      | Default production        |
+| `prod-x402` | `https://x402.api.agentmail.to` | x402 pay-per-use endpoint |
+| `prod-mpp`  | `https://mpp.api.agentmail.to`  | MPP routing endpoint      |
+| `eu-prod`   | `https://api.agentmail.eu`      | EU production             |
+
+
+
+### Override Server URL Per-Client
+
+The default server can also be overridden globally by passing a URL to the `server_url: str` optional parameter when initializing the SDK client instance. For example:
+
+
+### Override Server URL Per-Operation
+
+The server URL can also be overridden on a per-operation basis, provided a server list was specified for the operation. For example:
+```python
+from agentmail import AgentmailCli
+
+
+with AgentmailCli(
+    bearer_auth="<YOUR_BEARER_TOKEN_HERE>",
+) as agentmail_cli:
+
+    res = agentmail_cli.inboxes.inboxes_list(server_url="https://api.agentmail.to")
+
+    # Handle response
+    print(res)
+
+```
+<!-- End Server Selection [server] -->
+
 <!-- Start Custom HTTP Client [http-client] -->
 ## Custom HTTP Client
 
@@ -601,7 +642,7 @@ from agentmail import AgentmailCli
 import logging
 
 logging.basicConfig(level=logging.DEBUG)
-s = AgentmailCli(server_url="https://example.com", debug_logger=logging.getLogger("agentmail"))
+s = AgentmailCli(debug_logger=logging.getLogger("agentmail"))
 ```
 <!-- End Debugging [debug] -->
 

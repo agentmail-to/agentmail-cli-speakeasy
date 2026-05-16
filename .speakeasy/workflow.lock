@@ -2,30 +2,30 @@ speakeasyVersion: 1.761.9
 sources:
     api:
         sourceNamespace: api
-        sourceRevisionDigest: sha256:8460944c26d6b91523ec0583ad6fdfa558653c7cf4f113bd1e9b99f9d437db08
-        sourceBlobDigest: sha256:043248f3044176faef7826ca0d1fc65cd2696a672a45bdc2f40e2e4948222e6d
+        sourceRevisionDigest: sha256:c89c63e19880c0bed0e99653254e64f72f7cced40acc2d1732429d5f62324f4f
+        sourceBlobDigest: sha256:63fe698ae7d5f2ed33c51c31634705639cfd647bb8ed78ec567e9324f7b46524
         tags:
             - latest
 targets:
     agentmail-cli:
         source: api
         sourceNamespace: api
-        sourceRevisionDigest: sha256:8460944c26d6b91523ec0583ad6fdfa558653c7cf4f113bd1e9b99f9d437db08
-        sourceBlobDigest: sha256:043248f3044176faef7826ca0d1fc65cd2696a672a45bdc2f40e2e4948222e6d
+        sourceRevisionDigest: sha256:a83622da559da5d447abb44dbe13fdb9ced3501657bab0da8c8087a3bac387f2
+        sourceBlobDigest: sha256:a68e36fb97842bff7f82fdfb82e75b310e9172a2aadeaa261926867d208e968c
     agentmail-python:
         source: api
         sourceNamespace: api
-        sourceRevisionDigest: sha256:8460944c26d6b91523ec0583ad6fdfa558653c7cf4f113bd1e9b99f9d437db08
-        sourceBlobDigest: sha256:043248f3044176faef7826ca0d1fc65cd2696a672a45bdc2f40e2e4948222e6d
+        sourceRevisionDigest: sha256:c89c63e19880c0bed0e99653254e64f72f7cced40acc2d1732429d5f62324f4f
+        sourceBlobDigest: sha256:63fe698ae7d5f2ed33c51c31634705639cfd647bb8ed78ec567e9324f7b46524
         codeSamplesNamespace: api-python-code-samples
-        codeSamplesRevisionDigest: sha256:2873bad2ad717c9fa77801cbb439eabf80069bf81720a20d149d8a119df599ed
+        codeSamplesRevisionDigest: sha256:2e142af29d77e5c03494be156fac5882626015a3e0f053874be37a9f0f6d4711
     agentmail-typescript:
         source: api
         sourceNamespace: api
-        sourceRevisionDigest: sha256:8460944c26d6b91523ec0583ad6fdfa558653c7cf4f113bd1e9b99f9d437db08
-        sourceBlobDigest: sha256:043248f3044176faef7826ca0d1fc65cd2696a672a45bdc2f40e2e4948222e6d
+        sourceRevisionDigest: sha256:5d228247afc613f7ca85614bed26e81638940beb7a6845f1abb79b25351abb55
+        sourceBlobDigest: sha256:ddedf79e721b4786d3793c89e6388fa2bffc1dc4b5344c7558c953dddac7f1ff
         codeSamplesNamespace: api-typescript-code-samples
-        codeSamplesRevisionDigest: sha256:80e78d217ba2eadee16cb8991d725106ec2951950e770e6ed3806849a7577514
+        codeSamplesRevisionDigest: sha256:231603d8841d2af14be7d2a731999b42b6e6d6c6452c4f818f26cdba086eb62b
 workflow:
     workflowVersion: 1.0.0
     speakeasyVersion: latest

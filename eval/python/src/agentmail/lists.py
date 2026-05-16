@@ -45,7 +45,9 @@ class Lists(BaseSDK):
         if server_url is not None:
             base_url = server_url
         else:
-            base_url = models.operations.LISTS_LIST_SERVERS[0]
+            base_url = models.operations.LISTS_LIST_SERVERS[
+                models.operations.LISTS_LIST_SERVER_PROD
+            ]
 
         request = models.operations.ListsListRequest(
             direction=direction,
@@ -147,7 +149,9 @@ class Lists(BaseSDK):
         if server_url is not None:
             base_url = server_url
         else:
-            base_url = models.operations.LISTS_LIST_SERVERS[0]
+            base_url = models.operations.LISTS_LIST_SERVERS[
+                models.operations.LISTS_LIST_SERVER_PROD
+            ]
 
         request = models.operations.ListsListRequest(
             direction=direction,
@@ -249,7 +253,9 @@ class Lists(BaseSDK):
         if server_url is not None:
             base_url = server_url
         else:
-            base_url = models.operations.LISTS_CREATE_SERVERS[0]
+            base_url = models.operations.LISTS_CREATE_SERVERS[
+                models.operations.LISTS_CREATE_SERVER_PROD
+            ]
 
         request = models.operations.ListsCreateRequest(
             direction=direction,
@@ -364,7 +370,9 @@ class Lists(BaseSDK):
         if server_url is not None:
             base_url = server_url
         else:
-            base_url = models.operations.LISTS_CREATE_SERVERS[0]
+            base_url = models.operations.LISTS_CREATE_SERVERS[
+                models.operations.LISTS_CREATE_SERVER_PROD
+            ]
 
         request = models.operations.ListsCreateRequest(
             direction=direction,
@@ -477,7 +485,9 @@ class Lists(BaseSDK):
         if server_url is not None:
             base_url = server_url
         else:
-            base_url = models.operations.LISTS_GET_SERVERS[0]
+            base_url = models.operations.LISTS_GET_SERVERS[
+                models.operations.LISTS_GET_SERVER_PROD
+            ]
 
         request = models.operations.ListsGetRequest(
             direction=direction,
@@ -580,7 +590,9 @@ class Lists(BaseSDK):
         if server_url is not None:
             base_url = server_url
         else:
-            base_url = models.operations.LISTS_GET_SERVERS[0]
+            base_url = models.operations.LISTS_GET_SERVERS[
+                models.operations.LISTS_GET_SERVER_PROD
+            ]
 
         request = models.operations.ListsGetRequest(
             direction=direction,
@@ -683,7 +695,9 @@ class Lists(BaseSDK):
         if server_url is not None:
             base_url = server_url
         else:
-            base_url = models.operations.LISTS_DELETE_SERVERS[0]
+            base_url = models.operations.LISTS_DELETE_SERVERS[
+                models.operations.LISTS_DELETE_SERVER_PROD
+            ]
 
         request = models.operations.ListsDeleteRequest(
             direction=direction,
@@ -786,7 +800,9 @@ class Lists(BaseSDK):
         if server_url is not None:
             base_url = server_url
         else:
-            base_url = models.operations.LISTS_DELETE_SERVERS[0]
+            base_url = models.operations.LISTS_DELETE_SERVERS[
+                models.operations.LISTS_DELETE_SERVER_PROD
+            ]
 
         request = models.operations.ListsDeleteRequest(
             direction=direction,

@@ -1,16 +1,16 @@
-# PodsInboxes
+# Pods.Inboxes
 
 ## Overview
 
 ### Available Operations
 
-* [podsInboxesList](#podsinboxeslist) - List Inboxes
-* [podsInboxesCreate](#podsinboxescreate) - Create Inbox
-* [podsInboxesGet](#podsinboxesget) - Get Inbox
-* [podsInboxesUpdate](#podsinboxesupdate) - Update Inbox
-* [podsInboxesDelete](#podsinboxesdelete) - Delete Inbox
+* [list](#list) - List Inboxes
+* [create](#create) - Create Inbox
+* [get](#get) - Get Inbox
+* [update](#update) - Update Inbox
+* [delete](#delete) - Delete Inbox
 
-## podsInboxesList
+## list
 
 **CLI:**
 ```bash
@@ -28,7 +28,7 @@ const agentmailCli = new AgentmailCli({
 });
 
 async function run() {
-  const result = await agentmailCli.podsInboxes.podsInboxesList("<id>");
+  const result = await agentmailCli.pods.inboxes.list("<id>");
 
   console.log(result);
 }
@@ -42,7 +42,7 @@ The standalone function version of this method:
 
 ```typescript
 import { AgentmailCliCore } from "agentmail/core.js";
-import { podsInboxesPodsInboxesList } from "agentmail/funcs/pods-inboxes-pods-inboxes-list.js";
+import { podsInboxesList } from "agentmail/funcs/pods-inboxes-list.js";
 
 // Use `AgentmailCliCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
@@ -51,12 +51,12 @@ const agentmailCli = new AgentmailCliCore({
 });
 
 async function run() {
-  const res = await podsInboxesPodsInboxesList(agentmailCli, "<id>");
+  const res = await podsInboxesList(agentmailCli, "<id>");
   if (res.ok) {
     const { value: result } = res;
     console.log(result);
   } else {
-    console.log("podsInboxesPodsInboxesList failed:", res.error);
+    console.log("podsInboxesList failed:", res.error);
   }
 }
 
@@ -87,7 +87,7 @@ run();
 | errors.ErrorResponse            | 404                             | application/json                |
 | errors.AgentmailCliDefaultError | 4XX, 5XX                        | \*/\*                           |
 
-## podsInboxesCreate
+## create
 
 **CLI:**
 ```bash
@@ -105,7 +105,7 @@ const agentmailCli = new AgentmailCli({
 });
 
 async function run() {
-  const result = await agentmailCli.podsInboxes.podsInboxesCreate("<id>", {});
+  const result = await agentmailCli.pods.inboxes.create("<id>", {});
 
   console.log(result);
 }
@@ -119,7 +119,7 @@ The standalone function version of this method:
 
 ```typescript
 import { AgentmailCliCore } from "agentmail/core.js";
-import { podsInboxesPodsInboxesCreate } from "agentmail/funcs/pods-inboxes-pods-inboxes-create.js";
+import { podsInboxesCreate } from "agentmail/funcs/pods-inboxes-create.js";
 
 // Use `AgentmailCliCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
@@ -128,12 +128,12 @@ const agentmailCli = new AgentmailCliCore({
 });
 
 async function run() {
-  const res = await podsInboxesPodsInboxesCreate(agentmailCli, "<id>", {});
+  const res = await podsInboxesCreate(agentmailCli, "<id>", {});
   if (res.ok) {
     const { value: result } = res;
     console.log(result);
   } else {
-    console.log("podsInboxesPodsInboxesCreate failed:", res.error);
+    console.log("podsInboxesCreate failed:", res.error);
   }
 }
 
@@ -162,7 +162,7 @@ run();
 | errors.ValidationErrorResponse  | 400                             | application/json                |
 | errors.AgentmailCliDefaultError | 4XX, 5XX                        | \*/\*                           |
 
-## podsInboxesGet
+## get
 
 **CLI:**
 ```bash
@@ -180,7 +180,7 @@ const agentmailCli = new AgentmailCli({
 });
 
 async function run() {
-  const result = await agentmailCli.podsInboxes.podsInboxesGet("<id>", "<id>");
+  const result = await agentmailCli.pods.inboxes.get("<id>", "<id>");
 
   console.log(result);
 }
@@ -194,7 +194,7 @@ The standalone function version of this method:
 
 ```typescript
 import { AgentmailCliCore } from "agentmail/core.js";
-import { podsInboxesPodsInboxesGet } from "agentmail/funcs/pods-inboxes-pods-inboxes-get.js";
+import { podsInboxesGet } from "agentmail/funcs/pods-inboxes-get.js";
 
 // Use `AgentmailCliCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
@@ -203,12 +203,12 @@ const agentmailCli = new AgentmailCliCore({
 });
 
 async function run() {
-  const res = await podsInboxesPodsInboxesGet(agentmailCli, "<id>", "<id>");
+  const res = await podsInboxesGet(agentmailCli, "<id>", "<id>");
   if (res.ok) {
     const { value: result } = res;
     console.log(result);
   } else {
-    console.log("podsInboxesPodsInboxesGet failed:", res.error);
+    console.log("podsInboxesGet failed:", res.error);
   }
 }
 
@@ -237,7 +237,7 @@ run();
 | errors.ErrorResponse            | 404                             | application/json                |
 | errors.AgentmailCliDefaultError | 4XX, 5XX                        | \*/\*                           |
 
-## podsInboxesUpdate
+## update
 
 **CLI:**
 ```bash
@@ -255,7 +255,7 @@ const agentmailCli = new AgentmailCli({
 });
 
 async function run() {
-  const result = await agentmailCli.podsInboxes.podsInboxesUpdate("<id>", "<id>", {
+  const result = await agentmailCli.pods.inboxes.update("<id>", "<id>", {
     displayName: "Newton87",
   });
 
@@ -271,7 +271,7 @@ The standalone function version of this method:
 
 ```typescript
 import { AgentmailCliCore } from "agentmail/core.js";
-import { podsInboxesPodsInboxesUpdate } from "agentmail/funcs/pods-inboxes-pods-inboxes-update.js";
+import { podsInboxesUpdate } from "agentmail/funcs/pods-inboxes-update.js";
 
 // Use `AgentmailCliCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
@@ -280,14 +280,14 @@ const agentmailCli = new AgentmailCliCore({
 });
 
 async function run() {
-  const res = await podsInboxesPodsInboxesUpdate(agentmailCli, "<id>", "<id>", {
+  const res = await podsInboxesUpdate(agentmailCli, "<id>", "<id>", {
     displayName: "Newton87",
   });
   if (res.ok) {
     const { value: result } = res;
     console.log(result);
   } else {
-    console.log("podsInboxesPodsInboxesUpdate failed:", res.error);
+    console.log("podsInboxesUpdate failed:", res.error);
   }
 }
 
@@ -317,7 +317,7 @@ run();
 | errors.ErrorResponse            | 404                             | application/json                |
 | errors.AgentmailCliDefaultError | 4XX, 5XX                        | \*/\*                           |
 
-## podsInboxesDelete
+## delete
 
 **CLI:**
 ```bash
@@ -335,7 +335,7 @@ const agentmailCli = new AgentmailCli({
 });
 
 async function run() {
-  await agentmailCli.podsInboxes.podsInboxesDelete("<id>", "<id>");
+  await agentmailCli.pods.inboxes.delete("<id>", "<id>");
 
 
 }
@@ -349,7 +349,7 @@ The standalone function version of this method:
 
 ```typescript
 import { AgentmailCliCore } from "agentmail/core.js";
-import { podsInboxesPodsInboxesDelete } from "agentmail/funcs/pods-inboxes-pods-inboxes-delete.js";
+import { podsInboxesDelete } from "agentmail/funcs/pods-inboxes-delete.js";
 
 // Use `AgentmailCliCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
@@ -358,12 +358,12 @@ const agentmailCli = new AgentmailCliCore({
 });
 
 async function run() {
-  const res = await podsInboxesPodsInboxesDelete(agentmailCli, "<id>", "<id>");
+  const res = await podsInboxesDelete(agentmailCli, "<id>", "<id>");
   if (res.ok) {
     const { value: result } = res;
     
   } else {
-    console.log("podsInboxesPodsInboxesDelete failed:", res.error);
+    console.log("podsInboxesDelete failed:", res.error);
   }
 }
 

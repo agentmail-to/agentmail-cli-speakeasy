@@ -8,13 +8,24 @@ from agentmail.types import BaseModel
 from agentmail.utils import FieldMetadata, PathParamMetadata, RequestMetadata
 from typing_extensions import Annotated, TypedDict
 
+PODS_DOMAINS_UPDATE_SERVER_PROD = "prod"
+r"""Default production"""
 
-PODS_DOMAINS_UPDATE_SERVERS = [
-    "https://api.agentmail.to",
-    "https://x402.api.agentmail.to",
-    "https://mpp.api.agentmail.to",
-    "https://api.agentmail.eu",
-]
+PODS_DOMAINS_UPDATE_SERVER_PROD_X402 = "prod-x402"
+r"""x402 pay-per-use endpoint"""
+
+PODS_DOMAINS_UPDATE_SERVER_PROD_MPP = "prod-mpp"
+r"""MPP routing endpoint"""
+
+PODS_DOMAINS_UPDATE_SERVER_EU_PROD = "eu-prod"
+r"""EU production"""
+
+PODS_DOMAINS_UPDATE_SERVERS = {
+    PODS_DOMAINS_UPDATE_SERVER_PROD: "https://api.agentmail.to",
+    PODS_DOMAINS_UPDATE_SERVER_PROD_X402: "https://x402.api.agentmail.to",
+    PODS_DOMAINS_UPDATE_SERVER_PROD_MPP: "https://mpp.api.agentmail.to",
+    PODS_DOMAINS_UPDATE_SERVER_EU_PROD: "https://api.agentmail.eu",
+}
 
 
 class PodsDomainsUpdateRequestTypedDict(TypedDict):

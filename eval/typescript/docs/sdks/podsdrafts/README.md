@@ -1,14 +1,14 @@
-# PodsDrafts
+# Pods.Drafts
 
 ## Overview
 
 ### Available Operations
 
-* [podsDraftsList](#podsdraftslist) - List Drafts
-* [podsDraftsGet](#podsdraftsget) - Get Draft
-* [podsDraftsGetAttachment](#podsdraftsgetattachment) - Get Attachment
+* [list](#list) - List Drafts
+* [get](#get) - Get Draft
+* [getAttachment](#getattachment) - Get Attachment
 
-## podsDraftsList
+## list
 
 **CLI:**
 ```bash
@@ -26,7 +26,7 @@ const agentmailCli = new AgentmailCli({
 });
 
 async function run() {
-  const result = await agentmailCli.podsDrafts.podsDraftsList({
+  const result = await agentmailCli.pods.drafts.list({
     podId: "<id>",
   });
 
@@ -42,7 +42,7 @@ The standalone function version of this method:
 
 ```typescript
 import { AgentmailCliCore } from "agentmail/core.js";
-import { podsDraftsPodsDraftsList } from "agentmail/funcs/pods-drafts-pods-drafts-list.js";
+import { podsDraftsList } from "agentmail/funcs/pods-drafts-list.js";
 
 // Use `AgentmailCliCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
@@ -51,14 +51,14 @@ const agentmailCli = new AgentmailCliCore({
 });
 
 async function run() {
-  const res = await podsDraftsPodsDraftsList(agentmailCli, {
+  const res = await podsDraftsList(agentmailCli, {
     podId: "<id>",
   });
   if (res.ok) {
     const { value: result } = res;
     console.log(result);
   } else {
-    console.log("podsDraftsPodsDraftsList failed:", res.error);
+    console.log("podsDraftsList failed:", res.error);
   }
 }
 
@@ -86,7 +86,7 @@ run();
 | errors.ErrorResponse            | 404                             | application/json                |
 | errors.AgentmailCliDefaultError | 4XX, 5XX                        | \*/\*                           |
 
-## podsDraftsGet
+## get
 
 **CLI:**
 ```bash
@@ -104,7 +104,7 @@ const agentmailCli = new AgentmailCli({
 });
 
 async function run() {
-  const result = await agentmailCli.podsDrafts.podsDraftsGet("<id>", "<id>");
+  const result = await agentmailCli.pods.drafts.get("<id>", "<id>");
 
   console.log(result);
 }
@@ -118,7 +118,7 @@ The standalone function version of this method:
 
 ```typescript
 import { AgentmailCliCore } from "agentmail/core.js";
-import { podsDraftsPodsDraftsGet } from "agentmail/funcs/pods-drafts-pods-drafts-get.js";
+import { podsDraftsGet } from "agentmail/funcs/pods-drafts-get.js";
 
 // Use `AgentmailCliCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
@@ -127,12 +127,12 @@ const agentmailCli = new AgentmailCliCore({
 });
 
 async function run() {
-  const res = await podsDraftsPodsDraftsGet(agentmailCli, "<id>", "<id>");
+  const res = await podsDraftsGet(agentmailCli, "<id>", "<id>");
   if (res.ok) {
     const { value: result } = res;
     console.log(result);
   } else {
-    console.log("podsDraftsPodsDraftsGet failed:", res.error);
+    console.log("podsDraftsGet failed:", res.error);
   }
 }
 
@@ -161,7 +161,7 @@ run();
 | errors.ErrorResponse            | 404                             | application/json                |
 | errors.AgentmailCliDefaultError | 4XX, 5XX                        | \*/\*                           |
 
-## podsDraftsGetAttachment
+## getAttachment
 
 **CLI:**
 ```bash
@@ -179,7 +179,7 @@ const agentmailCli = new AgentmailCli({
 });
 
 async function run() {
-  const result = await agentmailCli.podsDrafts.podsDraftsGetAttachment("<id>", "<id>", "<id>");
+  const result = await agentmailCli.pods.drafts.getAttachment("<id>", "<id>", "<id>");
 
   console.log(result);
 }
@@ -193,7 +193,7 @@ The standalone function version of this method:
 
 ```typescript
 import { AgentmailCliCore } from "agentmail/core.js";
-import { podsDraftsPodsDraftsGetAttachment } from "agentmail/funcs/pods-drafts-pods-drafts-get-attachment.js";
+import { podsDraftsGetAttachment } from "agentmail/funcs/pods-drafts-get-attachment.js";
 
 // Use `AgentmailCliCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
@@ -202,12 +202,12 @@ const agentmailCli = new AgentmailCliCore({
 });
 
 async function run() {
-  const res = await podsDraftsPodsDraftsGetAttachment(agentmailCli, "<id>", "<id>", "<id>");
+  const res = await podsDraftsGetAttachment(agentmailCli, "<id>", "<id>", "<id>");
   if (res.ok) {
     const { value: result } = res;
     console.log(result);
   } else {
-    console.log("podsDraftsPodsDraftsGetAttachment failed:", res.error);
+    console.log("podsDraftsGetAttachment failed:", res.error);
   }
 }
 

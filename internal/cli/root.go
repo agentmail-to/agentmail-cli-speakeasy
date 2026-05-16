@@ -8,24 +8,10 @@ import (
 	"agentmail-cli/internal/cli/domains"
 	"agentmail-cli/internal/cli/drafts"
 	"agentmail-cli/internal/cli/inboxes"
-	"agentmail-cli/internal/cli/inboxesapikeys"
-	"agentmail-cli/internal/cli/inboxesdrafts"
-	"agentmail-cli/internal/cli/inboxesevents"
-	"agentmail-cli/internal/cli/inboxeslists"
-	"agentmail-cli/internal/cli/inboxesmessages"
-	"agentmail-cli/internal/cli/inboxesmetrics"
-	"agentmail-cli/internal/cli/inboxesthreads"
 	"agentmail-cli/internal/cli/lists"
 	"agentmail-cli/internal/cli/metrics"
 	"agentmail-cli/internal/cli/organizations"
 	"agentmail-cli/internal/cli/pods"
-	"agentmail-cli/internal/cli/podsapikeys"
-	"agentmail-cli/internal/cli/podsdomains"
-	"agentmail-cli/internal/cli/podsdrafts"
-	"agentmail-cli/internal/cli/podsinboxes"
-	"agentmail-cli/internal/cli/podslists"
-	"agentmail-cli/internal/cli/podsmetrics"
-	"agentmail-cli/internal/cli/podsthreads"
 	"agentmail-cli/internal/cli/threads"
 	"agentmail-cli/internal/cli/webhooks"
 	"agentmail-cli/internal/config"
@@ -91,27 +77,6 @@ func NewRootCommand() (*cobra.Command, error) {
 	if err := drafts.InitDraftsRoot(rootCmd); err != nil {
 		return nil, fmt.Errorf("init drafts: %w", err)
 	}
-	if err := inboxesapikeys.InitInboxesApiKeysRoot(rootCmd); err != nil {
-		return nil, fmt.Errorf("init inboxes-api-keys: %w", err)
-	}
-	if err := inboxesdrafts.InitInboxesDraftsRoot(rootCmd); err != nil {
-		return nil, fmt.Errorf("init inboxes-drafts: %w", err)
-	}
-	if err := inboxesevents.InitInboxesEventsRoot(rootCmd); err != nil {
-		return nil, fmt.Errorf("init inboxes-events: %w", err)
-	}
-	if err := inboxeslists.InitInboxesListsRoot(rootCmd); err != nil {
-		return nil, fmt.Errorf("init inboxes-lists: %w", err)
-	}
-	if err := inboxesmessages.InitInboxesMessagesRoot(rootCmd); err != nil {
-		return nil, fmt.Errorf("init inboxes-messages: %w", err)
-	}
-	if err := inboxesmetrics.InitInboxesMetricsRoot(rootCmd); err != nil {
-		return nil, fmt.Errorf("init inboxes-metrics: %w", err)
-	}
-	if err := inboxesthreads.InitInboxesThreadsRoot(rootCmd); err != nil {
-		return nil, fmt.Errorf("init inboxes-threads: %w", err)
-	}
 	if err := lists.InitListsRoot(rootCmd); err != nil {
 		return nil, fmt.Errorf("init lists: %w", err)
 	}
@@ -120,27 +85,6 @@ func NewRootCommand() (*cobra.Command, error) {
 	}
 	if err := organizations.InitOrganizationsRoot(rootCmd); err != nil {
 		return nil, fmt.Errorf("init organizations: %w", err)
-	}
-	if err := podsapikeys.InitPodsApiKeysRoot(rootCmd); err != nil {
-		return nil, fmt.Errorf("init pods-api-keys: %w", err)
-	}
-	if err := podsdomains.InitPodsDomainsRoot(rootCmd); err != nil {
-		return nil, fmt.Errorf("init pods-domains: %w", err)
-	}
-	if err := podsdrafts.InitPodsDraftsRoot(rootCmd); err != nil {
-		return nil, fmt.Errorf("init pods-drafts: %w", err)
-	}
-	if err := podsinboxes.InitPodsInboxesRoot(rootCmd); err != nil {
-		return nil, fmt.Errorf("init pods-inboxes: %w", err)
-	}
-	if err := podslists.InitPodsListsRoot(rootCmd); err != nil {
-		return nil, fmt.Errorf("init pods-lists: %w", err)
-	}
-	if err := podsmetrics.InitPodsMetricsRoot(rootCmd); err != nil {
-		return nil, fmt.Errorf("init pods-metrics: %w", err)
-	}
-	if err := podsthreads.InitPodsThreadsRoot(rootCmd); err != nil {
-		return nil, fmt.Errorf("init pods-threads: %w", err)
 	}
 	if err := threads.InitThreadsRoot(rootCmd); err != nil {
 		return nil, fmt.Errorf("init threads: %w", err)

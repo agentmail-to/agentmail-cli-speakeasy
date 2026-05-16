@@ -42,32 +42,18 @@ func Float64(f float64) *float64 { return &f }
 func Pointer[T any](v T) *T { return &v }
 
 type AgentmailCli struct {
-	SDKVersion      string
-	Inboxes         *Inboxes
-	Pods            *Pods
-	Webhooks        *Webhooks
-	Agent           *Agent
-	APIKeys         *APIKeys
-	Domains         *Domains
-	Drafts          *Drafts
-	InboxesAPIKeys  *InboxesAPIKeys
-	InboxesDrafts   *InboxesDrafts
-	InboxesEvents   *InboxesEvents
-	InboxesLists    *InboxesLists
-	InboxesMessages *InboxesMessages
-	InboxesMetrics  *InboxesMetrics
-	InboxesThreads  *InboxesThreads
-	Lists           *Lists
-	Metrics         *Metrics
-	Organizations   *Organizations
-	PodsAPIKeys     *PodsAPIKeys
-	PodsDomains     *PodsDomains
-	PodsDrafts      *PodsDrafts
-	PodsInboxes     *PodsInboxes
-	PodsLists       *PodsLists
-	PodsMetrics     *PodsMetrics
-	PodsThreads     *PodsThreads
-	Threads         *Threads
+	SDKVersion    string
+	Inboxes       *Inboxes
+	Pods          *Pods
+	Webhooks      *Webhooks
+	Agent         *Agent
+	APIKeys       *APIKeys
+	Domains       *Domains
+	Drafts        *Drafts
+	Lists         *Lists
+	Metrics       *Metrics
+	Organizations *Organizations
+	Threads       *Threads
 
 	sdkConfiguration config.SDKConfiguration
 	hooks            *hooks.Hooks
@@ -156,23 +142,9 @@ func New(opts ...SDKOption) *AgentmailCli {
 	sdk.APIKeys = newAPIKeys(sdk, sdk.sdkConfiguration, sdk.hooks)
 	sdk.Domains = newDomains(sdk, sdk.sdkConfiguration, sdk.hooks)
 	sdk.Drafts = newDrafts(sdk, sdk.sdkConfiguration, sdk.hooks)
-	sdk.InboxesAPIKeys = newInboxesAPIKeys(sdk, sdk.sdkConfiguration, sdk.hooks)
-	sdk.InboxesDrafts = newInboxesDrafts(sdk, sdk.sdkConfiguration, sdk.hooks)
-	sdk.InboxesEvents = newInboxesEvents(sdk, sdk.sdkConfiguration, sdk.hooks)
-	sdk.InboxesLists = newInboxesLists(sdk, sdk.sdkConfiguration, sdk.hooks)
-	sdk.InboxesMessages = newInboxesMessages(sdk, sdk.sdkConfiguration, sdk.hooks)
-	sdk.InboxesMetrics = newInboxesMetrics(sdk, sdk.sdkConfiguration, sdk.hooks)
-	sdk.InboxesThreads = newInboxesThreads(sdk, sdk.sdkConfiguration, sdk.hooks)
 	sdk.Lists = newLists(sdk, sdk.sdkConfiguration, sdk.hooks)
 	sdk.Metrics = newMetrics(sdk, sdk.sdkConfiguration, sdk.hooks)
 	sdk.Organizations = newOrganizations(sdk, sdk.sdkConfiguration, sdk.hooks)
-	sdk.PodsAPIKeys = newPodsAPIKeys(sdk, sdk.sdkConfiguration, sdk.hooks)
-	sdk.PodsDomains = newPodsDomains(sdk, sdk.sdkConfiguration, sdk.hooks)
-	sdk.PodsDrafts = newPodsDrafts(sdk, sdk.sdkConfiguration, sdk.hooks)
-	sdk.PodsInboxes = newPodsInboxes(sdk, sdk.sdkConfiguration, sdk.hooks)
-	sdk.PodsLists = newPodsLists(sdk, sdk.sdkConfiguration, sdk.hooks)
-	sdk.PodsMetrics = newPodsMetrics(sdk, sdk.sdkConfiguration, sdk.hooks)
-	sdk.PodsThreads = newPodsThreads(sdk, sdk.sdkConfiguration, sdk.hooks)
 	sdk.Threads = newThreads(sdk, sdk.sdkConfiguration, sdk.hooks)
 
 	return sdk

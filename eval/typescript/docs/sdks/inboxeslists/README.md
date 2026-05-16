@@ -1,15 +1,15 @@
-# InboxesLists
+# Inboxes.Lists
 
 ## Overview
 
 ### Available Operations
 
-* [inboxesListsList](#inboxeslistslist) - List Entries
-* [inboxesListsCreate](#inboxeslistscreate) - Create List Entry
-* [inboxesListsGet](#inboxeslistsget) - Get List Entry
-* [inboxesListsDelete](#inboxeslistsdelete) - Delete List Entry
+* [list](#list) - List Entries
+* [create](#create) - Create List Entry
+* [get](#get) - Get List Entry
+* [delete](#delete) - Delete List Entry
 
-## inboxesListsList
+## list
 
 **CLI:**
 ```bash
@@ -27,7 +27,7 @@ const agentmailCli = new AgentmailCli({
 });
 
 async function run() {
-  const result = await agentmailCli.inboxesLists.inboxesListsList({
+  const result = await agentmailCli.inboxes.lists.list({
     inboxId: "<id>",
     direction: "reply",
     type: "allow",
@@ -45,7 +45,7 @@ The standalone function version of this method:
 
 ```typescript
 import { AgentmailCliCore } from "agentmail/core.js";
-import { inboxesListsInboxesListsList } from "agentmail/funcs/inboxes-lists-inboxes-lists-list.js";
+import { inboxesListsList } from "agentmail/funcs/inboxes-lists-list.js";
 
 // Use `AgentmailCliCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
@@ -54,7 +54,7 @@ const agentmailCli = new AgentmailCliCore({
 });
 
 async function run() {
-  const res = await inboxesListsInboxesListsList(agentmailCli, {
+  const res = await inboxesListsList(agentmailCli, {
     inboxId: "<id>",
     direction: "reply",
     type: "allow",
@@ -63,7 +63,7 @@ async function run() {
     const { value: result } = res;
     console.log(result);
   } else {
-    console.log("inboxesListsInboxesListsList failed:", res.error);
+    console.log("inboxesListsList failed:", res.error);
   }
 }
 
@@ -90,7 +90,7 @@ run();
 | ------------------------------- | ------------------------------- | ------------------------------- |
 | errors.AgentmailCliDefaultError | 4XX, 5XX                        | \*/\*                           |
 
-## inboxesListsCreate
+## create
 
 **CLI:**
 ```bash
@@ -108,7 +108,7 @@ const agentmailCli = new AgentmailCli({
 });
 
 async function run() {
-  const result = await agentmailCli.inboxesLists.inboxesListsCreate("<id>", "reply", "allow", {
+  const result = await agentmailCli.inboxes.lists.create("<id>", "reply", "allow", {
     entry: "<value>",
   });
 
@@ -124,7 +124,7 @@ The standalone function version of this method:
 
 ```typescript
 import { AgentmailCliCore } from "agentmail/core.js";
-import { inboxesListsInboxesListsCreate } from "agentmail/funcs/inboxes-lists-inboxes-lists-create.js";
+import { inboxesListsCreate } from "agentmail/funcs/inboxes-lists-create.js";
 
 // Use `AgentmailCliCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
@@ -133,14 +133,14 @@ const agentmailCli = new AgentmailCliCore({
 });
 
 async function run() {
-  const res = await inboxesListsInboxesListsCreate(agentmailCli, "<id>", "reply", "allow", {
+  const res = await inboxesListsCreate(agentmailCli, "<id>", "reply", "allow", {
     entry: "<value>",
   });
   if (res.ok) {
     const { value: result } = res;
     console.log(result);
   } else {
-    console.log("inboxesListsInboxesListsCreate failed:", res.error);
+    console.log("inboxesListsCreate failed:", res.error);
   }
 }
 
@@ -171,7 +171,7 @@ run();
 | errors.ValidationErrorResponse  | 400                             | application/json                |
 | errors.AgentmailCliDefaultError | 4XX, 5XX                        | \*/\*                           |
 
-## inboxesListsGet
+## get
 
 **CLI:**
 ```bash
@@ -189,7 +189,7 @@ const agentmailCli = new AgentmailCli({
 });
 
 async function run() {
-  const result = await agentmailCli.inboxesLists.inboxesListsGet("<id>", "send", "block", "<value>");
+  const result = await agentmailCli.inboxes.lists.get("<id>", "send", "block", "<value>");
 
   console.log(result);
 }
@@ -203,7 +203,7 @@ The standalone function version of this method:
 
 ```typescript
 import { AgentmailCliCore } from "agentmail/core.js";
-import { inboxesListsInboxesListsGet } from "agentmail/funcs/inboxes-lists-inboxes-lists-get.js";
+import { inboxesListsGet } from "agentmail/funcs/inboxes-lists-get.js";
 
 // Use `AgentmailCliCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
@@ -212,12 +212,12 @@ const agentmailCli = new AgentmailCliCore({
 });
 
 async function run() {
-  const res = await inboxesListsInboxesListsGet(agentmailCli, "<id>", "send", "block", "<value>");
+  const res = await inboxesListsGet(agentmailCli, "<id>", "send", "block", "<value>");
   if (res.ok) {
     const { value: result } = res;
     console.log(result);
   } else {
-    console.log("inboxesListsInboxesListsGet failed:", res.error);
+    console.log("inboxesListsGet failed:", res.error);
   }
 }
 
@@ -248,7 +248,7 @@ run();
 | errors.ErrorResponse            | 404                             | application/json                |
 | errors.AgentmailCliDefaultError | 4XX, 5XX                        | \*/\*                           |
 
-## inboxesListsDelete
+## delete
 
 **CLI:**
 ```bash
@@ -266,7 +266,7 @@ const agentmailCli = new AgentmailCli({
 });
 
 async function run() {
-  await agentmailCli.inboxesLists.inboxesListsDelete("<id>", "reply", "allow", "<value>");
+  await agentmailCli.inboxes.lists.delete("<id>", "reply", "allow", "<value>");
 
 
 }
@@ -280,7 +280,7 @@ The standalone function version of this method:
 
 ```typescript
 import { AgentmailCliCore } from "agentmail/core.js";
-import { inboxesListsInboxesListsDelete } from "agentmail/funcs/inboxes-lists-inboxes-lists-delete.js";
+import { inboxesListsDelete } from "agentmail/funcs/inboxes-lists-delete.js";
 
 // Use `AgentmailCliCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
@@ -289,12 +289,12 @@ const agentmailCli = new AgentmailCliCore({
 });
 
 async function run() {
-  const res = await inboxesListsInboxesListsDelete(agentmailCli, "<id>", "reply", "allow", "<value>");
+  const res = await inboxesListsDelete(agentmailCli, "<id>", "reply", "allow", "<value>");
   if (res.ok) {
     const { value: result } = res;
     
   } else {
-    console.log("inboxesListsInboxesListsDelete failed:", res.error);
+    console.log("inboxesListsDelete failed:", res.error);
   }
 }
 

@@ -1,18 +1,18 @@
-# PodsDomains
+# Pods.Domains
 
 ## Overview
 
 ### Available Operations
 
-* [pods_domains_list](#pods_domains_list) - List Domains
-* [pods_domains_create](#pods_domains_create) - Create Domain
-* [pods_domains_get](#pods_domains_get) - Get Domain
-* [pods_domains_update](#pods_domains_update) - Update Domain
-* [pods_domains_delete](#pods_domains_delete) - Delete Domain
-* [pods_domains_get_zone_file](#pods_domains_get_zone_file) - Get Zone File
-* [pods_domains_verify](#pods_domains_verify) - Verify Domain
+* [list](#list) - List Domains
+* [create](#create) - Create Domain
+* [get](#get) - Get Domain
+* [update](#update) - Update Domain
+* [delete](#delete) - Delete Domain
+* [get_zone_file](#get_zone_file) - Get Zone File
+* [verify](#verify) - Verify Domain
 
-## pods_domains_list
+## list
 
 **CLI:**
 ```bash
@@ -30,7 +30,7 @@ with AgentmailCli(
     bearer_auth="<YOUR_BEARER_TOKEN_HERE>",
 ) as agentmail_cli:
 
-    res = agentmail_cli.pods_domains.pods_domains_list(pod_id="<id>")
+    res = agentmail_cli.pods.domains.list(pod_id="<id>")
 
     # Handle response
     print(res)
@@ -59,7 +59,7 @@ with AgentmailCli(
 | models.errors.ErrorResponse            | 404                                    | application/json                       |
 | models.errors.AgentmailCliDefaultError | 4XX, 5XX                               | \*/\*                                  |
 
-## pods_domains_create
+## create
 
 **CLI:**
 ```bash
@@ -77,7 +77,7 @@ with AgentmailCli(
     bearer_auth="<YOUR_BEARER_TOKEN_HERE>",
 ) as agentmail_cli:
 
-    res = agentmail_cli.pods_domains.pods_domains_create(pod_id="<id>", domain="scientific-swanling.org", feedback_enabled=True)
+    res = agentmail_cli.pods.domains.create(pod_id="<id>", domain="scientific-swanling.org", feedback_enabled=True)
 
     # Handle response
     print(res)
@@ -105,7 +105,7 @@ with AgentmailCli(
 | models.errors.ValidationErrorResponse  | 400                                    | application/json                       |
 | models.errors.AgentmailCliDefaultError | 4XX, 5XX                               | \*/\*                                  |
 
-## pods_domains_get
+## get
 
 **CLI:**
 ```bash
@@ -123,7 +123,7 @@ with AgentmailCli(
     bearer_auth="<YOUR_BEARER_TOKEN_HERE>",
 ) as agentmail_cli:
 
-    res = agentmail_cli.pods_domains.pods_domains_get(pod_id="<id>", domain_id="<id>")
+    res = agentmail_cli.pods.domains.get(pod_id="<id>", domain_id="<id>")
 
     # Handle response
     print(res)
@@ -150,7 +150,7 @@ with AgentmailCli(
 | models.errors.ErrorResponse            | 404                                    | application/json                       |
 | models.errors.AgentmailCliDefaultError | 4XX, 5XX                               | \*/\*                                  |
 
-## pods_domains_update
+## update
 
 **CLI:**
 ```bash
@@ -168,7 +168,7 @@ with AgentmailCli(
     bearer_auth="<YOUR_BEARER_TOKEN_HERE>",
 ) as agentmail_cli:
 
-    res = agentmail_cli.pods_domains.pods_domains_update(pod_id="<id>", domain_id="<id>")
+    res = agentmail_cli.pods.domains.update(pod_id="<id>", domain_id="<id>")
 
     # Handle response
     print(res)
@@ -196,7 +196,7 @@ with AgentmailCli(
 | models.errors.ErrorResponse            | 404                                    | application/json                       |
 | models.errors.AgentmailCliDefaultError | 4XX, 5XX                               | \*/\*                                  |
 
-## pods_domains_delete
+## delete
 
 **CLI:**
 ```bash
@@ -214,7 +214,7 @@ with AgentmailCli(
     bearer_auth="<YOUR_BEARER_TOKEN_HERE>",
 ) as agentmail_cli:
 
-    agentmail_cli.pods_domains.pods_domains_delete(pod_id="<id>", domain_id="<id>")
+    agentmail_cli.pods.domains.delete(pod_id="<id>", domain_id="<id>")
 
     # Use the SDK ...
 
@@ -236,7 +236,7 @@ with AgentmailCli(
 | models.errors.ErrorResponse            | 404                                    | application/json                       |
 | models.errors.AgentmailCliDefaultError | 4XX, 5XX                               | \*/\*                                  |
 
-## pods_domains_get_zone_file
+## get_zone_file
 
 **CLI:**
 ```bash
@@ -254,7 +254,7 @@ with AgentmailCli(
     bearer_auth="<YOUR_BEARER_TOKEN_HERE>",
 ) as agentmail_cli:
 
-    res = agentmail_cli.pods_domains.pods_domains_get_zone_file(pod_id="<id>", domain_id="<id>")
+    res = agentmail_cli.pods.domains.get_zone_file(pod_id="<id>", domain_id="<id>")
 
     # Handle response
     print(res)
@@ -281,7 +281,7 @@ with AgentmailCli(
 | models.errors.ErrorResponse            | 404                                    | application/json                       |
 | models.errors.AgentmailCliDefaultError | 4XX, 5XX                               | \*/\*                                  |
 
-## pods_domains_verify
+## verify
 
 **CLI:**
 ```bash
@@ -299,7 +299,7 @@ with AgentmailCli(
     bearer_auth="<YOUR_BEARER_TOKEN_HERE>",
 ) as agentmail_cli:
 
-    agentmail_cli.pods_domains.pods_domains_verify(pod_id="<id>", domain_id="<id>")
+    agentmail_cli.pods.domains.verify(pod_id="<id>", domain_id="<id>")
 
     # Use the SDK ...
 

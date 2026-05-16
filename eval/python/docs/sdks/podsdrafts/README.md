@@ -1,14 +1,14 @@
-# PodsDrafts
+# Pods.Drafts
 
 ## Overview
 
 ### Available Operations
 
-* [pods_drafts_list](#pods_drafts_list) - List Drafts
-* [pods_drafts_get](#pods_drafts_get) - Get Draft
-* [pods_drafts_get_attachment](#pods_drafts_get_attachment) - Get Attachment
+* [list](#list) - List Drafts
+* [get](#get) - Get Draft
+* [get_attachment](#get_attachment) - Get Attachment
 
-## pods_drafts_list
+## list
 
 **CLI:**
 ```bash
@@ -26,7 +26,7 @@ with AgentmailCli(
     bearer_auth="<YOUR_BEARER_TOKEN_HERE>",
 ) as agentmail_cli:
 
-    res = agentmail_cli.pods_drafts.pods_drafts_list(pod_id="<id>")
+    res = agentmail_cli.pods.drafts.list(pod_id="<id>")
 
     # Handle response
     print(res)
@@ -58,7 +58,7 @@ with AgentmailCli(
 | models.errors.ErrorResponse            | 404                                    | application/json                       |
 | models.errors.AgentmailCliDefaultError | 4XX, 5XX                               | \*/\*                                  |
 
-## pods_drafts_get
+## get
 
 **CLI:**
 ```bash
@@ -76,7 +76,7 @@ with AgentmailCli(
     bearer_auth="<YOUR_BEARER_TOKEN_HERE>",
 ) as agentmail_cli:
 
-    res = agentmail_cli.pods_drafts.pods_drafts_get(pod_id="<id>", draft_id="<id>")
+    res = agentmail_cli.pods.drafts.get(pod_id="<id>", draft_id="<id>")
 
     # Handle response
     print(res)
@@ -103,7 +103,7 @@ with AgentmailCli(
 | models.errors.ErrorResponse            | 404                                    | application/json                       |
 | models.errors.AgentmailCliDefaultError | 4XX, 5XX                               | \*/\*                                  |
 
-## pods_drafts_get_attachment
+## get_attachment
 
 **CLI:**
 ```bash
@@ -121,7 +121,7 @@ with AgentmailCli(
     bearer_auth="<YOUR_BEARER_TOKEN_HERE>",
 ) as agentmail_cli:
 
-    res = agentmail_cli.pods_drafts.pods_drafts_get_attachment(pod_id="<id>", draft_id="<id>", attachment_id="<id>")
+    res = agentmail_cli.pods.drafts.get_attachment(pod_id="<id>", draft_id="<id>", attachment_id="<id>")
 
     # Handle response
     print(res)

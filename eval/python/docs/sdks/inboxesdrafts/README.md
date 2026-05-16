@@ -1,18 +1,18 @@
-# InboxesDrafts
+# Inboxes.Drafts
 
 ## Overview
 
 ### Available Operations
 
-* [inboxes_drafts_list](#inboxes_drafts_list) - List Drafts
-* [inboxes_drafts_create](#inboxes_drafts_create) - Create Draft
-* [inboxes_drafts_get](#inboxes_drafts_get) - Get Draft
-* [inboxes_drafts_update](#inboxes_drafts_update) - Update Draft
-* [inboxes_drafts_delete](#inboxes_drafts_delete) - Delete Draft
-* [inboxes_drafts_get_attachment](#inboxes_drafts_get_attachment) - Get Attachment
-* [inboxes_drafts_send](#inboxes_drafts_send) - Send Draft
+* [list](#list) - List Drafts
+* [create](#create) - Create Draft
+* [get](#get) - Get Draft
+* [update](#update) - Update Draft
+* [delete](#delete) - Delete Draft
+* [get_attachment](#get_attachment) - Get Attachment
+* [send](#send) - Send Draft
 
-## inboxes_drafts_list
+## list
 
 **CLI:**
 ```bash
@@ -30,7 +30,7 @@ with AgentmailCli(
     bearer_auth="<YOUR_BEARER_TOKEN_HERE>",
 ) as agentmail_cli:
 
-    res = agentmail_cli.inboxes_drafts.inboxes_drafts_list(inbox_id="<id>")
+    res = agentmail_cli.inboxes.drafts.list(inbox_id="<id>")
 
     # Handle response
     print(res)
@@ -62,7 +62,7 @@ with AgentmailCli(
 | models.errors.ErrorResponse            | 404                                    | application/json                       |
 | models.errors.AgentmailCliDefaultError | 4XX, 5XX                               | \*/\*                                  |
 
-## inboxes_drafts_create
+## create
 
 **CLI:**
 ```bash
@@ -80,7 +80,7 @@ with AgentmailCli(
     bearer_auth="<YOUR_BEARER_TOKEN_HERE>",
 ) as agentmail_cli:
 
-    res = agentmail_cli.inboxes_drafts.inboxes_drafts_create(inbox_id="<id>")
+    res = agentmail_cli.inboxes.drafts.create(inbox_id="<id>")
 
     # Handle response
     print(res)
@@ -118,7 +118,7 @@ with AgentmailCli(
 | models.errors.ErrorResponse            | 404                                    | application/json                       |
 | models.errors.AgentmailCliDefaultError | 4XX, 5XX                               | \*/\*                                  |
 
-## inboxes_drafts_get
+## get
 
 **CLI:**
 ```bash
@@ -136,7 +136,7 @@ with AgentmailCli(
     bearer_auth="<YOUR_BEARER_TOKEN_HERE>",
 ) as agentmail_cli:
 
-    res = agentmail_cli.inboxes_drafts.inboxes_drafts_get(inbox_id="<id>", draft_id="<id>")
+    res = agentmail_cli.inboxes.drafts.get(inbox_id="<id>", draft_id="<id>")
 
     # Handle response
     print(res)
@@ -163,7 +163,7 @@ with AgentmailCli(
 | models.errors.ErrorResponse            | 404                                    | application/json                       |
 | models.errors.AgentmailCliDefaultError | 4XX, 5XX                               | \*/\*                                  |
 
-## inboxes_drafts_update
+## update
 
 **CLI:**
 ```bash
@@ -181,7 +181,7 @@ with AgentmailCli(
     bearer_auth="<YOUR_BEARER_TOKEN_HERE>",
 ) as agentmail_cli:
 
-    res = agentmail_cli.inboxes_drafts.inboxes_drafts_update(inbox_id="<id>", draft_id="<id>")
+    res = agentmail_cli.inboxes.drafts.update(inbox_id="<id>", draft_id="<id>")
 
     # Handle response
     print(res)
@@ -216,7 +216,7 @@ with AgentmailCli(
 | models.errors.ErrorResponse            | 404                                    | application/json                       |
 | models.errors.AgentmailCliDefaultError | 4XX, 5XX                               | \*/\*                                  |
 
-## inboxes_drafts_delete
+## delete
 
 **CLI:**
 ```bash
@@ -234,7 +234,7 @@ with AgentmailCli(
     bearer_auth="<YOUR_BEARER_TOKEN_HERE>",
 ) as agentmail_cli:
 
-    agentmail_cli.inboxes_drafts.inboxes_drafts_delete(inbox_id="<id>", draft_id="<id>")
+    agentmail_cli.inboxes.drafts.delete(inbox_id="<id>", draft_id="<id>")
 
     # Use the SDK ...
 
@@ -256,7 +256,7 @@ with AgentmailCli(
 | models.errors.ErrorResponse            | 404                                    | application/json                       |
 | models.errors.AgentmailCliDefaultError | 4XX, 5XX                               | \*/\*                                  |
 
-## inboxes_drafts_get_attachment
+## get_attachment
 
 **CLI:**
 ```bash
@@ -274,7 +274,7 @@ with AgentmailCli(
     bearer_auth="<YOUR_BEARER_TOKEN_HERE>",
 ) as agentmail_cli:
 
-    res = agentmail_cli.inboxes_drafts.inboxes_drafts_get_attachment(inbox_id="<id>", draft_id="<id>", attachment_id="<id>")
+    res = agentmail_cli.inboxes.drafts.get_attachment(inbox_id="<id>", draft_id="<id>", attachment_id="<id>")
 
     # Handle response
     print(res)
@@ -302,7 +302,7 @@ with AgentmailCli(
 | models.errors.ErrorResponse            | 404                                    | application/json                       |
 | models.errors.AgentmailCliDefaultError | 4XX, 5XX                               | \*/\*                                  |
 
-## inboxes_drafts_send
+## send
 
 **CLI:**
 ```bash
@@ -320,7 +320,7 @@ with AgentmailCli(
     bearer_auth="<YOUR_BEARER_TOKEN_HERE>",
 ) as agentmail_cli:
 
-    res = agentmail_cli.inboxes_drafts.inboxes_drafts_send(inbox_id="<id>", draft_id="<id>")
+    res = agentmail_cli.inboxes.drafts.send(inbox_id="<id>", draft_id="<id>")
 
     # Handle response
     print(res)

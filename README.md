@@ -159,12 +159,113 @@ Configuration is stored in `~/.config/agentmail/config.yaml`.
 * [`update`](docs/agentmail_inboxes_update.md) - Update Inbox
 * [`delete`](docs/agentmail_inboxes_delete.md) - Delete Inbox
 
+#### [inboxes-api-keys](docs/agentmail_inboxes_inboxes-api-keys.md)
+
+* [`list`](docs/agentmail_inboxes_inboxes-api-keys_list.md) - List API Keys
+* [`create`](docs/agentmail_inboxes_inboxes-api-keys_create.md) - Create API Key
+* [`delete`](docs/agentmail_inboxes_inboxes-api-keys_delete.md) - Delete API Key
+
+#### [inboxes-drafts](docs/agentmail_inboxes_inboxes-drafts.md)
+
+* [`list`](docs/agentmail_inboxes_inboxes-drafts_list.md) - List Drafts
+* [`create`](docs/agentmail_inboxes_inboxes-drafts_create.md) - Create Draft
+* [`get`](docs/agentmail_inboxes_inboxes-drafts_get.md) - Get Draft
+* [`update`](docs/agentmail_inboxes_inboxes-drafts_update.md) - Update Draft
+* [`delete`](docs/agentmail_inboxes_inboxes-drafts_delete.md) - Delete Draft
+* [`get-attachment`](docs/agentmail_inboxes_inboxes-drafts_get-attachment.md) - Get Attachment
+* [`send`](docs/agentmail_inboxes_inboxes-drafts_send.md) - Send Draft
+
+#### [events](docs/agentmail_inboxes_events.md)
+
+* [`inboxes-events-list`](docs/agentmail_inboxes_events_inboxes-events-list.md) - List Inbox Events
+
+#### [inboxes-lists](docs/agentmail_inboxes_inboxes-lists.md)
+
+* [`list`](docs/agentmail_inboxes_inboxes-lists_list.md) - List Entries
+* [`create`](docs/agentmail_inboxes_inboxes-lists_create.md) - Create List Entry
+* [`get`](docs/agentmail_inboxes_inboxes-lists_get.md) - Get List Entry
+* [`delete`](docs/agentmail_inboxes_inboxes-lists_delete.md) - Delete List Entry
+
+#### [messages](docs/agentmail_inboxes_messages.md)
+
+* [`inboxes-messages-list`](docs/agentmail_inboxes_messages_inboxes-messages-list.md) - List Messages
+* [`inboxes-messages-get`](docs/agentmail_inboxes_messages_inboxes-messages-get.md) - Get Message
+* [`inboxes-messages-update`](docs/agentmail_inboxes_messages_inboxes-messages-update.md) - Update Message
+* [`inboxes-messages-delete`](docs/agentmail_inboxes_messages_inboxes-messages-delete.md) - Delete Message
+* [`inboxes-messages-get-attachment`](docs/agentmail_inboxes_messages_inboxes-messages-get-attachment.md) - Get Attachment
+* [`inboxes-messages-get-raw`](docs/agentmail_inboxes_messages_inboxes-messages-get-raw.md) - Get Raw Message
+* [`inboxes-messages-send`](docs/agentmail_inboxes_messages_inboxes-messages-send.md) - Send Message
+* [`inboxes-messages-reply`](docs/agentmail_inboxes_messages_inboxes-messages-reply.md) - Reply To Message
+* [`inboxes-messages-reply-all`](docs/agentmail_inboxes_messages_inboxes-messages-reply-all.md) - Reply All Message
+* [`inboxes-messages-forward`](docs/agentmail_inboxes_messages_inboxes-messages-forward.md) - Forward Message
+
+#### [inboxes-metrics](docs/agentmail_inboxes_inboxes-metrics.md)
+
+* [`query`](docs/agentmail_inboxes_inboxes-metrics_query.md) - Query Metrics
+
+#### [inboxes-threads](docs/agentmail_inboxes_inboxes-threads.md)
+
+* [`list`](docs/agentmail_inboxes_inboxes-threads_list.md) - List Threads
+* [`get`](docs/agentmail_inboxes_inboxes-threads_get.md) - Get Thread
+* [`update`](docs/agentmail_inboxes_inboxes-threads_update.md) - Update Thread
+* [`delete`](docs/agentmail_inboxes_inboxes-threads_delete.md) - Delete Thread
+* [`get-attachment`](docs/agentmail_inboxes_inboxes-threads_get-attachment.md) - Get Attachment
+
 ### [pods](docs/agentmail_pods.md)
 
 * [`list`](docs/agentmail_pods_list.md) - List Pods
 * [`create`](docs/agentmail_pods_create.md) - Create Pod
 * [`get`](docs/agentmail_pods_get.md) - Get Pod
 * [`delete`](docs/agentmail_pods_delete.md) - Delete Pod
+
+#### [pods-api-keys](docs/agentmail_pods_pods-api-keys.md)
+
+* [`list`](docs/agentmail_pods_pods-api-keys_list.md) - List API Keys
+* [`create`](docs/agentmail_pods_pods-api-keys_create.md) - Create API Key
+* [`delete`](docs/agentmail_pods_pods-api-keys_delete.md) - Delete API Key
+
+#### [pods-domains](docs/agentmail_pods_pods-domains.md)
+
+* [`list`](docs/agentmail_pods_pods-domains_list.md) - List Domains
+* [`create`](docs/agentmail_pods_pods-domains_create.md) - Create Domain
+* [`get`](docs/agentmail_pods_pods-domains_get.md) - Get Domain
+* [`update`](docs/agentmail_pods_pods-domains_update.md) - Update Domain
+* [`delete`](docs/agentmail_pods_pods-domains_delete.md) - Delete Domain
+* [`get-zone-file`](docs/agentmail_pods_pods-domains_get-zone-file.md) - Get Zone File
+* [`verify`](docs/agentmail_pods_pods-domains_verify.md) - Verify Domain
+
+#### [pods-drafts](docs/agentmail_pods_pods-drafts.md)
+
+* [`list`](docs/agentmail_pods_pods-drafts_list.md) - List Drafts
+* [`get`](docs/agentmail_pods_pods-drafts_get.md) - Get Draft
+* [`get-attachment`](docs/agentmail_pods_pods-drafts_get-attachment.md) - Get Attachment
+
+#### [pods-inboxes](docs/agentmail_pods_pods-inboxes.md)
+
+* [`list`](docs/agentmail_pods_pods-inboxes_list.md) - List Inboxes
+* [`create`](docs/agentmail_pods_pods-inboxes_create.md) - Create Inbox
+* [`get`](docs/agentmail_pods_pods-inboxes_get.md) - Get Inbox
+* [`update`](docs/agentmail_pods_pods-inboxes_update.md) - Update Inbox
+* [`delete`](docs/agentmail_pods_pods-inboxes_delete.md) - Delete Inbox
+
+#### [pods-lists](docs/agentmail_pods_pods-lists.md)
+
+* [`list`](docs/agentmail_pods_pods-lists_list.md) - List Entries
+* [`create`](docs/agentmail_pods_pods-lists_create.md) - Create List Entry
+* [`get`](docs/agentmail_pods_pods-lists_get.md) - Get List Entry
+* [`delete`](docs/agentmail_pods_pods-lists_delete.md) - Delete List Entry
+
+#### [pods-metrics](docs/agentmail_pods_pods-metrics.md)
+
+* [`query`](docs/agentmail_pods_pods-metrics_query.md) - Query Metrics
+
+#### [pods-threads](docs/agentmail_pods_pods-threads.md)
+
+* [`list`](docs/agentmail_pods_pods-threads_list.md) - List Threads
+* [`get`](docs/agentmail_pods_pods-threads_get.md) - Get Thread
+* [`update`](docs/agentmail_pods_pods-threads_update.md) - Update Thread
+* [`delete`](docs/agentmail_pods_pods-threads_delete.md) - Delete Thread
+* [`get-attachment`](docs/agentmail_pods_pods-threads_get-attachment.md) - Get Attachment
 
 ### [webhooks](docs/agentmail_webhooks.md)
 
@@ -201,58 +302,6 @@ Configuration is stored in `~/.config/agentmail/config.yaml`.
 * [`get`](docs/agentmail_drafts_get.md) - Get Draft
 * [`get-attachment`](docs/agentmail_drafts_get-attachment.md) - Get Attachment
 
-### [inboxes-api-keys](docs/agentmail_inboxes-api-keys.md)
-
-* [`list`](docs/agentmail_inboxes-api-keys_list.md) - List API Keys
-* [`create`](docs/agentmail_inboxes-api-keys_create.md) - Create API Key
-* [`delete`](docs/agentmail_inboxes-api-keys_delete.md) - Delete API Key
-
-### [inboxes-drafts](docs/agentmail_inboxes-drafts.md)
-
-* [`list`](docs/agentmail_inboxes-drafts_list.md) - List Drafts
-* [`create`](docs/agentmail_inboxes-drafts_create.md) - Create Draft
-* [`get`](docs/agentmail_inboxes-drafts_get.md) - Get Draft
-* [`update`](docs/agentmail_inboxes-drafts_update.md) - Update Draft
-* [`delete`](docs/agentmail_inboxes-drafts_delete.md) - Delete Draft
-* [`get-attachment`](docs/agentmail_inboxes-drafts_get-attachment.md) - Get Attachment
-* [`send`](docs/agentmail_inboxes-drafts_send.md) - Send Draft
-
-### [inboxes-events](docs/agentmail_inboxes-events.md)
-
-* [`list`](docs/agentmail_inboxes-events_list.md) - List Inbox Events
-
-### [inboxes-lists](docs/agentmail_inboxes-lists.md)
-
-* [`list`](docs/agentmail_inboxes-lists_list.md) - List Entries
-* [`create`](docs/agentmail_inboxes-lists_create.md) - Create List Entry
-* [`get`](docs/agentmail_inboxes-lists_get.md) - Get List Entry
-* [`delete`](docs/agentmail_inboxes-lists_delete.md) - Delete List Entry
-
-### [inboxes-messages](docs/agentmail_inboxes-messages.md)
-
-* [`list`](docs/agentmail_inboxes-messages_list.md) - List Messages
-* [`get`](docs/agentmail_inboxes-messages_get.md) - Get Message
-* [`update`](docs/agentmail_inboxes-messages_update.md) - Update Message
-* [`delete`](docs/agentmail_inboxes-messages_delete.md) - Delete Message
-* [`get-attachment`](docs/agentmail_inboxes-messages_get-attachment.md) - Get Attachment
-* [`get-raw`](docs/agentmail_inboxes-messages_get-raw.md) - Get Raw Message
-* [`send`](docs/agentmail_inboxes-messages_send.md) - Send Message
-* [`reply`](docs/agentmail_inboxes-messages_reply.md) - Reply To Message
-* [`reply-all`](docs/agentmail_inboxes-messages_reply-all.md) - Reply All Message
-* [`forward`](docs/agentmail_inboxes-messages_forward.md) - Forward Message
-
-### [inboxes-metrics](docs/agentmail_inboxes-metrics.md)
-
-* [`query`](docs/agentmail_inboxes-metrics_query.md) - Query Metrics
-
-### [inboxes-threads](docs/agentmail_inboxes-threads.md)
-
-* [`list`](docs/agentmail_inboxes-threads_list.md) - List Threads
-* [`get`](docs/agentmail_inboxes-threads_get.md) - Get Thread
-* [`update`](docs/agentmail_inboxes-threads_update.md) - Update Thread
-* [`delete`](docs/agentmail_inboxes-threads_delete.md) - Delete Thread
-* [`get-attachment`](docs/agentmail_inboxes-threads_get-attachment.md) - Get Attachment
-
 ### [lists](docs/agentmail_lists.md)
 
 * [`list`](docs/agentmail_lists_list.md) - List Entries
@@ -267,55 +316,6 @@ Configuration is stored in `~/.config/agentmail/config.yaml`.
 ### [organizations](docs/agentmail_organizations.md)
 
 * [`get`](docs/agentmail_organizations_get.md) - Get Organization
-
-### [pods-api-keys](docs/agentmail_pods-api-keys.md)
-
-* [`list`](docs/agentmail_pods-api-keys_list.md) - List API Keys
-* [`create`](docs/agentmail_pods-api-keys_create.md) - Create API Key
-* [`delete`](docs/agentmail_pods-api-keys_delete.md) - Delete API Key
-
-### [pods-domains](docs/agentmail_pods-domains.md)
-
-* [`list`](docs/agentmail_pods-domains_list.md) - List Domains
-* [`create`](docs/agentmail_pods-domains_create.md) - Create Domain
-* [`get`](docs/agentmail_pods-domains_get.md) - Get Domain
-* [`update`](docs/agentmail_pods-domains_update.md) - Update Domain
-* [`delete`](docs/agentmail_pods-domains_delete.md) - Delete Domain
-* [`get-zone-file`](docs/agentmail_pods-domains_get-zone-file.md) - Get Zone File
-* [`verify`](docs/agentmail_pods-domains_verify.md) - Verify Domain
-
-### [pods-drafts](docs/agentmail_pods-drafts.md)
-
-* [`list`](docs/agentmail_pods-drafts_list.md) - List Drafts
-* [`get`](docs/agentmail_pods-drafts_get.md) - Get Draft
-* [`get-attachment`](docs/agentmail_pods-drafts_get-attachment.md) - Get Attachment
-
-### [pods-inboxes](docs/agentmail_pods-inboxes.md)
-
-* [`list`](docs/agentmail_pods-inboxes_list.md) - List Inboxes
-* [`create`](docs/agentmail_pods-inboxes_create.md) - Create Inbox
-* [`get`](docs/agentmail_pods-inboxes_get.md) - Get Inbox
-* [`update`](docs/agentmail_pods-inboxes_update.md) - Update Inbox
-* [`delete`](docs/agentmail_pods-inboxes_delete.md) - Delete Inbox
-
-### [pods-lists](docs/agentmail_pods-lists.md)
-
-* [`list`](docs/agentmail_pods-lists_list.md) - List Entries
-* [`create`](docs/agentmail_pods-lists_create.md) - Create List Entry
-* [`get`](docs/agentmail_pods-lists_get.md) - Get List Entry
-* [`delete`](docs/agentmail_pods-lists_delete.md) - Delete List Entry
-
-### [pods-metrics](docs/agentmail_pods-metrics.md)
-
-* [`query`](docs/agentmail_pods-metrics_query.md) - Query Metrics
-
-### [pods-threads](docs/agentmail_pods-threads.md)
-
-* [`list`](docs/agentmail_pods-threads_list.md) - List Threads
-* [`get`](docs/agentmail_pods-threads_get.md) - Get Thread
-* [`update`](docs/agentmail_pods-threads_update.md) - Update Thread
-* [`delete`](docs/agentmail_pods-threads_delete.md) - Delete Thread
-* [`get-attachment`](docs/agentmail_pods-threads_get-attachment.md) - Get Attachment
 
 ### [threads](docs/agentmail_threads.md)
 

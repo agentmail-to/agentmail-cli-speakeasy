@@ -1,18 +1,18 @@
-# InboxesDrafts
+# Inboxes.Drafts
 
 ## Overview
 
 ### Available Operations
 
-* [inboxesDraftsList](#inboxesdraftslist) - List Drafts
-* [inboxesDraftsCreate](#inboxesdraftscreate) - Create Draft
-* [inboxesDraftsGet](#inboxesdraftsget) - Get Draft
-* [inboxesDraftsUpdate](#inboxesdraftsupdate) - Update Draft
-* [inboxesDraftsDelete](#inboxesdraftsdelete) - Delete Draft
-* [inboxesDraftsGetAttachment](#inboxesdraftsgetattachment) - Get Attachment
-* [inboxesDraftsSend](#inboxesdraftssend) - Send Draft
+* [list](#list) - List Drafts
+* [create](#create) - Create Draft
+* [get](#get) - Get Draft
+* [update](#update) - Update Draft
+* [delete](#delete) - Delete Draft
+* [getAttachment](#getattachment) - Get Attachment
+* [send](#send) - Send Draft
 
-## inboxesDraftsList
+## list
 
 **CLI:**
 ```bash
@@ -30,7 +30,7 @@ const agentmailCli = new AgentmailCli({
 });
 
 async function run() {
-  const result = await agentmailCli.inboxesDrafts.inboxesDraftsList({
+  const result = await agentmailCli.inboxes.drafts.list({
     inboxId: "<id>",
   });
 
@@ -46,7 +46,7 @@ The standalone function version of this method:
 
 ```typescript
 import { AgentmailCliCore } from "agentmail/core.js";
-import { inboxesDraftsInboxesDraftsList } from "agentmail/funcs/inboxes-drafts-inboxes-drafts-list.js";
+import { inboxesDraftsList } from "agentmail/funcs/inboxes-drafts-list.js";
 
 // Use `AgentmailCliCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
@@ -55,14 +55,14 @@ const agentmailCli = new AgentmailCliCore({
 });
 
 async function run() {
-  const res = await inboxesDraftsInboxesDraftsList(agentmailCli, {
+  const res = await inboxesDraftsList(agentmailCli, {
     inboxId: "<id>",
   });
   if (res.ok) {
     const { value: result } = res;
     console.log(result);
   } else {
-    console.log("inboxesDraftsInboxesDraftsList failed:", res.error);
+    console.log("inboxesDraftsList failed:", res.error);
   }
 }
 
@@ -90,7 +90,7 @@ run();
 | errors.ErrorResponse            | 404                             | application/json                |
 | errors.AgentmailCliDefaultError | 4XX, 5XX                        | \*/\*                           |
 
-## inboxesDraftsCreate
+## create
 
 **CLI:**
 ```bash
@@ -108,7 +108,7 @@ const agentmailCli = new AgentmailCli({
 });
 
 async function run() {
-  const result = await agentmailCli.inboxesDrafts.inboxesDraftsCreate("<id>", {});
+  const result = await agentmailCli.inboxes.drafts.create("<id>", {});
 
   console.log(result);
 }
@@ -122,7 +122,7 @@ The standalone function version of this method:
 
 ```typescript
 import { AgentmailCliCore } from "agentmail/core.js";
-import { inboxesDraftsInboxesDraftsCreate } from "agentmail/funcs/inboxes-drafts-inboxes-drafts-create.js";
+import { inboxesDraftsCreate } from "agentmail/funcs/inboxes-drafts-create.js";
 
 // Use `AgentmailCliCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
@@ -131,12 +131,12 @@ const agentmailCli = new AgentmailCliCore({
 });
 
 async function run() {
-  const res = await inboxesDraftsInboxesDraftsCreate(agentmailCli, "<id>", {});
+  const res = await inboxesDraftsCreate(agentmailCli, "<id>", {});
   if (res.ok) {
     const { value: result } = res;
     console.log(result);
   } else {
-    console.log("inboxesDraftsInboxesDraftsCreate failed:", res.error);
+    console.log("inboxesDraftsCreate failed:", res.error);
   }
 }
 
@@ -165,7 +165,7 @@ run();
 | errors.ErrorResponse            | 404                             | application/json                |
 | errors.AgentmailCliDefaultError | 4XX, 5XX                        | \*/\*                           |
 
-## inboxesDraftsGet
+## get
 
 **CLI:**
 ```bash
@@ -183,7 +183,7 @@ const agentmailCli = new AgentmailCli({
 });
 
 async function run() {
-  const result = await agentmailCli.inboxesDrafts.inboxesDraftsGet("<id>", "<id>");
+  const result = await agentmailCli.inboxes.drafts.get("<id>", "<id>");
 
   console.log(result);
 }
@@ -197,7 +197,7 @@ The standalone function version of this method:
 
 ```typescript
 import { AgentmailCliCore } from "agentmail/core.js";
-import { inboxesDraftsInboxesDraftsGet } from "agentmail/funcs/inboxes-drafts-inboxes-drafts-get.js";
+import { inboxesDraftsGet } from "agentmail/funcs/inboxes-drafts-get.js";
 
 // Use `AgentmailCliCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
@@ -206,12 +206,12 @@ const agentmailCli = new AgentmailCliCore({
 });
 
 async function run() {
-  const res = await inboxesDraftsInboxesDraftsGet(agentmailCli, "<id>", "<id>");
+  const res = await inboxesDraftsGet(agentmailCli, "<id>", "<id>");
   if (res.ok) {
     const { value: result } = res;
     console.log(result);
   } else {
-    console.log("inboxesDraftsInboxesDraftsGet failed:", res.error);
+    console.log("inboxesDraftsGet failed:", res.error);
   }
 }
 
@@ -240,7 +240,7 @@ run();
 | errors.ErrorResponse            | 404                             | application/json                |
 | errors.AgentmailCliDefaultError | 4XX, 5XX                        | \*/\*                           |
 
-## inboxesDraftsUpdate
+## update
 
 **CLI:**
 ```bash
@@ -258,7 +258,7 @@ const agentmailCli = new AgentmailCli({
 });
 
 async function run() {
-  const result = await agentmailCli.inboxesDrafts.inboxesDraftsUpdate("<id>", "<id>", {});
+  const result = await agentmailCli.inboxes.drafts.update("<id>", "<id>", {});
 
   console.log(result);
 }
@@ -272,7 +272,7 @@ The standalone function version of this method:
 
 ```typescript
 import { AgentmailCliCore } from "agentmail/core.js";
-import { inboxesDraftsInboxesDraftsUpdate } from "agentmail/funcs/inboxes-drafts-inboxes-drafts-update.js";
+import { inboxesDraftsUpdate } from "agentmail/funcs/inboxes-drafts-update.js";
 
 // Use `AgentmailCliCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
@@ -281,12 +281,12 @@ const agentmailCli = new AgentmailCliCore({
 });
 
 async function run() {
-  const res = await inboxesDraftsInboxesDraftsUpdate(agentmailCli, "<id>", "<id>", {});
+  const res = await inboxesDraftsUpdate(agentmailCli, "<id>", "<id>", {});
   if (res.ok) {
     const { value: result } = res;
     console.log(result);
   } else {
-    console.log("inboxesDraftsInboxesDraftsUpdate failed:", res.error);
+    console.log("inboxesDraftsUpdate failed:", res.error);
   }
 }
 
@@ -316,7 +316,7 @@ run();
 | errors.ErrorResponse            | 404                             | application/json                |
 | errors.AgentmailCliDefaultError | 4XX, 5XX                        | \*/\*                           |
 
-## inboxesDraftsDelete
+## delete
 
 **CLI:**
 ```bash
@@ -334,7 +334,7 @@ const agentmailCli = new AgentmailCli({
 });
 
 async function run() {
-  await agentmailCli.inboxesDrafts.inboxesDraftsDelete("<id>", "<id>");
+  await agentmailCli.inboxes.drafts.delete("<id>", "<id>");
 
 
 }
@@ -348,7 +348,7 @@ The standalone function version of this method:
 
 ```typescript
 import { AgentmailCliCore } from "agentmail/core.js";
-import { inboxesDraftsInboxesDraftsDelete } from "agentmail/funcs/inboxes-drafts-inboxes-drafts-delete.js";
+import { inboxesDraftsDelete } from "agentmail/funcs/inboxes-drafts-delete.js";
 
 // Use `AgentmailCliCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
@@ -357,12 +357,12 @@ const agentmailCli = new AgentmailCliCore({
 });
 
 async function run() {
-  const res = await inboxesDraftsInboxesDraftsDelete(agentmailCli, "<id>", "<id>");
+  const res = await inboxesDraftsDelete(agentmailCli, "<id>", "<id>");
   if (res.ok) {
     const { value: result } = res;
     
   } else {
-    console.log("inboxesDraftsInboxesDraftsDelete failed:", res.error);
+    console.log("inboxesDraftsDelete failed:", res.error);
   }
 }
 
@@ -391,7 +391,7 @@ run();
 | errors.ErrorResponse            | 404                             | application/json                |
 | errors.AgentmailCliDefaultError | 4XX, 5XX                        | \*/\*                           |
 
-## inboxesDraftsGetAttachment
+## getAttachment
 
 **CLI:**
 ```bash
@@ -409,7 +409,7 @@ const agentmailCli = new AgentmailCli({
 });
 
 async function run() {
-  const result = await agentmailCli.inboxesDrafts.inboxesDraftsGetAttachment("<id>", "<id>", "<id>");
+  const result = await agentmailCli.inboxes.drafts.getAttachment("<id>", "<id>", "<id>");
 
   console.log(result);
 }
@@ -423,7 +423,7 @@ The standalone function version of this method:
 
 ```typescript
 import { AgentmailCliCore } from "agentmail/core.js";
-import { inboxesDraftsInboxesDraftsGetAttachment } from "agentmail/funcs/inboxes-drafts-inboxes-drafts-get-attachment.js";
+import { inboxesDraftsGetAttachment } from "agentmail/funcs/inboxes-drafts-get-attachment.js";
 
 // Use `AgentmailCliCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
@@ -432,12 +432,12 @@ const agentmailCli = new AgentmailCliCore({
 });
 
 async function run() {
-  const res = await inboxesDraftsInboxesDraftsGetAttachment(agentmailCli, "<id>", "<id>", "<id>");
+  const res = await inboxesDraftsGetAttachment(agentmailCli, "<id>", "<id>", "<id>");
   if (res.ok) {
     const { value: result } = res;
     console.log(result);
   } else {
-    console.log("inboxesDraftsInboxesDraftsGetAttachment failed:", res.error);
+    console.log("inboxesDraftsGetAttachment failed:", res.error);
   }
 }
 
@@ -467,7 +467,7 @@ run();
 | errors.ErrorResponse            | 404                             | application/json                |
 | errors.AgentmailCliDefaultError | 4XX, 5XX                        | \*/\*                           |
 
-## inboxesDraftsSend
+## send
 
 **CLI:**
 ```bash
@@ -485,7 +485,7 @@ const agentmailCli = new AgentmailCli({
 });
 
 async function run() {
-  const result = await agentmailCli.inboxesDrafts.inboxesDraftsSend("<id>", "<id>", {});
+  const result = await agentmailCli.inboxes.drafts.send("<id>", "<id>", {});
 
   console.log(result);
 }
@@ -499,7 +499,7 @@ The standalone function version of this method:
 
 ```typescript
 import { AgentmailCliCore } from "agentmail/core.js";
-import { inboxesDraftsInboxesDraftsSend } from "agentmail/funcs/inboxes-drafts-inboxes-drafts-send.js";
+import { inboxesDraftsSend } from "agentmail/funcs/inboxes-drafts-send.js";
 
 // Use `AgentmailCliCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
@@ -508,12 +508,12 @@ const agentmailCli = new AgentmailCliCore({
 });
 
 async function run() {
-  const res = await inboxesDraftsInboxesDraftsSend(agentmailCli, "<id>", "<id>", {});
+  const res = await inboxesDraftsSend(agentmailCli, "<id>", "<id>", {});
   if (res.ok) {
     const { value: result } = res;
     console.log(result);
   } else {
-    console.log("inboxesDraftsInboxesDraftsSend failed:", res.error);
+    console.log("inboxesDraftsSend failed:", res.error);
   }
 }
 

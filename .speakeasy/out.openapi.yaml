@@ -42,9 +42,17 @@ paths:
       summary: List Inboxes
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: &ref_0
         - BearerAuth: []
     post:
@@ -76,9 +84,17 @@ paths:
       summary: Create Inbox
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
       requestBody:
         required: false
@@ -119,9 +135,17 @@ paths:
       summary: Get Inbox
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
     patch:
       description: >-
@@ -157,9 +181,17 @@ paths:
       summary: Update Inbox
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
       requestBody:
         required: true
@@ -194,9 +226,17 @@ paths:
       summary: Delete Inbox
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
   /v0/pods:
     get:
@@ -237,9 +277,17 @@ paths:
       summary: List Pods
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
     post:
       description: |-
@@ -267,9 +315,17 @@ paths:
       summary: Create Pod
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
       requestBody:
         required: true
@@ -309,9 +365,17 @@ paths:
       summary: Get Pod
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
     delete:
       description: |-
@@ -340,9 +404,17 @@ paths:
       summary: Delete Pod
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
   /v0/webhooks:
     get:
@@ -383,9 +455,17 @@ paths:
       summary: List Webhooks
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
     post:
       description: >-
@@ -416,9 +496,17 @@ paths:
       summary: Create Webhook
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
       requestBody:
         required: true
@@ -458,9 +546,17 @@ paths:
       summary: Get Webhook
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
     patch:
       description: >-
@@ -502,9 +598,17 @@ paths:
       summary: Update Webhook
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
       requestBody:
         required: true
@@ -539,9 +643,17 @@ paths:
       summary: Delete Webhook
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
   /v0/agent/sign-up:
     post:
@@ -585,9 +697,17 @@ paths:
       summary: Sign Up
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       requestBody:
         required: true
         content:
@@ -627,9 +747,17 @@ paths:
       summary: Verify
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
       requestBody:
         required: true
@@ -676,9 +804,17 @@ paths:
       summary: List API Keys
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
     post:
       description: |-
@@ -706,9 +842,17 @@ paths:
       summary: Create API Key
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
       requestBody:
         required: true
@@ -744,9 +888,17 @@ paths:
       summary: Delete API Key
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
   /v0/domains:
     get:
@@ -787,9 +939,17 @@ paths:
       summary: List Domains
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
     post:
       description: |-
@@ -817,9 +977,17 @@ paths:
       summary: Create Domain
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
       requestBody:
         required: true
@@ -859,9 +1027,17 @@ paths:
       summary: Get Domain
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
     patch:
       description: |-
@@ -894,9 +1070,17 @@ paths:
       summary: Update Domain
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
       requestBody:
         required: true
@@ -931,9 +1115,17 @@ paths:
       summary: Delete Domain
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
   /v0/domains/{domain_id}/zone-file:
     get:
@@ -968,9 +1160,17 @@ paths:
       summary: Get Zone File
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
   /v0/domains/{domain_id}/verify:
     post:
@@ -1000,9 +1200,17 @@ paths:
       summary: Verify Domain
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
   /v0/drafts:
     get:
@@ -1067,9 +1275,17 @@ paths:
       summary: List Drafts
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
   /v0/drafts/{draft_id}:
     get:
@@ -1103,9 +1319,17 @@ paths:
       summary: Get Draft
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
   /v0/drafts/{draft_id}/attachments/{attachment_id}:
     get:
@@ -1147,9 +1371,17 @@ paths:
       summary: Get Attachment
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
   /v0/inboxes/{inbox_id}/api-keys:
     get:
@@ -1195,10 +1427,19 @@ paths:
       summary: List API Keys
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
+      x-speakeasy-group: inboxes.api_keys
     post:
       description: |-
         **CLI:**
@@ -1236,9 +1477,17 @@ paths:
       summary: Create API Key
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
       requestBody:
         required: true
@@ -1246,6 +1495,7 @@ paths:
           application/json:
             schema:
               $ref: '#/components/schemas/CreateApiKeyRequest'
+      x-speakeasy-group: inboxes.api_keys
   /v0/inboxes/{inbox_id}/api-keys/{api_key_id}:
     delete:
       description: >-
@@ -1282,10 +1532,19 @@ paths:
       summary: Delete API Key
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
+      x-speakeasy-group: inboxes.api_keys
   /v0/inboxes/{inbox_id}/drafts:
     get:
       description: |-
@@ -1354,10 +1613,20 @@ paths:
       summary: List Drafts
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
+      x-speakeasy-group: inboxes.drafts
+      x-speakeasy-name-override: list
     post:
       description: >-
         **CLI:**
@@ -1392,9 +1661,17 @@ paths:
       summary: Create Draft
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
       requestBody:
         required: true
@@ -1402,6 +1679,8 @@ paths:
           application/json:
             schema:
               $ref: '#/components/schemas/CreateDraftRequest'
+      x-speakeasy-group: inboxes.drafts
+      x-speakeasy-name-override: create
   /v0/inboxes/{inbox_id}/drafts/{draft_id}:
     get:
       description: |-
@@ -1439,10 +1718,20 @@ paths:
       summary: Get Draft
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
+      x-speakeasy-group: inboxes.drafts
+      x-speakeasy-name-override: get
     patch:
       description: >-
         **CLI:**
@@ -1482,9 +1771,17 @@ paths:
       summary: Update Draft
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
       requestBody:
         required: true
@@ -1492,6 +1789,8 @@ paths:
           application/json:
             schema:
               $ref: '#/components/schemas/UpdateDraftRequest'
+      x-speakeasy-group: inboxes.drafts
+      x-speakeasy-name-override: update
     delete:
       description: >-
         **CLI:**
@@ -1527,10 +1826,20 @@ paths:
       summary: Delete Draft
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
+      x-speakeasy-group: inboxes.drafts
+      x-speakeasy-name-override: delete
   /v0/inboxes/{inbox_id}/drafts/{draft_id}/attachments/{attachment_id}:
     get:
       description: >-
@@ -1576,10 +1885,20 @@ paths:
       summary: Get Attachment
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
+      x-speakeasy-group: inboxes.drafts
+      x-speakeasy-name-override: getAttachment
   /v0/inboxes/{inbox_id}/drafts/{draft_id}/send:
     post:
       description: >-
@@ -1632,9 +1951,17 @@ paths:
       summary: Send Draft
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
       requestBody:
         required: true
@@ -1642,6 +1969,8 @@ paths:
           application/json:
             schema:
               $ref: '#/components/schemas/UpdateMessageRequest'
+      x-speakeasy-group: inboxes.drafts
+      x-speakeasy-name-override: send
   /v0/inboxes/{inbox_id}/events:
     get:
       description: >-
@@ -1698,10 +2027,20 @@ paths:
       summary: List Inbox Events
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
+      x-speakeasy-group: inboxes.events
+      x-speakeasy-name-override: list
   /v0/inboxes/{inbox_id}/lists/{direction}/{type}:
     get:
       description: >-
@@ -1753,10 +2092,20 @@ paths:
       summary: List Entries
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
+      x-speakeasy-group: inboxes.lists
+      x-speakeasy-name-override: list
     post:
       description: >-
         **CLI:**
@@ -1801,9 +2150,17 @@ paths:
       summary: Create List Entry
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
       requestBody:
         required: true
@@ -1811,6 +2168,8 @@ paths:
           application/json:
             schema:
               $ref: '#/components/schemas/CreateListEntryRequest'
+      x-speakeasy-group: inboxes.lists
+      x-speakeasy-name-override: create
   /v0/inboxes/{inbox_id}/lists/{direction}/{type}/{entry}:
     get:
       description: >-
@@ -1862,10 +2221,20 @@ paths:
       summary: Get List Entry
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
+      x-speakeasy-group: inboxes.lists
+      x-speakeasy-name-override: get
     delete:
       description: >-
         **CLI:**
@@ -1912,10 +2281,20 @@ paths:
       summary: Delete List Entry
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
+      x-speakeasy-group: inboxes.lists
+      x-speakeasy-name-override: delete
   /v0/inboxes/{inbox_id}/messages:
     get:
       description: |-
@@ -2002,10 +2381,20 @@ paths:
       summary: List Messages
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
+      x-speakeasy-group: inboxes.messages
+      x-speakeasy-name-override: list
   /v0/inboxes/{inbox_id}/messages/{message_id}:
     get:
       description: >-
@@ -2046,10 +2435,20 @@ paths:
       summary: Get Message
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
+      x-speakeasy-group: inboxes.messages
+      x-speakeasy-name-override: get
     patch:
       description: >-
         **CLI:**
@@ -2095,9 +2494,17 @@ paths:
       summary: Update Message
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
       requestBody:
         required: true
@@ -2105,6 +2512,8 @@ paths:
           application/json:
             schema:
               $ref: '#/components/schemas/UpdateMessageRequest'
+      x-speakeasy-group: inboxes.messages
+      x-speakeasy-name-override: update
     delete:
       description: >-
         Permanently deletes a message.
@@ -2143,10 +2552,20 @@ paths:
       summary: Delete Message
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
+      x-speakeasy-group: inboxes.messages
+      x-speakeasy-name-override: delete
   /v0/inboxes/{inbox_id}/messages/{message_id}/attachments/{attachment_id}:
     get:
       description: >-
@@ -2192,10 +2611,20 @@ paths:
       summary: Get Attachment
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
+      x-speakeasy-group: inboxes.messages
+      x-speakeasy-name-override: getAttachment
   /v0/inboxes/{inbox_id}/messages/{message_id}/raw:
     get:
       description: >-
@@ -2236,10 +2665,20 @@ paths:
       summary: Get Raw Message
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
+      x-speakeasy-group: inboxes.messages
+      x-speakeasy-name-override: getRaw
   /v0/inboxes/{inbox_id}/messages/send:
     post:
       description: >-
@@ -2287,9 +2726,17 @@ paths:
       summary: Send Message
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
       requestBody:
         required: true
@@ -2297,6 +2744,8 @@ paths:
           application/json:
             schema:
               $ref: '#/components/schemas/SendMessageRequest'
+      x-speakeasy-group: inboxes.messages
+      x-speakeasy-name-override: send
   /v0/inboxes/{inbox_id}/messages/{message_id}/reply:
     post:
       description: >-
@@ -2349,9 +2798,17 @@ paths:
       summary: Reply To Message
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
       requestBody:
         required: true
@@ -2359,6 +2816,8 @@ paths:
           application/json:
             schema:
               $ref: '#/components/schemas/ReplyToMessageRequest'
+      x-speakeasy-group: inboxes.messages
+      x-speakeasy-name-override: reply
   /v0/inboxes/{inbox_id}/messages/{message_id}/reply-all:
     post:
       description: >-
@@ -2411,9 +2870,17 @@ paths:
       summary: Reply All Message
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
       requestBody:
         required: true
@@ -2421,6 +2888,8 @@ paths:
           application/json:
             schema:
               $ref: '#/components/schemas/ReplyAllMessageRequest'
+      x-speakeasy-group: inboxes.messages
+      x-speakeasy-name-override: reply-all
   /v0/inboxes/{inbox_id}/messages/{message_id}/forward:
     post:
       description: >-
@@ -2473,9 +2942,17 @@ paths:
       summary: Forward Message
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
       requestBody:
         required: true
@@ -2483,6 +2960,8 @@ paths:
           application/json:
             schema:
               $ref: '#/components/schemas/SendMessageRequest'
+      x-speakeasy-group: inboxes.messages
+      x-speakeasy-name-override: forward
   /v0/inboxes/{inbox_id}/metrics:
     get:
       description: |-
@@ -2551,10 +3030,20 @@ paths:
       summary: Query Metrics
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
+      x-speakeasy-group: inboxes.metrics
+      x-speakeasy-name-override: query
   /v0/inboxes/{inbox_id}/threads:
     get:
       description: |-
@@ -2641,10 +3130,20 @@ paths:
       summary: List Threads
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
+      x-speakeasy-group: inboxes.threads
+      x-speakeasy-name-override: list
   /v0/inboxes/{inbox_id}/threads/{thread_id}:
     get:
       description: >-
@@ -2685,10 +3184,20 @@ paths:
       summary: Get Thread
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
+      x-speakeasy-group: inboxes.threads
+      x-speakeasy-name-override: get
     patch:
       description: >-
         Updates thread labels. Cannot add or remove system labels (sent, received, bounced, etc.). Rejects requests with a `422` for threads with 100 or more messages.
@@ -2734,9 +3243,17 @@ paths:
       summary: Update Thread
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
       requestBody:
         required: true
@@ -2744,6 +3261,8 @@ paths:
           application/json:
             schema:
               $ref: '#/components/schemas/UpdateThreadRequest'
+      x-speakeasy-group: inboxes.threads
+      x-speakeasy-name-override: update
     delete:
       description: >-
         Moves the thread to trash by adding a trash label to all messages. If the thread is already in trash, it will be permanently deleted. Use `permanent=true` to force permanent deletion.
@@ -2789,10 +3308,20 @@ paths:
       summary: Delete Thread
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
+      x-speakeasy-group: inboxes.threads
+      x-speakeasy-name-override: delete
   /v0/inboxes/{inbox_id}/threads/{thread_id}/attachments/{attachment_id}:
     get:
       description: >-
@@ -2838,10 +3367,20 @@ paths:
       summary: Get Attachment
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
+      x-speakeasy-group: inboxes.threads
+      x-speakeasy-name-override: getAttachment
   /v0/lists/{direction}/{type}:
     get:
       description: |-
@@ -2885,9 +3424,17 @@ paths:
       summary: List Entries
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
     post:
       description: >-
@@ -2928,9 +3475,17 @@ paths:
       summary: Create List Entry
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
       requestBody:
         required: true
@@ -2984,9 +3539,17 @@ paths:
       summary: Get List Entry
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
     delete:
       description: >-
@@ -3029,9 +3592,17 @@ paths:
       summary: Delete List Entry
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
   /v0/metrics:
     get:
@@ -3096,9 +3667,17 @@ paths:
       summary: Query Metrics
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
   /v0/organizations:
     get:
@@ -3127,9 +3706,17 @@ paths:
       summary: Get Organization
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
   /v0/pods/{pod_id}/api-keys:
     get:
@@ -3175,10 +3762,19 @@ paths:
       summary: List API Keys
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
+      x-speakeasy-group: pods.api_keys
     post:
       description: |-
         **CLI:**
@@ -3216,9 +3812,17 @@ paths:
       summary: Create API Key
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
       requestBody:
         required: true
@@ -3226,6 +3830,7 @@ paths:
           application/json:
             schema:
               $ref: '#/components/schemas/CreateApiKeyRequest'
+      x-speakeasy-group: pods.api_keys
   /v0/pods/{pod_id}/api-keys/{api_key_id}:
     delete:
       description: >-
@@ -3262,10 +3867,19 @@ paths:
       summary: Delete API Key
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
+      x-speakeasy-group: pods.api_keys
   /v0/pods/{pod_id}/domains:
     get:
       description: |-
@@ -3316,10 +3930,20 @@ paths:
       summary: List Domains
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
+      x-speakeasy-group: pods.domains
+      x-speakeasy-name-override: list
     post:
       description: |-
         **CLI:**
@@ -3351,9 +3975,17 @@ paths:
       summary: Create Domain
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
       requestBody:
         required: true
@@ -3361,6 +3993,8 @@ paths:
           application/json:
             schema:
               $ref: '#/components/schemas/CreateDomainRequest'
+      x-speakeasy-group: pods.domains
+      x-speakeasy-name-override: create
   /v0/pods/{pod_id}/domains/{domain_id}:
     get:
       description: |-
@@ -3398,10 +4032,20 @@ paths:
       summary: Get Domain
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
+      x-speakeasy-group: pods.domains
+      x-speakeasy-name-override: get
     patch:
       description: |-
         **CLI:**
@@ -3438,9 +4082,17 @@ paths:
       summary: Update Domain
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
       requestBody:
         required: true
@@ -3448,6 +4100,8 @@ paths:
           application/json:
             schema:
               $ref: '#/components/schemas/UpdateDomainRequest'
+      x-speakeasy-group: pods.domains
+      x-speakeasy-name-override: update
     delete:
       description: |-
         **CLI:**
@@ -3480,10 +4134,20 @@ paths:
       summary: Delete Domain
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
+      x-speakeasy-group: pods.domains
+      x-speakeasy-name-override: delete
   /v0/pods/{pod_id}/domains/{domain_id}/zone-file:
     get:
       description: >-
@@ -3525,10 +4189,20 @@ paths:
       summary: Get Zone File
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
+      x-speakeasy-group: pods.domains
+      x-speakeasy-name-override: getZoneFile
   /v0/pods/{pod_id}/domains/{domain_id}/verify:
     post:
       description: |-
@@ -3562,10 +4236,20 @@ paths:
       summary: Verify Domain
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
+      x-speakeasy-group: pods.domains
+      x-speakeasy-name-override: verify
   /v0/pods/{pod_id}/drafts:
     get:
       description: |-
@@ -3634,10 +4318,20 @@ paths:
       summary: List Drafts
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
+      x-speakeasy-group: pods.drafts
+      x-speakeasy-name-override: list
   /v0/pods/{pod_id}/drafts/{draft_id}:
     get:
       description: |-
@@ -3675,10 +4369,20 @@ paths:
       summary: Get Draft
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
+      x-speakeasy-group: pods.drafts
+      x-speakeasy-name-override: get
   /v0/pods/{pod_id}/drafts/{draft_id}/attachments/{attachment_id}:
     get:
       description: >-
@@ -3724,10 +4428,20 @@ paths:
       summary: Get Attachment
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
+      x-speakeasy-group: pods.drafts
+      x-speakeasy-name-override: getAttachment
   /v0/pods/{pod_id}/inboxes:
     get:
       description: |-
@@ -3778,10 +4492,20 @@ paths:
       summary: List Inboxes
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
+      x-speakeasy-group: pods.inboxes
+      x-speakeasy-name-override: list
     post:
       description: >-
         **CLI:**
@@ -3816,9 +4540,17 @@ paths:
       summary: Create Inbox
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
       requestBody:
         required: true
@@ -3826,6 +4558,8 @@ paths:
           application/json:
             schema:
               $ref: '#/components/schemas/inboxesCreateInboxRequest'
+      x-speakeasy-group: pods.inboxes
+      x-speakeasy-name-override: create
   /v0/pods/{pod_id}/inboxes/{inbox_id}:
     get:
       description: |-
@@ -3863,10 +4597,20 @@ paths:
       summary: Get Inbox
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
+      x-speakeasy-group: pods.inboxes
+      x-speakeasy-name-override: get
     patch:
       description: |-
         **CLI:**
@@ -3903,9 +4647,17 @@ paths:
       summary: Update Inbox
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
       requestBody:
         required: true
@@ -3913,6 +4665,8 @@ paths:
           application/json:
             schema:
               $ref: '#/components/schemas/inboxesUpdateInboxRequest'
+      x-speakeasy-group: pods.inboxes
+      x-speakeasy-name-override: update
     delete:
       description: |-
         **CLI:**
@@ -3945,10 +4699,20 @@ paths:
       summary: Delete Inbox
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
+      x-speakeasy-group: pods.inboxes
+      x-speakeasy-name-override: delete
   /v0/pods/{pod_id}/lists/{direction}/{type}:
     get:
       description: >-
@@ -4000,10 +4764,20 @@ paths:
       summary: List Entries
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
+      x-speakeasy-group: pods.lists
+      x-speakeasy-name-override: list
     post:
       description: >-
         **CLI:**
@@ -4048,9 +4822,17 @@ paths:
       summary: Create List Entry
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
       requestBody:
         required: true
@@ -4058,6 +4840,8 @@ paths:
           application/json:
             schema:
               $ref: '#/components/schemas/CreateListEntryRequest'
+      x-speakeasy-group: pods.lists
+      x-speakeasy-name-override: create
   /v0/pods/{pod_id}/lists/{direction}/{type}/{entry}:
     get:
       description: >-
@@ -4109,10 +4893,20 @@ paths:
       summary: Get List Entry
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
+      x-speakeasy-group: pods.lists
+      x-speakeasy-name-override: get
     delete:
       description: >-
         **CLI:**
@@ -4159,10 +4953,20 @@ paths:
       summary: Delete List Entry
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
+      x-speakeasy-group: pods.lists
+      x-speakeasy-name-override: delete
   /v0/pods/{pod_id}/metrics:
     get:
       description: |-
@@ -4231,10 +5035,20 @@ paths:
       summary: Query Metrics
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
+      x-speakeasy-group: pods.metrics
+      x-speakeasy-name-override: query
   /v0/pods/{pod_id}/threads:
     get:
       description: |-
@@ -4321,10 +5135,20 @@ paths:
       summary: List Threads
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
+      x-speakeasy-group: pods.threads
+      x-speakeasy-name-override: list
   /v0/pods/{pod_id}/threads/{thread_id}:
     get:
       description: |-
@@ -4362,10 +5186,20 @@ paths:
       summary: Get Thread
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
+      x-speakeasy-group: pods.threads
+      x-speakeasy-name-override: get
     patch:
       description: >-
         Updates thread labels. Cannot add or remove system labels (sent, received, bounced, etc.). Rejects requests with a `422` for threads with 100 or more messages.
@@ -4411,9 +5245,17 @@ paths:
       summary: Update Thread
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
       requestBody:
         required: true
@@ -4421,6 +5263,8 @@ paths:
           application/json:
             schema:
               $ref: '#/components/schemas/UpdateThreadRequest'
+      x-speakeasy-group: pods.threads
+      x-speakeasy-name-override: update
     delete:
       description: >-
         Moves the thread to trash by adding a trash label to all messages. If the thread is already in trash, it will be permanently deleted. Use `permanent=true` to force permanent deletion.
@@ -4466,10 +5310,20 @@ paths:
       summary: Delete Thread
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
+      x-speakeasy-group: pods.threads
+      x-speakeasy-name-override: delete
   /v0/pods/{pod_id}/threads/{thread_id}/attachments/{attachment_id}:
     get:
       description: >-
@@ -4515,10 +5369,20 @@ paths:
       summary: Get Attachment
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
+      x-speakeasy-group: pods.threads
+      x-speakeasy-name-override: getAttachment
   /v0/threads:
     get:
       description: |-
@@ -4600,9 +5464,17 @@ paths:
       summary: List Threads
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
   /v0/threads/{thread_id}:
     get:
@@ -4636,9 +5508,17 @@ paths:
       summary: Get Thread
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
     patch:
       description: >-
@@ -4680,9 +5560,17 @@ paths:
       summary: Update Thread
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
       requestBody:
         required: true
@@ -4730,9 +5618,17 @@ paths:
       summary: Delete Thread
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
   /v0/threads/{thread_id}/attachments/{attachment_id}:
     get:
@@ -4774,9 +5670,17 @@ paths:
       summary: Get Attachment
       servers:
         - url: https://api.agentmail.to
+          x-speakeasy-server-id: prod
+          description: Default production
         - url: https://x402.api.agentmail.to
+          x-speakeasy-server-id: prod-x402
+          description: x402 pay-per-use endpoint
         - url: https://mpp.api.agentmail.to
+          x-speakeasy-server-id: prod-mpp
+          description: MPP routing endpoint
         - url: https://api.agentmail.eu
+          x-speakeasy-server-id: eu-prod
+          description: EU production
       security: *ref_0
 components:
   schemas:
@@ -7447,3 +8351,16 @@ components:
     BearerAuth:
       type: http
       scheme: bearer
+servers:
+  - url: https://api.agentmail.to
+    description: Default production
+    x-speakeasy-server-id: prod
+  - url: https://x402.api.agentmail.to
+    description: x402 pay-per-use endpoint
+    x-speakeasy-server-id: prod-x402
+  - url: https://mpp.api.agentmail.to
+    description: MPP routing endpoint
+    x-speakeasy-server-id: prod-mpp
+  - url: https://api.agentmail.eu
+    description: EU production
+    x-speakeasy-server-id: eu-prod

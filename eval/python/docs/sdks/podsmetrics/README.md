@@ -1,12 +1,12 @@
-# PodsMetrics
+# Pods.Metrics
 
 ## Overview
 
 ### Available Operations
 
-* [pods_metrics_query](#pods_metrics_query) - Query Metrics
+* [query](#query) - Query Metrics
 
-## pods_metrics_query
+## query
 
 **CLI:**
 ```bash
@@ -24,7 +24,7 @@ with AgentmailCli(
     bearer_auth="<YOUR_BEARER_TOKEN_HERE>",
 ) as agentmail_cli:
 
-    res = agentmail_cli.pods_metrics.pods_metrics_query(pod_id="<id>")
+    res = agentmail_cli.pods.metrics.query(pod_id="<id>")
 
     # Handle response
     print(res)

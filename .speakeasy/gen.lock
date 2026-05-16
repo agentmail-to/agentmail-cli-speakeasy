@@ -1,21 +1,22 @@
 lockVersion: 2.0.0
 id: 357e6474-f2c3-4257-8ba2-b5a5c9ab6b72
 management:
-  docChecksum: 969122d79cc72647b2e485c773124c93
+  docChecksum: 84742195500bdf2502a28959fe1ca289
   speakeasyVersion: 1.761.9
   generationVersion: 2.881.4
-  releaseVersion: 0.0.9
-  configChecksum: a31c3b6a488c37b318ba1eb673192f76
+  releaseVersion: 0.1.0
+  configChecksum: c3c9dc2bcddc15438d6894fbf3fa4a59
 persistentEdits:
-  generation_id: d05ae051-b065-4461-8cc9-202fbe214615
-  pristine_commit_hash: c0844af510d4ac6b4381fa1e2c25839ac268120c
-  pristine_tree_hash: 4286b187c8ad320f7e32184b96ca2890efcf7c6c
+  generation_id: 664dbfa1-e7db-4e94-961e-a0a437c4c24d
+  pristine_commit_hash: 75d69158a3f33a28c4bcc9c6817c6c5f35f7b607
+  pristine_tree_hash: e73caa075abe61960305fb5d551ce471bbe25b5b
 features:
   cli:
     core: 0.2.8
     downloadStreams: 0.0.1
     globalSecurity: 0.0.1
     globalServerURLs: 0.0.0
+    groups: 0.1.0
     methodServerURLs: 0.0.0
     responseFormat: 0.1.1
     unions: 0.0.1
@@ -46,7 +47,7 @@ trackedFiles:
     pristine_git_object: 367281846b2b4ef7098b355eb72b6da2469533a5
   go.mod:
     id: c47645c391ad
-    last_write_checksum: sha1:a619905498081204140f66a62f38eafcf0751c74
+    last_write_checksum: sha1:5776b069ab7e9819182c2822bdbaf16a4b04a3a1
     pristine_git_object: aad9adb50194a3b2075e46665b8e5c1a4ce55418
   internal/cli/agent/agentsignup.go:
     id: 83c1526efdf5
@@ -132,6 +133,30 @@ trackedFiles:
     id: 728d3a8f913f
     last_write_checksum: sha1:b3843da684a46390ed377180dc3d84d804562a4b
     pristine_git_object: 28068e2f1afee2812802ff85d726e5f87a72a59c
+  internal/cli/inboxes/events/inboxeseventslist.go:
+    id: da5c23fcce49
+    last_write_checksum: sha1:2080f18d573da01976702f0623507e816ed2d748
+    pristine_git_object: ead306ef43b88e67448519c06cd0f0bf4bec8147
+  internal/cli/inboxes/events/root.go:
+    id: 02530749a0bf
+    last_write_checksum: sha1:81b90adb571f95638b702f07a046ad3e572c5496
+    pristine_git_object: 049677f3a5d5c166789ff51214210283675882c6
+  internal/cli/inboxes/inboxesapikeys/inboxesapikeyscreate.go:
+    id: 66baf097aa76
+    last_write_checksum: sha1:4e0598f76873edd35a8aa728121f0cb4523b1bb7
+    pristine_git_object: cf8055bd7588ba54082b84495128fe84a390b119
+  internal/cli/inboxes/inboxesapikeys/inboxesapikeysdelete.go:
+    id: eb8db29fc7b4
+    last_write_checksum: sha1:34608a4aa9d3ccb2b455fd75a5bb240979e83c3e
+    pristine_git_object: f1aa3a69d13b58d44ff17e15d8585234103bdb8b
+  internal/cli/inboxes/inboxesapikeys/inboxesapikeyslist.go:
+    id: ff919a09ebe9
+    last_write_checksum: sha1:10fba5b2dab4bd3dd984be9de52c9dbc7181940a
+    pristine_git_object: 523c10835c5fc465d5a9a056a2494ac3413b6f06
+  internal/cli/inboxes/inboxesapikeys/root.go:
+    id: a1edf5ae3c38
+    last_write_checksum: sha1:ce8838fba7a37459f02cc37c6aefe71102302b51
+    pristine_git_object: f13b5b01385e7750c2376279bbae0bc526e170a0
   internal/cli/inboxes/inboxescreate.go:
     id: afdb92d1b5af
     last_write_checksum: sha1:34b9877798d1c22073e0de204da3f6c800d9b086
@@ -140,6 +165,38 @@ trackedFiles:
     id: bc8e0c1e2e7d
     last_write_checksum: sha1:6dceb86aae2a8828a9428fa6409cc8b5c0ea0dd5
     pristine_git_object: 91510c014cb70d97bb575ceffeb8f08fd4cb8d88
+  internal/cli/inboxes/inboxesdrafts/inboxesdraftscreate.go:
+    id: 900b7a1fd914
+    last_write_checksum: sha1:03127f22894a7ca3060b0b542977af5bcd906715
+    pristine_git_object: c5a619e066e4e8a6f0746b09593eafd514e6d6ce
+  internal/cli/inboxes/inboxesdrafts/inboxesdraftsdelete.go:
+    id: d55560b1405f
+    last_write_checksum: sha1:59d2419a3312b17ef116c2a89b9083ff21f99e81
+    pristine_git_object: 9da3f0192a3b63534541adaea47a8bac4cd03e4a
+  internal/cli/inboxes/inboxesdrafts/inboxesdraftsget.go:
+    id: b706fadc0c60
+    last_write_checksum: sha1:ee4d42199373c90834e907c35f43f6b6e2d9908e
+    pristine_git_object: f884b718c0c6f351bc98de4c9c105def2c5f7401
+  internal/cli/inboxes/inboxesdrafts/inboxesdraftsgetattachment.go:
+    id: 025897ef1657
+    last_write_checksum: sha1:71fc83569f7fd32eefdf445e15ff313cf072d254
+    pristine_git_object: de65f2212df15ca7c95d78a48a1471d2834d4546
+  internal/cli/inboxes/inboxesdrafts/inboxesdraftslist.go:
+    id: c77c58bf629e
+    last_write_checksum: sha1:33331c16ac372c24011bea55a25abfb9ce07276b
+    pristine_git_object: 2dbd303d72203c39cdc7e9c0385cde3e45874df1
+  internal/cli/inboxes/inboxesdrafts/inboxesdraftssend.go:
+    id: 7869211dcd77
+    last_write_checksum: sha1:de29fed6b79d12f1ce2205cf59d76a647ac06782
+    pristine_git_object: ec03faa0f110b5565007f46721b1daa562da490d
+  internal/cli/inboxes/inboxesdrafts/inboxesdraftsupdate.go:
+    id: 3507640a74f6
+    last_write_checksum: sha1:b725212a7ea15970ced06ddce51c3fa4c28ea425
+    pristine_git_object: 47b85c728d1bc18c7cb3e086e63a614f9ce2c699
+  internal/cli/inboxes/inboxesdrafts/root.go:
+    id: 7b28349b5423
+    last_write_checksum: sha1:9d060f10ea9826fcd87c83a24fc69843e6f7eb7d
+    pristine_git_object: 2a5cab6a2505b6e3dbfcf275d14f786f15afc479
   internal/cli/inboxes/inboxesget.go:
     id: b12f77cd5c3a
     last_write_checksum: sha1:a425e5ce2e9067a7880d78710fc25cf6826c8f77
@@ -148,166 +205,110 @@ trackedFiles:
     id: 729a167ff0e9
     last_write_checksum: sha1:182539b7e08e0a6d6ee7950f7c4dcaa47ed56486
     pristine_git_object: 6c009705e78ca105b986a782550904118af21b11
+  internal/cli/inboxes/inboxeslists/inboxeslistscreate.go:
+    id: 5691bcafa507
+    last_write_checksum: sha1:e6b6110fe069c13e731aae33879e84bd4c8e02fd
+    pristine_git_object: 09197423d178de1508012af9fd61052becc59def
+  internal/cli/inboxes/inboxeslists/inboxeslistsdelete.go:
+    id: 95ec24d2feb2
+    last_write_checksum: sha1:fe07cf780155742da6e696b273fb90ae74b7ff4a
+    pristine_git_object: 8f943c2e7abae80b77b160593d74119bdeb6ceef
+  internal/cli/inboxes/inboxeslists/inboxeslistsget.go:
+    id: a37f38793fe9
+    last_write_checksum: sha1:c9ab9081670a28bf5eda916e203edd440cb10ec6
+    pristine_git_object: 2e53f03a43dbb336b4c88f5be5980af6ed21bd38
+  internal/cli/inboxes/inboxeslists/inboxeslistslist.go:
+    id: 54281fe81a31
+    last_write_checksum: sha1:5a32b31568d80460e5cd9a84cb130984eaf3daaa
+    pristine_git_object: ab51e4a1502ec132d271b12c9bc91c36172b7cf0
+  internal/cli/inboxes/inboxeslists/root.go:
+    id: c591d68b0e38
+    last_write_checksum: sha1:0d91e4db8f49ecb01bf30eabcb9a898c7b89c7ee
+    pristine_git_object: b2a63f2f535ca84497b187eecbea21fd26d908a7
+  internal/cli/inboxes/inboxesmetrics/inboxesmetricsquery.go:
+    id: 8da00cd0646c
+    last_write_checksum: sha1:ffb27ff5f48214d4100f7a112cdd222b9ae4b3dd
+    pristine_git_object: 311fed041388dfbb3fb0a60c1d96d2aa5a995486
+  internal/cli/inboxes/inboxesmetrics/root.go:
+    id: 345f5055c23c
+    last_write_checksum: sha1:79ee087d0d903246f4f481f743fca0568f5b2634
+    pristine_git_object: f42ba489b5a949ff01630ea29a91803d7dcfbba3
+  internal/cli/inboxes/inboxesthreads/inboxesthreadsdelete.go:
+    id: d9a3196e6b09
+    last_write_checksum: sha1:eaadda605503b8e5245ae209eb37ea7a4a4f5f35
+    pristine_git_object: f7b326c58fd6cb3eeb2ae4300d14c1b73d5e9649
+  internal/cli/inboxes/inboxesthreads/inboxesthreadsget.go:
+    id: 23b55f2802ef
+    last_write_checksum: sha1:f9867817c8bcc577315e93e3ae28f5fee8547415
+    pristine_git_object: aed82dd022e685f53b133b8684e3bdcd67278376
+  internal/cli/inboxes/inboxesthreads/inboxesthreadsgetattachment.go:
+    id: 7e77aa121b3c
+    last_write_checksum: sha1:f4ef2cb4b9844f16af5b495a230b8b3d9697e55a
+    pristine_git_object: 68388d6912752250127e3ea6eac06ebbaf3056a3
+  internal/cli/inboxes/inboxesthreads/inboxesthreadslist.go:
+    id: 5171c7f27c55
+    last_write_checksum: sha1:faee6bfd784790e3ba3d9ddc7463652d3f9ec424
+    pristine_git_object: e2016a79c853465f0bc6da244e6b99f3e4734b1c
+  internal/cli/inboxes/inboxesthreads/inboxesthreadsupdate.go:
+    id: 332a397ced91
+    last_write_checksum: sha1:15bb4df6ededd7e4c9e227ab951a2c3a2571ec4f
+    pristine_git_object: 6e772761fa5066ec2dd3a0395f07b6ee3598810e
+  internal/cli/inboxes/inboxesthreads/root.go:
+    id: 297e2ef4ab34
+    last_write_checksum: sha1:9717b0b572566602ca21b25715853b9f12d2ada2
+    pristine_git_object: 594786ceed4554aac6ec7aa6832a0ec8baf02c98
   internal/cli/inboxes/inboxesupdate.go:
     id: 76cbc16d5585
     last_write_checksum: sha1:43c0de4b260b72b01ce0c859ea94a3ca656ed41c
     pristine_git_object: 3e3fa2dac2ab5c935c597fe293052d2850340cff
+  internal/cli/inboxes/messages/inboxesmessagesdelete.go:
+    id: 29837293133c
+    last_write_checksum: sha1:f73ea7b88090ab5be5f0a82e6f6ed7c78b027b0f
+    pristine_git_object: 41af32193de956d1b483037bbdffd54520d032e6
+  internal/cli/inboxes/messages/inboxesmessagesforward.go:
+    id: b2afac729748
+    last_write_checksum: sha1:77bd49b11bfad13bbb1f2c59f67656142d5bd8e5
+    pristine_git_object: f3ae24d061978874b06462734c1146953028f94e
+  internal/cli/inboxes/messages/inboxesmessagesget.go:
+    id: a3ad00f15bb2
+    last_write_checksum: sha1:6f3db2c70b7c167a0a9eeb9effc1244d58265537
+    pristine_git_object: 9ec508e9222f3b8214c881e9047cfb031db61b63
+  internal/cli/inboxes/messages/inboxesmessagesgetattachment.go:
+    id: 5da91162225e
+    last_write_checksum: sha1:2361409904a9023cf66f3a9cc94c6a67810af000
+    pristine_git_object: c928024e10b6936d39e6d732dd584ff63a0ba037
+  internal/cli/inboxes/messages/inboxesmessagesgetraw.go:
+    id: 43688cc52fb3
+    last_write_checksum: sha1:cbc1f69176657756601743f8a476ce14a29ad3db
+    pristine_git_object: 6787cacb8d0d938c165a13e90cc461b35c6d0786
+  internal/cli/inboxes/messages/inboxesmessageslist.go:
+    id: 6684078c0f77
+    last_write_checksum: sha1:6144d70b5aebb3f667a31ddd3692264492c3c3d9
+    pristine_git_object: 43e4b15c78f0657d58782d222b0775049427a9e2
+  internal/cli/inboxes/messages/inboxesmessagesreply.go:
+    id: 276220fdfd0f
+    last_write_checksum: sha1:3785b62cdc1d78c807f0ba40d29a813a190e0203
+    pristine_git_object: 7e48f2827c2e1ca5c19224c0b8b5c037c9b4ac34
+  internal/cli/inboxes/messages/inboxesmessagesreplyall.go:
+    id: 565c261ec3e5
+    last_write_checksum: sha1:b701aacb1df9394a18830ea3cf76e68d87a40008
+    pristine_git_object: 008a9824f946d8c166070a9d6bb653697c9ed584
+  internal/cli/inboxes/messages/inboxesmessagessend.go:
+    id: 5ec36bc86e99
+    last_write_checksum: sha1:28fff0b8e1ee6709e547dc07ec5f8e33790e26ad
+    pristine_git_object: 8a392bfc1141d54cec08cc8e5ae5860672113684
+  internal/cli/inboxes/messages/inboxesmessagesupdate.go:
+    id: 3898b89169b2
+    last_write_checksum: sha1:f16357aadc09a262d49dd840fbd1f83fb77f4410
+    pristine_git_object: 2ad9b5e9756e25021a01f9a7ca10ae67d76f708b
+  internal/cli/inboxes/messages/root.go:
+    id: 49fc24515cf5
+    last_write_checksum: sha1:bf4c91d2a6ac5e01272ae1214995c59c930fe224
+    pristine_git_object: 900b558048ff5bdfc30b2702b34709bdd6bdfe24
   internal/cli/inboxes/root.go:
     id: 4a0bdc352dee
-    last_write_checksum: sha1:52071e7c5f8cc3834d4b8b6495b47c211c02b648
-    pristine_git_object: 3ca516b086ee5ae2a60d25574ed5d54054184071
-  internal/cli/inboxesapikeys/inboxesapikeyscreate.go:
-    id: 7c248524fd45
-    last_write_checksum: sha1:e3d286bf21f54395993f826b2b8f5d4cf8334e4b
-    pristine_git_object: 498e8308aeea5b57151c0b37b6d0691b4e1326f6
-  internal/cli/inboxesapikeys/inboxesapikeysdelete.go:
-    id: 1200d9210ed2
-    last_write_checksum: sha1:8ff0005aba8e8dc35302acf0bfe3b886ae08ee15
-    pristine_git_object: f7862ff55d3edd6397ffbea80b617b0b6e9f0c46
-  internal/cli/inboxesapikeys/inboxesapikeyslist.go:
-    id: f867cf98d5fc
-    last_write_checksum: sha1:1bccb00e430a4b176d1af29d69525f89310b085b
-    pristine_git_object: df82f75fa586198e5f5bd0cea71196f048051ef9
-  internal/cli/inboxesapikeys/root.go:
-    id: 170ceaef6731
-    last_write_checksum: sha1:56b7e936e240a53a6ac9d9edaf6da3c4d7fad6bb
-    pristine_git_object: 32c0a64efb4be34216b24f3674c2111ad123eb6a
-  internal/cli/inboxesdrafts/inboxesdraftscreate.go:
-    id: 5a905bd149a4
-    last_write_checksum: sha1:19cc8aeb35e855db25fa83e707f993bce448c0ad
-    pristine_git_object: 8ad90de349639c6357a4022dae9902bc4b31bc54
-  internal/cli/inboxesdrafts/inboxesdraftsdelete.go:
-    id: a4c5ca7160c3
-    last_write_checksum: sha1:1b4be4790904653a003f8f45a4009145af8ec710
-    pristine_git_object: 299683b1e22d633b620970d05a77ebe66b85f817
-  internal/cli/inboxesdrafts/inboxesdraftsget.go:
-    id: ac37a01bc727
-    last_write_checksum: sha1:fbbd908a95e73ea51e037b10f96f8575a78e0ddc
-    pristine_git_object: a825c311808ef03e5ba2b799d8d40cc1d055dc76
-  internal/cli/inboxesdrafts/inboxesdraftsgetattachment.go:
-    id: cf789cd73024
-    last_write_checksum: sha1:12552dba62195db7d9899d218f3304a28d54815a
-    pristine_git_object: b223d08c957796d124114f6fb948d156cbcafb02
-  internal/cli/inboxesdrafts/inboxesdraftslist.go:
-    id: 251d4f0a2bba
-    last_write_checksum: sha1:7a28a5961bd9cf8e7956d623318f2cf5af4389e5
-    pristine_git_object: 7b1a7243d108303ece2f4fde82ecfd9f958429b5
-  internal/cli/inboxesdrafts/inboxesdraftssend.go:
-    id: 8265df27f75e
-    last_write_checksum: sha1:3cf9b996887e525695039f68e1a6f0836503b0d4
-    pristine_git_object: 288547a89d587b66690e1280ce298cfd077957dc
-  internal/cli/inboxesdrafts/inboxesdraftsupdate.go:
-    id: c686a38c3769
-    last_write_checksum: sha1:a95b46c7d1e200fb702df4b39bc82f00bd3b1277
-    pristine_git_object: 45f5b29b2cb95853121c8fe7eda1c723091381cb
-  internal/cli/inboxesdrafts/root.go:
-    id: 3b3e05690493
-    last_write_checksum: sha1:38ee363e1468c1f122db7c70fbe2a99da1b9bc26
-    pristine_git_object: fe6b3b7987aaee547c3788b503b5b27e04070741
-  internal/cli/inboxesevents/inboxeseventslist.go:
-    id: d0da610929f6
-    last_write_checksum: sha1:8100a8fa326b79641ba68fcdb490c32a66b6e2fa
-    pristine_git_object: 7442caa78a6509b052f9ad26192bcbdbe1340616
-  internal/cli/inboxesevents/root.go:
-    id: 532f1c520ba5
-    last_write_checksum: sha1:4ea913c84439e22998eeab965d5462a47f01e0ab
-    pristine_git_object: bedf52a1434affb7173054082c3cf630f75dc485
-  internal/cli/inboxeslists/inboxeslistscreate.go:
-    id: bb9c9930204b
-    last_write_checksum: sha1:760796fd3e35716b1da939c850699c39fce5478b
-    pristine_git_object: 403131903b9e44af152bfe23707997c4ea3ccadb
-  internal/cli/inboxeslists/inboxeslistsdelete.go:
-    id: a2be5bcbdb4e
-    last_write_checksum: sha1:7cf8fc298b2187f816d36efdd2450f8741a844f8
-    pristine_git_object: bccacc6eee09c8b6c142c4f9c0252fb83fd93868
-  internal/cli/inboxeslists/inboxeslistsget.go:
-    id: d5f27b810e4c
-    last_write_checksum: sha1:2b3755d27965564bf565bcde97d51f88cfaf2f4e
-    pristine_git_object: fff94df2585ef2d18236dc3a78e7c84c5eceb440
-  internal/cli/inboxeslists/inboxeslistslist.go:
-    id: 3ff6a6714ae1
-    last_write_checksum: sha1:b25feae2949c5d23720daf6d00e2b20217788094
-    pristine_git_object: dfbea003d5ef1f17506a6382bc12edefe60742da
-  internal/cli/inboxeslists/root.go:
-    id: 951d5652c9a8
-    last_write_checksum: sha1:88eff07757f778bc8146f0fba8c0db60476382f9
-    pristine_git_object: 2061670123317e92a0f8b9a799c349cb325c45fb
-  internal/cli/inboxesmessages/inboxesmessagesdelete.go:
-    id: 769bc7dc88ed
-    last_write_checksum: sha1:7d587f5a45b76bfa3c476d7461d34bf9cc27f621
-    pristine_git_object: 77b0e6d93aad0e79c1c47957ac0ee20f49602570
-  internal/cli/inboxesmessages/inboxesmessagesforward.go:
-    id: 17b96b8cab1f
-    last_write_checksum: sha1:35a88e89793f1754d5425f480d92132a0959aef8
-    pristine_git_object: e02edf9414887f1bcbc2c077237b887c3f546a0e
-  internal/cli/inboxesmessages/inboxesmessagesget.go:
-    id: aa9f3028fe69
-    last_write_checksum: sha1:91890c380826da986c60d9401602fbdbdfaaae6e
-    pristine_git_object: 0927c424a188b0bbb1e5255133b35c0352774c82
-  internal/cli/inboxesmessages/inboxesmessagesgetattachment.go:
-    id: d3478a1b8428
-    last_write_checksum: sha1:7038bb066dec8e015138f09936f117199636128d
-    pristine_git_object: f9c5a0c09c8c508950ba723da84066e9fc84a62a
-  internal/cli/inboxesmessages/inboxesmessagesgetraw.go:
-    id: 8c2af83a248f
-    last_write_checksum: sha1:b3dac8182058b64efd240d9a875e61f177ad7d2c
-    pristine_git_object: b4c6db2eceb240e70975468827e8162a40ba2a07
-  internal/cli/inboxesmessages/inboxesmessageslist.go:
-    id: cf3c6470515d
-    last_write_checksum: sha1:7fccca9e11dd14ea7029ee99bb02d92ae1902bcd
-    pristine_git_object: 9661f2186a6f97f9aa903406668f083c57bd6f32
-  internal/cli/inboxesmessages/inboxesmessagesreply.go:
-    id: 6969fe882d84
-    last_write_checksum: sha1:6447ea744f44402d755799eb0fcca407dd34c1a6
-    pristine_git_object: f64121a7d9c3a6b60fafe6dfc8767e8be2c41b67
-  internal/cli/inboxesmessages/inboxesmessagesreplyall.go:
-    id: 2976dedc3574
-    last_write_checksum: sha1:c9ceb0eb08a5ed396cfcc1670efbd6256dd84776
-    pristine_git_object: 661131ac473fcdd66dfedf811c4fab6d02e0bbe8
-  internal/cli/inboxesmessages/inboxesmessagessend.go:
-    id: beab915bca92
-    last_write_checksum: sha1:22b2c7ae1533697caa5cf63d64ea17f521272130
-    pristine_git_object: b39f5e76e3020c6464557eb81a445dfb44e32052
-  internal/cli/inboxesmessages/inboxesmessagesupdate.go:
-    id: 0a116ef33bfc
-    last_write_checksum: sha1:a727934bff4fefb88c6e8db91195be38a972af3e
-    pristine_git_object: 6ea719fe5e762e7e2a8c0e7c4a550ac6f9cb854b
-  internal/cli/inboxesmessages/root.go:
-    id: 388b51ae55c4
-    last_write_checksum: sha1:668af43339e89dd09a7f1beec96246a8468ee893
-    pristine_git_object: 96e0836af74e9586ebea2d00955c7552e28eaa46
-  internal/cli/inboxesmetrics/inboxesmetricsquery.go:
-    id: 98e31b3db91f
-    last_write_checksum: sha1:59d717363094690a474a427935daae32d265e982
-    pristine_git_object: 0ed0b748ae71c758e857553c6a8eeeb26c064c1b
-  internal/cli/inboxesmetrics/root.go:
-    id: 6b251ce6ebcd
-    last_write_checksum: sha1:d4551601e8b798eef713f4fcb42ae2a27085524f
-    pristine_git_object: 77917437c5be8375fea1e7b11908fb83feaacd90
-  internal/cli/inboxesthreads/inboxesthreadsdelete.go:
-    id: fce05ecddfe0
-    last_write_checksum: sha1:34d261b1c8bedf76397c29fb26be86480e26d576
-    pristine_git_object: f8e2c28457e58abc546532de3f20aaaa36cc41db
-  internal/cli/inboxesthreads/inboxesthreadsget.go:
-    id: f121cb9e60b2
-    last_write_checksum: sha1:d6d3c7565af604073390a3a98cc087452e9dc88c
-    pristine_git_object: 4ff49a5cd6a4ba462a238e0a679ef1d6d50dff13
-  internal/cli/inboxesthreads/inboxesthreadsgetattachment.go:
-    id: 0d9134f73cba
-    last_write_checksum: sha1:12073e74241d7ebca385c94974d85479db7129bc
-    pristine_git_object: 3a9e1481159d469c9122983e5e92566187bf3287
-  internal/cli/inboxesthreads/inboxesthreadslist.go:
-    id: 6f9cb298af77
-    last_write_checksum: sha1:c7ab303320073b570cdc722ce04fdacb4b8c525f
-    pristine_git_object: 251287831cb2d9ac73b2f119e6b8d602ecc17acc
-  internal/cli/inboxesthreads/inboxesthreadsupdate.go:
-    id: 830905739f31
-    last_write_checksum: sha1:d80314c2cc48e0885be3129321b12bcfa0d3e6e9
-    pristine_git_object: 7dd7f67eb1dc4aae4735cd9a681dc5cc7975f566
-  internal/cli/inboxesthreads/root.go:
-    id: 5f36e7654fa5
-    last_write_checksum: sha1:6b99fe3472df256d360e15120dbd4f1c6cd452f5
-    pristine_git_object: 25dbd3591925951ecf61130a6107ade27e9ddea5
+    last_write_checksum: sha1:0d41868352cfa436786d87df71e1e55050ccb039
+    pristine_git_object: f2f23cd386c2c1d90edaa840f78544327e5b39d6
   internal/cli/lists/listscreate.go:
     id: 8645214ea8f5
     last_write_checksum: sha1:f8c0f0bc719b3f5affb7f4d88113e350a0c2b13e
@@ -348,6 +349,22 @@ trackedFiles:
     id: 3bb199705c62
     last_write_checksum: sha1:497ecbcc8e25f652f55f680868d0f14070f56066
     pristine_git_object: f797e8ed72d71d4a6f75129ce5d23542f2f195af
+  internal/cli/pods/podsapikeys/podsapikeyscreate.go:
+    id: 3f157715cf20
+    last_write_checksum: sha1:673c16ccdc84638a78b124c5d8da5a6687d1a0f6
+    pristine_git_object: fb7b611015610f6892bf681cc30680226911547f
+  internal/cli/pods/podsapikeys/podsapikeysdelete.go:
+    id: f791ede3ad06
+    last_write_checksum: sha1:da4ed4eee66236b91343965753a0fdcefe975aca
+    pristine_git_object: 8cb8f0f852684dba9732a31f9570d6b140961442
+  internal/cli/pods/podsapikeys/podsapikeyslist.go:
+    id: 52bbe90855b6
+    last_write_checksum: sha1:015088483ab305df89d77507759b92272e059942
+    pristine_git_object: 5e926f31704ee6d9e2c23b0555e6dc910277fd44
+  internal/cli/pods/podsapikeys/root.go:
+    id: 15d12b9cc295
+    last_write_checksum: sha1:9438e9d756d8a58e2cbc87742c3431e4579fac08
+    pristine_git_object: e310546a6095b4fdbf012a74b70059f22dce5326
   internal/cli/pods/podscreate.go:
     id: 818e2d3983cf
     last_write_checksum: sha1:d0388641be605fd91cf3fd544261b8b7833abf43
@@ -356,162 +373,146 @@ trackedFiles:
     id: 9f7644a42d85
     last_write_checksum: sha1:74711a233d73d974b4793349fd479ab94b9ab66a
     pristine_git_object: 091a70a0eeeb92e12a9469fe938f523665e41a6b
+  internal/cli/pods/podsdomains/podsdomainscreate.go:
+    id: 6121fb2363ff
+    last_write_checksum: sha1:a1d1adf67dfcfdb428cabab41780832694d86478
+    pristine_git_object: 5bd821a887fefd184a4a86748efe04fa7c9399f5
+  internal/cli/pods/podsdomains/podsdomainsdelete.go:
+    id: "499480020626"
+    last_write_checksum: sha1:3f8866844357c47b8e4660b2e6ac5009c50fad90
+    pristine_git_object: 4feca3b554753013b2f0b8863512293d39fa4c45
+  internal/cli/pods/podsdomains/podsdomainsget.go:
+    id: 3b26ddac36d7
+    last_write_checksum: sha1:d8d2353ee45eb148617ef14017219bc3ecd2500b
+    pristine_git_object: de1f8f36f146f0baefcfd59b1d0733649796f50a
+  internal/cli/pods/podsdomains/podsdomainsgetzonefile.go:
+    id: 6d22d2d1c470
+    last_write_checksum: sha1:6ac59584b63109b458676d895b7b184be2d73127
+    pristine_git_object: c18ae71a4498ee6ac8002140608065fde7194c8e
+  internal/cli/pods/podsdomains/podsdomainslist.go:
+    id: 5dab04fd5ec9
+    last_write_checksum: sha1:dde9944637f9656207e31dfe6b60eeb210e8ee1b
+    pristine_git_object: accf7ad8dffa73947308cc4fc389c49752c4fb61
+  internal/cli/pods/podsdomains/podsdomainsupdate.go:
+    id: 4f026740030c
+    last_write_checksum: sha1:12df8463d4d20475792c48db8a2b60e24cccea43
+    pristine_git_object: 548f02c90dea0202785cc884f5112ed8cdee2de3
+  internal/cli/pods/podsdomains/podsdomainsverify.go:
+    id: c484a404376d
+    last_write_checksum: sha1:b345b68c82b0df83a92c43030a39a16fb4a6b9b0
+    pristine_git_object: a6e19680fd9547a49f71c8db8ae0aee23e6ad5fc
+  internal/cli/pods/podsdomains/root.go:
+    id: 0b679c41aebd
+    last_write_checksum: sha1:4607c59b6cddc478cd913345eb62a4058051880b
+    pristine_git_object: 180207466ff21b954a10aa6ecc775b302649b919
+  internal/cli/pods/podsdrafts/podsdraftsget.go:
+    id: 3091f1d394c6
+    last_write_checksum: sha1:033eb4c559be5c1987dca6e750b8185304e2ad02
+    pristine_git_object: f9c81b42162ca493cc10bf3a6451732ace431130
+  internal/cli/pods/podsdrafts/podsdraftsgetattachment.go:
+    id: 4d5ffbd6841e
+    last_write_checksum: sha1:6a57282e59f9fa2e7bdadd467708696f565ebc4f
+    pristine_git_object: 8b5011f7aba20d20c404c4e3f5a446b5e2876855
+  internal/cli/pods/podsdrafts/podsdraftslist.go:
+    id: a81986119338
+    last_write_checksum: sha1:4a61408f0a4cb5bf6bc9f8f1839a9a6985f2282b
+    pristine_git_object: d5db3f8f26ddd08473cd23298a0f33822b767666
+  internal/cli/pods/podsdrafts/root.go:
+    id: afacd8162254
+    last_write_checksum: sha1:6761d0295b5ad843fa4e635f41a0a57408b144d8
+    pristine_git_object: 149ff4812b89d6162bc2d0aafbd38ca64eb2c623
   internal/cli/pods/podsget.go:
     id: aff71a588605
     last_write_checksum: sha1:92dee1cd1a5fdde48d6b9728c7ff9f202f189393
     pristine_git_object: 56beb8632e193df6f4019573971824e0f46a9442
+  internal/cli/pods/podsinboxes/podsinboxescreate.go:
+    id: b0674f55a881
+    last_write_checksum: sha1:d8bb0c194f9c9410a6e69e3b01871fedf3ae7592
+    pristine_git_object: d0dba465cc531cdbeb28c5979c465ac046d5bd3b
+  internal/cli/pods/podsinboxes/podsinboxesdelete.go:
+    id: df4519f53fe6
+    last_write_checksum: sha1:4de58852ca3f1cc7876379d72f1a43ea2325b334
+    pristine_git_object: 435fdb7f1c835f9256d9901e2eaf29530a75e69a
+  internal/cli/pods/podsinboxes/podsinboxesget.go:
+    id: c7604a1ffe41
+    last_write_checksum: sha1:eba39c914c6f694b624666892eabca8d12006956
+    pristine_git_object: 0f69c9cd45427609987afc62f7beb9f5bd0b4578
+  internal/cli/pods/podsinboxes/podsinboxeslist.go:
+    id: 01e8276c8a2e
+    last_write_checksum: sha1:ea6ae24f9f29b4e06c4c0c8d12e4eb26e04c3b83
+    pristine_git_object: a021ae686a2ee5090b6ae9600f28b30bf54128c0
+  internal/cli/pods/podsinboxes/podsinboxesupdate.go:
+    id: 334c5844b20a
+    last_write_checksum: sha1:f322314f3a1b9368c0ad46c9aa8efaf7c543a444
+    pristine_git_object: 9467c117435101e5f7f82f17be3b4121c05552a4
+  internal/cli/pods/podsinboxes/root.go:
+    id: aab8a1eaea5c
+    last_write_checksum: sha1:f6d2c562f6a02cce354a01f5f2196c515eb71810
+    pristine_git_object: ed5403aa6e1330d5029257180df39c2e95d1c836
   internal/cli/pods/podslist.go:
     id: ebb45479e52a
     last_write_checksum: sha1:f5b5fcd6155fadfb8fc92571e7303b24084ecb8e
     pristine_git_object: 7e99b98440a7da15cca572843ab13c0228ffe783
+  internal/cli/pods/podslists/podslistscreate.go:
+    id: 63ce142ba534
+    last_write_checksum: sha1:295546af14a362651c37c6c788439031f1033b5d
+    pristine_git_object: e3ae8b0958af8ad0ea3ca0d1c72b6ed24cede24c
+  internal/cli/pods/podslists/podslistsdelete.go:
+    id: a61d7ca1d591
+    last_write_checksum: sha1:16bfa098eca8e808f9e08cbcd4684153c87c3fcc
+    pristine_git_object: 529bddcb66f025cc6c39854ce620dfff180951d3
+  internal/cli/pods/podslists/podslistsget.go:
+    id: dffec1115db2
+    last_write_checksum: sha1:d91f8601ac685456f88c9d3b8ff783de86fdf723
+    pristine_git_object: 848a9744030086b968837402dca323fd2164345b
+  internal/cli/pods/podslists/podslistslist.go:
+    id: 5e56e6b58dda
+    last_write_checksum: sha1:2974abdba31736959d09c8398dc8a4ad0e56bc16
+    pristine_git_object: 737d132d9a7efc475d6d01108e36f8ef8d6561ff
+  internal/cli/pods/podslists/root.go:
+    id: 729e6d898992
+    last_write_checksum: sha1:e4b5309f3898126b9ad20e7e9475b58f0e718a9f
+    pristine_git_object: 4a6787a46619b1bb1b5f06b6cc3086991a4b0db1
+  internal/cli/pods/podsmetrics/podsmetricsquery.go:
+    id: 83fa06164431
+    last_write_checksum: sha1:ce255dcfacae204de6aaa809fc43ec14387ebebe
+    pristine_git_object: 29ef8a73d76d56f4a7647aca946d865ceca7f5c0
+  internal/cli/pods/podsmetrics/root.go:
+    id: b21fb8b85b34
+    last_write_checksum: sha1:229bc1827e71a050e15404364c36930455c5d740
+    pristine_git_object: 801e3bcae23fb12da7d49aa437f3857732f11a0f
+  internal/cli/pods/podsthreads/podsthreadsdelete.go:
+    id: 944889afa879
+    last_write_checksum: sha1:3dda921a451868a3958e0ebb796ea9c1760fb111
+    pristine_git_object: 239e4aaff0cdb2382bbd21406434ade60bf7e73e
+  internal/cli/pods/podsthreads/podsthreadsget.go:
+    id: a41745ca3b47
+    last_write_checksum: sha1:f901e69ba77a204752c07fcf4d75455b2c59a12a
+    pristine_git_object: 0245b39bebcbc4229b652aa626f4a6aee05ec12c
+  internal/cli/pods/podsthreads/podsthreadsgetattachment.go:
+    id: 490729b742a6
+    last_write_checksum: sha1:3c747108b758c5b03f36fcc576f0de901bd86d34
+    pristine_git_object: 2895d74405fb4b9a21b49b4548b38e8f4e424856
+  internal/cli/pods/podsthreads/podsthreadslist.go:
+    id: 1b508802ab26
+    last_write_checksum: sha1:b59553d7af67cfd733054936953f9a116ff0f6d7
+    pristine_git_object: 5243dc42cb317c783895706be1836003f77e732e
+  internal/cli/pods/podsthreads/podsthreadsupdate.go:
+    id: ce416d3275ec
+    last_write_checksum: sha1:63db22b0c60a664d6aa3a8dfad5fefb441bcf3c9
+    pristine_git_object: 54eb60154071ea49eb44f14588daeb07bbe39a42
+  internal/cli/pods/podsthreads/root.go:
+    id: 1299939e35af
+    last_write_checksum: sha1:c7eda2baeabac906383017075d0fe1af908ceb25
+    pristine_git_object: 99ac52a2b53e129e64e6fe3677f1297cd52322b9
   internal/cli/pods/root.go:
     id: 26f759915161
-    last_write_checksum: sha1:58503cfc1f28b69923750c3e3afa8187d9e097eb
-    pristine_git_object: 618a8e5082ecd0e24cc5e04c5c2b1ec978b29ab4
-  internal/cli/podsapikeys/podsapikeyscreate.go:
-    id: e81b8023ff20
-    last_write_checksum: sha1:9f4e99d8d6738f8ca064223c27c4a38d38ad8f5c
-    pristine_git_object: 9f7c49bbc2e5adde02c79cd1fa58c6cb19d0d58e
-  internal/cli/podsapikeys/podsapikeysdelete.go:
-    id: 9c19145b93ec
-    last_write_checksum: sha1:78c9bdb6bb243739e37421f6ca9b8786706a4f2a
-    pristine_git_object: 029e657605c056c9972ffe3287b7fff376e34cf4
-  internal/cli/podsapikeys/podsapikeyslist.go:
-    id: 39663a67043e
-    last_write_checksum: sha1:ee15a88e1e2ec95bc363ab7e31c5ce360bcae3f8
-    pristine_git_object: b721986e94232ef4f1143c3f065ad377b5042eb2
-  internal/cli/podsapikeys/root.go:
-    id: 26a4c4393703
-    last_write_checksum: sha1:deaf8edabd27ef232da54175f954ba21243775da
-    pristine_git_object: d8bd5aff40fe0fe0ca6fffc4f36aff34c2868e0e
-  internal/cli/podsdomains/podsdomainscreate.go:
-    id: bd0e3e85bab0
-    last_write_checksum: sha1:37ea09f1292a9bbfd669c87d1e087eb55fc335a6
-    pristine_git_object: 01d2853b75607df8f9c4cc05a3eb9dc47e59825a
-  internal/cli/podsdomains/podsdomainsdelete.go:
-    id: df43a0e1bd99
-    last_write_checksum: sha1:734bf11b7605fd8b8ba17f168e0c3f6ec432d4f6
-    pristine_git_object: 20805f36bec97ac58bd271ce9644c67623443727
-  internal/cli/podsdomains/podsdomainsget.go:
-    id: 18476d0b4211
-    last_write_checksum: sha1:e45f4574e482ed16c3c6ea5e6048e1cdc40f210d
-    pristine_git_object: 2773e159171a5874f5679fe3ed7ffd8573555c05
-  internal/cli/podsdomains/podsdomainsgetzonefile.go:
-    id: 10ed6b0829a0
-    last_write_checksum: sha1:13a816e5fc0427fe49dc160b997e2a2dac6b88bc
-    pristine_git_object: 7a98034ae5328c3c483bbf6e9ddbc8cd9bbf3214
-  internal/cli/podsdomains/podsdomainslist.go:
-    id: d0a731850a20
-    last_write_checksum: sha1:f8926037e2229a7dc75e63bf3c09ef358b6e7a72
-    pristine_git_object: 218674fff8fbf8a566a19c761ad5f24d0214c2aa
-  internal/cli/podsdomains/podsdomainsupdate.go:
-    id: b6a44c1cac2b
-    last_write_checksum: sha1:f1f2e2e8e5f745017128a6eba8cd4a236c7b761b
-    pristine_git_object: 274d5bf491be3cf2b814ccf65fd2fd6b9d9ab029
-  internal/cli/podsdomains/podsdomainsverify.go:
-    id: 4c99b371b0c4
-    last_write_checksum: sha1:da06d92c5754ee4f9c10491a1242b04f88b52e46
-    pristine_git_object: e670cb0b0d2e256dd9446294cc1a992f9a7ac8e1
-  internal/cli/podsdomains/root.go:
-    id: 312329b1f213
-    last_write_checksum: sha1:34364fa54bcab74acaa040c37ae390df050416cf
-    pristine_git_object: 52626a9ec08113703bdcc61df616a2b450810fe5
-  internal/cli/podsdrafts/podsdraftsget.go:
-    id: d03f04b68d9e
-    last_write_checksum: sha1:7ddd20caedfdc80ce4fdf541d510142f3b8836d2
-    pristine_git_object: 5e4a29e5ed84a6a64ae010c20f47a09447bef4dd
-  internal/cli/podsdrafts/podsdraftsgetattachment.go:
-    id: 96f5820dcbaf
-    last_write_checksum: sha1:baac91083f41b51cb9e12d85fa9fa6c7939c996e
-    pristine_git_object: 780cbb894d560670628b861f2197095722ce02b7
-  internal/cli/podsdrafts/podsdraftslist.go:
-    id: ff3435c932b4
-    last_write_checksum: sha1:87f48ab57e294ea2f74c4edaaf54a18ef0d548ea
-    pristine_git_object: db3c76c2f37804e602a5b87956af94096439ecb7
-  internal/cli/podsdrafts/root.go:
-    id: 6902b97d0292
-    last_write_checksum: sha1:784f5f42ed9d7736fba5dac0d7838f42a2685ed2
-    pristine_git_object: a94672eeec5dc4a3f603c6523399c89de25917f3
-  internal/cli/podsinboxes/podsinboxescreate.go:
-    id: 8a71e942d1f6
-    last_write_checksum: sha1:b0b163c03962ba0e84c3189f9462715075562d0d
-    pristine_git_object: f317f14cb3acb025d72348a7bc722de999ae6432
-  internal/cli/podsinboxes/podsinboxesdelete.go:
-    id: 62237220942d
-    last_write_checksum: sha1:ddce54e834d709acce4b2efc63c830eab165612d
-    pristine_git_object: a3bcb49943a6736b353d1521a2f9aeb5677d9091
-  internal/cli/podsinboxes/podsinboxesget.go:
-    id: 80399b702210
-    last_write_checksum: sha1:f211d7f9149852203a6401e173b4c4a518a7bb05
-    pristine_git_object: 0ac480d5e4327dffc5a81cd1aad08fc51a690db9
-  internal/cli/podsinboxes/podsinboxeslist.go:
-    id: 3b384129e469
-    last_write_checksum: sha1:3deac3e16994be9a262168ed83cb1a174b0c1838
-    pristine_git_object: 9a66bf639b4ecad531e73494348c9c83361eefa6
-  internal/cli/podsinboxes/podsinboxesupdate.go:
-    id: 9070ae7449f0
-    last_write_checksum: sha1:bd3d68b1ee27ac11172874b18286003c7759b51f
-    pristine_git_object: 86e20336652274adfc20b330ec6a0608be5e852f
-  internal/cli/podsinboxes/root.go:
-    id: 7899d2984fba
-    last_write_checksum: sha1:7c2f88c37d590b65e56edee23415a99d89f77a2c
-    pristine_git_object: cf2fc8815d31cf2a682a4cdfa37b2ded39bf78ff
-  internal/cli/podslists/podslistscreate.go:
-    id: 0a0b9f53a272
-    last_write_checksum: sha1:04ba35254db0a7c1e392d559efdbc4c255f7a1ea
-    pristine_git_object: bcb329f58d979d18783ac2c1af4467fd05dde053
-  internal/cli/podslists/podslistsdelete.go:
-    id: c5cbb440836f
-    last_write_checksum: sha1:40734bf638c943820159c7743ed1c0bc1c263150
-    pristine_git_object: 95bfdea3442b9c0eed6ce686a4d89a42afa3e1ce
-  internal/cli/podslists/podslistsget.go:
-    id: 57ddd23a1c7a
-    last_write_checksum: sha1:caabc3cb035a68cf34fdca575805f451e6dfe450
-    pristine_git_object: 430f4e0fc93851f682514f6468e587287cd43c9c
-  internal/cli/podslists/podslistslist.go:
-    id: 003587eeca8c
-    last_write_checksum: sha1:f3910687ec94f74d8f4e92f1c2eab69895efce26
-    pristine_git_object: 547dffb6dfcf4b7e8b02aa906e8312129ceaf247
-  internal/cli/podslists/root.go:
-    id: ccc85ebfcb8f
-    last_write_checksum: sha1:9ae84871e54688e163f27e6ae6c22d7e10cfade4
-    pristine_git_object: 63cc54aa81ed932a1368b30b53e5fe26dc5e38a4
-  internal/cli/podsmetrics/podsmetricsquery.go:
-    id: 71de223e4aaf
-    last_write_checksum: sha1:7d470c3b86d7e1ef6fd31977d51d5719f5f4b462
-    pristine_git_object: 15686dad05809523af783622591b83d47ee46d56
-  internal/cli/podsmetrics/root.go:
-    id: 65e9d7d5132e
-    last_write_checksum: sha1:68dee4e62c53a5871417e3208fb6148b713dce94
-    pristine_git_object: 02973a2ab06c670d4c5792961ecb4b90f411d63f
-  internal/cli/podsthreads/podsthreadsdelete.go:
-    id: 1c5eafe97abe
-    last_write_checksum: sha1:185a1c23dfe68d77a8129556f27d85ff1d24c273
-    pristine_git_object: 3b2d66ac0168d99c4b9622e0262330eb043ed51b
-  internal/cli/podsthreads/podsthreadsget.go:
-    id: 41cf529f02e5
-    last_write_checksum: sha1:897ba006414adcbef1581d12a86584f652f849c9
-    pristine_git_object: 043afd7d52416493ca281196f59ae848e15ab126
-  internal/cli/podsthreads/podsthreadsgetattachment.go:
-    id: ff3f2404ca2a
-    last_write_checksum: sha1:c65b050b8859f07003d41a77514cbd64ef32a3ce
-    pristine_git_object: d03b1d262bacd902ce700138ada3aa6d7d96e6d4
-  internal/cli/podsthreads/podsthreadslist.go:
-    id: 240eeeb9e9f5
-    last_write_checksum: sha1:ebae9e01049ed8e4d2468fbbb9107b17a7ed2f93
-    pristine_git_object: 19318c8022a22618e324eeda2f3ef5f1f15a8b3c
-  internal/cli/podsthreads/podsthreadsupdate.go:
-    id: e9887212c945
-    last_write_checksum: sha1:f4bf4fb51af46df3b2117f7c630d84fac7ea7e25
-    pristine_git_object: f86dd332312609fc5140ced7c0b79d9d2d616d45
-  internal/cli/podsthreads/root.go:
-    id: 65a094c45e82
-    last_write_checksum: sha1:5557257d9663f4c1618e38dad0c9d3b4d1c3a01c
-    pristine_git_object: 7547356379375a9da3a1c72b7782834ad9fa4dac
+    last_write_checksum: sha1:688115e7d5f5ead65cc67a8d7b3f9704dc54e805
+    pristine_git_object: 87495076947bea0113a6935082290467142d9c88
   internal/cli/root.go:
     id: 239d55a0d6be
-    last_write_checksum: sha1:c7ef40cf317adfec6b3992d7450f3c3f4b85ec49
-    pristine_git_object: f16e68615927d1b97bf1e7031da5eb730a8ebc31
+    last_write_checksum: sha1:10167b5a7732e6af3f9b14fdf48f8537bc6a5e86
+    pristine_git_object: 9e2f00a0a3953d688b272f841d268f946ecbd05f
   internal/cli/threads/root.go:
     id: 9bda5a508612
     last_write_checksum: sha1:dc86c01d3ff82c29a3ba57649c7650815a8335a5
@@ -538,8 +539,8 @@ trackedFiles:
     pristine_git_object: bbe41324490ec75c27f42caa1e38c646302968a5
   internal/cli/version.go:
     id: 7b0665492f72
-    last_write_checksum: sha1:98c4bf32ad329e5ca0adc71cd898994b9eef54b4
-    pristine_git_object: 470cca2a07c3549a84c19b88912360a203dd8992
+    last_write_checksum: sha1:308a185f9405e639c0031ed4b1d66b04b3dfcbd7
+    pristine_git_object: 47a1b0c1ec781e632dc8ba742e7d3f816800d43f
   internal/cli/webhooks/root.go:
     id: 5a347bd41522
     last_write_checksum: sha1:07f0e71fac79561ec5ae555c841aebc4de91a7ed
@@ -646,8 +647,8 @@ trackedFiles:
     pristine_git_object: 9efb4e0771c6b537787727fafd2f6d4cca81c651
   internal/sdk/agentmailcli.go:
     id: 86d18d36f19f
-    last_write_checksum: sha1:833a1da575643ce2c3fbc966625e2ed277d284c7
-    pristine_git_object: 7b764d94eafc2f2bd753a1140ab1c5f415084ab7
+    last_write_checksum: sha1:ad84d5b50248a8fae57c0577d1966aa146638adc
+    pristine_git_object: 883158ae29ccc867d0e1cf4a9ce702b55a0d4a6f
   internal/sdk/apikeys.go:
     id: a40d4b208cc3
     last_write_checksum: sha1:699b9fa8ff59d9e4d6d4143ab7ab6bb9ea3669ed
@@ -664,10 +665,14 @@ trackedFiles:
     id: dc71bff05366
     last_write_checksum: sha1:9e8d1cde38023918f58619acbac160a2e58b8bbf
     pristine_git_object: d666c48f8ebbd82be5896ba173260ce9b548acc6
+  internal/sdk/events.go:
+    id: f57c428ba828
+    last_write_checksum: sha1:e0ca1e2bc4986d9c2b774805b1bbf6c7c4a50412
+    pristine_git_object: f24a2b040972ecefe9faf0b72d695f1a793cad28
   internal/sdk/inboxes.go:
     id: ccf45aed945f
-    last_write_checksum: sha1:a83348d2fb3224b1c4f86d78d882ae660bf5dba1
-    pristine_git_object: ec0bc4b37c28c9893bdf5d6ad4249d45adf3c831
+    last_write_checksum: sha1:7426f2a8c56d0ce845f22c9a7934f789ceedde29
+    pristine_git_object: c5250d4eb378d3a0249947efccacccbb8178e6cd
   internal/sdk/inboxesapikeys.go:
     id: cc2d5f8db9e7
     last_write_checksum: sha1:687aa9ad8bcd016fef2bf14216379e50abe810e6
@@ -676,18 +681,10 @@ trackedFiles:
     id: 89d2a7c0e362
     last_write_checksum: sha1:d1aa3650cd660c629827945e20597314559fd62d
     pristine_git_object: df4364cfe23b34e218f8e4a5e465763ec58a3240
-  internal/sdk/inboxesevents.go:
-    id: 7d125da904ca
-    last_write_checksum: sha1:e9de1160cb0d389a132a7bb2f522127078b817d7
-    pristine_git_object: bf14a0fb6ce8c41c798fd2d4facf349ce068af63
   internal/sdk/inboxeslists.go:
     id: eae7ddfef843
     last_write_checksum: sha1:09197928a0f66899baf11de704279e3ac6218dcd
     pristine_git_object: d919ee354e5c3f7d4e91b6804aa7fea726841efe
-  internal/sdk/inboxesmessages.go:
-    id: cf3740c2358b
-    last_write_checksum: sha1:47a4bf9df9b0b913b5419bc6ac1968f3cae28f38
-    pristine_git_object: ca6f0e0b2f1c4ee87bdb4d945513350e9e16b9cc
   internal/sdk/inboxesmetrics.go:
     id: ac42518c7c94
     last_write_checksum: sha1:ea71a691d975ffa9d478e3eaad7e27fcce34ee14
@@ -700,6 +697,10 @@ trackedFiles:
     id: 0511e477d9a2
     last_write_checksum: sha1:27186bdbcdd3bdbbcaad4a4628eea6c5db76b02d
     pristine_git_object: cabe65c5595108ce009cb7b973480acaee8ff482
+  internal/sdk/messages.go:
+    id: e86c3ff67df6
+    last_write_checksum: sha1:2130a1155f260774ff2db3e0306b2440d1cb8e32
+    pristine_git_object: 94c3161ba045dfe945424dbabdda86a6e26ee9ed
   internal/sdk/metrics.go:
     id: c7e79e689e86
     last_write_checksum: sha1:d705677f30cc64741a5bc64047e7a503248ae1e2
@@ -1434,8 +1435,8 @@ trackedFiles:
     pristine_git_object: f427c3008f5cde0a248a96d35879c1bf25f610b0
   internal/sdk/pods.go:
     id: abc574389f5c
-    last_write_checksum: sha1:8afa69340e766eed72280ab3fbe6403f983762d2
-    pristine_git_object: e35ef19b86ea61b7f2e3101fbb94479645680451
+    last_write_checksum: sha1:9b44cfb929c7bf81a0ad4f51a11f270a19b8b2bd
+    pristine_git_object: 45f3d5da8901a2744961977432ebc17a19b6eb32
   internal/sdk/podsapikeys.go:
     id: b94624bd80d5
     last_write_checksum: sha1:400f3de2550553bcdb5b1fe67e0d9c158112f2f4
@@ -1558,8 +1559,8 @@ trackedFiles:
     pristine_git_object: 159a87ec97aba99e4edd132f69652e123434303e
   internal/usage/schema.go:
     id: 0f40f4612437
-    last_write_checksum: sha1:58ff1bb6387fa6d9975654e7f5541d891e9e634f
-    pristine_git_object: 9c0f8309a10627a2b1a65b61c95852486389369b
+    last_write_checksum: sha1:35d58b59b3970ce1a6ed3cd5944072ff8c871536
+    pristine_git_object: c404b832267bded06d8088fbf14f9cc55f753fb0
   scripts/install.ps1:
     id: fee0853709e9
     last_write_checksum: sha1:b6b0bd0a249ec7beba495c7f3e363f7bdf01e640

@@ -10,8 +10,50 @@ import { inboxesInboxesUpdate } from "../funcs/inboxes-inboxes-update.js";
 import { ClientSDK, RequestOptions } from "../lib/sdks.js";
 import * as components from "../models/components/index.js";
 import { unwrapAsync } from "../types/fp.js";
+import { Events } from "./events.js";
+import { InboxesApiKeys } from "./inboxes-api-keys.js";
+import { InboxesDrafts } from "./inboxes-drafts.js";
+import { InboxesLists } from "./inboxes-lists.js";
+import { InboxesMetrics } from "./inboxes-metrics.js";
+import { InboxesThreads } from "./inboxes-threads.js";
+import { Messages } from "./messages.js";
 
 export class Inboxes extends ClientSDK {
+  private _apiKeys?: InboxesApiKeys;
+  get apiKeys(): InboxesApiKeys {
+    return (this._apiKeys ??= new InboxesApiKeys(this._options));
+  }
+
+  private _drafts?: InboxesDrafts;
+  get drafts(): InboxesDrafts {
+    return (this._drafts ??= new InboxesDrafts(this._options));
+  }
+
+  private _events?: Events;
+  get events(): Events {
+    return (this._events ??= new Events(this._options));
+  }
+
+  private _lists?: InboxesLists;
+  get lists(): InboxesLists {
+    return (this._lists ??= new InboxesLists(this._options));
+  }
+
+  private _messages?: Messages;
+  get messages(): Messages {
+    return (this._messages ??= new Messages(this._options));
+  }
+
+  private _metrics?: InboxesMetrics;
+  get metrics(): InboxesMetrics {
+    return (this._metrics ??= new InboxesMetrics(this._options));
+  }
+
+  private _threads?: InboxesThreads;
+  get threads(): InboxesThreads {
+    return (this._threads ??= new InboxesThreads(this._options));
+  }
+
   /**
    * List Inboxes
    *

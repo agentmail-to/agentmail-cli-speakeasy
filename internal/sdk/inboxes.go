@@ -17,6 +17,14 @@ import (
 )
 
 type Inboxes struct {
+	APIKeys  *InboxesAPIKeys
+	Drafts   *InboxesDrafts
+	Events   *Events
+	Lists    *InboxesLists
+	Messages *Messages
+	Metrics  *InboxesMetrics
+	Threads  *InboxesThreads
+
 	rootSDK          *AgentmailCli
 	sdkConfiguration config.SDKConfiguration
 	hooks            *hooks.Hooks
@@ -27,6 +35,13 @@ func newInboxes(rootSDK *AgentmailCli, sdkConfig config.SDKConfiguration, hooks 
 		rootSDK:          rootSDK,
 		sdkConfiguration: sdkConfig,
 		hooks:            hooks,
+		APIKeys:          newInboxesAPIKeys(rootSDK, sdkConfig, hooks),
+		Drafts:           newInboxesDrafts(rootSDK, sdkConfig, hooks),
+		Events:           newEvents(rootSDK, sdkConfig, hooks),
+		Lists:            newInboxesLists(rootSDK, sdkConfig, hooks),
+		Messages:         newMessages(rootSDK, sdkConfig, hooks),
+		Metrics:          newInboxesMetrics(rootSDK, sdkConfig, hooks),
+		Threads:          newInboxesThreads(rootSDK, sdkConfig, hooks),
 	}
 }
 

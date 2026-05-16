@@ -9,13 +9,24 @@ from agentmail.types import BaseModel
 from agentmail.utils import FieldMetadata, PathParamMetadata
 from typing_extensions import Annotated, TypedDict
 
+INBOXES_LISTS_GET_SERVER_PROD = "prod"
+r"""Default production"""
 
-INBOXES_LISTS_GET_SERVERS = [
-    "https://api.agentmail.to",
-    "https://x402.api.agentmail.to",
-    "https://mpp.api.agentmail.to",
-    "https://api.agentmail.eu",
-]
+INBOXES_LISTS_GET_SERVER_PROD_X402 = "prod-x402"
+r"""x402 pay-per-use endpoint"""
+
+INBOXES_LISTS_GET_SERVER_PROD_MPP = "prod-mpp"
+r"""MPP routing endpoint"""
+
+INBOXES_LISTS_GET_SERVER_EU_PROD = "eu-prod"
+r"""EU production"""
+
+INBOXES_LISTS_GET_SERVERS = {
+    INBOXES_LISTS_GET_SERVER_PROD: "https://api.agentmail.to",
+    INBOXES_LISTS_GET_SERVER_PROD_X402: "https://x402.api.agentmail.to",
+    INBOXES_LISTS_GET_SERVER_PROD_MPP: "https://mpp.api.agentmail.to",
+    INBOXES_LISTS_GET_SERVER_EU_PROD: "https://api.agentmail.eu",
+}
 
 
 class InboxesListsGetRequestTypedDict(TypedDict):

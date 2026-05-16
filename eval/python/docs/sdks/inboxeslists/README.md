@@ -1,15 +1,15 @@
-# InboxesLists
+# Inboxes.Lists
 
 ## Overview
 
 ### Available Operations
 
-* [inboxes_lists_list](#inboxes_lists_list) - List Entries
-* [inboxes_lists_create](#inboxes_lists_create) - Create List Entry
-* [inboxes_lists_get](#inboxes_lists_get) - Get List Entry
-* [inboxes_lists_delete](#inboxes_lists_delete) - Delete List Entry
+* [list](#list) - List Entries
+* [create](#create) - Create List Entry
+* [get](#get) - Get List Entry
+* [delete](#delete) - Delete List Entry
 
-## inboxes_lists_list
+## list
 
 **CLI:**
 ```bash
@@ -27,7 +27,7 @@ with AgentmailCli(
     bearer_auth="<YOUR_BEARER_TOKEN_HERE>",
 ) as agentmail_cli:
 
-    res = agentmail_cli.inboxes_lists.inboxes_lists_list(inbox_id="<id>", direction="reply", type_="allow")
+    res = agentmail_cli.inboxes.lists.list(inbox_id="<id>", direction="reply", type_="allow")
 
     # Handle response
     print(res)
@@ -56,7 +56,7 @@ with AgentmailCli(
 | -------------------------------------- | -------------------------------------- | -------------------------------------- |
 | models.errors.AgentmailCliDefaultError | 4XX, 5XX                               | \*/\*                                  |
 
-## inboxes_lists_create
+## create
 
 **CLI:**
 ```bash
@@ -74,7 +74,7 @@ with AgentmailCli(
     bearer_auth="<YOUR_BEARER_TOKEN_HERE>",
 ) as agentmail_cli:
 
-    res = agentmail_cli.inboxes_lists.inboxes_lists_create(inbox_id="<id>", direction="reply", type_="allow", entry="<value>")
+    res = agentmail_cli.inboxes.lists.create(inbox_id="<id>", direction="reply", type_="allow", entry="<value>")
 
     # Handle response
     print(res)
@@ -104,7 +104,7 @@ with AgentmailCli(
 | models.errors.ValidationErrorResponse  | 400                                    | application/json                       |
 | models.errors.AgentmailCliDefaultError | 4XX, 5XX                               | \*/\*                                  |
 
-## inboxes_lists_get
+## get
 
 **CLI:**
 ```bash
@@ -122,7 +122,7 @@ with AgentmailCli(
     bearer_auth="<YOUR_BEARER_TOKEN_HERE>",
 ) as agentmail_cli:
 
-    res = agentmail_cli.inboxes_lists.inboxes_lists_get(inbox_id="<id>", direction="send", type_="block", entry="<value>")
+    res = agentmail_cli.inboxes.lists.get(inbox_id="<id>", direction="send", type_="block", entry="<value>")
 
     # Handle response
     print(res)
@@ -151,7 +151,7 @@ with AgentmailCli(
 | models.errors.ErrorResponse            | 404                                    | application/json                       |
 | models.errors.AgentmailCliDefaultError | 4XX, 5XX                               | \*/\*                                  |
 
-## inboxes_lists_delete
+## delete
 
 **CLI:**
 ```bash
@@ -169,7 +169,7 @@ with AgentmailCli(
     bearer_auth="<YOUR_BEARER_TOKEN_HERE>",
 ) as agentmail_cli:
 
-    agentmail_cli.inboxes_lists.inboxes_lists_delete(inbox_id="<id>", direction="reply", type_="allow", entry="<value>")
+    agentmail_cli.inboxes.lists.delete(inbox_id="<id>", direction="reply", type_="allow", entry="<value>")
 
     # Use the SDK ...
 

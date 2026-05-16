@@ -39,7 +39,9 @@ class Organizations(BaseSDK):
         if server_url is not None:
             base_url = server_url
         else:
-            base_url = models.operations.ORGANIZATIONS_GET_SERVERS[0]
+            base_url = models.operations.ORGANIZATIONS_GET_SERVERS[
+                models.operations.ORGANIZATIONS_GET_SERVER_PROD
+            ]
         req = self._build_request(
             method="GET",
             path="/v0/organizations",
@@ -125,7 +127,9 @@ class Organizations(BaseSDK):
         if server_url is not None:
             base_url = server_url
         else:
-            base_url = models.operations.ORGANIZATIONS_GET_SERVERS[0]
+            base_url = models.operations.ORGANIZATIONS_GET_SERVERS[
+                models.operations.ORGANIZATIONS_GET_SERVER_PROD
+            ]
         req = self._build_request_async(
             method="GET",
             path="/v0/organizations",

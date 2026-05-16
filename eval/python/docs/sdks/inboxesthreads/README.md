@@ -1,16 +1,16 @@
-# InboxesThreads
+# Inboxes.Threads
 
 ## Overview
 
 ### Available Operations
 
-* [inboxes_threads_list](#inboxes_threads_list) - List Threads
-* [inboxes_threads_get](#inboxes_threads_get) - Get Thread
-* [inboxes_threads_update](#inboxes_threads_update) - Update Thread
-* [inboxes_threads_delete](#inboxes_threads_delete) - Delete Thread
-* [inboxes_threads_get_attachment](#inboxes_threads_get_attachment) - Get Attachment
+* [list](#list) - List Threads
+* [get](#get) - Get Thread
+* [update](#update) - Update Thread
+* [delete](#delete) - Delete Thread
+* [get_attachment](#get_attachment) - Get Attachment
 
-## inboxes_threads_list
+## list
 
 **CLI:**
 ```bash
@@ -28,7 +28,7 @@ with AgentmailCli(
     bearer_auth="<YOUR_BEARER_TOKEN_HERE>",
 ) as agentmail_cli:
 
-    res = agentmail_cli.inboxes_threads.inboxes_threads_list(inbox_id="<id>")
+    res = agentmail_cli.inboxes.threads.list(inbox_id="<id>")
 
     # Handle response
     print(res)
@@ -63,7 +63,7 @@ with AgentmailCli(
 | models.errors.ErrorResponse            | 404                                    | application/json                       |
 | models.errors.AgentmailCliDefaultError | 4XX, 5XX                               | \*/\*                                  |
 
-## inboxes_threads_get
+## get
 
 **CLI:**
 ```bash
@@ -81,7 +81,7 @@ with AgentmailCli(
     bearer_auth="<YOUR_BEARER_TOKEN_HERE>",
 ) as agentmail_cli:
 
-    res = agentmail_cli.inboxes_threads.inboxes_threads_get(inbox_id="<id>", thread_id="<id>")
+    res = agentmail_cli.inboxes.threads.get(inbox_id="<id>", thread_id="<id>")
 
     # Handle response
     print(res)
@@ -108,7 +108,7 @@ with AgentmailCli(
 | models.errors.ErrorResponse            | 404                                    | application/json                       |
 | models.errors.AgentmailCliDefaultError | 4XX, 5XX                               | \*/\*                                  |
 
-## inboxes_threads_update
+## update
 
 Updates thread labels. Cannot add or remove system labels (sent, received, bounced, etc.). Rejects requests with a `422` for threads with 100 or more messages.
 
@@ -123,7 +123,7 @@ with AgentmailCli(
     bearer_auth="<YOUR_BEARER_TOKEN_HERE>",
 ) as agentmail_cli:
 
-    res = agentmail_cli.inboxes_threads.inboxes_threads_update(inbox_id="<id>", thread_id="<id>")
+    res = agentmail_cli.inboxes.threads.update(inbox_id="<id>", thread_id="<id>")
 
     # Handle response
     print(res)
@@ -153,7 +153,7 @@ with AgentmailCli(
 | models.errors.ErrorResponse            | 404, 422                               | application/json                       |
 | models.errors.AgentmailCliDefaultError | 4XX, 5XX                               | \*/\*                                  |
 
-## inboxes_threads_delete
+## delete
 
 Moves the thread to trash by adding a trash label to all messages. If the thread is already in trash, it will be permanently deleted. Use `permanent=true` to force permanent deletion.
 
@@ -173,7 +173,7 @@ with AgentmailCli(
     bearer_auth="<YOUR_BEARER_TOKEN_HERE>",
 ) as agentmail_cli:
 
-    agentmail_cli.inboxes_threads.inboxes_threads_delete(inbox_id="<id>", thread_id="<id>")
+    agentmail_cli.inboxes.threads.delete(inbox_id="<id>", thread_id="<id>")
 
     # Use the SDK ...
 
@@ -196,7 +196,7 @@ with AgentmailCli(
 | models.errors.ErrorResponse            | 404                                    | application/json                       |
 | models.errors.AgentmailCliDefaultError | 4XX, 5XX                               | \*/\*                                  |
 
-## inboxes_threads_get_attachment
+## get_attachment
 
 **CLI:**
 ```bash
@@ -214,7 +214,7 @@ with AgentmailCli(
     bearer_auth="<YOUR_BEARER_TOKEN_HERE>",
 ) as agentmail_cli:
 
-    res = agentmail_cli.inboxes_threads.inboxes_threads_get_attachment(inbox_id="<id>", thread_id="<id>", attachment_id="<id>")
+    res = agentmail_cli.inboxes.threads.get_attachment(inbox_id="<id>", thread_id="<id>", attachment_id="<id>")
 
     # Handle response
     print(res)

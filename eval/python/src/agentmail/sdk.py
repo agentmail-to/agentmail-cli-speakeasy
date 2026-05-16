@@ -5,13 +5,13 @@ from .httpclient import AsyncHttpClient, ClientOwner, HttpClient, close_clients
 from .sdkconfiguration import SDKConfiguration
 from .utils.logger import Logger, get_default_logger
 from .utils.retries import RetryConfig
-from agentmail import models
+from agentmail import models, utils
 from agentmail._hooks import SDKHooks
 from agentmail.types import OptionalNullable, UNSET
 import httpx
 import importlib
 import sys
-from typing import Any, Callable, Optional, TYPE_CHECKING, Union, cast
+from typing import Any, Callable, Dict, Optional, TYPE_CHECKING, Union, cast
 import weakref
 
 if TYPE_CHECKING:
@@ -20,24 +20,10 @@ if TYPE_CHECKING:
     from agentmail.domains import Domains
     from agentmail.drafts import Drafts
     from agentmail.inboxes import Inboxes
-    from agentmail.inboxesapikeys import InboxesAPIKeys
-    from agentmail.inboxesdrafts import InboxesDrafts
-    from agentmail.inboxesevents import InboxesEvents
-    from agentmail.inboxeslists import InboxesLists
-    from agentmail.inboxesmessages import InboxesMessages
-    from agentmail.inboxesmetrics import InboxesMetrics
-    from agentmail.inboxesthreads import InboxesThreads
     from agentmail.lists import Lists
     from agentmail.metrics import Metrics
     from agentmail.organizations import Organizations
     from agentmail.pods import Pods
-    from agentmail.podsapikeys import PodsAPIKeys
-    from agentmail.podsdomains import PodsDomains
-    from agentmail.podsdrafts import PodsDrafts
-    from agentmail.podsinboxes import PodsInboxes
-    from agentmail.podslists import PodsLists
-    from agentmail.podsmetrics import PodsMetrics
-    from agentmail.podsthreads import PodsThreads
     from agentmail.threads import Threads
     from agentmail.webhooks import Webhooks
 
@@ -50,23 +36,9 @@ class AgentmailCli(BaseSDK):
     api_keys: "APIKeys"
     domains: "Domains"
     drafts: "Drafts"
-    inboxes_api_keys: "InboxesAPIKeys"
-    inboxes_drafts: "InboxesDrafts"
-    inboxes_events: "InboxesEvents"
-    inboxes_lists: "InboxesLists"
-    inboxes_messages: "InboxesMessages"
-    inboxes_metrics: "InboxesMetrics"
-    inboxes_threads: "InboxesThreads"
     lists: "Lists"
     metrics: "Metrics"
     organizations: "Organizations"
-    pods_api_keys: "PodsAPIKeys"
-    pods_domains: "PodsDomains"
-    pods_drafts: "PodsDrafts"
-    pods_inboxes: "PodsInboxes"
-    pods_lists: "PodsLists"
-    pods_metrics: "PodsMetrics"
-    pods_threads: "PodsThreads"
     threads: "Threads"
     _sub_sdk_map = {
         "inboxes": ("agentmail.inboxes", "Inboxes"),
@@ -76,29 +48,17 @@ class AgentmailCli(BaseSDK):
         "api_keys": ("agentmail.apikeys", "APIKeys"),
         "domains": ("agentmail.domains", "Domains"),
         "drafts": ("agentmail.drafts", "Drafts"),
-        "inboxes_api_keys": ("agentmail.inboxesapikeys", "InboxesAPIKeys"),
-        "inboxes_drafts": ("agentmail.inboxesdrafts", "InboxesDrafts"),
-        "inboxes_events": ("agentmail.inboxesevents", "InboxesEvents"),
-        "inboxes_lists": ("agentmail.inboxeslists", "InboxesLists"),
-        "inboxes_messages": ("agentmail.inboxesmessages", "InboxesMessages"),
-        "inboxes_metrics": ("agentmail.inboxesmetrics", "InboxesMetrics"),
-        "inboxes_threads": ("agentmail.inboxesthreads", "InboxesThreads"),
         "lists": ("agentmail.lists", "Lists"),
         "metrics": ("agentmail.metrics", "Metrics"),
         "organizations": ("agentmail.organizations", "Organizations"),
-        "pods_api_keys": ("agentmail.podsapikeys", "PodsAPIKeys"),
-        "pods_domains": ("agentmail.podsdomains", "PodsDomains"),
-        "pods_drafts": ("agentmail.podsdrafts", "PodsDrafts"),
-        "pods_inboxes": ("agentmail.podsinboxes", "PodsInboxes"),
-        "pods_lists": ("agentmail.podslists", "PodsLists"),
-        "pods_metrics": ("agentmail.podsmetrics", "PodsMetrics"),
-        "pods_threads": ("agentmail.podsthreads", "PodsThreads"),
         "threads": ("agentmail.threads", "Threads"),
     }
 
     def __init__(
         self,
         bearer_auth: Union[str, Callable[[], str]],
+        server: Optional[str] = None,
+        url_params: Optional[Dict[str, str]] = None,
         server_url: Optional[str] = None,
         client: Optional[HttpClient] = None,
         async_client: Optional[AsyncHttpClient] = None,
@@ -109,7 +69,7 @@ class AgentmailCli(BaseSDK):
         r"""Instantiates the SDK configuring it with the provided parameters.
 
         :param bearer_auth: The bearer_auth required for authentication
-        :param server_idx: The index of the server to use for all methods
+        :param server: The server by name to use for all methods
         :param server_url: The server URL to use for all methods
         :param url_params: Parameters to optionally template the server URL with
         :param client: The HTTP client to use for all synchronous methods
@@ -145,6 +105,10 @@ class AgentmailCli(BaseSDK):
         else:
             security = models.components.Security(bearer_auth=bearer_auth)
 
+        if server_url is not None:
+            if url_params is not None:
+                server_url = utils.template_url(server_url, url_params)
+
         BaseSDK.__init__(
             self,
             SDKConfiguration(
@@ -154,6 +118,7 @@ class AgentmailCli(BaseSDK):
                 async_client_supplied=async_client_supplied,
                 security=security,
                 server_url=server_url,
+                server=server,
                 retry_config=retry_config,
                 timeout_ms=timeout_ms,
                 debug_logger=debug_logger,

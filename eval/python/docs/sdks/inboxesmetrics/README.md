@@ -1,12 +1,12 @@
-# InboxesMetrics
+# Inboxes.Metrics
 
 ## Overview
 
 ### Available Operations
 
-* [inboxes_metrics_query](#inboxes_metrics_query) - Query Metrics
+* [query](#query) - Query Metrics
 
-## inboxes_metrics_query
+## query
 
 **CLI:**
 ```bash
@@ -24,7 +24,7 @@ with AgentmailCli(
     bearer_auth="<YOUR_BEARER_TOKEN_HERE>",
 ) as agentmail_cli:
 
-    res = agentmail_cli.inboxes_metrics.inboxes_metrics_query(inbox_id="<id>")
+    res = agentmail_cli.inboxes.metrics.query(inbox_id="<id>")
 
     # Handle response
     print(res)

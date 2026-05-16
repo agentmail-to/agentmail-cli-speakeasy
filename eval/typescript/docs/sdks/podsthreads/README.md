@@ -1,16 +1,16 @@
-# PodsThreads
+# Pods.Threads
 
 ## Overview
 
 ### Available Operations
 
-* [podsThreadsList](#podsthreadslist) - List Threads
-* [podsThreadsGet](#podsthreadsget) - Get Thread
-* [podsThreadsUpdate](#podsthreadsupdate) - Update Thread
-* [podsThreadsDelete](#podsthreadsdelete) - Delete Thread
-* [podsThreadsGetAttachment](#podsthreadsgetattachment) - Get Attachment
+* [list](#list) - List Threads
+* [get](#get) - Get Thread
+* [update](#update) - Update Thread
+* [delete](#delete) - Delete Thread
+* [getAttachment](#getattachment) - Get Attachment
 
-## podsThreadsList
+## list
 
 **CLI:**
 ```bash
@@ -28,7 +28,7 @@ const agentmailCli = new AgentmailCli({
 });
 
 async function run() {
-  const result = await agentmailCli.podsThreads.podsThreadsList({
+  const result = await agentmailCli.pods.threads.list({
     podId: "<id>",
   });
 
@@ -44,7 +44,7 @@ The standalone function version of this method:
 
 ```typescript
 import { AgentmailCliCore } from "agentmail/core.js";
-import { podsThreadsPodsThreadsList } from "agentmail/funcs/pods-threads-pods-threads-list.js";
+import { podsThreadsList } from "agentmail/funcs/pods-threads-list.js";
 
 // Use `AgentmailCliCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
@@ -53,14 +53,14 @@ const agentmailCli = new AgentmailCliCore({
 });
 
 async function run() {
-  const res = await podsThreadsPodsThreadsList(agentmailCli, {
+  const res = await podsThreadsList(agentmailCli, {
     podId: "<id>",
   });
   if (res.ok) {
     const { value: result } = res;
     console.log(result);
   } else {
-    console.log("podsThreadsPodsThreadsList failed:", res.error);
+    console.log("podsThreadsList failed:", res.error);
   }
 }
 
@@ -88,7 +88,7 @@ run();
 | errors.ErrorResponse            | 404                             | application/json                |
 | errors.AgentmailCliDefaultError | 4XX, 5XX                        | \*/\*                           |
 
-## podsThreadsGet
+## get
 
 **CLI:**
 ```bash
@@ -106,7 +106,7 @@ const agentmailCli = new AgentmailCli({
 });
 
 async function run() {
-  const result = await agentmailCli.podsThreads.podsThreadsGet("<id>", "<id>");
+  const result = await agentmailCli.pods.threads.get("<id>", "<id>");
 
   console.log(result);
 }
@@ -120,7 +120,7 @@ The standalone function version of this method:
 
 ```typescript
 import { AgentmailCliCore } from "agentmail/core.js";
-import { podsThreadsPodsThreadsGet } from "agentmail/funcs/pods-threads-pods-threads-get.js";
+import { podsThreadsGet } from "agentmail/funcs/pods-threads-get.js";
 
 // Use `AgentmailCliCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
@@ -129,12 +129,12 @@ const agentmailCli = new AgentmailCliCore({
 });
 
 async function run() {
-  const res = await podsThreadsPodsThreadsGet(agentmailCli, "<id>", "<id>");
+  const res = await podsThreadsGet(agentmailCli, "<id>", "<id>");
   if (res.ok) {
     const { value: result } = res;
     console.log(result);
   } else {
-    console.log("podsThreadsPodsThreadsGet failed:", res.error);
+    console.log("podsThreadsGet failed:", res.error);
   }
 }
 
@@ -163,7 +163,7 @@ run();
 | errors.ErrorResponse            | 404                             | application/json                |
 | errors.AgentmailCliDefaultError | 4XX, 5XX                        | \*/\*                           |
 
-## podsThreadsUpdate
+## update
 
 Updates thread labels. Cannot add or remove system labels (sent, received, bounced, etc.). Rejects requests with a `422` for threads with 100 or more messages.
 
@@ -178,7 +178,7 @@ const agentmailCli = new AgentmailCli({
 });
 
 async function run() {
-  const result = await agentmailCli.podsThreads.podsThreadsUpdate("<id>", "<id>", {});
+  const result = await agentmailCli.pods.threads.update("<id>", "<id>", {});
 
   console.log(result);
 }
@@ -192,7 +192,7 @@ The standalone function version of this method:
 
 ```typescript
 import { AgentmailCliCore } from "agentmail/core.js";
-import { podsThreadsPodsThreadsUpdate } from "agentmail/funcs/pods-threads-pods-threads-update.js";
+import { podsThreadsUpdate } from "agentmail/funcs/pods-threads-update.js";
 
 // Use `AgentmailCliCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
@@ -201,12 +201,12 @@ const agentmailCli = new AgentmailCliCore({
 });
 
 async function run() {
-  const res = await podsThreadsPodsThreadsUpdate(agentmailCli, "<id>", "<id>", {});
+  const res = await podsThreadsUpdate(agentmailCli, "<id>", "<id>", {});
   if (res.ok) {
     const { value: result } = res;
     console.log(result);
   } else {
-    console.log("podsThreadsPodsThreadsUpdate failed:", res.error);
+    console.log("podsThreadsUpdate failed:", res.error);
   }
 }
 
@@ -237,7 +237,7 @@ run();
 | errors.ErrorResponse            | 404, 422                        | application/json                |
 | errors.AgentmailCliDefaultError | 4XX, 5XX                        | \*/\*                           |
 
-## podsThreadsDelete
+## delete
 
 Moves the thread to trash by adding a trash label to all messages. If the thread is already in trash, it will be permanently deleted. Use `permanent=true` to force permanent deletion.
 
@@ -257,7 +257,7 @@ const agentmailCli = new AgentmailCli({
 });
 
 async function run() {
-  await agentmailCli.podsThreads.podsThreadsDelete("<id>", "<id>");
+  await agentmailCli.pods.threads.delete("<id>", "<id>");
 
 
 }
@@ -271,7 +271,7 @@ The standalone function version of this method:
 
 ```typescript
 import { AgentmailCliCore } from "agentmail/core.js";
-import { podsThreadsPodsThreadsDelete } from "agentmail/funcs/pods-threads-pods-threads-delete.js";
+import { podsThreadsDelete } from "agentmail/funcs/pods-threads-delete.js";
 
 // Use `AgentmailCliCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
@@ -280,12 +280,12 @@ const agentmailCli = new AgentmailCliCore({
 });
 
 async function run() {
-  const res = await podsThreadsPodsThreadsDelete(agentmailCli, "<id>", "<id>");
+  const res = await podsThreadsDelete(agentmailCli, "<id>", "<id>");
   if (res.ok) {
     const { value: result } = res;
     
   } else {
-    console.log("podsThreadsPodsThreadsDelete failed:", res.error);
+    console.log("podsThreadsDelete failed:", res.error);
   }
 }
 
@@ -315,7 +315,7 @@ run();
 | errors.ErrorResponse            | 404                             | application/json                |
 | errors.AgentmailCliDefaultError | 4XX, 5XX                        | \*/\*                           |
 
-## podsThreadsGetAttachment
+## getAttachment
 
 **CLI:**
 ```bash
@@ -333,7 +333,7 @@ const agentmailCli = new AgentmailCli({
 });
 
 async function run() {
-  const result = await agentmailCli.podsThreads.podsThreadsGetAttachment("<id>", "<id>", "<id>");
+  const result = await agentmailCli.pods.threads.getAttachment("<id>", "<id>", "<id>");
 
   console.log(result);
 }
@@ -347,7 +347,7 @@ The standalone function version of this method:
 
 ```typescript
 import { AgentmailCliCore } from "agentmail/core.js";
-import { podsThreadsPodsThreadsGetAttachment } from "agentmail/funcs/pods-threads-pods-threads-get-attachment.js";
+import { podsThreadsGetAttachment } from "agentmail/funcs/pods-threads-get-attachment.js";
 
 // Use `AgentmailCliCore` for best tree-shaking performance.
 // You can create one instance of it to use across an application.
@@ -356,12 +356,12 @@ const agentmailCli = new AgentmailCliCore({
 });
 
 async function run() {
-  const res = await podsThreadsPodsThreadsGetAttachment(agentmailCli, "<id>", "<id>", "<id>");
+  const res = await podsThreadsGetAttachment(agentmailCli, "<id>", "<id>", "<id>");
   if (res.ok) {
     const { value: result } = res;
     console.log(result);
   } else {
-    console.log("podsThreadsPodsThreadsGetAttachment failed:", res.error);
+    console.log("podsThreadsGetAttachment failed:", res.error);
   }
 }
 

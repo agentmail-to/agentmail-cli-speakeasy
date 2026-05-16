@@ -1,4 +1,4 @@
-# PodsApiKeys
+# Pods.ApiKeys
 
 ## Overview
 
@@ -26,7 +26,7 @@ const agentmailCli = new AgentmailCli({
 });
 
 async function run() {
-  const result = await agentmailCli.podsApiKeys.podsApiKeysList("<id>");
+  const result = await agentmailCli.pods.apiKeys.podsApiKeysList("<id>");
 
   console.log(result);
 }
@@ -102,7 +102,7 @@ const agentmailCli = new AgentmailCli({
 });
 
 async function run() {
-  const result = await agentmailCli.podsApiKeys.podsApiKeysCreate("<id>", {});
+  const result = await agentmailCli.pods.apiKeys.podsApiKeysCreate("<id>", {});
 
   console.log(result);
 }
@@ -178,7 +178,7 @@ const agentmailCli = new AgentmailCli({
 });
 
 async function run() {
-  await agentmailCli.podsApiKeys.podsApiKeysDelete("<id>", "<id>");
+  await agentmailCli.pods.apiKeys.podsApiKeysDelete("<id>", "<id>");
 
 
 }

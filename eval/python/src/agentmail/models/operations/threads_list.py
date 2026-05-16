@@ -8,13 +8,24 @@ from pydantic import model_serializer
 from typing import List, Optional
 from typing_extensions import Annotated, NotRequired, TypedDict
 
+THREADS_LIST_SERVER_PROD = "prod"
+r"""Default production"""
 
-THREADS_LIST_SERVERS = [
-    "https://api.agentmail.to",
-    "https://x402.api.agentmail.to",
-    "https://mpp.api.agentmail.to",
-    "https://api.agentmail.eu",
-]
+THREADS_LIST_SERVER_PROD_X402 = "prod-x402"
+r"""x402 pay-per-use endpoint"""
+
+THREADS_LIST_SERVER_PROD_MPP = "prod-mpp"
+r"""MPP routing endpoint"""
+
+THREADS_LIST_SERVER_EU_PROD = "eu-prod"
+r"""EU production"""
+
+THREADS_LIST_SERVERS = {
+    THREADS_LIST_SERVER_PROD: "https://api.agentmail.to",
+    THREADS_LIST_SERVER_PROD_X402: "https://x402.api.agentmail.to",
+    THREADS_LIST_SERVER_PROD_MPP: "https://mpp.api.agentmail.to",
+    THREADS_LIST_SERVER_EU_PROD: "https://api.agentmail.eu",
+}
 
 
 class ThreadsListRequestTypedDict(TypedDict):

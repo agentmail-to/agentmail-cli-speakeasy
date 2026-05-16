@@ -56,7 +56,9 @@ class Threads(BaseSDK):
         if server_url is not None:
             base_url = server_url
         else:
-            base_url = models.operations.THREADS_LIST_SERVERS[0]
+            base_url = models.operations.THREADS_LIST_SERVERS[
+                models.operations.THREADS_LIST_SERVER_PROD
+            ]
 
         request = models.operations.ThreadsListRequest(
             limit=limit,
@@ -179,7 +181,9 @@ class Threads(BaseSDK):
         if server_url is not None:
             base_url = server_url
         else:
-            base_url = models.operations.THREADS_LIST_SERVERS[0]
+            base_url = models.operations.THREADS_LIST_SERVERS[
+                models.operations.THREADS_LIST_SERVER_PROD
+            ]
 
         request = models.operations.ThreadsListRequest(
             limit=limit,
@@ -286,7 +290,9 @@ class Threads(BaseSDK):
         if server_url is not None:
             base_url = server_url
         else:
-            base_url = models.operations.THREADS_GET_SERVERS[0]
+            base_url = models.operations.THREADS_GET_SERVERS[
+                models.operations.THREADS_GET_SERVER_PROD
+            ]
 
         request = models.operations.ThreadsGetRequest(
             thread_id=thread_id,
@@ -383,7 +389,9 @@ class Threads(BaseSDK):
         if server_url is not None:
             base_url = server_url
         else:
-            base_url = models.operations.THREADS_GET_SERVERS[0]
+            base_url = models.operations.THREADS_GET_SERVERS[
+                models.operations.THREADS_GET_SERVER_PROD
+            ]
 
         request = models.operations.ThreadsGetRequest(
             thread_id=thread_id,
@@ -481,7 +489,9 @@ class Threads(BaseSDK):
         if server_url is not None:
             base_url = server_url
         else:
-            base_url = models.operations.THREADS_UPDATE_SERVERS[0]
+            base_url = models.operations.THREADS_UPDATE_SERVERS[
+                models.operations.THREADS_UPDATE_SERVER_PROD
+            ]
 
         request = models.operations.ThreadsUpdateRequest(
             thread_id=thread_id,
@@ -597,7 +607,9 @@ class Threads(BaseSDK):
         if server_url is not None:
             base_url = server_url
         else:
-            base_url = models.operations.THREADS_UPDATE_SERVERS[0]
+            base_url = models.operations.THREADS_UPDATE_SERVERS[
+                models.operations.THREADS_UPDATE_SERVER_PROD
+            ]
 
         request = models.operations.ThreadsUpdateRequest(
             thread_id=thread_id,
@@ -716,7 +728,9 @@ class Threads(BaseSDK):
         if server_url is not None:
             base_url = server_url
         else:
-            base_url = models.operations.THREADS_DELETE_SERVERS[0]
+            base_url = models.operations.THREADS_DELETE_SERVERS[
+                models.operations.THREADS_DELETE_SERVER_PROD
+            ]
 
         request = models.operations.ThreadsDeleteRequest(
             thread_id=thread_id,
@@ -818,7 +832,9 @@ class Threads(BaseSDK):
         if server_url is not None:
             base_url = server_url
         else:
-            base_url = models.operations.THREADS_DELETE_SERVERS[0]
+            base_url = models.operations.THREADS_DELETE_SERVERS[
+                models.operations.THREADS_DELETE_SERVER_PROD
+            ]
 
         request = models.operations.ThreadsDeleteRequest(
             thread_id=thread_id,
@@ -918,7 +934,9 @@ class Threads(BaseSDK):
         if server_url is not None:
             base_url = server_url
         else:
-            base_url = models.operations.THREADS_GET_ATTACHMENT_SERVERS[0]
+            base_url = models.operations.THREADS_GET_ATTACHMENT_SERVERS[
+                models.operations.THREADS_GET_ATTACHMENT_SERVER_PROD
+            ]
 
         request = models.operations.ThreadsGetAttachmentRequest(
             thread_id=thread_id,
@@ -1020,7 +1038,9 @@ class Threads(BaseSDK):
         if server_url is not None:
             base_url = server_url
         else:
-            base_url = models.operations.THREADS_GET_ATTACHMENT_SERVERS[0]
+            base_url = models.operations.THREADS_GET_ATTACHMENT_SERVERS[
+                models.operations.THREADS_GET_ATTACHMENT_SERVER_PROD
+            ]
 
         request = models.operations.ThreadsGetAttachmentRequest(
             thread_id=thread_id,

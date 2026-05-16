@@ -38,7 +38,14 @@ agentmail pods [flags]
 ### SEE ALSO
 
 * [agentmail](agentmail.md)	 - agentmail command-line interface
+* [agentmail pods api-keys](agentmail_pods_api-keys.md)	 - Operations for pods-api-keys
 * [agentmail pods create](agentmail_pods_create.md)	 - Create Pod
 * [agentmail pods delete](agentmail_pods_delete.md)	 - Delete Pod
+* [agentmail pods domains](agentmail_pods_domains.md)	 - Operations for pods-domains
+* [agentmail pods drafts](agentmail_pods_drafts.md)	 - Operations for pods-drafts
 * [agentmail pods get](agentmail_pods_get.md)	 - Get Pod
+* [agentmail pods inboxes](agentmail_pods_inboxes.md)	 - Operations for pods-inboxes
 * [agentmail pods list](agentmail_pods_list.md)	 - List Pods
+* [agentmail pods lists](agentmail_pods_lists.md)	 - Operations for pods-lists
+* [agentmail pods metrics](agentmail_pods_metrics.md)	 - Operations for pods-metrics
+* [agentmail pods threads](agentmail_pods_threads.md)	 - Operations for pods-threads

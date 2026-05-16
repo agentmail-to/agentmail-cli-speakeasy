@@ -7,24 +7,10 @@ import { Agent } from "./agent.js";
 import { ApiKeys } from "./api-keys.js";
 import { Domains } from "./domains.js";
 import { Drafts } from "./drafts.js";
-import { InboxesApiKeys } from "./inboxes-api-keys.js";
-import { InboxesDrafts } from "./inboxes-drafts.js";
-import { InboxesEvents } from "./inboxes-events.js";
-import { InboxesLists } from "./inboxes-lists.js";
-import { InboxesMessages } from "./inboxes-messages.js";
-import { InboxesMetrics } from "./inboxes-metrics.js";
-import { InboxesThreads } from "./inboxes-threads.js";
 import { Inboxes } from "./inboxes.js";
 import { Lists } from "./lists.js";
 import { Metrics } from "./metrics.js";
 import { Organizations } from "./organizations.js";
-import { PodsApiKeys } from "./pods-api-keys.js";
-import { PodsDomains } from "./pods-domains.js";
-import { PodsDrafts } from "./pods-drafts.js";
-import { PodsInboxes } from "./pods-inboxes.js";
-import { PodsLists } from "./pods-lists.js";
-import { PodsMetrics } from "./pods-metrics.js";
-import { PodsThreads } from "./pods-threads.js";
 import { Pods } from "./pods.js";
 import { Threads } from "./threads.js";
 import { Webhooks } from "./webhooks.js";
@@ -65,41 +51,6 @@ export class AgentmailCli extends ClientSDK {
     return (this._drafts ??= new Drafts(this._options));
   }
 
-  private _inboxesApiKeys?: InboxesApiKeys;
-  get inboxesApiKeys(): InboxesApiKeys {
-    return (this._inboxesApiKeys ??= new InboxesApiKeys(this._options));
-  }
-
-  private _inboxesDrafts?: InboxesDrafts;
-  get inboxesDrafts(): InboxesDrafts {
-    return (this._inboxesDrafts ??= new InboxesDrafts(this._options));
-  }
-
-  private _inboxesEvents?: InboxesEvents;
-  get inboxesEvents(): InboxesEvents {
-    return (this._inboxesEvents ??= new InboxesEvents(this._options));
-  }
-
-  private _inboxesLists?: InboxesLists;
-  get inboxesLists(): InboxesLists {
-    return (this._inboxesLists ??= new InboxesLists(this._options));
-  }
-
-  private _inboxesMessages?: InboxesMessages;
-  get inboxesMessages(): InboxesMessages {
-    return (this._inboxesMessages ??= new InboxesMessages(this._options));
-  }
-
-  private _inboxesMetrics?: InboxesMetrics;
-  get inboxesMetrics(): InboxesMetrics {
-    return (this._inboxesMetrics ??= new InboxesMetrics(this._options));
-  }
-
-  private _inboxesThreads?: InboxesThreads;
-  get inboxesThreads(): InboxesThreads {
-    return (this._inboxesThreads ??= new InboxesThreads(this._options));
-  }
-
   private _lists?: Lists;
   get lists(): Lists {
     return (this._lists ??= new Lists(this._options));
@@ -113,41 +64,6 @@ export class AgentmailCli extends ClientSDK {
   private _organizations?: Organizations;
   get organizations(): Organizations {
     return (this._organizations ??= new Organizations(this._options));
-  }
-
-  private _podsApiKeys?: PodsApiKeys;
-  get podsApiKeys(): PodsApiKeys {
-    return (this._podsApiKeys ??= new PodsApiKeys(this._options));
-  }
-
-  private _podsDomains?: PodsDomains;
-  get podsDomains(): PodsDomains {
-    return (this._podsDomains ??= new PodsDomains(this._options));
-  }
-
-  private _podsDrafts?: PodsDrafts;
-  get podsDrafts(): PodsDrafts {
-    return (this._podsDrafts ??= new PodsDrafts(this._options));
-  }
-
-  private _podsInboxes?: PodsInboxes;
-  get podsInboxes(): PodsInboxes {
-    return (this._podsInboxes ??= new PodsInboxes(this._options));
-  }
-
-  private _podsLists?: PodsLists;
-  get podsLists(): PodsLists {
-    return (this._podsLists ??= new PodsLists(this._options));
-  }
-
-  private _podsMetrics?: PodsMetrics;
-  get podsMetrics(): PodsMetrics {
-    return (this._podsMetrics ??= new PodsMetrics(this._options));
-  }
-
-  private _podsThreads?: PodsThreads;
-  get podsThreads(): PodsThreads {
-    return (this._podsThreads ??= new PodsThreads(this._options));
   }
 
   private _threads?: Threads;

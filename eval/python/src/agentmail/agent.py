@@ -49,7 +49,9 @@ class Agent(BaseSDK):
         if server_url is not None:
             base_url = server_url
         else:
-            base_url = models.operations.AGENT_SIGN_UP_SERVERS[0]
+            base_url = models.operations.AGENT_SIGN_UP_SERVERS[
+                models.operations.AGENT_SIGN_UP_SERVER_PROD
+            ]
 
         request = models.components.AgentSignupRequest(
             human_email=human_email,
@@ -162,7 +164,9 @@ class Agent(BaseSDK):
         if server_url is not None:
             base_url = server_url
         else:
-            base_url = models.operations.AGENT_SIGN_UP_SERVERS[0]
+            base_url = models.operations.AGENT_SIGN_UP_SERVERS[
+                models.operations.AGENT_SIGN_UP_SERVER_PROD
+            ]
 
         request = models.components.AgentSignupRequest(
             human_email=human_email,
@@ -271,7 +275,9 @@ class Agent(BaseSDK):
         if server_url is not None:
             base_url = server_url
         else:
-            base_url = models.operations.AGENT_VERIFY_SERVERS[0]
+            base_url = models.operations.AGENT_VERIFY_SERVERS[
+                models.operations.AGENT_VERIFY_SERVER_PROD
+            ]
 
         request = models.components.AgentVerifyRequest(
             otp_code=otp_code,
@@ -373,7 +379,9 @@ class Agent(BaseSDK):
         if server_url is not None:
             base_url = server_url
         else:
-            base_url = models.operations.AGENT_VERIFY_SERVERS[0]
+            base_url = models.operations.AGENT_VERIFY_SERVERS[
+                models.operations.AGENT_VERIFY_SERVER_PROD
+            ]
 
         request = models.components.AgentVerifyRequest(
             otp_code=otp_code,

@@ -1,4 +1,4 @@
-# PodsApiKeys
+# Pods.ApiKeys
 
 ## Overview
 
@@ -26,7 +26,7 @@ with AgentmailCli(
     bearer_auth="<YOUR_BEARER_TOKEN_HERE>",
 ) as agentmail_cli:
 
-    res = agentmail_cli.pods_api_keys.pods_api_keys_list(pod_id="<id>")
+    res = agentmail_cli.pods.api_keys.pods_api_keys_list(pod_id="<id>")
 
     # Handle response
     print(res)
@@ -72,7 +72,7 @@ with AgentmailCli(
     bearer_auth="<YOUR_BEARER_TOKEN_HERE>",
 ) as agentmail_cli:
 
-    res = agentmail_cli.pods_api_keys.pods_api_keys_create(pod_id="<id>")
+    res = agentmail_cli.pods.api_keys.pods_api_keys_create(pod_id="<id>")
 
     # Handle response
     print(res)
@@ -119,7 +119,7 @@ with AgentmailCli(
     bearer_auth="<YOUR_BEARER_TOKEN_HERE>",
 ) as agentmail_cli:
 
-    agentmail_cli.pods_api_keys.pods_api_keys_delete(pod_id="<id>", api_key_id="<id>")
+    agentmail_cli.pods.api_keys.pods_api_keys_delete(pod_id="<id>", api_key_id="<id>")
 
     # Use the SDK ...
 

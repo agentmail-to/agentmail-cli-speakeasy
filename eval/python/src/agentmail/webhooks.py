@@ -43,7 +43,9 @@ class Webhooks(BaseSDK):
         if server_url is not None:
             base_url = server_url
         else:
-            base_url = models.operations.WEBHOOKS_LIST_SERVERS[0]
+            base_url = models.operations.WEBHOOKS_LIST_SERVERS[
+                models.operations.WEBHOOKS_LIST_SERVER_PROD
+            ]
 
         request = models.operations.WebhooksListRequest(
             limit=limit,
@@ -142,7 +144,9 @@ class Webhooks(BaseSDK):
         if server_url is not None:
             base_url = server_url
         else:
-            base_url = models.operations.WEBHOOKS_LIST_SERVERS[0]
+            base_url = models.operations.WEBHOOKS_LIST_SERVERS[
+                models.operations.WEBHOOKS_LIST_SERVER_PROD
+            ]
 
         request = models.operations.WebhooksListRequest(
             limit=limit,
@@ -245,7 +249,9 @@ class Webhooks(BaseSDK):
         if server_url is not None:
             base_url = server_url
         else:
-            base_url = models.operations.WEBHOOKS_CREATE_SERVERS[0]
+            base_url = models.operations.WEBHOOKS_CREATE_SERVERS[
+                models.operations.WEBHOOKS_CREATE_SERVER_PROD
+            ]
 
         request = models.components.WebhooksCreateWebhookRequest(
             url=url,
@@ -361,7 +367,9 @@ class Webhooks(BaseSDK):
         if server_url is not None:
             base_url = server_url
         else:
-            base_url = models.operations.WEBHOOKS_CREATE_SERVERS[0]
+            base_url = models.operations.WEBHOOKS_CREATE_SERVERS[
+                models.operations.WEBHOOKS_CREATE_SERVER_PROD
+            ]
 
         request = models.components.WebhooksCreateWebhookRequest(
             url=url,
@@ -469,7 +477,9 @@ class Webhooks(BaseSDK):
         if server_url is not None:
             base_url = server_url
         else:
-            base_url = models.operations.WEBHOOKS_GET_SERVERS[0]
+            base_url = models.operations.WEBHOOKS_GET_SERVERS[
+                models.operations.WEBHOOKS_GET_SERVER_PROD
+            ]
 
         request = models.operations.WebhooksGetRequest(
             webhook_id=webhook_id,
@@ -566,7 +576,9 @@ class Webhooks(BaseSDK):
         if server_url is not None:
             base_url = server_url
         else:
-            base_url = models.operations.WEBHOOKS_GET_SERVERS[0]
+            base_url = models.operations.WEBHOOKS_GET_SERVERS[
+                models.operations.WEBHOOKS_GET_SERVER_PROD
+            ]
 
         request = models.operations.WebhooksGetRequest(
             webhook_id=webhook_id,
@@ -671,7 +683,9 @@ class Webhooks(BaseSDK):
         if server_url is not None:
             base_url = server_url
         else:
-            base_url = models.operations.WEBHOOKS_UPDATE_SERVERS[0]
+            base_url = models.operations.WEBHOOKS_UPDATE_SERVERS[
+                models.operations.WEBHOOKS_UPDATE_SERVER_PROD
+            ]
 
         request = models.operations.WebhooksUpdateRequest(
             webhook_id=webhook_id,
@@ -794,7 +808,9 @@ class Webhooks(BaseSDK):
         if server_url is not None:
             base_url = server_url
         else:
-            base_url = models.operations.WEBHOOKS_UPDATE_SERVERS[0]
+            base_url = models.operations.WEBHOOKS_UPDATE_SERVERS[
+                models.operations.WEBHOOKS_UPDATE_SERVER_PROD
+            ]
 
         request = models.operations.WebhooksUpdateRequest(
             webhook_id=webhook_id,
@@ -909,7 +925,9 @@ class Webhooks(BaseSDK):
         if server_url is not None:
             base_url = server_url
         else:
-            base_url = models.operations.WEBHOOKS_DELETE_SERVERS[0]
+            base_url = models.operations.WEBHOOKS_DELETE_SERVERS[
+                models.operations.WEBHOOKS_DELETE_SERVER_PROD
+            ]
 
         request = models.operations.WebhooksDeleteRequest(
             webhook_id=webhook_id,
@@ -1006,7 +1024,9 @@ class Webhooks(BaseSDK):
         if server_url is not None:
             base_url = server_url
         else:
-            base_url = models.operations.WEBHOOKS_DELETE_SERVERS[0]
+            base_url = models.operations.WEBHOOKS_DELETE_SERVERS[
+                models.operations.WEBHOOKS_DELETE_SERVER_PROD
+            ]
 
         request = models.operations.WebhooksDeleteRequest(
             webhook_id=webhook_id,

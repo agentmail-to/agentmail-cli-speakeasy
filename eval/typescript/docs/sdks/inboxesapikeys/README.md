@@ -1,4 +1,4 @@
-# InboxesApiKeys
+# Inboxes.ApiKeys
 
 ## Overview
 
@@ -26,7 +26,7 @@ const agentmailCli = new AgentmailCli({
 });
 
 async function run() {
-  const result = await agentmailCli.inboxesApiKeys.inboxesApiKeysList("<id>");
+  const result = await agentmailCli.inboxes.apiKeys.inboxesApiKeysList("<id>");
 
   console.log(result);
 }
@@ -102,7 +102,7 @@ const agentmailCli = new AgentmailCli({
 });
 
 async function run() {
-  const result = await agentmailCli.inboxesApiKeys.inboxesApiKeysCreate("<id>", {});
+  const result = await agentmailCli.inboxes.apiKeys.inboxesApiKeysCreate("<id>", {});
 
   console.log(result);
 }
@@ -178,7 +178,7 @@ const agentmailCli = new AgentmailCli({
 });
 
 async function run() {
-  await agentmailCli.inboxesApiKeys.inboxesApiKeysDelete("<id>", "<id>");
+  await agentmailCli.inboxes.apiKeys.inboxesApiKeysDelete("<id>", "<id>");
 
 
 }

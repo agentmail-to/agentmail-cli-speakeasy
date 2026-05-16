@@ -43,7 +43,9 @@ class APIKeys(BaseSDK):
         if server_url is not None:
             base_url = server_url
         else:
-            base_url = models.operations.API_KEYS_LIST_SERVERS[0]
+            base_url = models.operations.API_KEYS_LIST_SERVERS[
+                models.operations.API_KEYS_LIST_SERVER_PROD
+            ]
 
         request = models.operations.APIKeysListRequest(
             limit=limit,
@@ -142,7 +144,9 @@ class APIKeys(BaseSDK):
         if server_url is not None:
             base_url = server_url
         else:
-            base_url = models.operations.API_KEYS_LIST_SERVERS[0]
+            base_url = models.operations.API_KEYS_LIST_SERVERS[
+                models.operations.API_KEYS_LIST_SERVER_PROD
+            ]
 
         request = models.operations.APIKeysListRequest(
             limit=limit,
@@ -244,7 +248,9 @@ class APIKeys(BaseSDK):
         if server_url is not None:
             base_url = server_url
         else:
-            base_url = models.operations.API_KEYS_CREATE_SERVERS[0]
+            base_url = models.operations.API_KEYS_CREATE_SERVERS[
+                models.operations.API_KEYS_CREATE_SERVER_PROD
+            ]
 
         request = models.components.CreateAPIKeyRequest(
             name=name,
@@ -356,7 +362,9 @@ class APIKeys(BaseSDK):
         if server_url is not None:
             base_url = server_url
         else:
-            base_url = models.operations.API_KEYS_CREATE_SERVERS[0]
+            base_url = models.operations.API_KEYS_CREATE_SERVERS[
+                models.operations.API_KEYS_CREATE_SERVER_PROD
+            ]
 
         request = models.components.CreateAPIKeyRequest(
             name=name,
@@ -461,7 +469,9 @@ class APIKeys(BaseSDK):
         if server_url is not None:
             base_url = server_url
         else:
-            base_url = models.operations.API_KEYS_DELETE_SERVERS[0]
+            base_url = models.operations.API_KEYS_DELETE_SERVERS[
+                models.operations.API_KEYS_DELETE_SERVER_PROD
+            ]
 
         request = models.operations.APIKeysDeleteRequest(
             api_key_id=api_key_id,
@@ -558,7 +568,9 @@ class APIKeys(BaseSDK):
         if server_url is not None:
             base_url = server_url
         else:
-            base_url = models.operations.API_KEYS_DELETE_SERVERS[0]
+            base_url = models.operations.API_KEYS_DELETE_SERVERS[
+                models.operations.API_KEYS_DELETE_SERVER_PROD
+            ]
 
         request = models.operations.APIKeysDeleteRequest(
             api_key_id=api_key_id,

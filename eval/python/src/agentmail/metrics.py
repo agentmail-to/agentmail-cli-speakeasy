@@ -50,7 +50,9 @@ class Metrics(BaseSDK):
         if server_url is not None:
             base_url = server_url
         else:
-            base_url = models.operations.METRICS_QUERY_SERVERS[0]
+            base_url = models.operations.METRICS_QUERY_SERVERS[
+                models.operations.METRICS_QUERY_SERVER_PROD
+            ]
 
         request = models.operations.MetricsQueryRequest(
             event_types=event_types,
@@ -164,7 +166,9 @@ class Metrics(BaseSDK):
         if server_url is not None:
             base_url = server_url
         else:
-            base_url = models.operations.METRICS_QUERY_SERVERS[0]
+            base_url = models.operations.METRICS_QUERY_SERVERS[
+                models.operations.METRICS_QUERY_SERVER_PROD
+            ]
 
         request = models.operations.MetricsQueryRequest(
             event_types=event_types,
