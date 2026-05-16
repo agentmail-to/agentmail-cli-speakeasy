@@ -2,7 +2,7 @@
 
 package sdk
 
-// Generated from  generator version 2.881.2
+// Generated from  generator version 2.881.4
 
 import (
 	"agentmail-cli/internal/sdk/models/components"
@@ -134,7 +134,7 @@ func New(opts ...SDKOption) *AgentmailCli {
 	sdk := &AgentmailCli{
 		SDKVersion: "0.0.1",
 		sdkConfiguration: config.SDKConfiguration{
-			UserAgent: "speakeasy-sdk/go 0.0.1 2.881.2 agentmail-cli/internal/sdk",
+			UserAgent: "speakeasy-sdk/go 0.0.1 2.881.4 agentmail-cli/internal/sdk",
 		},
 		hooks: hooks.New(),
 	}

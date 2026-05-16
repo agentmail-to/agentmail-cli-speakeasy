@@ -1,0 +1,22 @@
+# UpdateMessageLabels
+
+Label or list of labels.
+
+
+## Supported Types
+
+### `string`
+
+```typescript
+const value: string = "<value>";
+```
+
+### `string[]`
+
+```typescript
+const value: string[] = [
+  "<value 1>",
+  "<value 2>",
+];
+```
+

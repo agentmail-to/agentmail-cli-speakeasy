@@ -2,14 +2,14 @@ lockVersion: 2.0.0
 id: 357e6474-f2c3-4257-8ba2-b5a5c9ab6b72
 management:
   docChecksum: 969122d79cc72647b2e485c773124c93
-  speakeasyVersion: 1.761.8
-  generationVersion: 2.881.2
-  releaseVersion: 0.0.4
-  configChecksum: 65c1692f11ebc4616e7b809bb056a581
+  speakeasyVersion: 1.761.9
+  generationVersion: 2.881.4
+  releaseVersion: 0.0.9
+  configChecksum: a31c3b6a488c37b318ba1eb673192f76
 persistentEdits:
-  generation_id: 8c505882-5a0d-484f-8ce4-2faba3594e61
-  pristine_commit_hash: 5f7c8e11158f93c1829fe9b57dbad450621cd303
-  pristine_tree_hash: 82944ed56dd862ccf8f37efd155100243bab6138
+  generation_id: d05ae051-b065-4461-8cc9-202fbe214615
+  pristine_commit_hash: c0844af510d4ac6b4381fa1e2c25839ac268120c
+  pristine_tree_hash: 4286b187c8ad320f7e32184b96ca2890efcf7c6c
 features:
   cli:
     core: 0.2.8
@@ -538,8 +538,8 @@ trackedFiles:
     pristine_git_object: bbe41324490ec75c27f42caa1e38c646302968a5
   internal/cli/version.go:
     id: 7b0665492f72
-    last_write_checksum: sha1:eb5cd96d4847745eccee69ee5598bf6b39d44eec
-    pristine_git_object: 93758966170095ca8846d9957c39b7b925e0233c
+    last_write_checksum: sha1:98c4bf32ad329e5ca0adc71cd898994b9eef54b4
+    pristine_git_object: 470cca2a07c3549a84c19b88912360a203dd8992
   internal/cli/webhooks/root.go:
     id: 5a347bd41522
     last_write_checksum: sha1:07f0e71fac79561ec5ae555c841aebc4de91a7ed
@@ -646,8 +646,8 @@ trackedFiles:
     pristine_git_object: 9efb4e0771c6b537787727fafd2f6d4cca81c651
   internal/sdk/agentmailcli.go:
     id: 86d18d36f19f
-    last_write_checksum: sha1:328789cdce9168a24dc3c5eea226deb0e68a9d79
-    pristine_git_object: cf55c29598f71d3ae888d03dfc0d9252050ce922
+    last_write_checksum: sha1:833a1da575643ce2c3fbc966625e2ed277d284c7
+    pristine_git_object: 7b764d94eafc2f2bd753a1140ab1c5f415084ab7
   internal/sdk/apikeys.go:
     id: a40d4b208cc3
     last_write_checksum: sha1:699b9fa8ff59d9e4d6d4143ab7ab6bb9ea3669ed
@@ -1558,8 +1558,8 @@ trackedFiles:
     pristine_git_object: 159a87ec97aba99e4edd132f69652e123434303e
   internal/usage/schema.go:
     id: 0f40f4612437
-    last_write_checksum: sha1:35d1670d0da736f3d75f0fb9e59939a1b81497b7
-    pristine_git_object: 4d1f2eb58018b538eb9841c70fbaf259a7b63321
+    last_write_checksum: sha1:58ff1bb6387fa6d9975654e7f5541d891e9e634f
+    pristine_git_object: 9c0f8309a10627a2b1a65b61c95852486389369b
   scripts/install.ps1:
     id: fee0853709e9
     last_write_checksum: sha1:b6b0bd0a249ec7beba495c7f3e363f7bdf01e640

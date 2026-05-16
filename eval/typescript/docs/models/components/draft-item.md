@@ -1,0 +1,32 @@
+# DraftItem
+
+## Example Usage
+
+```typescript
+import { DraftItem } from "agentmail/models/components";
+
+let value: DraftItem = {
+  inboxId: "<id>",
+  draftId: "<id>",
+  labels: [],
+  updatedAt: new Date("2024-01-25T07:02:15.503Z"),
+};
+```
+
+## Fields
+
+| Field                                                                                                 | Type                                                                                                  | Required                                                                                              | Description                                                                                           |
+| ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| `inboxId`                                                                                             | *string*                                                                                              | :heavy_check_mark:                                                                                    | The ID of the inbox.                                                                                  |
+| `draftId`                                                                                             | *string*                                                                                              | :heavy_check_mark:                                                                                    | ID of draft.                                                                                          |
+| `labels`                                                                                              | *string*[]                                                                                            | :heavy_check_mark:                                                                                    | Labels of draft.                                                                                      |
+| `to`                                                                                                  | *string*[]                                                                                            | :heavy_minus_sign:                                                                                    | Addresses of recipients. In format `username@domain.com` or `Display Name <username@domain.com>`.     |
+| `cc`                                                                                                  | *string*[]                                                                                            | :heavy_minus_sign:                                                                                    | Addresses of CC recipients. In format `username@domain.com` or `Display Name <username@domain.com>`.  |
+| `bcc`                                                                                                 | *string*[]                                                                                            | :heavy_minus_sign:                                                                                    | Addresses of BCC recipients. In format `username@domain.com` or `Display Name <username@domain.com>`. |
+| `subject`                                                                                             | *string*                                                                                              | :heavy_minus_sign:                                                                                    | Subject of draft.                                                                                     |
+| `preview`                                                                                             | *string*                                                                                              | :heavy_minus_sign:                                                                                    | Text preview of draft.                                                                                |
+| `attachments`                                                                                         | [components.Attachment](../../models/components/attachment.md)[]                                      | :heavy_minus_sign:                                                                                    | Attachments in draft.                                                                                 |
+| `inReplyTo`                                                                                           | *string*                                                                                              | :heavy_minus_sign:                                                                                    | ID of message being replied to.                                                                       |
+| `sendStatus`                                                                                          | [components.DraftSendStatus](../../models/components/draft-send-status.md)                            | :heavy_minus_sign:                                                                                    | Schedule send status of draft.                                                                        |
+| `sendAt`                                                                                              | [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)         | :heavy_minus_sign:                                                                                    | Time at which to schedule send draft.                                                                 |
+| `updatedAt`                                                                                           | [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)         | :heavy_check_mark:                                                                                    | Time at which draft was last updated.                                                                 |

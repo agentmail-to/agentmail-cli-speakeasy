@@ -4,6 +4,120 @@ Generated: 2026-04-20
 
 Goal: evaluate Speakeasy as a CLI generator vs the existing Stainless-generated `agentmail-cli`.
 
+## Try the TUI
+
+Prereq: Go 1.25+ (`brew install go`).
+
+```bash
+git clone https://github.com/agentmail-to/agentmail-cli-speakeasy
+cd agentmail-cli-speakeasy
+
+# fastest: run without building
+go run ./cmd/agentmail explore
+
+# or build once, run many times
+go build -o bin/agentmail ./cmd/agentmail
+./bin/agentmail explore
+```
+
+Other things worth poking at:
+
+```bash
+./bin/agentmail --help                    # full command tree
+./bin/agentmail configure                 # interactive auth setup (writes to OS keychain)
+./bin/agentmail inboxes list --dry-run    # preview the request without sending
+CLAUDE_CODE=1 ./bin/agentmail inboxes list --dry-run   # agent-mode auto-detection
+./bin/agentmail completion zsh            # shell completion
+```
+
+The generated README's `go install` instructions won't work as-is because the Go module path is local (`agentmail-cli`), not a public GitHub path. Use `go run` or `go build` from the repo instead.
+
+## SDK Eval: Speakeasy vs Fern
+
+Speakeasy-generated SDKs now live under `eval/python/` and `eval/typescript/`. Compared against the current Fern-generated SDKs in `agentmail-docs/fern/generated/{python,typescript}`.
+
+### File counts
+
+|            | Fern | Speakeasy |
+|------------|-----:|----------:|
+| Python     |  303 |       239 |
+| TypeScript |  661 |       344 |
+
+Speakeasy's output is noticeably flatter — resources are one file each (`inboxes.py`, `inboxes-messages.ts`) instead of Fern's nested `api/resources/inboxes/resources/messages/client/Client.ts` structure.
+
+### Python call sites
+
+**Fern:**
+```python
+client.inboxes.messages.send(
+    inbox_id,
+    to="user@example.com",
+    subject="Hi",
+    text="Hello from my agent",
+)
+```
+
+**Speakeasy:**
+```python
+client.inboxes_messages.inboxes_messages_send(
+    inbox_id=inbox_id,
+    to="user@example.com",
+    subject="Hi",
+    text="Hello from my agent",
+)
+```
+
+Fern wins on ergonomics here. Speakeasy's `inboxes_messages.inboxes_messages_send` is the stutter you'd expect from tag-name-prefixed methods. Needs `removeStutter: true` or overlay work to clean up. Same root cause as the CLI's flat 31 command groups.
+
+### TypeScript call sites
+
+**Fern:**
+```ts
+await client.inboxes.messages.send(inboxId, {
+    to: "user@example.com",
+    subject: "Hi",
+    text: "Hello from my agent",
+})
+```
+
+**Speakeasy:**
+```ts
+await client.inboxesMessages.inboxesMessagesSend(inboxId, {
+    to: "user@example.com",
+    subject: "Hi",
+    text: "Hello from my agent",
+})
+```
+
+Same ergonomics gap as Python.
+
+### What Speakeasy gives you that Fern doesn't
+
+- **Sync + async in Python** — every method auto-generated with an `_async` variant (`inboxes_messages_send` + `inboxes_messages_send_async`). Fern's Python is sync-only in the current setup.
+- **Per-call overrides** — `retries`, `server_url`, `timeout_ms`, `http_headers` accepted as kwargs on every method. Fern has `request_options` but not as granular.
+- **Dual ESM/CJS TypeScript** with proper `moduleFormat: dual`, pre-built `dist/` ships ready.
+- **MCP server generation** (`enableMCPServer: false` flag available, not enabled here).
+- **React Query hooks** (`enableReactQuery: false`, also toggleable).
+- **Webhooks** — first-class runtime support in generated SDKs, not just types.
+- **Zod models** exported for TS.
+- **Pre-generated docs** — both SDKs ship with USAGE.md, docs/, FUNCTIONS.md.
+
+### What Fern gives you that Speakeasy doesn't (by default)
+
+- **Cleaner method names** — `client.inboxes.messages.send()` vs `client.inboxes_messages.inboxes_messages_send()`
+- **Namespaced client tree** — `client.inboxes.messages` is an actual nested object, not a flat resource
+- **Branded types** — `InboxId`, `MessageSubject`, `MessageText` in Python; richer type info propagates
+- **HttpResponsePromise pattern in TS** — lazy unwrapping, access raw response without re-firing
+- **Raw client variants** (`raw_client.py` files) — escape hatch to raw HTTP without leaving the SDK
+
+### Verdict for SDK eval
+
+Speakeasy's SDKs are **more feature-rich** (async, MCP, React Query, webhook runtime, Zod) but **worse ergonomically** out of the box (tag-prefixed method names, flat resource access). Fern's output is closer to what a human would hand-write.
+
+The stutter problem is the same root cause as the CLI's 31 top-level groups. Fixing it requires either overlays that rewrite tags (what we did for `APIKeys`) or a convention in Fern's tag naming. A systematic overlay that maps nested resource tags to cleaner method groupings would unlock most of the ergonomics gap.
+
+Net: Speakeasy SDK eval is promising but not a drop-in replacement. Would require investment in overlays or config tuning to match Fern's call-site feel. The extra features (async, MCP, React Query) are real value if they align with roadmap.
+
 ## Setup
 
 1. Created private repo `agentmail-to/agentmail-cli-speakeasy`

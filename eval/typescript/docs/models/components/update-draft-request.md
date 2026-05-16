@@ -1,0 +1,22 @@
+# UpdateDraftRequest
+
+## Example Usage
+
+```typescript
+import { UpdateDraftRequest } from "agentmail/models/components";
+
+let value: UpdateDraftRequest = {};
+```
+
+## Fields
+
+| Field                                                                                                 | Type                                                                                                  | Required                                                                                              | Description                                                                                           |
+| ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| `replyTo`                                                                                             | *string*[]                                                                                            | :heavy_minus_sign:                                                                                    | Reply-to addresses. In format `username@domain.com` or `Display Name <username@domain.com>`.          |
+| `to`                                                                                                  | *string*[]                                                                                            | :heavy_minus_sign:                                                                                    | Addresses of recipients. In format `username@domain.com` or `Display Name <username@domain.com>`.     |
+| `cc`                                                                                                  | *string*[]                                                                                            | :heavy_minus_sign:                                                                                    | Addresses of CC recipients. In format `username@domain.com` or `Display Name <username@domain.com>`.  |
+| `bcc`                                                                                                 | *string*[]                                                                                            | :heavy_minus_sign:                                                                                    | Addresses of BCC recipients. In format `username@domain.com` or `Display Name <username@domain.com>`. |
+| `subject`                                                                                             | *string*                                                                                              | :heavy_minus_sign:                                                                                    | Subject of draft.                                                                                     |
+| `text`                                                                                                | *string*                                                                                              | :heavy_minus_sign:                                                                                    | Plain text body of draft.                                                                             |
+| `html`                                                                                                | *string*                                                                                              | :heavy_minus_sign:                                                                                    | HTML body of draft.                                                                                   |
+| `sendAt`                                                                                              | [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)         | :heavy_minus_sign:                                                                                    | Time at which to schedule send draft.                                                                 |

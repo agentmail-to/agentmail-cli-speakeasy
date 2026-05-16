@@ -1,0 +1,16 @@
+# InboxEvent
+
+
+## Fields
+
+| Field                                                                  | Type                                                                   | Required                                                               | Description                                                            |
+| ---------------------------------------------------------------------- | ---------------------------------------------------------------------- | ---------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| `organization_id`                                                      | *str*                                                                  | :heavy_check_mark:                                                     | ID of organization.                                                    |
+| `pod_id`                                                               | *str*                                                                  | :heavy_check_mark:                                                     | ID of pod.                                                             |
+| `inbox_id`                                                             | *str*                                                                  | :heavy_check_mark:                                                     | The ID of the inbox.                                                   |
+| `event_id`                                                             | *str*                                                                  | :heavy_check_mark:                                                     | ID of event.                                                           |
+| `event_type`                                                           | [components.InboxEventType](../../models/components/inboxeventtype.md) | :heavy_check_mark:                                                     | Type of inbox event.                                                   |
+| `message_id`                                                           | *str*                                                                  | :heavy_check_mark:                                                     | ID of message.                                                         |
+| `label`                                                                | *str*                                                                  | :heavy_check_mark:                                                     | Label added or removed.                                                |
+| `event_at`                                                             | [date](https://docs.python.org/3/library/datetime.html#date-objects)   | :heavy_check_mark:                                                     | Time at which the event occurred.                                      |
+| `created_at`                                                           | [date](https://docs.python.org/3/library/datetime.html#date-objects)   | :heavy_check_mark:                                                     | Time at which the event was recorded.                                  |

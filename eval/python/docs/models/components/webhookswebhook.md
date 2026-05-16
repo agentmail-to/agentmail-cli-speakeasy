@@ -1,0 +1,17 @@
+# WebhooksWebhook
+
+
+## Fields
+
+| Field                                                                | Type                                                                 | Required                                                             | Description                                                          |
+| -------------------------------------------------------------------- | -------------------------------------------------------------------- | -------------------------------------------------------------------- | -------------------------------------------------------------------- |
+| `webhook_id`                                                         | *str*                                                                | :heavy_check_mark:                                                   | ID of webhook.                                                       |
+| `url`                                                                | *str*                                                                | :heavy_check_mark:                                                   | URL of webhook endpoint.                                             |
+| `event_types`                                                        | List[[components.EventType](../../models/components/eventtype.md)]   | :heavy_minus_sign:                                                   | Event types for which to send events.                                |
+| `pod_ids`                                                            | List[*str*]                                                          | :heavy_minus_sign:                                                   | Pods for which to send events. Maximum 10 per webhook.               |
+| `inbox_ids`                                                          | List[*str*]                                                          | :heavy_minus_sign:                                                   | Inboxes for which to send events. Maximum 10 per webhook.            |
+| `secret`                                                             | *str*                                                                | :heavy_check_mark:                                                   | Secret for webhook signature verification.                           |
+| `enabled`                                                            | *bool*                                                               | :heavy_check_mark:                                                   | Webhook is enabled.                                                  |
+| `updated_at`                                                         | [date](https://docs.python.org/3/library/datetime.html#date-objects) | :heavy_check_mark:                                                   | Time at which webhook was last updated.                              |
+| `created_at`                                                         | [date](https://docs.python.org/3/library/datetime.html#date-objects) | :heavy_check_mark:                                                   | Time at which webhook was created.                                   |
+| `client_id`                                                          | *Optional[str]*                                                      | :heavy_minus_sign:                                                   | Client ID of webhook.                                                |

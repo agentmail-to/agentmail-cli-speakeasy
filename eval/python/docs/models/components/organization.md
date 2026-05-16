@@ -1,0 +1,21 @@
+# Organization
+
+Organization details with usage limits and counts.
+
+
+## Fields
+
+| Field                                                                | Type                                                                 | Required                                                             | Description                                                          |
+| -------------------------------------------------------------------- | -------------------------------------------------------------------- | -------------------------------------------------------------------- | -------------------------------------------------------------------- |
+| `organization_id`                                                    | *str*                                                                | :heavy_check_mark:                                                   | ID of organization.                                                  |
+| `inbox_count`                                                        | *int*                                                                | :heavy_check_mark:                                                   | Current number of inboxes.                                           |
+| `domain_count`                                                       | *int*                                                                | :heavy_check_mark:                                                   | Current number of domains.                                           |
+| `inbox_limit`                                                        | *OptionalNullable[int]*                                              | :heavy_minus_sign:                                                   | Maximum number of inboxes allowed.                                   |
+| `domain_limit`                                                       | *OptionalNullable[int]*                                              | :heavy_minus_sign:                                                   | Maximum number of domains allowed.                                   |
+| `billing_id`                                                         | *OptionalNullable[str]*                                              | :heavy_minus_sign:                                                   | Provider-agnostic billing customer ID.                               |
+| `billing_type`                                                       | *OptionalNullable[str]*                                              | :heavy_minus_sign:                                                   | Billing provider type (e.g. "stripe").                               |
+| `billing_subscription_id`                                            | *OptionalNullable[str]*                                              | :heavy_minus_sign:                                                   | Active billing subscription ID.                                      |
+| `authentication_id`                                                  | *OptionalNullable[str]*                                              | :heavy_minus_sign:                                                   | Provider-agnostic authentication ID.                                 |
+| `authentication_type`                                                | *OptionalNullable[str]*                                              | :heavy_minus_sign:                                                   | Authentication provider type.                                        |
+| `updated_at`                                                         | [date](https://docs.python.org/3/library/datetime.html#date-objects) | :heavy_check_mark:                                                   | Time at which organization was last updated.                         |
+| `created_at`                                                         | [date](https://docs.python.org/3/library/datetime.html#date-objects) | :heavy_check_mark:                                                   | Time at which organization was created.                              |

@@ -1,4 +1,4 @@
-speakeasyVersion: 1.761.8
+speakeasyVersion: 1.761.9
 sources:
     api:
         sourceNamespace: api
@@ -12,6 +12,20 @@ targets:
         sourceNamespace: api
         sourceRevisionDigest: sha256:8460944c26d6b91523ec0583ad6fdfa558653c7cf4f113bd1e9b99f9d437db08
         sourceBlobDigest: sha256:043248f3044176faef7826ca0d1fc65cd2696a672a45bdc2f40e2e4948222e6d
+    agentmail-python:
+        source: api
+        sourceNamespace: api
+        sourceRevisionDigest: sha256:8460944c26d6b91523ec0583ad6fdfa558653c7cf4f113bd1e9b99f9d437db08
+        sourceBlobDigest: sha256:043248f3044176faef7826ca0d1fc65cd2696a672a45bdc2f40e2e4948222e6d
+        codeSamplesNamespace: api-python-code-samples
+        codeSamplesRevisionDigest: sha256:2873bad2ad717c9fa77801cbb439eabf80069bf81720a20d149d8a119df599ed
+    agentmail-typescript:
+        source: api
+        sourceNamespace: api
+        sourceRevisionDigest: sha256:8460944c26d6b91523ec0583ad6fdfa558653c7cf4f113bd1e9b99f9d437db08
+        sourceBlobDigest: sha256:043248f3044176faef7826ca0d1fc65cd2696a672a45bdc2f40e2e4948222e6d
+        codeSamplesNamespace: api-typescript-code-samples
+        codeSamplesRevisionDigest: sha256:80e78d217ba2eadee16cb8991d725106ec2951950e770e6ed3806849a7577514
 workflow:
     workflowVersion: 1.0.0
     speakeasyVersion: latest
@@ -28,3 +42,23 @@ workflow:
         agentmail-cli:
             target: cli
             source: api
+        agentmail-python:
+            target: python
+            source: api
+            output: eval/python
+            codeSamples:
+                registry:
+                    location: registry.speakeasyapi.dev/agentmail/agentmail/api-python-code-samples
+                labelOverride:
+                    fixedValue: Python (SDK)
+                blocking: false
+        agentmail-typescript:
+            target: typescript
+            source: api
+            output: eval/typescript
+            codeSamples:
+                registry:
+                    location: registry.speakeasyapi.dev/agentmail/agentmail/api-typescript-code-samples
+                labelOverride:
+                    fixedValue: Typescript (SDK)
+                blocking: false

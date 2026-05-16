@@ -1,0 +1,13 @@
+# MetricsQueryRequest
+
+
+## Fields
+
+| Field                                                                          | Type                                                                           | Required                                                                       | Description                                                                    |
+| ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------ |
+| `event_types`                                                                  | List[[components.MetricEventType](../../models/components/metriceventtype.md)] | :heavy_minus_sign:                                                             | N/A                                                                            |
+| `start`                                                                        | [date](https://docs.python.org/3/library/datetime.html#date-objects)           | :heavy_minus_sign:                                                             | N/A                                                                            |
+| `end`                                                                          | [date](https://docs.python.org/3/library/datetime.html#date-objects)           | :heavy_minus_sign:                                                             | N/A                                                                            |
+| `period`                                                                       | *Optional[str]*                                                                | :heavy_minus_sign:                                                             | N/A                                                                            |
+| `limit`                                                                        | *Optional[int]*                                                                | :heavy_minus_sign:                                                             | N/A                                                                            |
+| `descending`                                                                   | *Optional[bool]*                                                               | :heavy_minus_sign:                                                             | N/A                                                                            |

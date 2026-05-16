@@ -1,0 +1,14 @@
+# InboxesInbox
+
+
+## Fields
+
+| Field                                                                | Type                                                                 | Required                                                             | Description                                                          |
+| -------------------------------------------------------------------- | -------------------------------------------------------------------- | -------------------------------------------------------------------- | -------------------------------------------------------------------- |
+| `pod_id`                                                             | *str*                                                                | :heavy_check_mark:                                                   | ID of pod.                                                           |
+| `inbox_id`                                                           | *str*                                                                | :heavy_check_mark:                                                   | The ID of the inbox.                                                 |
+| `email`                                                              | *str*                                                                | :heavy_check_mark:                                                   | Email address of the inbox.                                          |
+| `display_name`                                                       | *Optional[str]*                                                      | :heavy_minus_sign:                                                   | Display name: `Display Name <username@domain.com>`.                  |
+| `client_id`                                                          | *Optional[str]*                                                      | :heavy_minus_sign:                                                   | Client ID of inbox.                                                  |
+| `updated_at`                                                         | [date](https://docs.python.org/3/library/datetime.html#date-objects) | :heavy_check_mark:                                                   | Time at which inbox was last updated.                                |
+| `created_at`                                                         | [date](https://docs.python.org/3/library/datetime.html#date-objects) | :heavy_check_mark:                                                   | Time at which inbox was created.                                     |
